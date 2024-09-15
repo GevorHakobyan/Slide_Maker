@@ -4,6 +4,7 @@
 
 namespace model {
     //this class must be responsible for storing existing slides
+    //and implementing different commands on them
     class Storage{
         private:
         class Const_Iterator{
