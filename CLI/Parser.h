@@ -18,6 +18,18 @@ namespace cli {
         using Value = std::pair<std::optional<C_arguments>, std::optional<C_options>>;
         using CommandList = std::map<Key, Value>;
         using parserPtr = std::shared_ptr<Parser>;
+        private:
+        class Lexer {
+
+        };
+
+        class Semantic_analyzer {
+
+        };
+        
+        class Syntax_analyzer {
+
+        };
 
         public: //methods
         static parserPtr getInstance();
