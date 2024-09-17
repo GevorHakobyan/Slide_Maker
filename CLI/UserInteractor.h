@@ -1,8 +1,10 @@
 #pragma once
+#include "CommandCreator.h"
 
 namespace cli {
     class UserInteractor {
-        //this will interact with user
-        //interact means get raw commands and send to commandCreator
+        public:
+        void startProgram(); //will create a default slide
+        void getUserInput(); //will wait for user input
     };
 }; //namespace cli
