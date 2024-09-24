@@ -14,7 +14,7 @@ namespace cli {
 
         public: //methods
         static CommandCreatorPtr getInstance();
-        Command&& CreateCommand(name, options = {}, arguments = {});
+        Command CreateCommand(name, options = {}, arguments = {});
 
         private: //data members
         CommandCreator() = default;
