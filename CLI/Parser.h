@@ -1,77 +1,110 @@
 #pragma once
-#include <cstring>
-#include <map>
-#include <vector>
 #include <string>
 #include <utility>
 #include <memory>
-#include <optional>
-#include <unordered_set>
-#include <unordered_map>
+#include <mutex>
+#include <iostream>
+#include <ranges>
 
 namespace cli {
 
     class Parser {
+        public:
+        enum class TokenType{Null = 0, Name, Option, Argument};
         public: //usings
-        using C_name = std::string_view;
-        using Text = std::string_view;
-        using C_arguments = std::unordered_set<std::string_view>;
-        using C_options = std::unordered_set<std::string_view>;
-        using CommandInfo = std::tuple<C_name, C_arguments, C_options>;
-        using Key = C_name;
-        using Value = std::pair<std::optional<C_arguments>, std::optional<C_options>>;
-        using CommandList = std::unordered_map<Key, Value>;
+        using Text = std::istream;
+        using rawToken = std::string;
+        using C_name = std::string;
+        using C_arguments = std::string;
+        using C_options = std::string;
+        using Token = std::pair<std::string, TokenType>;
         using parserPtr = std::shared_ptr<Parser>;
+        using Character = char;
+        
 
         private: //nested classes
         class Lexer {
             public:
-            using Token = char*;
-            using Text = std::initializer_list<std::string&>;
-            using Tokens = std::vector<Token>;
-
             public://methods
-            Lexer(Text);
+            Lexer() = default;
             ~Lexer() = default;
-            bool isLexicallyValid(Text) const;
+            Token getToken(Text&);
             private:
-            void tokenize(std::string&);
-            void setTokens(Text);
-            bool isTokenValid(Token) const;
+            Token tokenize(Text&);
+            rawToken getRawToken(Text&);
+            //type deciders
+            bool isWord(const rawToken&) const;
+            bool isOption(const rawToken&) const;
+            bool isArgument(const rawToken&) const;
 
-            private://members
-            Tokens m_tokens;
+            //type decider helpers
+            bool isLetter(const Character) const;
+            bool hasDigit(const rawToken&) const;
+            bool isHyphen(const Character) const;
+            bool isInQuotation(const rawToken&) const;
+
+            //specific type validators
+            void validateWord(const rawToken&) const;
+            void validateOption(const rawToken&) const;
+            void validateArgument(const rawToken&) const;
+
+            //validator helpers
+            bool isZeroFirst(const rawToken&) const;
+            bool hasInvalidCharacter(const rawToken&) const;
+            bool isZero(const Character) const;
         };
 
         class Syntax_analyzer {
-            using Text = std::string_view;
+            using Data = std::tuple<C_name, C_arguments, C_options>;
+
             public:
             Syntax_analyzer() = default;
             ~Syntax_analyzer() = default;
-            bool isSyntaticallyValid(Text) const;
+            void analyze(const Token&);
+            Data getData() const;
+
+            private:
+            void addToCommand_Name(const Token&);
+            void addToCommand_Options(const Token&);
+            void addToCommand_Arguments(const Token&);
+            bool hadBeenCalled(const bool) const;
+
+            private:
+            bool m_nameSetter{false};
+            bool m_optionSetter{false};
+            bool m_argumentSetter{false};
+            private: //PARSED COMMAND INFO
+            C_name m_CommandName{};
+            C_options m_CommandOptions{};
+            C_arguments m_CommandArguments{};
         };
 
-        /*class Semantic_analyzer { // I am not sure about this class
-                                    // do I really need it
-                                    //what does it mean in this case
-                                    //the way I check the syntax is enough
-        };*/
-        
-       
+        struct CommandInfo {
+            C_name m_name{};
+            C_options m_options{};
+            C_arguments m_arguments{};
+        };
+
         public: //methods
         static parserPtr getInstance();
         Parser(const Parser&) = delete;
         Parser& operator=(const Parser&) = delete;
-        CommandInfo operator()(Text);
+        CommandInfo operator()(Text&);
+        ~Parser() = default;
 
         private:
-        Parser() = default;
-        ~Parser() = default;
-        CommandInfo parseText(Text);
+        Parser();
+        void parseText(Text&);
+        void setCommandName(const C_name&);
+        void setCommandOptions(const C_options&);
+        void setCommandArguments(const C_arguments&);
 
         private: //data members
+        CommandInfo m_ParsedCommand;
         static parserPtr m_ptr;
-        CommandList m_list;
+        static std::mutex m_mutex;
+        Lexer m_lexer{};
+        Syntax_analyzer m_syntaxAnalyzer{};
     };
     #include "Parser.inl"
 } //namespace cli
