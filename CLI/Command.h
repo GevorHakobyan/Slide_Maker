@@ -1,29 +1,32 @@
 #pragma once
-#include "string"
-#include <vector>
+#include "FunctionArgument.h"
 
 namespace cli {
     class I_Command {
-        public: //usings
-        using name = std::string_view;
-        using arguments = std::initializer_list<std::string_view>;
-        using options = std::initializer_list<std::string_view>;
-
         public:
-        I_Command(name, arguments = {}, options = {});
-        I_Command(I_Command&&) noexcept;
-        ~I_Command() = default;
-        public://setters and getters
-        void setName(const name);
-        void setArguments(const arguments&);
-        void setOptions(const options&);
-        const name getName() const;
-        const arguments& getArguments() const;
-        const options& getOptions() const;
+        using ArgList = cli::Argument_list;
+        using Options = cli::Argument_list::Options;
+        using Arguments =  cli::Argument_list::ArgList;
+        public:
+        I_Command(const Options&, const Arguments&);
+        I_Command() = default;
+
+        public: //static methods
+        static I_Command create(const ArgList& );
+        void print() const;
+        private://static helper ones
+        static bool areOptionsValid(const Options&);
+        static bool areArgumentsValid(const Arguments&);
+        static void setValidOptions(const Options&);
+        static void setValidArguments(const Arguments&);
 
         private:
-        name m_name{};
-        arguments m_arguments{};
-        options m_options{};
+        static Options m_Valid_Options;
+        static Arguments m_Valid_Arguments;
+
+        private:
+        Options m_Options;
+        Arguments m_Arguments;
     };
+    #include "Command.inl"
 } //namespace cli

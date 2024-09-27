@@ -238,14 +238,14 @@ void cli::Parser::Syntax_analyzer::addToCommand_Options(const Token& token) {
     if (!hadBeenCalled(m_nameSetter) || hadBeenCalled(m_argumentSetter)) {
         throw std::runtime_error("Invalid Syntax\n");
     }
-    m_CommandOptions += token.first;
+    m_CommandOptions.insert(token.first);
 }
 
 void cli::Parser::Syntax_analyzer::addToCommand_Arguments(const Token& token) {
     if (!hadBeenCalled(m_nameSetter)) {
         throw std::runtime_error("Invalid Syntax\n");
     }
-    m_CommandArguments += token.first;
+    m_CommandArguments.insert(token.first);
 }
 
 bool cli::Parser::Syntax_analyzer::hadBeenCalled(bool setter) const {
@@ -254,4 +254,8 @@ bool cli::Parser::Syntax_analyzer::hadBeenCalled(bool setter) const {
 
 cli::Parser::Syntax_analyzer::Data cli::Parser::Syntax_analyzer::getData() const {
     return {m_CommandName, m_CommandOptions, m_CommandArguments};
+}
+
+cli::Parser::CommandInfo::Info cli::Parser::CommandInfo::getInfo() const {
+    return {m_name, m_options, m_arguments};
 }

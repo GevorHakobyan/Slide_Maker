@@ -5,6 +5,7 @@
 #include <mutex>
 #include <iostream>
 #include <ranges>
+#include <unordered_set>
 
 namespace cli {
 
@@ -15,8 +16,8 @@ namespace cli {
         using Text = std::istream;
         using rawToken = std::string;
         using C_name = std::string;
-        using C_arguments = std::string;
-        using C_options = std::string;
+        using C_arguments = std::unordered_set<std::string>;
+        using C_options = std::unordered_set<std::string>;
         using Token = std::pair<std::string, TokenType>;
         using parserPtr = std::shared_ptr<Parser>;
         using Character = char;
@@ -79,10 +80,13 @@ namespace cli {
             C_arguments m_CommandArguments{};
         };
 
+        public: //available for CommandCreator
         struct CommandInfo {
+            using Info = std::tuple<C_name, C_options, C_arguments>;
             C_name m_name{};
             C_options m_options{};
             C_arguments m_arguments{};
+            Info getInfo() const;
         };
 
         public: //methods

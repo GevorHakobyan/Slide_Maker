@@ -2,23 +2,37 @@
 
 #include "Command.h"
 #include "Parser.h"
+#include "FunctionArgument.h"
+#include <unordered_map>
+#include <functional>
 
 namespace cli {
     class CommandCreator{
         public: //usings
-        using CommandCreatorPtr = std::shared_ptr<CommandCreator>;
-        using Command = cli::I_Command;
-        using name = cli::I_Command::name;
-        using options = cli::I_Command::options;
-        using arguments = cli::I_Command::arguments;
+        using thisPtr = std::shared_ptr<CommandCreator>;
+        using CommandInfo = cli::Parser::CommandInfo;
+        using Key = cli::Parser::C_name;
+        using Arguments = cli::Argument_list;
+        using FunctionType = cli::I_Command(Arguments);
+        using Value = std::function<FunctionType>;
+        using Function_map = std::unordered_map<Key, Value>; 
 
         public: //methods
-        static CommandCreatorPtr getInstance();
-        static Command CreateCommand(name, options = {}, arguments = {});
+        CommandCreator(const CommandCreator&) = delete;
+        CommandCreator& operator=(const CommandCreator&) = delete;
+        static thisPtr getInstance();
+        cli::I_Command CreateCommand(const CommandInfo&);
+        void setValidCommands(const Function_map&);
+        ~CommandCreator() = default;
+
+        private: //helper methods
+        const Value getFunction(const Key&);
 
         private: //data members
         CommandCreator() = default;
-        ~CommandCreator() = default;
-        static CommandCreatorPtr m_ptr;
+        static thisPtr m_ptr;
+        static std::mutex m_mutex;
+        Function_map m_validCommands{};
     };
+    #include "CommandCreator.inl"
 } //namespace cli

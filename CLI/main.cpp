@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Parser.h"
+#include "CommandCreator.h"
 #include <sstream>
 
 int main() {
@@ -9,8 +10,14 @@ int main() {
 
     const auto ptr = cli::Parser::getInstance();
     const auto command = ptr->operator()(obj);
-    std::cout << command.m_name << "\n";
-    std::cout << command.m_options << "\n";
-    std::cout << command.m_arguments << "\n";
+    
+    const auto creatorPtr = cli::CommandCreator::getInstance();
+    cli::CommandCreator::Function_map map;
+    cli::CommandCreator::Value val = cli::I_Command::create;
+    map["make slide "] = val;
+    
+    creatorPtr->setValidCommands(map);
+    const auto Command = creatorPtr->CreateCommand(command);
+    Command.print();
     return 0;
 }
