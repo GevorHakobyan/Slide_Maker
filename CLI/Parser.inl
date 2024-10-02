@@ -3,10 +3,14 @@
 //static member initialization
 std::mutex cli::Parser::m_mutex;
 cli::Parser::parserPtr cli::Parser::m_ptr{nullptr};
+cli::Parser::StateDiagram cli::Parser::m_states;
+cli::Parser::State cli::Parser::m_CurrentState = State::S_Start;
 
 //PARSER CORE METHODS DEFINITIONS
 cli::Parser::Parser() 
-: m_lexer{}, m_syntaxAnalyzer{} {};
+: m_lexer{}, m_syntaxAnalyzer{} {
+    setStateDiagram();
+};
 
 cli::Parser::parserPtr cli::Parser::getInstance() {
     std::lock_guard<std::mutex> lock{m_mutex};
@@ -15,6 +19,78 @@ cli::Parser::parserPtr cli::Parser::getInstance() {
     }
     return m_ptr;
 }
+
+void cli::Parser::setStateDiagram() {
+    setStartState();
+    setOptionState();
+    setArgumentState();
+}
+
+void cli::Parser::setStartState() {
+    std::unordered_map<TokenType, State> startStateValue;
+    startStateValue[TokenType::Name] = State::S_Name;
+    startStateValue[TokenType::Option] = State::S_Dead;
+    startStateValue[TokenType::Argument] = State::S_Dead;
+    startStateValue[TokenType::Null] = State::S_Dead;
+
+    m_states[State::S_Start] = startStateValue;
+}
+
+void cli::Parser::setOptionState() {
+    std::unordered_map<TokenType, State> optionStateValue;
+    optionStateValue[TokenType::Name] = State::S_Dead;
+    optionStateValue[TokenType::Option] = State::S_Opt;
+    optionStateValue[TokenType::Argument] = State::S_Arg;
+    optionStateValue[TokenType::Null] = State::S_End;
+
+    m_states[State::S_Opt] = optionStateValue;
+}
+
+void cli::Parser::setArgumentState() {
+    std::unordered_map<TokenType, State> argumentStateValue;
+    argumentStateValue[TokenType::Name] = State::S_Dead;
+    argumentStateValue[TokenType::Option] = State::S_Dead;
+    argumentStateValue[TokenType::Argument] = State::S_Arg;
+    argumentStateValue[TokenType::Null] = State::S_End;
+
+    m_states[State::S_Arg] = argumentStateValue;
+}
+
+const cli::Parser::State cli::Parser::pass(const Token& nextToken) {
+    try {
+        const auto type = nextToken.second;
+        const auto currState =  getNextState(nextToken);
+        m_syntaxAnalyzer.addTo(nextToken);
+        return currState;
+        } catch(const Exception& cerr) {
+            throw;
+        }
+}
+
+const cli::Parser::State cli::Parser::getNextState(const Token& nextToken) const {
+    const auto tokenType = nextToken.second;
+    const auto nextState = m_states[m_CurrentState][tokenType];
+    if (nextState == State::S_Dead) {
+        const auto error  = getErrorType(nextToken);
+        throw cli::InvalidSyntax_Cerr("Invalid Syntax", error);
+    }
+    return nextState;
+}
+
+const cli::Parser::ErrorType cli::Parser::getErrorType(const Token& nextToken) const {
+    if (m_CurrentState == State::S_Name) {
+        return (nextToken.second == TokenType::Option) ? ErrorType::T4 : ErrorType::T1;
+    }
+
+    if(m_CurrentState == State::S_Opt) {
+        return (nextToken.second == TokenType::Name) ? ErrorType::T3 : ErrorType::T4;
+    }
+
+    if (m_CurrentState == State::S_Arg) {
+        return (nextToken.second == TokenType::Name) ? ErrorType::T2 : ErrorType::T1; //RECHECK HERE BUG!!
+    }
+}
+
 
 cli::Parser::CommandInfo cli::Parser::operator() (Text& text) {
     CommandInfo newCommand;
@@ -32,7 +108,7 @@ void cli::Parser::parseText(Text& text) {
         Token nextToken = m_lexer.getToken(text);
 
         while (nextToken.second != TokenType::Null) {
-            m_syntaxAnalyzer.analyze(nextToken);
+            m_CurrentState = pass(nextToken);
             nextToken = m_lexer.getToken(text);
         } 
 
@@ -203,53 +279,77 @@ void cli::Parser::Lexer::validateArgument(const rawToken& token) const {
 
 //PARSER::SYNTAX_ANALYZER CORE METHODS DEFINITONS
 
-void cli::Parser::Syntax_analyzer::analyze(const Token& token) {
+void cli::Parser::Syntax_analyzer::addTo(const Token& token) {
     try {
-        if (token.second == TokenType::Name) {
-            addToCommand_Name(token);
-            m_nameSetter = true;
-            return;
-        }
+        switch(token.second) {
+            case TokenType::Null: {
+                throw;
+                break;
+            }
 
-        if (token.second == TokenType::Option) {
-            addToCommand_Options(token);
-            m_optionSetter = true;
-            return;
-        }
+            case TokenType::Name: {
+                addToCommand_Name(token);
+                break;
+            }
 
-        if (token.second == TokenType::Argument) {
-            addToCommand_Arguments(token);
-            m_argumentSetter = true;
-            return;
+            case TokenType::Option: {
+                addToCommand_Options(token);
+                break;
+            }
+
+            case TokenType::Argument: {
+                addToCommand_Arguments(token);
+                break;
+            }
         }
-    } catch(std::runtime_error& err) {
+    } catch (std::runtime_error& err) {
         throw;
     }
 }
 
-void cli::Parser::Syntax_analyzer::addToCommand_Name(const Token& token) {
-    if(hadBeenCalled(m_argumentSetter) || hadBeenCalled(m_optionSetter)) {
-        throw std::runtime_error("Invalid Syntax\n");
+const cli::Parser::Varaint cli::Parser::Syntax_analyzer::getValue(const Token& token) const{
+    const auto type = getType(token);
+    switch(type) {
+        case VariantType::Int: {
+            return std::stoi(token.first);
+        }
+
+        case VariantType::String: {
+            return token.first;
+        }
+
+        case VariantType::Bool: {
+            const auto string = token.first;
+            return (string == "true") ? true : false;
+        }
     }
+}
+
+const cli::Parser::VariantType cli::Parser::Syntax_analyzer::getType(const Token& token) const {
+    if (token.first == "true" || token.first == "false") {
+        return VariantType::Bool;
+    }
+
+    if (std::isdigit(token.first[0])) {
+        return VariantType::Int;
+    }
+
+    return VariantType::String;
+}
+
+
+void cli::Parser::Syntax_analyzer::addToCommand_Name(const Token& token) {
     m_CommandName +=  token.first + " ";
 }
 
 void cli::Parser::Syntax_analyzer::addToCommand_Options(const Token& token) {
-    if (!hadBeenCalled(m_nameSetter) || hadBeenCalled(m_argumentSetter)) {
-        throw std::runtime_error("Invalid Syntax\n");
-    }
-    m_CommandOptions.insert(token.first);
+    const auto value = getValue(token);
+    m_CommandOptions.insert(value);
 }
 
 void cli::Parser::Syntax_analyzer::addToCommand_Arguments(const Token& token) {
-    if (!hadBeenCalled(m_nameSetter)) {
-        throw std::runtime_error("Invalid Syntax\n");
-    }
-    m_CommandArguments.insert(token.first);
-}
-
-bool cli::Parser::Syntax_analyzer::hadBeenCalled(bool setter) const {
-    return (setter) ? true :false;
+    const auto value = getValue(token);
+    m_CommandArguments.insert(value);
 }
 
 cli::Parser::Syntax_analyzer::Data cli::Parser::Syntax_analyzer::getData() const {

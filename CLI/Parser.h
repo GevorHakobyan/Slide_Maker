@@ -6,26 +6,36 @@
 #include <iostream>
 #include <ranges>
 #include <unordered_set>
+#include <variant>
+#include "InvalidCharacter_Cerr.h"
+#include "InvalidSyntax_Cerr.h"
 
 namespace cli {
 
     class Parser {
         public:
         enum class TokenType{Null = 0, Name, Option, Argument};
+        enum class State{S_Start, S_Name, S_Opt, S_Arg, S_Dead, S_End};
+        enum class VariantType{Int, String, Bool};
         public: //usings
         using Text = std::istream;
         using rawToken = std::string;
+        using Varaint = std::variant<int, std::string, bool>;
+        using argument = std::variant<int, std::string, bool>;
+        using option = std::variant<int, std::string, bool>;
         using C_name = std::string;
-        using C_arguments = std::unordered_set<std::string>;
-        using C_options = std::unordered_set<std::string>;
+        using C_arguments = std::unordered_set<argument>;
+        using C_options = std::unordered_set<option>;
         using Token = std::pair<std::string, TokenType>;
         using parserPtr = std::shared_ptr<Parser>;
         using Character = char;
+        using Value = std::unordered_map<TokenType, State>;
+        using StateDiagram = std::unordered_map<State, Value>;
+        using ErrorType = InvalidSyntax_Cerr::Error;
         
 
         private: //nested classes
         class Lexer {
-            public:
             public://methods
             Lexer() = default;
             ~Lexer() = default;
@@ -61,19 +71,16 @@ namespace cli {
             public:
             Syntax_analyzer() = default;
             ~Syntax_analyzer() = default;
-            void analyze(const Token&);
+            void addTo(const Token&);
             Data getData() const;
 
             private:
             void addToCommand_Name(const Token&);
             void addToCommand_Options(const Token&);
             void addToCommand_Arguments(const Token&);
-            bool hadBeenCalled(const bool) const;
+            const Varaint getValue(const Token&) const;
+            const VariantType getType(const Token&) const;
 
-            private:
-            bool m_nameSetter{false};
-            bool m_optionSetter{false};
-            bool m_argumentSetter{false};
             private: //PARSED COMMAND INFO
             C_name m_CommandName{};
             C_options m_CommandOptions{};
@@ -102,11 +109,22 @@ namespace cli {
         void setCommandName(const C_name&);
         void setCommandOptions(const C_options&);
         void setCommandArguments(const C_arguments&);
+        void setStateDiagram();
+        void setStartState();
+        void setOptionState();
+        void setArgumentState();
+        const State pass(const Token&);
+        const State getNextState(const Token&) const;
+        const ErrorType getErrorType(const Token&) const noexcept;
+
+
 
         private: //data members
         CommandInfo m_ParsedCommand;
         static parserPtr m_ptr;
         static std::mutex m_mutex;
+        static StateDiagram m_states;
+        static State m_CurrentState;
         Lexer m_lexer{};
         Syntax_analyzer m_syntaxAnalyzer{};
     };
