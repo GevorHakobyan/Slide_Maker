@@ -5,7 +5,7 @@ namespace cli{
 
 class InvalidSyntax_Cerr : public Exception {
     public:
-    enum class Error{T1 = 1, T2, T3, T4};
+    enum class Error{T1 = 1, T2, T3, T4, T5, T6};
     using Messeage = std::string;
     
     public:
@@ -17,6 +17,8 @@ class InvalidSyntax_Cerr : public Exception {
         static Messeage m_T2;
         static Messeage m_T3;
         static Messeage m_T4;
+        static Messeage m_T5;
+        static Messeage m_T6;
     };
 
     public:

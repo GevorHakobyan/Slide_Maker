@@ -1,8 +1,10 @@
 #include "InvalidSyntax_Cerr.h"
-cli::InvalidSyntax_Cerr::Messeage cli::InvalidSyntax_Cerr::Error_Type::m_T1{"Provided argument before option\n"};
+cli::InvalidSyntax_Cerr::Messeage cli::InvalidSyntax_Cerr::Error_Type::m_T1{"Provided option before name\n"};
 cli::InvalidSyntax_Cerr::Messeage cli::InvalidSyntax_Cerr::Error_Type::m_T2{"Provided argument before name\n"};
-cli::InvalidSyntax_Cerr::Messeage cli::InvalidSyntax_Cerr::Error_Type::m_T3{"Provided option before argument\n"};
-cli::InvalidSyntax_Cerr::Messeage cli::InvalidSyntax_Cerr::Error_Type::m_T4{"Provided option before name\n"};
+cli::InvalidSyntax_Cerr::Messeage cli::InvalidSyntax_Cerr::Error_Type::m_T3{"Provided argument before option\n"};
+cli::InvalidSyntax_Cerr::Messeage cli::InvalidSyntax_Cerr::Error_Type::m_T4{"Provided name after option\n"};
+cli::InvalidSyntax_Cerr::Messeage cli::InvalidSyntax_Cerr::Error_Type::m_T5{"Provided name after argument\n"};
+cli::InvalidSyntax_Cerr::Messeage cli::InvalidSyntax_Cerr::Error_Type::m_T6{"Provided option after argument\n"};
 
 cli::InvalidSyntax_Cerr::InvalidSyntax_Cerr(const Messeage& messeage, const Error cerr)
 : Exception(messeage), m_cerr{cerr} {};
@@ -34,6 +36,16 @@ cli::InvalidSyntax_Cerr::Messeage cli::InvalidSyntax_Cerr::Error_Type::getMessea
 
         case Error::T4 : {
             return m_T4;
+            break;
+        }
+
+        case Error::T5 : {
+            return m_T5;
+            break;
+        }
+
+        case Error::T6 : {
+            return m_T6;
             break;
         }
     }

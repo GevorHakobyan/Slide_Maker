@@ -7,6 +7,7 @@
 #include <ranges>
 #include <unordered_set>
 #include <variant>
+#include "CommandCreator.h"
 #include "InvalidCharacter_Cerr.h"
 #include "InvalidSyntax_Cerr.h"
 
@@ -23,11 +24,11 @@ namespace cli {
         using Varaint = std::variant<int, std::string, bool>;
         using argument = std::variant<int, std::string, bool>;
         using option = std::variant<int, std::string, bool>;
+        using CommandPtr = std::shared_ptr<cli::I_Command>;
         using C_name = std::string;
         using C_arguments = std::unordered_set<argument>;
         using C_options = std::unordered_set<option>;
         using Token = std::pair<std::string, TokenType>;
-        using parserPtr = std::shared_ptr<Parser>;
         using Character = char;
         using Value = std::unordered_map<TokenType, State>;
         using StateDiagram = std::unordered_map<State, Value>;
@@ -97,14 +98,12 @@ namespace cli {
         };
 
         public: //methods
-        static parserPtr getInstance();
-        Parser(const Parser&) = delete;
-        Parser& operator=(const Parser&) = delete;
-        CommandInfo operator()(Text&);
+        Parser();
+        CommandPtr getCommand(std::istream&);
         ~Parser() = default;
 
         private:
-        Parser();
+        CommandInfo Parse(Text&);
         void parseText(Text&);
         void setCommandName(const C_name&);
         void setCommandOptions(const C_options&);
@@ -121,8 +120,6 @@ namespace cli {
 
         private: //data members
         CommandInfo m_ParsedCommand;
-        static parserPtr m_ptr;
-        static std::mutex m_mutex;
         static StateDiagram m_states;
         static State m_CurrentState;
         Lexer m_lexer{};

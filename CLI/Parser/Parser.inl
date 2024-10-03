@@ -1,8 +1,6 @@
 #include "Parser.h"
 
 //static member initialization
-std::mutex cli::Parser::m_mutex;
-cli::Parser::parserPtr cli::Parser::m_ptr{nullptr};
 cli::Parser::StateDiagram cli::Parser::m_states;
 cli::Parser::State cli::Parser::m_CurrentState = State::S_Start;
 
@@ -12,18 +10,14 @@ cli::Parser::Parser()
     setStateDiagram();
 };
 
-cli::Parser::parserPtr cli::Parser::getInstance() {
-    std::lock_guard<std::mutex> lock{m_mutex};
-    if (!m_ptr) {
-        m_ptr.reset(new Parser());
-    }
-    return m_ptr;
-}
-
 void cli::Parser::setStateDiagram() {
     setStartState();
     setOptionState();
     setArgumentState();
+}
+
+cli::Parser::CommandPtr cli::Parser::getCommand(std::istream& input) {
+    std::make_shared<cli::I_Command>(CommandCreator::CreateCommand(Parse(input)));
 }
 
 void cli::Parser::setStartState() {
@@ -79,20 +73,20 @@ const cli::Parser::State cli::Parser::getNextState(const Token& nextToken) const
 
 const cli::Parser::ErrorType cli::Parser::getErrorType(const Token& nextToken) const {
     if (m_CurrentState == State::S_Name) {
-        return (nextToken.second == TokenType::Option) ? ErrorType::T4 : ErrorType::T1;
+        return (nextToken.second == TokenType::Option) ? ErrorType::T1 : ErrorType::T2;
     }
 
     if(m_CurrentState == State::S_Opt) {
-        return (nextToken.second == TokenType::Name) ? ErrorType::T3 : ErrorType::T4;
+        return (nextToken.second == TokenType::Name) ? ErrorType::T4 : ErrorType::T3;
     }
 
     if (m_CurrentState == State::S_Arg) {
-        return (nextToken.second == TokenType::Name) ? ErrorType::T2 : ErrorType::T1; //RECHECK HERE BUG!!
+        return (nextToken.second == TokenType::Name) ? ErrorType::T5 : ErrorType::T6;
     }
 }
 
 
-cli::Parser::CommandInfo cli::Parser::operator() (Text& text) {
+cli::Parser::CommandInfo cli::Parser::Parse(Text& text) {
     CommandInfo newCommand;
     try {
         parseText(text);
@@ -138,7 +132,7 @@ void cli::Parser::setCommandArguments(const C_arguments& argument) {
 cli::Parser::Token cli::Parser::Lexer::getToken(Text& text) {
     try {
         return tokenize(text);
-    } catch (std::runtime_error& err) {
+    } catch (cli::InvalidCharacter_Cerr& err) {
         throw;
     }
 }
@@ -166,7 +160,7 @@ cli::Parser::Token cli::Parser::Lexer::tokenize(Text& text) {
             validateArgument(token);
             return Token{token, TokenType::Argument};
         }
-    } catch(std::runtime_error& err) {
+    } catch(cli::InvalidCharacter_Cerr& err) {
         throw;
     }
 
@@ -227,7 +221,7 @@ void cli::Parser::Lexer::validateWord(const rawToken& token) const {
     //Word = ^[a-z]+$
     for (size_t i{0}; i < token.size(); ++i) {
         if (!isLetter(token[i])) {
-            throw std::runtime_error("Invalid Character\n");
+            throw cli::InvalidCharacter_Cerr("Invalid Character", token, i);
         }
     }
 }
@@ -238,7 +232,7 @@ void cli::Parser::Lexer::validateOption(const rawToken& token) const {
     //Symbol = ! | / | * | () | % | @ | # | $ | = 
 
     if ((isZeroFirst(token) || hasInvalidCharacter(token))) {
-        throw std::runtime_error("Invalid Character\n");
+        throw cli::InvalidCharacter_Cerr("Invalid Character", token, 0);
     }
 }
 
@@ -272,7 +266,7 @@ bool cli::Parser::Lexer::hasInvalidCharacter(const rawToken& token) const {
 void cli::Parser::Lexer::validateArgument(const rawToken& token) const {
     try {
         validateOption(token);
-    } catch(std::runtime_error& err) {
+    } catch(cli::InvalidCharacter_Cerr& err) {
         throw;
     }
 }
