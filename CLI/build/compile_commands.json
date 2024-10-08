@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/CLI/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/gevorg/Desktop/Slide_Maker/CLI/Controller -I/home/gevorg/Desktop/Slide_Maker/CLI/Exception -I/home/gevorg/Desktop/Slide_Maker/CLI/Parser  -o CMakeFiles/power.dir/Controller/main.cpp.o -c /home/gevorg/Desktop/Slide_Maker/CLI/Controller/main.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/CLI/Controller/main.cpp"
+}
+]
