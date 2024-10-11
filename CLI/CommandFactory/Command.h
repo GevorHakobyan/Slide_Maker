@@ -1,5 +1,8 @@
 #pragma once
 #include "FunctionArgument.h"
+#include "InvalidArgument_Cerr.h"
+#include "InvalidOption_Cerr.h"
+#include <memory>
 
 namespace cli {
     class I_Command {
@@ -7,7 +10,7 @@ namespace cli {
         using ArgList = cli::Argument_list;
         using Options = cli::Argument_list::Options;
         using Arguments =  cli::Argument_list::ArgList;
-        using CommandPtr = std::shared_ptr<I_Command>;
+        using CommandPtr = std::unique_ptr<I_Command>;
         public:
         I_Command(const Options&, const Arguments&);
         I_Command() = default;
@@ -15,10 +18,10 @@ namespace cli {
 
         public: //static methods
         static CommandPtr create(const ArgList& );
-        virtual void Execute() = 0;
+        virtual void Execute();
         private://static helper ones
-        static bool areOptionsValid(const Options&);
-        static bool areArgumentsValid(const Arguments&);
+        static void validateOptions(const Options&);
+        static void validateArguments(const Arguments&);
         static void setValidOptions(const Options&);
         static void setValidArguments(const Arguments&);
 
@@ -30,5 +33,4 @@ namespace cli {
         Options m_Options;
         Arguments m_Arguments;
     };
-    #include "Command.inl"
 } //namespace cli

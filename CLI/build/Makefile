@@ -129,6 +129,174 @@ power/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/build
 .PHONY : power/fast
 
+CommandFactory/Command.o: CommandFactory/Command.cpp.o
+.PHONY : CommandFactory/Command.o
+
+# target to build an object file
+CommandFactory/Command.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CommandFactory/Command.cpp.o
+.PHONY : CommandFactory/Command.cpp.o
+
+CommandFactory/Command.i: CommandFactory/Command.cpp.i
+.PHONY : CommandFactory/Command.i
+
+# target to preprocess a source file
+CommandFactory/Command.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CommandFactory/Command.cpp.i
+.PHONY : CommandFactory/Command.cpp.i
+
+CommandFactory/Command.s: CommandFactory/Command.cpp.s
+.PHONY : CommandFactory/Command.s
+
+# target to generate assembly for a file
+CommandFactory/Command.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CommandFactory/Command.cpp.s
+.PHONY : CommandFactory/Command.cpp.s
+
+CommandFactory/CommandCreator.o: CommandFactory/CommandCreator.cpp.o
+.PHONY : CommandFactory/CommandCreator.o
+
+# target to build an object file
+CommandFactory/CommandCreator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CommandFactory/CommandCreator.cpp.o
+.PHONY : CommandFactory/CommandCreator.cpp.o
+
+CommandFactory/CommandCreator.i: CommandFactory/CommandCreator.cpp.i
+.PHONY : CommandFactory/CommandCreator.i
+
+# target to preprocess a source file
+CommandFactory/CommandCreator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CommandFactory/CommandCreator.cpp.i
+.PHONY : CommandFactory/CommandCreator.cpp.i
+
+CommandFactory/CommandCreator.s: CommandFactory/CommandCreator.cpp.s
+.PHONY : CommandFactory/CommandCreator.s
+
+# target to generate assembly for a file
+CommandFactory/CommandCreator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CommandFactory/CommandCreator.cpp.s
+.PHONY : CommandFactory/CommandCreator.cpp.s
+
+CommandFactory/CommandInfo.o: CommandFactory/CommandInfo.cpp.o
+.PHONY : CommandFactory/CommandInfo.o
+
+# target to build an object file
+CommandFactory/CommandInfo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CommandFactory/CommandInfo.cpp.o
+.PHONY : CommandFactory/CommandInfo.cpp.o
+
+CommandFactory/CommandInfo.i: CommandFactory/CommandInfo.cpp.i
+.PHONY : CommandFactory/CommandInfo.i
+
+# target to preprocess a source file
+CommandFactory/CommandInfo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CommandFactory/CommandInfo.cpp.i
+.PHONY : CommandFactory/CommandInfo.cpp.i
+
+CommandFactory/CommandInfo.s: CommandFactory/CommandInfo.cpp.s
+.PHONY : CommandFactory/CommandInfo.s
+
+# target to generate assembly for a file
+CommandFactory/CommandInfo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CommandFactory/CommandInfo.cpp.s
+.PHONY : CommandFactory/CommandInfo.cpp.s
+
+CommandFactory/FunctionArgument.o: CommandFactory/FunctionArgument.cpp.o
+.PHONY : CommandFactory/FunctionArgument.o
+
+# target to build an object file
+CommandFactory/FunctionArgument.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CommandFactory/FunctionArgument.cpp.o
+.PHONY : CommandFactory/FunctionArgument.cpp.o
+
+CommandFactory/FunctionArgument.i: CommandFactory/FunctionArgument.cpp.i
+.PHONY : CommandFactory/FunctionArgument.i
+
+# target to preprocess a source file
+CommandFactory/FunctionArgument.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CommandFactory/FunctionArgument.cpp.i
+.PHONY : CommandFactory/FunctionArgument.cpp.i
+
+CommandFactory/FunctionArgument.s: CommandFactory/FunctionArgument.cpp.s
+.PHONY : CommandFactory/FunctionArgument.s
+
+# target to generate assembly for a file
+CommandFactory/FunctionArgument.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CommandFactory/FunctionArgument.cpp.s
+.PHONY : CommandFactory/FunctionArgument.cpp.s
+
+CommandFactory/SlideMaker.o: CommandFactory/SlideMaker.cpp.o
+.PHONY : CommandFactory/SlideMaker.o
+
+# target to build an object file
+CommandFactory/SlideMaker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CommandFactory/SlideMaker.cpp.o
+.PHONY : CommandFactory/SlideMaker.cpp.o
+
+CommandFactory/SlideMaker.i: CommandFactory/SlideMaker.cpp.i
+.PHONY : CommandFactory/SlideMaker.i
+
+# target to preprocess a source file
+CommandFactory/SlideMaker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CommandFactory/SlideMaker.cpp.i
+.PHONY : CommandFactory/SlideMaker.cpp.i
+
+CommandFactory/SlideMaker.s: CommandFactory/SlideMaker.cpp.s
+.PHONY : CommandFactory/SlideMaker.s
+
+# target to generate assembly for a file
+CommandFactory/SlideMaker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CommandFactory/SlideMaker.cpp.s
+.PHONY : CommandFactory/SlideMaker.cpp.s
+
+Controller/Controller.o: Controller/Controller.cpp.o
+.PHONY : Controller/Controller.o
+
+# target to build an object file
+Controller/Controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Controller/Controller.cpp.o
+.PHONY : Controller/Controller.cpp.o
+
+Controller/Controller.i: Controller/Controller.cpp.i
+.PHONY : Controller/Controller.i
+
+# target to preprocess a source file
+Controller/Controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Controller/Controller.cpp.i
+.PHONY : Controller/Controller.cpp.i
+
+Controller/Controller.s: Controller/Controller.cpp.s
+.PHONY : Controller/Controller.s
+
+# target to generate assembly for a file
+Controller/Controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Controller/Controller.cpp.s
+.PHONY : Controller/Controller.cpp.s
+
+Controller/Initializer.o: Controller/Initializer.cpp.o
+.PHONY : Controller/Initializer.o
+
+# target to build an object file
+Controller/Initializer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Controller/Initializer.cpp.o
+.PHONY : Controller/Initializer.cpp.o
+
+Controller/Initializer.i: Controller/Initializer.cpp.i
+.PHONY : Controller/Initializer.i
+
+# target to preprocess a source file
+Controller/Initializer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Controller/Initializer.cpp.i
+.PHONY : Controller/Initializer.cpp.i
+
+Controller/Initializer.s: Controller/Initializer.cpp.s
+.PHONY : Controller/Initializer.s
+
+# target to generate assembly for a file
+Controller/Initializer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Controller/Initializer.cpp.s
+.PHONY : Controller/Initializer.cpp.s
+
 Controller/main.o: Controller/main.cpp.o
 .PHONY : Controller/main.o
 
@@ -153,6 +321,174 @@ Controller/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Controller/main.cpp.s
 .PHONY : Controller/main.cpp.s
 
+Exception/Exception.o: Exception/Exception.cpp.o
+.PHONY : Exception/Exception.o
+
+# target to build an object file
+Exception/Exception.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/Exception.cpp.o
+.PHONY : Exception/Exception.cpp.o
+
+Exception/Exception.i: Exception/Exception.cpp.i
+.PHONY : Exception/Exception.i
+
+# target to preprocess a source file
+Exception/Exception.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/Exception.cpp.i
+.PHONY : Exception/Exception.cpp.i
+
+Exception/Exception.s: Exception/Exception.cpp.s
+.PHONY : Exception/Exception.s
+
+# target to generate assembly for a file
+Exception/Exception.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/Exception.cpp.s
+.PHONY : Exception/Exception.cpp.s
+
+Exception/InvalidArgument_Cerr.o: Exception/InvalidArgument_Cerr.cpp.o
+.PHONY : Exception/InvalidArgument_Cerr.o
+
+# target to build an object file
+Exception/InvalidArgument_Cerr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/InvalidArgument_Cerr.cpp.o
+.PHONY : Exception/InvalidArgument_Cerr.cpp.o
+
+Exception/InvalidArgument_Cerr.i: Exception/InvalidArgument_Cerr.cpp.i
+.PHONY : Exception/InvalidArgument_Cerr.i
+
+# target to preprocess a source file
+Exception/InvalidArgument_Cerr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/InvalidArgument_Cerr.cpp.i
+.PHONY : Exception/InvalidArgument_Cerr.cpp.i
+
+Exception/InvalidArgument_Cerr.s: Exception/InvalidArgument_Cerr.cpp.s
+.PHONY : Exception/InvalidArgument_Cerr.s
+
+# target to generate assembly for a file
+Exception/InvalidArgument_Cerr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/InvalidArgument_Cerr.cpp.s
+.PHONY : Exception/InvalidArgument_Cerr.cpp.s
+
+Exception/InvalidCharacter_Cerr.o: Exception/InvalidCharacter_Cerr.cpp.o
+.PHONY : Exception/InvalidCharacter_Cerr.o
+
+# target to build an object file
+Exception/InvalidCharacter_Cerr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/InvalidCharacter_Cerr.cpp.o
+.PHONY : Exception/InvalidCharacter_Cerr.cpp.o
+
+Exception/InvalidCharacter_Cerr.i: Exception/InvalidCharacter_Cerr.cpp.i
+.PHONY : Exception/InvalidCharacter_Cerr.i
+
+# target to preprocess a source file
+Exception/InvalidCharacter_Cerr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/InvalidCharacter_Cerr.cpp.i
+.PHONY : Exception/InvalidCharacter_Cerr.cpp.i
+
+Exception/InvalidCharacter_Cerr.s: Exception/InvalidCharacter_Cerr.cpp.s
+.PHONY : Exception/InvalidCharacter_Cerr.s
+
+# target to generate assembly for a file
+Exception/InvalidCharacter_Cerr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/InvalidCharacter_Cerr.cpp.s
+.PHONY : Exception/InvalidCharacter_Cerr.cpp.s
+
+Exception/InvalidCommand_Cerr.o: Exception/InvalidCommand_Cerr.cpp.o
+.PHONY : Exception/InvalidCommand_Cerr.o
+
+# target to build an object file
+Exception/InvalidCommand_Cerr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/InvalidCommand_Cerr.cpp.o
+.PHONY : Exception/InvalidCommand_Cerr.cpp.o
+
+Exception/InvalidCommand_Cerr.i: Exception/InvalidCommand_Cerr.cpp.i
+.PHONY : Exception/InvalidCommand_Cerr.i
+
+# target to preprocess a source file
+Exception/InvalidCommand_Cerr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/InvalidCommand_Cerr.cpp.i
+.PHONY : Exception/InvalidCommand_Cerr.cpp.i
+
+Exception/InvalidCommand_Cerr.s: Exception/InvalidCommand_Cerr.cpp.s
+.PHONY : Exception/InvalidCommand_Cerr.s
+
+# target to generate assembly for a file
+Exception/InvalidCommand_Cerr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/InvalidCommand_Cerr.cpp.s
+.PHONY : Exception/InvalidCommand_Cerr.cpp.s
+
+Exception/InvalidOption_Cerr.o: Exception/InvalidOption_Cerr.cpp.o
+.PHONY : Exception/InvalidOption_Cerr.o
+
+# target to build an object file
+Exception/InvalidOption_Cerr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/InvalidOption_Cerr.cpp.o
+.PHONY : Exception/InvalidOption_Cerr.cpp.o
+
+Exception/InvalidOption_Cerr.i: Exception/InvalidOption_Cerr.cpp.i
+.PHONY : Exception/InvalidOption_Cerr.i
+
+# target to preprocess a source file
+Exception/InvalidOption_Cerr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/InvalidOption_Cerr.cpp.i
+.PHONY : Exception/InvalidOption_Cerr.cpp.i
+
+Exception/InvalidOption_Cerr.s: Exception/InvalidOption_Cerr.cpp.s
+.PHONY : Exception/InvalidOption_Cerr.s
+
+# target to generate assembly for a file
+Exception/InvalidOption_Cerr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/InvalidOption_Cerr.cpp.s
+.PHONY : Exception/InvalidOption_Cerr.cpp.s
+
+Exception/InvalidSyntax_Cerr.o: Exception/InvalidSyntax_Cerr.cpp.o
+.PHONY : Exception/InvalidSyntax_Cerr.o
+
+# target to build an object file
+Exception/InvalidSyntax_Cerr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/InvalidSyntax_Cerr.cpp.o
+.PHONY : Exception/InvalidSyntax_Cerr.cpp.o
+
+Exception/InvalidSyntax_Cerr.i: Exception/InvalidSyntax_Cerr.cpp.i
+.PHONY : Exception/InvalidSyntax_Cerr.i
+
+# target to preprocess a source file
+Exception/InvalidSyntax_Cerr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/InvalidSyntax_Cerr.cpp.i
+.PHONY : Exception/InvalidSyntax_Cerr.cpp.i
+
+Exception/InvalidSyntax_Cerr.s: Exception/InvalidSyntax_Cerr.cpp.s
+.PHONY : Exception/InvalidSyntax_Cerr.s
+
+# target to generate assembly for a file
+Exception/InvalidSyntax_Cerr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Exception/InvalidSyntax_Cerr.cpp.s
+.PHONY : Exception/InvalidSyntax_Cerr.cpp.s
+
+Parser/Parser.o: Parser/Parser.cpp.o
+.PHONY : Parser/Parser.o
+
+# target to build an object file
+Parser/Parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Parser/Parser.cpp.o
+.PHONY : Parser/Parser.cpp.o
+
+Parser/Parser.i: Parser/Parser.cpp.i
+.PHONY : Parser/Parser.i
+
+# target to preprocess a source file
+Parser/Parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Parser/Parser.cpp.i
+.PHONY : Parser/Parser.cpp.i
+
+Parser/Parser.s: Parser/Parser.cpp.s
+.PHONY : Parser/Parser.s
+
+# target to generate assembly for a file
+Parser/Parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Parser/Parser.cpp.s
+.PHONY : Parser/Parser.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +498,51 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... power"
+	@echo "... CommandFactory/Command.o"
+	@echo "... CommandFactory/Command.i"
+	@echo "... CommandFactory/Command.s"
+	@echo "... CommandFactory/CommandCreator.o"
+	@echo "... CommandFactory/CommandCreator.i"
+	@echo "... CommandFactory/CommandCreator.s"
+	@echo "... CommandFactory/CommandInfo.o"
+	@echo "... CommandFactory/CommandInfo.i"
+	@echo "... CommandFactory/CommandInfo.s"
+	@echo "... CommandFactory/FunctionArgument.o"
+	@echo "... CommandFactory/FunctionArgument.i"
+	@echo "... CommandFactory/FunctionArgument.s"
+	@echo "... CommandFactory/SlideMaker.o"
+	@echo "... CommandFactory/SlideMaker.i"
+	@echo "... CommandFactory/SlideMaker.s"
+	@echo "... Controller/Controller.o"
+	@echo "... Controller/Controller.i"
+	@echo "... Controller/Controller.s"
+	@echo "... Controller/Initializer.o"
+	@echo "... Controller/Initializer.i"
+	@echo "... Controller/Initializer.s"
 	@echo "... Controller/main.o"
 	@echo "... Controller/main.i"
 	@echo "... Controller/main.s"
+	@echo "... Exception/Exception.o"
+	@echo "... Exception/Exception.i"
+	@echo "... Exception/Exception.s"
+	@echo "... Exception/InvalidArgument_Cerr.o"
+	@echo "... Exception/InvalidArgument_Cerr.i"
+	@echo "... Exception/InvalidArgument_Cerr.s"
+	@echo "... Exception/InvalidCharacter_Cerr.o"
+	@echo "... Exception/InvalidCharacter_Cerr.i"
+	@echo "... Exception/InvalidCharacter_Cerr.s"
+	@echo "... Exception/InvalidCommand_Cerr.o"
+	@echo "... Exception/InvalidCommand_Cerr.i"
+	@echo "... Exception/InvalidCommand_Cerr.s"
+	@echo "... Exception/InvalidOption_Cerr.o"
+	@echo "... Exception/InvalidOption_Cerr.i"
+	@echo "... Exception/InvalidOption_Cerr.s"
+	@echo "... Exception/InvalidSyntax_Cerr.o"
+	@echo "... Exception/InvalidSyntax_Cerr.i"
+	@echo "... Exception/InvalidSyntax_Cerr.s"
+	@echo "... Parser/Parser.o"
+	@echo "... Parser/Parser.i"
+	@echo "... Parser/Parser.s"
 .PHONY : help
 
 

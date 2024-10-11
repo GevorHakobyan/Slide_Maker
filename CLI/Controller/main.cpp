@@ -2,7 +2,7 @@
 #include "Controller.h"
 
 int main() {
-    const auto ptr = cli::Controller::getInstance();
-    //ptr->start(std::cin);
+    cli::Controller m_controller;
+    m_controller.start(std::cin);
     return 0;
 }

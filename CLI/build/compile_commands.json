@@ -1,7 +1,77 @@
 [
 {
   "directory": "/home/gevorg/Desktop/Slide_Maker/CLI/build",
-  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/gevorg/Desktop/Slide_Maker/CLI/Controller -I/home/gevorg/Desktop/Slide_Maker/CLI/Exception -I/home/gevorg/Desktop/Slide_Maker/CLI/Parser  -o CMakeFiles/power.dir/Controller/main.cpp.o -c /home/gevorg/Desktop/Slide_Maker/CLI/Controller/main.cpp",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/gevorg/Desktop/Slide_Maker/CLI/Controller -I/home/gevorg/Desktop/Slide_Maker/CLI/Exception -I/home/gevorg/Desktop/Slide_Maker/CLI/Parser -g -std=gnu++20 -o CMakeFiles/power.dir/CommandFactory/Command.cpp.o -c /home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory/Command.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory/Command.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/CLI/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/gevorg/Desktop/Slide_Maker/CLI/Controller -I/home/gevorg/Desktop/Slide_Maker/CLI/Exception -I/home/gevorg/Desktop/Slide_Maker/CLI/Parser -g -std=gnu++20 -o CMakeFiles/power.dir/CommandFactory/CommandCreator.cpp.o -c /home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory/CommandCreator.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory/CommandCreator.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/CLI/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/gevorg/Desktop/Slide_Maker/CLI/Controller -I/home/gevorg/Desktop/Slide_Maker/CLI/Exception -I/home/gevorg/Desktop/Slide_Maker/CLI/Parser -g -std=gnu++20 -o CMakeFiles/power.dir/CommandFactory/CommandInfo.cpp.o -c /home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory/CommandInfo.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory/CommandInfo.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/CLI/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/gevorg/Desktop/Slide_Maker/CLI/Controller -I/home/gevorg/Desktop/Slide_Maker/CLI/Exception -I/home/gevorg/Desktop/Slide_Maker/CLI/Parser -g -std=gnu++20 -o CMakeFiles/power.dir/CommandFactory/FunctionArgument.cpp.o -c /home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory/FunctionArgument.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory/FunctionArgument.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/CLI/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/gevorg/Desktop/Slide_Maker/CLI/Controller -I/home/gevorg/Desktop/Slide_Maker/CLI/Exception -I/home/gevorg/Desktop/Slide_Maker/CLI/Parser -g -std=gnu++20 -o CMakeFiles/power.dir/CommandFactory/SlideMaker.cpp.o -c /home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory/SlideMaker.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory/SlideMaker.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/CLI/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/gevorg/Desktop/Slide_Maker/CLI/Controller -I/home/gevorg/Desktop/Slide_Maker/CLI/Exception -I/home/gevorg/Desktop/Slide_Maker/CLI/Parser -g -std=gnu++20 -o CMakeFiles/power.dir/Controller/Controller.cpp.o -c /home/gevorg/Desktop/Slide_Maker/CLI/Controller/Controller.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/CLI/Controller/Controller.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/CLI/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/gevorg/Desktop/Slide_Maker/CLI/Controller -I/home/gevorg/Desktop/Slide_Maker/CLI/Exception -I/home/gevorg/Desktop/Slide_Maker/CLI/Parser -g -std=gnu++20 -o CMakeFiles/power.dir/Controller/Initializer.cpp.o -c /home/gevorg/Desktop/Slide_Maker/CLI/Controller/Initializer.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/CLI/Controller/Initializer.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/CLI/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/gevorg/Desktop/Slide_Maker/CLI/Controller -I/home/gevorg/Desktop/Slide_Maker/CLI/Exception -I/home/gevorg/Desktop/Slide_Maker/CLI/Parser -g -std=gnu++20 -o CMakeFiles/power.dir/Controller/main.cpp.o -c /home/gevorg/Desktop/Slide_Maker/CLI/Controller/main.cpp",
   "file": "/home/gevorg/Desktop/Slide_Maker/CLI/Controller/main.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/CLI/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/gevorg/Desktop/Slide_Maker/CLI/Controller -I/home/gevorg/Desktop/Slide_Maker/CLI/Exception -I/home/gevorg/Desktop/Slide_Maker/CLI/Parser -g -std=gnu++20 -o CMakeFiles/power.dir/Exception/Exception.cpp.o -c /home/gevorg/Desktop/Slide_Maker/CLI/Exception/Exception.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/CLI/Exception/Exception.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/CLI/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/gevorg/Desktop/Slide_Maker/CLI/Controller -I/home/gevorg/Desktop/Slide_Maker/CLI/Exception -I/home/gevorg/Desktop/Slide_Maker/CLI/Parser -g -std=gnu++20 -o CMakeFiles/power.dir/Exception/InvalidArgument_Cerr.cpp.o -c /home/gevorg/Desktop/Slide_Maker/CLI/Exception/InvalidArgument_Cerr.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/CLI/Exception/InvalidArgument_Cerr.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/CLI/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/gevorg/Desktop/Slide_Maker/CLI/Controller -I/home/gevorg/Desktop/Slide_Maker/CLI/Exception -I/home/gevorg/Desktop/Slide_Maker/CLI/Parser -g -std=gnu++20 -o CMakeFiles/power.dir/Exception/InvalidCharacter_Cerr.cpp.o -c /home/gevorg/Desktop/Slide_Maker/CLI/Exception/InvalidCharacter_Cerr.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/CLI/Exception/InvalidCharacter_Cerr.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/CLI/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/gevorg/Desktop/Slide_Maker/CLI/Controller -I/home/gevorg/Desktop/Slide_Maker/CLI/Exception -I/home/gevorg/Desktop/Slide_Maker/CLI/Parser -g -std=gnu++20 -o CMakeFiles/power.dir/Exception/InvalidCommand_Cerr.cpp.o -c /home/gevorg/Desktop/Slide_Maker/CLI/Exception/InvalidCommand_Cerr.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/CLI/Exception/InvalidCommand_Cerr.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/CLI/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/gevorg/Desktop/Slide_Maker/CLI/Controller -I/home/gevorg/Desktop/Slide_Maker/CLI/Exception -I/home/gevorg/Desktop/Slide_Maker/CLI/Parser -g -std=gnu++20 -o CMakeFiles/power.dir/Exception/InvalidOption_Cerr.cpp.o -c /home/gevorg/Desktop/Slide_Maker/CLI/Exception/InvalidOption_Cerr.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/CLI/Exception/InvalidOption_Cerr.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/CLI/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/gevorg/Desktop/Slide_Maker/CLI/Controller -I/home/gevorg/Desktop/Slide_Maker/CLI/Exception -I/home/gevorg/Desktop/Slide_Maker/CLI/Parser -g -std=gnu++20 -o CMakeFiles/power.dir/Exception/InvalidSyntax_Cerr.cpp.o -c /home/gevorg/Desktop/Slide_Maker/CLI/Exception/InvalidSyntax_Cerr.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/CLI/Exception/InvalidSyntax_Cerr.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/CLI/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/gevorg/Desktop/Slide_Maker/CLI/Controller -I/home/gevorg/Desktop/Slide_Maker/CLI/Exception -I/home/gevorg/Desktop/Slide_Maker/CLI/Parser -g -std=gnu++20 -o CMakeFiles/power.dir/Parser/Parser.cpp.o -c /home/gevorg/Desktop/Slide_Maker/CLI/Parser/Parser.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/CLI/Parser/Parser.cpp"
 }
 ]

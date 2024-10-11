@@ -12,10 +12,11 @@ namespace cli {
         public:
         Exception(const Messeage&, const Location& = std::source_location::current());
         virtual const char* what() const noexcept override;
+        
+        protected:
+        virtual void setMesseage();
         protected:
         Messeage m_messeage{};
         Location m_ErrorLocation;
     };
-    #include "Exception.inl"
-
 }; //namespace cli

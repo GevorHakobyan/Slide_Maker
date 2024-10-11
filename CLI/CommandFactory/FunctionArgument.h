@@ -1,10 +1,10 @@
 #pragma once
-#include "Parser.h"
+#include "Types.h"
 
 namespace cli {
 struct Argument_list{
-        using ArgList = cli::Parser::C_arguments;
-        using Options = cli::Parser::C_options;
+        using ArgList = cli::C_arguments; 
+        using Options = cli::C_options;
         public:
         Argument_list(const Options& op, const ArgList& arg);
         const ArgList& getArgumetns() const;
@@ -13,5 +13,4 @@ struct Argument_list{
         Options m_options;
         ArgList m_arguments;
     };
-    #include "FunctionArgument.inl"
 };//namespace cli

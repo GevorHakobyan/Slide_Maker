@@ -1,12 +1,12 @@
 #pragma once
-#include <string>
+
 #include <utility>
 #include <memory>
 #include <mutex>
 #include <iostream>
+#include <sstream>
 #include <ranges>
-#include <unordered_set>
-#include <variant>
+#include "CommandInfo.h"
 #include "CommandCreator.h"
 #include "InvalidCharacter_Cerr.h"
 #include "InvalidSyntax_Cerr.h"
@@ -19,15 +19,11 @@ namespace cli {
         enum class State{S_Start, S_Name, S_Opt, S_Arg, S_Dead, S_End};
         enum class VariantType{Int, String, Bool};
         public: //usings
-        using Text = std::istream;
-        using rawToken = std::string;
+        using FactoryPtr  = std::unique_ptr<cli::CommandCreator>;
         using Varaint = std::variant<int, std::string, bool>;
-        using argument = std::variant<int, std::string, bool>;
-        using option = std::variant<int, std::string, bool>;
-        using CommandPtr = std::shared_ptr<cli::I_Command>;
-        using C_name = std::string;
-        using C_arguments = std::unordered_set<argument>;
-        using C_options = std::unordered_set<option>;
+        using Text = std::stringstream;
+        using rawToken = std::string;
+        using CommandPtr = std::unique_ptr<cli::I_Command>;
         using Token = std::pair<std::string, TokenType>;
         using Character = char;
         using Value = std::unordered_map<TokenType, State>;
@@ -88,14 +84,7 @@ namespace cli {
             C_arguments m_CommandArguments{};
         };
 
-        public: //available for CommandCreator
-        struct CommandInfo {
-            using Info = std::tuple<C_name, C_options, C_arguments>;
-            C_name m_name{};
-            C_options m_options{};
-            C_arguments m_arguments{};
-            Info getInfo() const;
-        };
+       
 
         public: //methods
         Parser();
@@ -110,6 +99,7 @@ namespace cli {
         void setCommandArguments(const C_arguments&);
         void setStateDiagram();
         void setStartState();
+        void setNameState();
         void setOptionState();
         void setArgumentState();
         const State pass(const Token&);
@@ -122,8 +112,8 @@ namespace cli {
         CommandInfo m_ParsedCommand;
         static StateDiagram m_states;
         static State m_CurrentState;
+        FactoryPtr m_CommandFactory{nullptr};
         Lexer m_lexer{};
         Syntax_analyzer m_syntaxAnalyzer{};
     };
-    #include "Parser.inl"
 } //namespace cli

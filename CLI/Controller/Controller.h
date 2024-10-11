@@ -1,21 +1,20 @@
 #pragma once
-#include "../Parser/Parser.h"
+#include "Parser.h"
+#include "Initializer.h"
 
 namespace cli {
     class Controller {
         public:
-        using CommandPtr = std::shared_ptr<cli::I_Command>;
+        using CommandPtr = std::unique_ptr<cli::I_Command>;
         using ParserPtr = std::unique_ptr<cli::Parser>;
-        using thisPtr = std::shared_ptr<Controller>;
         public:
+        Controller();
+        ~Controller() = default; 
         void start(std::istream&);
-        static thisPtr  getInstance();
 
         private:
-        Controller() = default;
-        ~Controller() = default; 
         CommandPtr fetch(std::istream&);
-        void Exectute(CommandPtr);
+        void Exectute(CommandPtr&);
 
         private:
         ParserPtr m_parser{};        

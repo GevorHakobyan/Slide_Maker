@@ -81,12 +81,12 @@ clean: CMakeFiles/power.dir/clean
 CMakeFiles/power.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gevorg/Desktop/Slide_Maker/CLI/build/CMakeFiles --progress-num=1,2 "Built target power"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gevorg/Desktop/Slide_Maker/CLI/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target power"
 .PHONY : CMakeFiles/power.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/power.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gevorg/Desktop/Slide_Maker/CLI/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gevorg/Desktop/Slide_Maker/CLI/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/power.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gevorg/Desktop/Slide_Maker/CLI/build/CMakeFiles 0
 .PHONY : CMakeFiles/power.dir/rule

@@ -22,10 +22,10 @@ class InvalidSyntax_Cerr : public Exception {
     };
 
     public:
-    InvalidSyntax_Cerr(const Messeage&, const Error);
+    InvalidSyntax_Cerr(const Messeage&, const Error, const Location& = Location::current());
     const char* what() const noexcept override;
+    void setMesseage() override;
     private:
     Error m_cerr{};
-};
-
+    };
 }; //namespace cli

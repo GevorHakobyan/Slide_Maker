@@ -6,7 +6,7 @@ namespace cli {
         public:
         Slide_Maker(const Options&, const Arguments&);
         void Execute() override;
-        void setValidOptions();
-        void setValidArguments();
+        static void setValidOptions();
+        static void setValidArguments();
     };
 } //namespace cli
