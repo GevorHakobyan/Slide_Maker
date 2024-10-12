@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/power.dir/document/Exception.cpp.o CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.o CMakeFiles/power.dir/document/Slide.cpp.o CMakeFiles/power.dir/document/main.cpp.o -o power 

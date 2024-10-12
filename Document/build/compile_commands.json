@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/Document/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/Document/document -std=gnu++20 -o CMakeFiles/power.dir/document/Exception.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/Exception.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/Document/document/Exception.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/Document/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/Document/document -std=gnu++20 -o CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/InvalidIndex_Cerr.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/Document/document/InvalidIndex_Cerr.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/Document/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/Document/document -std=gnu++20 -o CMakeFiles/power.dir/document/Slide.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/Slide.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/Document/document/Slide.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/Document/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/Document/document -std=gnu++20 -o CMakeFiles/power.dir/document/main.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/main.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/Document/document/main.cpp"
+}
+]
