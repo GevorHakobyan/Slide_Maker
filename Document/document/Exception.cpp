@@ -12,5 +12,6 @@ const char* cli::Exception::what() const noexcept {
 void cli::Exception::setMesseage() {
     std::string fileName = m_ErrorLocation.file_name();
     int lineNumber = (m_ErrorLocation.line());
+    
     m_messeage = m_messeage + " In: " + fileName + " On Line: " + std::to_string(lineNumber) + '\n';
 }

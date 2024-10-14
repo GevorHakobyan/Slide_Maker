@@ -1,7 +1,12 @@
 #include "Slide.h"
 
-document::Slide::Slide(Size itemCount)
-: m_data(itemCount), m_dataSize{itemCount} {};
+document::Slide::Slide(std::initializer_list<ItemPtr> itemList)
+: m_data(itemList.size()), m_dataSize{itemList.size()} {
+    
+    for (const auto& itemPtr : itemList) {
+        m_data.push_back(std::move(itemPtr));
+    }
+}
 
 document::Slide::Slide(Slide&& rhs) noexcept {
     Swap(*this, rhs);
@@ -58,7 +63,7 @@ void document::Slide::assignInfo(const Slide& rhs) {
     const auto dataSize{rhs.getItemCount()};
 
     for (size_t i{0}; i < dataSize; ++i) {
-        m_data[i] = *rhs.getIteratorOn(i);
+        //m_data[i] = std::make_unique<A_Item>(*rhs.getIteratorOn(i));
     }
 }
 

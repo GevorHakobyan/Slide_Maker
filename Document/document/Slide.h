@@ -1,19 +1,21 @@
 #pragma once
 #include <vector>
 #include "InvalidIndex_Cerr.h"
+#include "Item.h"
 
 namespace document {
 
     class Slide {
        public:
-       using Data = std::vector<int>;
+       using ItemPtr = std::unique_ptr<A_Item>;
+       using Data = std::vector<ItemPtr>;
        using Iterator = Data::iterator;
        using ConstIterator = Data::const_iterator;
        using Index = size_t;
        using Size = size_t;
 
        public:
-       Slide(Size);
+       Slide(std::initializer_list<ItemPtr>);
        ~Slide() = default;
        Slide(Slide&&) noexcept;
        Slide& operator=(Slide&&) noexcept;
