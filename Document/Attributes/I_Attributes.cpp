@@ -1,4 +1,4 @@
-#include "I_Attributes.h"
+#include "../Include/I_Attributes.h"
 
 document::I_Attributes::I_Attributes(Color color, Length len, Width width) {
     setColor(color);

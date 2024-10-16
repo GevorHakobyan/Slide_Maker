@@ -9,7 +9,7 @@ namespace document {
         using Attribute = std::variant<int, std::string, float>;
 
         public:
-        InvalidAttribute_Cerr(const Messeage&, const Location& = Location::current(), Attribute);
+        InvalidAttribute_Cerr(const Messeage&, Attribute,  const Location& = Location::current());
         void setMesseage() override;
 
         private:

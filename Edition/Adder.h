@@ -1,11 +1,24 @@
 #pragma once
+
 #include <memory>
 #include <vector>
-#include "Command.h"
-#include "Storage.h"
+#include "../Include/Item.h"
+#include "../Include/I_Attributes.h"
+#include "../Include/Slide.h"
+#include "Item_Info.h"
 
 namespace edition {
+
+    class Adder {
+        public:
+        using Info = document::Item_Info;
+
+        public:
+        virtual void add(const Info&) = 0;
+    };
+
 }; //namespace edition
+
 
 /*
 FRIST: INTERFACE MUST BE:

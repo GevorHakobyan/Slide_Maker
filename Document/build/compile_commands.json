@@ -6,13 +6,38 @@
 },
 {
   "directory": "/home/gevorg/Desktop/Slide_Maker/Document/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/Document/document -std=gnu++20 -o CMakeFiles/power.dir/document/I_Attributes.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/I_Attributes.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/Document/document/I_Attributes.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/Document/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/Document/document -std=gnu++20 -o CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/InvalidAttribute_Cerr.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/Document/document/InvalidAttribute_Cerr.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/Document/build",
   "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/Document/document -std=gnu++20 -o CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/InvalidIndex_Cerr.cpp",
   "file": "/home/gevorg/Desktop/Slide_Maker/Document/document/InvalidIndex_Cerr.cpp"
 },
 {
   "directory": "/home/gevorg/Desktop/Slide_Maker/Document/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/Document/document -std=gnu++20 -o CMakeFiles/power.dir/document/Item.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/Item.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/Document/document/Item.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/Document/build",
   "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/Document/document -std=gnu++20 -o CMakeFiles/power.dir/document/Slide.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/Slide.cpp",
   "file": "/home/gevorg/Desktop/Slide_Maker/Document/document/Slide.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/Document/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/Document/document -std=gnu++20 -o CMakeFiles/power.dir/document/TextBox.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/TextBox.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/Document/document/TextBox.cpp"
+},
+{
+  "directory": "/home/gevorg/Desktop/Slide_Maker/Document/build",
+  "command": "/usr/bin/c++  -I/home/gevorg/Desktop/Slide_Maker/Document/document -std=gnu++20 -o CMakeFiles/power.dir/document/TextBox_Attr.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/TextBox_Attr.cpp",
+  "file": "/home/gevorg/Desktop/Slide_Maker/Document/document/TextBox_Attr.cpp"
 },
 {
   "directory": "/home/gevorg/Desktop/Slide_Maker/Document/build",

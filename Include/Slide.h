@@ -15,7 +15,7 @@ namespace document {
        using Size = size_t;
 
        public:
-       Slide(std::initializer_list<ItemPtr>);
+       Slide(Data&);
        ~Slide() = default;
        Slide(Slide&&) noexcept;
        Slide& operator=(Slide&&) noexcept;

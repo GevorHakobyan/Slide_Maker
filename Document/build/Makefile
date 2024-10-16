@@ -153,6 +153,54 @@ document/Exception.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/Exception.cpp.s
 .PHONY : document/Exception.cpp.s
 
+document/I_Attributes.o: document/I_Attributes.cpp.o
+.PHONY : document/I_Attributes.o
+
+# target to build an object file
+document/I_Attributes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/I_Attributes.cpp.o
+.PHONY : document/I_Attributes.cpp.o
+
+document/I_Attributes.i: document/I_Attributes.cpp.i
+.PHONY : document/I_Attributes.i
+
+# target to preprocess a source file
+document/I_Attributes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/I_Attributes.cpp.i
+.PHONY : document/I_Attributes.cpp.i
+
+document/I_Attributes.s: document/I_Attributes.cpp.s
+.PHONY : document/I_Attributes.s
+
+# target to generate assembly for a file
+document/I_Attributes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/I_Attributes.cpp.s
+.PHONY : document/I_Attributes.cpp.s
+
+document/InvalidAttribute_Cerr.o: document/InvalidAttribute_Cerr.cpp.o
+.PHONY : document/InvalidAttribute_Cerr.o
+
+# target to build an object file
+document/InvalidAttribute_Cerr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.o
+.PHONY : document/InvalidAttribute_Cerr.cpp.o
+
+document/InvalidAttribute_Cerr.i: document/InvalidAttribute_Cerr.cpp.i
+.PHONY : document/InvalidAttribute_Cerr.i
+
+# target to preprocess a source file
+document/InvalidAttribute_Cerr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.i
+.PHONY : document/InvalidAttribute_Cerr.cpp.i
+
+document/InvalidAttribute_Cerr.s: document/InvalidAttribute_Cerr.cpp.s
+.PHONY : document/InvalidAttribute_Cerr.s
+
+# target to generate assembly for a file
+document/InvalidAttribute_Cerr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.s
+.PHONY : document/InvalidAttribute_Cerr.cpp.s
+
 document/InvalidIndex_Cerr.o: document/InvalidIndex_Cerr.cpp.o
 .PHONY : document/InvalidIndex_Cerr.o
 
@@ -177,6 +225,30 @@ document/InvalidIndex_Cerr.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.s
 .PHONY : document/InvalidIndex_Cerr.cpp.s
 
+document/Item.o: document/Item.cpp.o
+.PHONY : document/Item.o
+
+# target to build an object file
+document/Item.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/Item.cpp.o
+.PHONY : document/Item.cpp.o
+
+document/Item.i: document/Item.cpp.i
+.PHONY : document/Item.i
+
+# target to preprocess a source file
+document/Item.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/Item.cpp.i
+.PHONY : document/Item.cpp.i
+
+document/Item.s: document/Item.cpp.s
+.PHONY : document/Item.s
+
+# target to generate assembly for a file
+document/Item.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/Item.cpp.s
+.PHONY : document/Item.cpp.s
+
 document/Slide.o: document/Slide.cpp.o
 .PHONY : document/Slide.o
 
@@ -200,6 +272,54 @@ document/Slide.s: document/Slide.cpp.s
 document/Slide.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/Slide.cpp.s
 .PHONY : document/Slide.cpp.s
+
+document/TextBox.o: document/TextBox.cpp.o
+.PHONY : document/TextBox.o
+
+# target to build an object file
+document/TextBox.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/TextBox.cpp.o
+.PHONY : document/TextBox.cpp.o
+
+document/TextBox.i: document/TextBox.cpp.i
+.PHONY : document/TextBox.i
+
+# target to preprocess a source file
+document/TextBox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/TextBox.cpp.i
+.PHONY : document/TextBox.cpp.i
+
+document/TextBox.s: document/TextBox.cpp.s
+.PHONY : document/TextBox.s
+
+# target to generate assembly for a file
+document/TextBox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/TextBox.cpp.s
+.PHONY : document/TextBox.cpp.s
+
+document/TextBox_Attr.o: document/TextBox_Attr.cpp.o
+.PHONY : document/TextBox_Attr.o
+
+# target to build an object file
+document/TextBox_Attr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/TextBox_Attr.cpp.o
+.PHONY : document/TextBox_Attr.cpp.o
+
+document/TextBox_Attr.i: document/TextBox_Attr.cpp.i
+.PHONY : document/TextBox_Attr.i
+
+# target to preprocess a source file
+document/TextBox_Attr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/TextBox_Attr.cpp.i
+.PHONY : document/TextBox_Attr.cpp.i
+
+document/TextBox_Attr.s: document/TextBox_Attr.cpp.s
+.PHONY : document/TextBox_Attr.s
+
+# target to generate assembly for a file
+document/TextBox_Attr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/document/TextBox_Attr.cpp.s
+.PHONY : document/TextBox_Attr.cpp.s
 
 document/main.o: document/main.cpp.o
 .PHONY : document/main.o
@@ -237,12 +357,27 @@ help:
 	@echo "... document/Exception.o"
 	@echo "... document/Exception.i"
 	@echo "... document/Exception.s"
+	@echo "... document/I_Attributes.o"
+	@echo "... document/I_Attributes.i"
+	@echo "... document/I_Attributes.s"
+	@echo "... document/InvalidAttribute_Cerr.o"
+	@echo "... document/InvalidAttribute_Cerr.i"
+	@echo "... document/InvalidAttribute_Cerr.s"
 	@echo "... document/InvalidIndex_Cerr.o"
 	@echo "... document/InvalidIndex_Cerr.i"
 	@echo "... document/InvalidIndex_Cerr.s"
+	@echo "... document/Item.o"
+	@echo "... document/Item.i"
+	@echo "... document/Item.s"
 	@echo "... document/Slide.o"
 	@echo "... document/Slide.i"
 	@echo "... document/Slide.s"
+	@echo "... document/TextBox.o"
+	@echo "... document/TextBox.i"
+	@echo "... document/TextBox.s"
+	@echo "... document/TextBox_Attr.o"
+	@echo "... document/TextBox_Attr.i"
+	@echo "... document/TextBox_Attr.s"
 	@echo "... document/main.o"
 	@echo "... document/main.i"
 	@echo "... document/main.s"

@@ -83,10 +83,38 @@ CMakeFiles/power.dir/document/Exception.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/power.dir/document/Exception.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gevorg/Desktop/Slide_Maker/Document/document/Exception.cpp -o CMakeFiles/power.dir/document/Exception.cpp.s
 
+CMakeFiles/power.dir/document/I_Attributes.cpp.o: CMakeFiles/power.dir/flags.make
+CMakeFiles/power.dir/document/I_Attributes.cpp.o: ../document/I_Attributes.cpp
+CMakeFiles/power.dir/document/I_Attributes.cpp.o: CMakeFiles/power.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gevorg/Desktop/Slide_Maker/Document/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/power.dir/document/I_Attributes.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/power.dir/document/I_Attributes.cpp.o -MF CMakeFiles/power.dir/document/I_Attributes.cpp.o.d -o CMakeFiles/power.dir/document/I_Attributes.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/I_Attributes.cpp
+
+CMakeFiles/power.dir/document/I_Attributes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/power.dir/document/I_Attributes.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gevorg/Desktop/Slide_Maker/Document/document/I_Attributes.cpp > CMakeFiles/power.dir/document/I_Attributes.cpp.i
+
+CMakeFiles/power.dir/document/I_Attributes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/power.dir/document/I_Attributes.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gevorg/Desktop/Slide_Maker/Document/document/I_Attributes.cpp -o CMakeFiles/power.dir/document/I_Attributes.cpp.s
+
+CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.o: CMakeFiles/power.dir/flags.make
+CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.o: ../document/InvalidAttribute_Cerr.cpp
+CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.o: CMakeFiles/power.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gevorg/Desktop/Slide_Maker/Document/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.o -MF CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.o.d -o CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/InvalidAttribute_Cerr.cpp
+
+CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gevorg/Desktop/Slide_Maker/Document/document/InvalidAttribute_Cerr.cpp > CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.i
+
+CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gevorg/Desktop/Slide_Maker/Document/document/InvalidAttribute_Cerr.cpp -o CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.s
+
 CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.o: CMakeFiles/power.dir/flags.make
 CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.o: ../document/InvalidIndex_Cerr.cpp
 CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.o: CMakeFiles/power.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gevorg/Desktop/Slide_Maker/Document/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gevorg/Desktop/Slide_Maker/Document/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.o -MF CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.o.d -o CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/InvalidIndex_Cerr.cpp
 
 CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.i: cmake_force
@@ -97,10 +125,24 @@ CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gevorg/Desktop/Slide_Maker/Document/document/InvalidIndex_Cerr.cpp -o CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.s
 
+CMakeFiles/power.dir/document/Item.cpp.o: CMakeFiles/power.dir/flags.make
+CMakeFiles/power.dir/document/Item.cpp.o: ../document/Item.cpp
+CMakeFiles/power.dir/document/Item.cpp.o: CMakeFiles/power.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gevorg/Desktop/Slide_Maker/Document/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/power.dir/document/Item.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/power.dir/document/Item.cpp.o -MF CMakeFiles/power.dir/document/Item.cpp.o.d -o CMakeFiles/power.dir/document/Item.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/Item.cpp
+
+CMakeFiles/power.dir/document/Item.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/power.dir/document/Item.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gevorg/Desktop/Slide_Maker/Document/document/Item.cpp > CMakeFiles/power.dir/document/Item.cpp.i
+
+CMakeFiles/power.dir/document/Item.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/power.dir/document/Item.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gevorg/Desktop/Slide_Maker/Document/document/Item.cpp -o CMakeFiles/power.dir/document/Item.cpp.s
+
 CMakeFiles/power.dir/document/Slide.cpp.o: CMakeFiles/power.dir/flags.make
 CMakeFiles/power.dir/document/Slide.cpp.o: ../document/Slide.cpp
 CMakeFiles/power.dir/document/Slide.cpp.o: CMakeFiles/power.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gevorg/Desktop/Slide_Maker/Document/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/power.dir/document/Slide.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gevorg/Desktop/Slide_Maker/Document/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/power.dir/document/Slide.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/power.dir/document/Slide.cpp.o -MF CMakeFiles/power.dir/document/Slide.cpp.o.d -o CMakeFiles/power.dir/document/Slide.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/Slide.cpp
 
 CMakeFiles/power.dir/document/Slide.cpp.i: cmake_force
@@ -111,10 +153,38 @@ CMakeFiles/power.dir/document/Slide.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/power.dir/document/Slide.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gevorg/Desktop/Slide_Maker/Document/document/Slide.cpp -o CMakeFiles/power.dir/document/Slide.cpp.s
 
+CMakeFiles/power.dir/document/TextBox.cpp.o: CMakeFiles/power.dir/flags.make
+CMakeFiles/power.dir/document/TextBox.cpp.o: ../document/TextBox.cpp
+CMakeFiles/power.dir/document/TextBox.cpp.o: CMakeFiles/power.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gevorg/Desktop/Slide_Maker/Document/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/power.dir/document/TextBox.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/power.dir/document/TextBox.cpp.o -MF CMakeFiles/power.dir/document/TextBox.cpp.o.d -o CMakeFiles/power.dir/document/TextBox.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/TextBox.cpp
+
+CMakeFiles/power.dir/document/TextBox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/power.dir/document/TextBox.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gevorg/Desktop/Slide_Maker/Document/document/TextBox.cpp > CMakeFiles/power.dir/document/TextBox.cpp.i
+
+CMakeFiles/power.dir/document/TextBox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/power.dir/document/TextBox.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gevorg/Desktop/Slide_Maker/Document/document/TextBox.cpp -o CMakeFiles/power.dir/document/TextBox.cpp.s
+
+CMakeFiles/power.dir/document/TextBox_Attr.cpp.o: CMakeFiles/power.dir/flags.make
+CMakeFiles/power.dir/document/TextBox_Attr.cpp.o: ../document/TextBox_Attr.cpp
+CMakeFiles/power.dir/document/TextBox_Attr.cpp.o: CMakeFiles/power.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gevorg/Desktop/Slide_Maker/Document/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/power.dir/document/TextBox_Attr.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/power.dir/document/TextBox_Attr.cpp.o -MF CMakeFiles/power.dir/document/TextBox_Attr.cpp.o.d -o CMakeFiles/power.dir/document/TextBox_Attr.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/TextBox_Attr.cpp
+
+CMakeFiles/power.dir/document/TextBox_Attr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/power.dir/document/TextBox_Attr.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gevorg/Desktop/Slide_Maker/Document/document/TextBox_Attr.cpp > CMakeFiles/power.dir/document/TextBox_Attr.cpp.i
+
+CMakeFiles/power.dir/document/TextBox_Attr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/power.dir/document/TextBox_Attr.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gevorg/Desktop/Slide_Maker/Document/document/TextBox_Attr.cpp -o CMakeFiles/power.dir/document/TextBox_Attr.cpp.s
+
 CMakeFiles/power.dir/document/main.cpp.o: CMakeFiles/power.dir/flags.make
 CMakeFiles/power.dir/document/main.cpp.o: ../document/main.cpp
 CMakeFiles/power.dir/document/main.cpp.o: CMakeFiles/power.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gevorg/Desktop/Slide_Maker/Document/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/power.dir/document/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gevorg/Desktop/Slide_Maker/Document/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/power.dir/document/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/power.dir/document/main.cpp.o -MF CMakeFiles/power.dir/document/main.cpp.o.d -o CMakeFiles/power.dir/document/main.cpp.o -c /home/gevorg/Desktop/Slide_Maker/Document/document/main.cpp
 
 CMakeFiles/power.dir/document/main.cpp.i: cmake_force
@@ -128,20 +198,30 @@ CMakeFiles/power.dir/document/main.cpp.s: cmake_force
 # Object files for target power
 power_OBJECTS = \
 "CMakeFiles/power.dir/document/Exception.cpp.o" \
+"CMakeFiles/power.dir/document/I_Attributes.cpp.o" \
+"CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.o" \
 "CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.o" \
+"CMakeFiles/power.dir/document/Item.cpp.o" \
 "CMakeFiles/power.dir/document/Slide.cpp.o" \
+"CMakeFiles/power.dir/document/TextBox.cpp.o" \
+"CMakeFiles/power.dir/document/TextBox_Attr.cpp.o" \
 "CMakeFiles/power.dir/document/main.cpp.o"
 
 # External object files for target power
 power_EXTERNAL_OBJECTS =
 
 power: CMakeFiles/power.dir/document/Exception.cpp.o
+power: CMakeFiles/power.dir/document/I_Attributes.cpp.o
+power: CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.o
 power: CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.o
+power: CMakeFiles/power.dir/document/Item.cpp.o
 power: CMakeFiles/power.dir/document/Slide.cpp.o
+power: CMakeFiles/power.dir/document/TextBox.cpp.o
+power: CMakeFiles/power.dir/document/TextBox_Attr.cpp.o
 power: CMakeFiles/power.dir/document/main.cpp.o
 power: CMakeFiles/power.dir/build.make
 power: CMakeFiles/power.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gevorg/Desktop/Slide_Maker/Document/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable power"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gevorg/Desktop/Slide_Maker/Document/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable power"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/power.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

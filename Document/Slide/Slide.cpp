@@ -1,10 +1,10 @@
 #include "Slide.h"
 
-document::Slide::Slide(std::initializer_list<ItemPtr> itemList)
-: m_data(itemList.size()), m_dataSize{itemList.size()} {
-    
-    for (const auto& itemPtr : itemList) {
-        m_data.push_back(std::move(itemPtr));
+document::Slide::Slide(Data& itemList)
+: m_dataSize{itemList.size()}, m_data{} {
+
+    for (auto& ptr : itemList) {
+        m_data.push_back(std::move(ptr));
     }
 }
 
