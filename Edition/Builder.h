@@ -9,6 +9,6 @@ namespace document {
 
         public:
         
-    };
+    }; //just trying
 
 }; //namespace document
