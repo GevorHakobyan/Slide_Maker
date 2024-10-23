@@ -8,19 +8,25 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/gevorg/Desktop/Slide_Maker/Document/document/Exception.cpp" "CMakeFiles/power.dir/document/Exception.cpp.o" "gcc" "CMakeFiles/power.dir/document/Exception.cpp.o.d"
-  "/home/gevorg/Desktop/Slide_Maker/Document/document/I_Attributes.cpp" "CMakeFiles/power.dir/document/I_Attributes.cpp.o" "gcc" "CMakeFiles/power.dir/document/I_Attributes.cpp.o.d"
-  "/home/gevorg/Desktop/Slide_Maker/Document/document/InvalidAttribute_Cerr.cpp" "CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.o" "gcc" "CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.o.d"
-  "/home/gevorg/Desktop/Slide_Maker/Document/document/InvalidIndex_Cerr.cpp" "CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.o" "gcc" "CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.o.d"
-  "/home/gevorg/Desktop/Slide_Maker/Document/document/Item.cpp" "CMakeFiles/power.dir/document/Item.cpp.o" "gcc" "CMakeFiles/power.dir/document/Item.cpp.o.d"
-  "/home/gevorg/Desktop/Slide_Maker/Document/document/Slide.cpp" "CMakeFiles/power.dir/document/Slide.cpp.o" "gcc" "CMakeFiles/power.dir/document/Slide.cpp.o.d"
-  "/home/gevorg/Desktop/Slide_Maker/Document/document/TextBox.cpp" "CMakeFiles/power.dir/document/TextBox.cpp.o" "gcc" "CMakeFiles/power.dir/document/TextBox.cpp.o.d"
-  "/home/gevorg/Desktop/Slide_Maker/Document/document/TextBox_Attr.cpp" "CMakeFiles/power.dir/document/TextBox_Attr.cpp.o" "gcc" "CMakeFiles/power.dir/document/TextBox_Attr.cpp.o.d"
-  "/home/gevorg/Desktop/Slide_Maker/Document/document/main.cpp" "CMakeFiles/power.dir/document/main.cpp.o" "gcc" "CMakeFiles/power.dir/document/main.cpp.o.d"
+  "/home/geveorg/Desktop/Slide_Maker/Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" "CMakeFiles/power.dir/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.o" "gcc" "CMakeFiles/power.dir/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.o.d"
+  "/home/geveorg/Desktop/Slide_Maker/Document/document/Exception.cpp" "CMakeFiles/power.dir/document/Exception.cpp.o" "gcc" "CMakeFiles/power.dir/document/Exception.cpp.o.d"
+  "/home/geveorg/Desktop/Slide_Maker/Document/document/I_Attributes.cpp" "CMakeFiles/power.dir/document/I_Attributes.cpp.o" "gcc" "CMakeFiles/power.dir/document/I_Attributes.cpp.o.d"
+  "/home/geveorg/Desktop/Slide_Maker/Document/document/InvalidAttribute_Cerr.cpp" "CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.o" "gcc" "CMakeFiles/power.dir/document/InvalidAttribute_Cerr.cpp.o.d"
+  "/home/geveorg/Desktop/Slide_Maker/Document/document/InvalidIndex_Cerr.cpp" "CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.o" "gcc" "CMakeFiles/power.dir/document/InvalidIndex_Cerr.cpp.o.d"
+  "/home/geveorg/Desktop/Slide_Maker/Document/document/Item.cpp" "CMakeFiles/power.dir/document/Item.cpp.o" "gcc" "CMakeFiles/power.dir/document/Item.cpp.o.d"
+  "/home/geveorg/Desktop/Slide_Maker/Document/document/Slide.cpp" "CMakeFiles/power.dir/document/Slide.cpp.o" "gcc" "CMakeFiles/power.dir/document/Slide.cpp.o.d"
+  "/home/geveorg/Desktop/Slide_Maker/Document/document/Storage.cpp" "CMakeFiles/power.dir/document/Storage.cpp.o" "gcc" "CMakeFiles/power.dir/document/Storage.cpp.o.d"
+  "/home/geveorg/Desktop/Slide_Maker/Document/document/TextBox.cpp" "CMakeFiles/power.dir/document/TextBox.cpp.o" "gcc" "CMakeFiles/power.dir/document/TextBox.cpp.o.d"
+  "/home/geveorg/Desktop/Slide_Maker/Document/document/TextBox_Attr.cpp" "CMakeFiles/power.dir/document/TextBox_Attr.cpp.o" "gcc" "CMakeFiles/power.dir/document/TextBox_Attr.cpp.o.d"
+  "/home/geveorg/Desktop/Slide_Maker/Document/main.cpp" "CMakeFiles/power.dir/main.cpp.o" "gcc" "CMakeFiles/power.dir/main.cpp.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

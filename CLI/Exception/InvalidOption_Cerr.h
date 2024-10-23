@@ -1,5 +1,5 @@
 #pragma once
-#include "Exception.h"
+#include "../../Document/document/Exception.h"
 #include "Types.h"
 
 namespace cli {

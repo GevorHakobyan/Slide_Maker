@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/power.dir/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.o"
+  "CMakeFiles/power.dir/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.o.d"
   "CMakeFiles/power.dir/document/Exception.cpp.o"
   "CMakeFiles/power.dir/document/Exception.cpp.o.d"
   "CMakeFiles/power.dir/document/I_Attributes.cpp.o"
@@ -11,12 +13,14 @@ file(REMOVE_RECURSE
   "CMakeFiles/power.dir/document/Item.cpp.o.d"
   "CMakeFiles/power.dir/document/Slide.cpp.o"
   "CMakeFiles/power.dir/document/Slide.cpp.o.d"
+  "CMakeFiles/power.dir/document/Storage.cpp.o"
+  "CMakeFiles/power.dir/document/Storage.cpp.o.d"
   "CMakeFiles/power.dir/document/TextBox.cpp.o"
   "CMakeFiles/power.dir/document/TextBox.cpp.o.d"
   "CMakeFiles/power.dir/document/TextBox_Attr.cpp.o"
   "CMakeFiles/power.dir/document/TextBox_Attr.cpp.o.d"
-  "CMakeFiles/power.dir/document/main.cpp.o"
-  "CMakeFiles/power.dir/document/main.cpp.o.d"
+  "CMakeFiles/power.dir/main.cpp.o"
+  "CMakeFiles/power.dir/main.cpp.o.d"
   "power"
   "power.pdb"
 )
