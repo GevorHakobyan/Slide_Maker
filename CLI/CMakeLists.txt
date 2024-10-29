@@ -5,14 +5,18 @@ project(power)
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 20)
 
-
+# Enable export of compile commands (for IDE integration)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+# Set the build type to Debug to include debugging symbols for gdb
+set(CMAKE_BUILD_TYPE Debug)
 
 # Include directories (recursive for headers)
 include_directories(CommandFactory)
 include_directories(Controller)
 include_directories(Exception)
 include_directories(Parser)
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/../Include")
 
 # Glob all source files recursively
 file(GLOB_RECURSE SOURCES 

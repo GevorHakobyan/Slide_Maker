@@ -14,7 +14,7 @@ namespace cli {
 
         private:
         CommandPtr fetch(std::istream&);
-        void Exectute(CommandPtr&);
+        bool Exectute(CommandPtr&);
 
         private:
         ParserPtr m_parser{};        

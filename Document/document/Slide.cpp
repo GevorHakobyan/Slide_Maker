@@ -1,10 +1,9 @@
 #include "Slide.h"
 
-document::Slide::Slide(Data& itemList)
-: m_dataSize{itemList.size()}, m_data{} {
-
+document::Slide::Slide(Data& itemList, const ID id)
+: m_dataSize{itemList.size()}, m_data{}, m_id{id} {
     for (auto& ptr : itemList) {
-        m_data.push_back(std::move(ptr));
+        m_data.push_back(ptr);
     }
 }
 
@@ -57,6 +56,9 @@ document::Slide::Size document::Slide::getItemCount() const {
     return m_dataSize;
 }
 
+document::Slide::ID document::Slide::getId() const {
+    return m_id;
+}
 
 bool document::operator==(const Slide& first, const Slide& second) {
     return (&first.m_data == &second.m_data);
@@ -83,7 +85,7 @@ document::Slide::Iterator::Iterator(size_t index, Data& m_data) {
     setIterator(index, m_data);
 }
 
-document::Slide::Iterator::Iterator(PointerType ptr) {
+document::Slide::Iterator::Iterator(IterPointer ptr) {
     m_iterator = ptr;
 }
 
@@ -92,26 +94,34 @@ bool document::Slide::Iterator::isIndexValid(size_t index, size_t size) const {
 }
 
 void document::Slide::Iterator::setIterator(size_t index, Data& m_data) {
-    m_iterator = (0 == index) ? m_data.begin() : m_data.end();
+    m_iterator = (0 == index) ? std::make_shared<PointerType>(m_data.begin()) : std::make_shared<PointerType>(m_data.end());
 }
 
 document::Slide::Iterator document::Slide::Iterator::operator++() {
     Iterator iter{m_iterator};
-    m_iterator++;
+    (*m_iterator)++;
     return iter;
 }
 
 document::Slide::Iterator& document::Slide::Iterator::operator++(int) {
-    ++m_iterator;
+    ++(*m_iterator);
     return *this;
 }
 
 document::Slide::Iterator::ValueType document::Slide::Iterator::operator*() {
-    return *m_iterator;
+    return *(*m_iterator);
 }
 
 document::Slide::Iterator& document::Slide::Iterator::operator->() {
     return *this;
+}
+
+bool document::Slide::Iterator::operator==(const Iterator& rhs) {
+    return this == &rhs;
+}
+
+bool document::Slide::Iterator::operator!=(const Iterator& rhs) {
+    return !(this == &rhs);
 }
 
 document::Slide::ConstIterator::ConstIterator(size_t index, const Data& m_data) {
@@ -121,26 +131,34 @@ document::Slide::ConstIterator::ConstIterator(size_t index, const Data& m_data) 
     setIterator(index, m_data);
 }
 
-document::Slide::ConstIterator::ConstIterator(PointerType ptr)
+document::Slide::ConstIterator::ConstIterator(IterPointer ptr)
 : m_iterator{ptr} {};
 
 document::Slide::ConstIterator document::Slide::ConstIterator::operator++() {
     ConstIterator iter{m_iterator};
-    ++m_iterator;
+    ++(*m_iterator);
     return iter;
 }
 
 document::Slide::ConstIterator& document::Slide::ConstIterator::operator++(int) {
-    ++m_iterator;
+    ++(*m_iterator);
     return *this;
 }
 
 document::Slide::ConstIterator::ValueType document::Slide::ConstIterator::operator*() {
-    return *m_iterator;
+    return *(*m_iterator);
 }
 
 document::Slide::ConstIterator& document::Slide::ConstIterator::operator->() {
     return *this;
+}
+
+bool document::Slide::ConstIterator::operator==(const ConstIterator& rhs) {
+    return this == &rhs;
+}
+
+bool document::Slide::ConstIterator::operator!=(const ConstIterator& rhs) {
+    return !(this == &rhs);
 }
 
 bool document::Slide::ConstIterator::isIndexValid(size_t index, size_t size) const {
@@ -148,7 +166,7 @@ bool document::Slide::ConstIterator::isIndexValid(size_t index, size_t size) con
 }
 
 void document::Slide::ConstIterator::setIterator(size_t index, const Data& m_data) {
-    m_iterator = (0 == index) ? m_data.cbegin() : m_data.cend();
+    m_iterator = (0 == index) ? std::make_shared<PointerType>(m_data.cbegin()) : std::make_shared<PointerType>(m_data.cend());
 }
 
 

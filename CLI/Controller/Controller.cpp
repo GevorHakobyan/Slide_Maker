@@ -4,11 +4,13 @@ cli::Controller::Controller()
 : m_parser{std::make_unique<Parser>()} {};
 
 void cli::Controller::start(std::istream& stream) {
-    Initializer::initialize();
+    Initializer::InitializeCommands();
+    bool Continue{true};
+
     try{
-        while(true) {
+        while(Continue) {
             auto command = fetch(stream);
-            Exectute(command);
+            Continue = Exectute(command);
         }
     } catch(const Exception& err) {
         std::cerr << err.what() << "\n";
@@ -19,7 +21,7 @@ cli::Controller::CommandPtr cli::Controller::fetch(std::istream& stream) {
    return m_parser->getCommand(stream);
 }
 
-void cli::Controller::Exectute(CommandPtr& command) {
-    command->Execute();
+bool cli::Controller::Exectute(CommandPtr& command) {
+    return command->Execute();
 }
 

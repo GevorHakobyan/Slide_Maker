@@ -5,6 +5,7 @@
 #include "InvalidCommand_Cerr.h"
 #include "CommandInfo.h"
 #include "SlideMaker.h"
+#include "Exiter.h"
 #include <unordered_map>
 #include <functional>
 
@@ -14,7 +15,7 @@ namespace cli {
         using Key = cli::C_name;
         using Arguments = cli::Argument_list;
         using FunctionType = std::unique_ptr<cli::I_Command>(Arguments);
-        using Value = std::function<FunctionType>;
+        using Value = std::shared_ptr<I_Command>;
         using Function_map = std::unordered_map<Key, Value>; 
         using CommandPtr = std::unique_ptr<cli::I_Command>;
 

@@ -20,7 +20,7 @@ namespace cli {
         enum class VariantType{Int, String, Bool};
         public: //usings
         using FactoryPtr  = std::unique_ptr<cli::CommandCreator>;
-        using Varaint = std::variant<int, std::string, bool>;
+        using Varaint = std::variant<int, std::string, bool, cli::EMPTY>;
         using Text = std::stringstream;
         using rawToken = std::string;
         using CommandPtr = std::unique_ptr<cli::I_Command>;
@@ -70,6 +70,7 @@ namespace cli {
             ~Syntax_analyzer() = default;
             void addTo(const Token&);
             Data getData() const;
+            void clearCollectedData();
 
             private:
             void addToCommand_Name(const Token&);
@@ -95,8 +96,8 @@ namespace cli {
         CommandInfo Parse(Text&);
         void parseText(Text&);
         void setCommandName(const C_name&);
-        void setCommandOptions(const C_options&);
-        void setCommandArguments(const C_arguments&);
+        void setCommandOptions(C_options&);
+        void setCommandArguments(C_arguments&);
         void setStateDiagram();
         void setStartState();
         void setNameState();
@@ -105,6 +106,7 @@ namespace cli {
         const State pass(const Token&);
         const State getNextState(const Token&) const;
         const ErrorType getErrorType(const Token&) const noexcept;
+        void restateAutomata();
 
 
 

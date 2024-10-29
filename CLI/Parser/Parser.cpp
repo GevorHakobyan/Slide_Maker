@@ -40,7 +40,7 @@ void cli::Parser::setNameState() {
     std::unordered_map<TokenType, State> nameStateValue;
     nameStateValue[TokenType::Name] = State::S_Name;
     nameStateValue[TokenType::Option] = State::S_Opt;
-    nameStateValue[TokenType::Argument] = State::S_Dead;
+    nameStateValue[TokenType::Argument] = State::S_Arg;
     nameStateValue[TokenType::Null] = State::S_End;
 
    m_states[State::S_Name] = std::move(nameStateValue);
@@ -60,7 +60,7 @@ void cli::Parser::setOptionState() {
 void cli::Parser::setArgumentState() {
     std::unordered_map<TokenType, State> argumentStateValue;
     argumentStateValue[TokenType::Name] = State::S_Dead;
-    argumentStateValue[TokenType::Option] = State::S_Dead;
+    argumentStateValue[TokenType::Option] = State::S_Opt;
     argumentStateValue[TokenType::Argument] = State::S_Arg;
     argumentStateValue[TokenType::Null] = State::S_End;
 
@@ -111,6 +111,8 @@ cli::CommandInfo cli::Parser::Parse(Text& text) {
     } catch (const cli::Exception& err) {
         throw;
     }
+
+    restateAutomata();
     return m_ParsedCommand;
 }
 
@@ -128,7 +130,8 @@ void cli::Parser::parseText(Text& text) {
         throw;
     }
 
-    const auto[name, options, arguments] = m_syntaxAnalyzer.getData();
+    auto[name, options, arguments] = m_syntaxAnalyzer.getData();
+    m_syntaxAnalyzer.clearCollectedData();
     setCommandName(name);
     setCommandOptions(options);
     setCommandArguments(arguments);
@@ -138,12 +141,26 @@ void cli::Parser::setCommandName(const C_name& name) {
     m_ParsedCommand.m_name = name;
 }
 
-void cli::Parser::setCommandOptions(const C_options& options) {
+void cli::Parser::setCommandOptions(C_options& options) {
+    if (0 == options.size()) {
+        cli::option emptyOpt = cli::EMPTY::empty;
+        options.insert(emptyOpt);
+    }
+
     m_ParsedCommand.m_options = options;
 }
 
-void cli::Parser::setCommandArguments(const C_arguments& argument) {
-    m_ParsedCommand.m_arguments = argument;
+void cli::Parser::setCommandArguments(C_arguments& arguments) {
+    if (0 == arguments.size()) {
+        cli::argument emptyArg = cli::EMPTY::empty;
+        arguments.insert(emptyArg);
+    }
+
+    m_ParsedCommand.m_arguments = arguments;
+}
+
+void cli::Parser::restateAutomata() {
+    m_CurrentState = State::S_Start;
 }
 
 //PARSER::LEXER CORE METHODS DEFINITIONS
@@ -369,4 +386,10 @@ void cli::Parser::Syntax_analyzer::addToCommand_Arguments(const Token& token) {
 
 cli::Parser::Syntax_analyzer::Data cli::Parser::Syntax_analyzer::getData() const {
     return {m_CommandName, m_CommandOptions, m_CommandArguments};
+}
+
+void cli::Parser::Syntax_analyzer::clearCollectedData() {
+    m_CommandName.erase();
+    m_CommandOptions.erase(m_CommandOptions.begin(), m_CommandOptions.end());
+    m_CommandArguments.erase(m_CommandArguments.begin(), m_CommandArguments.end());
 }

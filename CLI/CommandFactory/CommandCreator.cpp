@@ -13,20 +13,23 @@ const cli::CommandCreator::Value cli::CommandCreator::getFunction(const Key& key
 
 cli::CommandCreator::CommandPtr cli::CommandCreator::CreateCommand(const CommandInfo& commandInf) {
     const auto[name, options, arguments] = commandInf.getInfo();
-    Value funcPtr;
+    Value commandPtr;
 
     try{
-        funcPtr = getFunction(name);
+        commandPtr = getFunction(name);
     } catch(cli::InvalidCommand_Cerr& err) {
         throw;
     }
 
     Argument_list argList(options, arguments);
-    return std::move(funcPtr(argList));
+    return std::move(commandPtr->create(argList));
 }
 
 void cli::CommandCreator::setValidCommands() {
-    const auto val = cli::Slide_Maker::create;
+    auto val = std::make_shared<cli::Slide_Maker>(cli::Slide_Maker());
     m_validCommands["makeslide"] = std::move(val);
-}
+    
+    auto val2 = std::make_shared<cli::Exiter>(cli::Exiter());
+    m_validCommands["exit"] = std::move(val2);
+} 
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/gevorg/Desktop/Slide_Maker/CLI
+# Install script for directory: /home/geveorg/Desktop/Slide_Maker/CLI
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/gevorg/Desktop/Slide_Maker/CLI/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/geveorg/Desktop/Slide_Maker/CLI/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
