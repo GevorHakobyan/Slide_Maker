@@ -1,4 +1,4 @@
-#include "InvalidAttribute_Cerr.h"
+#include "../../Include/InvalidAttribute_Cerr.h"
 
 document::InvalidAttribute_Cerr::InvalidAttribute_Cerr(const Messeage& messeage, Attribute attr, const Location& locate)
 : Exception(messeage, locate), m_invalidAttribute{attr} {

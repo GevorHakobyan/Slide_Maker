@@ -1,12 +1,10 @@
-#include "TextBox.h"
+#include "../../Include/TextBox.h"
 
-document::TextBox::TextBox(const Location& loc, const TextBox_Attr& attr, const Text& text)
-: A_Item(loc, std::make_shared<I_Attributes>(attr)), m_text{text} {};
+document::TextBox::TextBox(const Location& loc, const TextBoxAttrPtr attr, const Text& text, ID id)
+: A_Item{loc, attr, id}, m_text{text} {};
 
-void document::TextBox::setGeometry(const Location& location) {
-    m_geometry = location;
+document::TextBox::ItemPtr document::TextBox::create(const Location location, const AttributePtr atrr) {
+    ItemPtr ptr  = std::make_unique<TextBox>(location, atrr, 5);
+    return std::move(ptr);    
 }
 
-void document::TextBox::setAttributes(const I_Attributes& attr) {
-    //m_attributesPtr = std::make_unique<TextBox_Attr>();
-}

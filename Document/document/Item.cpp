@@ -1,8 +1,17 @@
-#include "Item.h"
+#include "../../Include/Item.h"
 
+document::A_Item::A_Item(const Location& location, AttributePtr atrbutes, const ID id)
+: m_BoundingBox{nullptr}, m_attributesPtr{atrbutes}, m_id{id} {
+    setGeometry(location);
+}
 
-document::A_Item::A_Item(const BoundingBoxPtr boundingBox, AttributePtr atrbutes, const ID id)
-: m_BoundingBox{boundingBox}, m_attributesPtr{atrbutes}, m_id{id} {}
+void document::A_Item::setAttributes(const AttributePtr attr) {
+    m_attributesPtr = attr; 
+}
+
+void document::A_Item::setGeometry(const Location& location) {
+    m_BoundingBox = std::make_shared<Bounding_Box>(location, 5.5, 6.2);
+}
 
 document::A_Item::Location document::A_Item::getGeometry(){
     return m_BoundingBox->getLocation();
@@ -21,7 +30,7 @@ document::A_Item::ID document::A_Item::getId() const {
 }
 
 document::A_Item::A_Item(A_Item&& rhs) noexcept
-: A_Item(rhs.getBoundingBox(), rhs.getAttributesPtr(), rhs.getId()) {}
+: A_Item(rhs.getGeometry(), rhs.getAttributesPtr(), rhs.getId()) {}
 
 bool document::operator==(const A_Item& first, const A_Item& second) noexcept {
     return (first.m_attributesPtr == second.m_attributesPtr) ? true : false;

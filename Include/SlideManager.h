@@ -2,7 +2,8 @@
 #include "../Include/Slide.h"
 #include "../Include/Storage.h"
 #include "AttributeMutator.h"
-#include "../CLI/CommandFactory/SlideInfo.h"
+#include "../Include/ItemInfo.h"
+#include "../Include/SlideInfo.h"
 #include "Mover.h"
 #include "Slide_Factory.h"
 

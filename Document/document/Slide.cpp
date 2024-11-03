@@ -1,4 +1,4 @@
-#include "Slide.h"
+#include "../../Include/Slide.h"
 
 document::Slide::Slide(Data& itemList, const ID id)
 : m_dataSize{itemList.size()}, m_data{}, m_id{id} {

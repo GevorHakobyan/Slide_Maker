@@ -11,20 +11,20 @@ namespace document {
         using Location = std::pair<float, float>;
         using AttributePtr = std::shared_ptr<I_Attributes>;
         using BoundingBoxPtr = std::shared_ptr<Bounding_Box>;
+        using ItemPtr = std::unique_ptr<A_Item>;
         using ID = size_t;
 
         public:
         A_Item(A_Item&&) noexcept;
         A_Item& operator=(A_Item&&) noexcept;
+        virtual ItemPtr create(const Location, const AttributePtr) = 0;
         virtual ~A_Item() = default;
-        virtual A_Item create(const Location, const AttributePtr) = 0;
 
         protected:
-        A_Item() = default;
-        A_Item(const BoundingBoxPtr, const AttributePtr, const ID);
+        A_Item(const Location&, const AttributePtr, const ID);
         void move(const Location&);
-        virtual void setGeometry(const Location&) = 0;
-        virtual void setAttributes(const I_Attributes&) = 0;
+        void setGeometry(const Location&);
+        void setAttributes(const AttributePtr);
 
         public:
         bool friend operator==(const A_Item&, const A_Item&) noexcept;

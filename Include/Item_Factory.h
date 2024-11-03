@@ -1,5 +1,5 @@
 #pragma once
-#include "../CLI/CommandFactory/ItemInfo.h"
+#include "../Include/ItemInfo.h"
 #include "../Include/Item.h"
 #include <functional>
 

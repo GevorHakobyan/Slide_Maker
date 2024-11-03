@@ -1,4 +1,4 @@
-#include "TextBox_Attr.h"
+#include "../../Include/TextBox_Attr.h"
 
 document::TextBox_Attr::TextBox_Attr(Color color, Length length, Width width, LetterSize size, const Title& title)
 : I_Attributes(color, length, width) {

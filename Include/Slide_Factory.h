@@ -1,6 +1,6 @@
 #pragma once
 #include "../Include/Slide.h"
-#include "../CLI/CommandFactory/SlideInfo.h"
+#include "../Include/SlideInfo.h"
 
 namespace edition {
 

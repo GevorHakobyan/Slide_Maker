@@ -1,5 +1,6 @@
 #pragma once
 #include "../Include/Storage.h"
+#include "../Include/ItemInfo.h"
 #include "SlideManager.h"
 
 namespace edition {

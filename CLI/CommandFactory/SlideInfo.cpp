@@ -1,4 +1,4 @@
-#include "SlideInfo.h"
+#include "../Include/SlideInfo.h"
 
 void cli::SlideInfo::setTitile(const Title& title) {
     m_slideTitle.clear();
