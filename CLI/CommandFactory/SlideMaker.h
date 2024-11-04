@@ -1,6 +1,6 @@
 #pragma once
 #include "Command.h"
-#include "SlideInfo.h"
+#include "../Include/SlideInfo.h"
 #include "../Include/StoreManager.h"
 
 namespace cli {

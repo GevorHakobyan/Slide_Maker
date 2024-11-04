@@ -28,6 +28,7 @@ namespace document {
 
        Size getItemCount() const;  
        ID getId() const;
+       void erase(ItemPtr);
        Iterator begin();
        Iterator end();
        ConstIterator cbegin() const;

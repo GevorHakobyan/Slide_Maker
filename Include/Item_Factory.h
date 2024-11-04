@@ -2,27 +2,28 @@
 #include "../Include/ItemInfo.h"
 #include "../Include/Item.h"
 #include <functional>
+#include "ItemTypes.h"
 
 namespace edition {
 
     class ItemFactory {
         public:
         using ItemInfo = cli::ItemInfo;
-        using Type = std::string;
+        using Type = ItemType;
         using Item = document::A_Item;
+        using ItemPtr = std::unique_ptr<Item>;
         using Location = document::A_Item::Location;
         using AttributePtr = document::A_Item::AttributePtr;
-        using FunctionType = Item(const Location&, const AttributePtr);
+        using FunctionType = ItemPtr(const ItemInfo&);
         using FunctionPtr = std::function<FunctionType>;
         using ItemMap = std::unordered_map<Type, FunctionPtr>;
-        using ItemPtr = std::unique_ptr<Item>;
 
         public:
         static  ItemPtr create(const ItemInfo&);
 
         private:
         ItemFactory() = default;
-        ItemMap m_Items;
+        static ItemMap m_Items;
     };
 
 }; //namespace edition

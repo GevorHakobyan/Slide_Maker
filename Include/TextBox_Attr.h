@@ -6,18 +6,18 @@ namespace document {
     struct TextBox_Attr : public I_Attributes {
         public:
         using LetterSize = float;
-        using Title = std::string;
+        using Content = std::string;
 
         public:
-        TextBox_Attr(Color, Length, Width, LetterSize, const Title&);
+        TextBox_Attr(Color, Length, Width, LetterSize, const Content&);
         ~TextBox_Attr() = default;
         void setLetterSize(LetterSize);
-        void setTitle(const Title&);
+        void setContent(const Content&);
         const LetterSize getSize() const;
-        const Title getTitle() const;
+        const Content getContent() const;
 
         private:
         LetterSize m_letterSize{};
-        Title m_title{};
+        Content m_content{};
     };
 }; //namespace document

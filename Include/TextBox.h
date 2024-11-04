@@ -1,21 +1,22 @@
 #pragma once
 #include "Item.h"
 #include "TextBox_Attr.h"
+#include "TextBoxInfo.h"
 #include <string>
 
 namespace document {
     class TextBox : public A_Item {
        public:
-       using  Text = std::string;
-       using ID = size_t;
        using TextBoxAttrPtr = std::shared_ptr<TextBox_Attr>;
+       using ItemInfoPtr = std::shared_ptr<cli::ItemInfo>;
+       using TextBoxInfoPtr = std::shared_ptr<cli::TextBoxInfo>;
 
        public:
-       TextBox(const Location&, const TextBoxAttrPtr, const Text&, ID);
+       TextBox(const Location&, const TextBoxAttrPtr);
        ~TextBox() = default;
+       ItemPtr create(ItemInfoPtr, const ID) override;
 
-       ItemPtr create(const Location, const AttributePtr) override;
        private:
-       Text m_text{};
+       TextBoxAttrPtr m_attributes{nullptr};
     };
 }; //document

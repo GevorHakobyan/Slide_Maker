@@ -1,3 +1,0 @@
-/home/gevorg/Desktop/Slide_Maker/CLI/debug/CMakeFiles/power.dir
-/home/gevorg/Desktop/Slide_Maker/CLI/debug/CMakeFiles/edit_cache.dir
-/home/gevorg/Desktop/Slide_Maker/CLI/debug/CMakeFiles/rebuild_cache.dir

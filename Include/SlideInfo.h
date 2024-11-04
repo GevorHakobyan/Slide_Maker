@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <optional>
 
 namespace cli {
     class SlideInfo {
@@ -12,8 +13,8 @@ namespace cli {
         ~SlideInfo() = default;
         void setTitile(const Title&);
         void setText(const Text&);
-        const Title& getTitle() const;
-        const Text& getText() const;
+        const std::optional<Title&> getTitle() const;
+        const std::optional<Text&> getText() const;
 
         private:
         Title m_slideTitle{};

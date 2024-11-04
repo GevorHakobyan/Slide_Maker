@@ -10,10 +10,12 @@
 namespace edition {
 
     class SlideManager {
+        public:
         using Location = document::A_Item::Location;
         using Design = cli::ItemInfo;
         using DesignerPtr = std::unique_ptr<AttributeMutator>;
         using MoverPtr = std::unique_ptr<Mover>;
+        using FactoryPtr = std::unique_ptr<edition::SlideFactory>;
         using ItemInfoPtr = std::shared_ptr<cli::ItemInfo>;
         using ItemPtr = std::shared_ptr<document::A_Item>;
         using SlidePtr = std::unique_ptr<document::Slide>;
@@ -32,6 +34,7 @@ namespace edition {
         private:
         DesignerPtr m_designer{nullptr};
         MoverPtr m_mover{nullptr};
+        FactoryPtr m_factory{nullptr};
     };
 
 }; //namespace edition
