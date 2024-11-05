@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named power
+# Target rules for targets named SlideMakerProject
 
 # Build rule for target.
-power: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 power
-.PHONY : power
+SlideMakerProject: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SlideMakerProject
+.PHONY : SlideMakerProject
 
 # fast build rule for target.
-power/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/build
-.PHONY : power/fast
+SlideMakerProject/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/build
+.PHONY : SlideMakerProject/fast
 
 CLI/CommandFactory/Command.o: CLI/CommandFactory/Command.cpp.o
 .PHONY : CLI/CommandFactory/Command.o
 
 # target to build an object file
 CLI/CommandFactory/Command.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/Command.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/Command.cpp.o
 .PHONY : CLI/CommandFactory/Command.cpp.o
 
 CLI/CommandFactory/Command.i: CLI/CommandFactory/Command.cpp.i
@@ -142,7 +142,7 @@ CLI/CommandFactory/Command.i: CLI/CommandFactory/Command.cpp.i
 
 # target to preprocess a source file
 CLI/CommandFactory/Command.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/Command.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/Command.cpp.i
 .PHONY : CLI/CommandFactory/Command.cpp.i
 
 CLI/CommandFactory/Command.s: CLI/CommandFactory/Command.cpp.s
@@ -150,7 +150,7 @@ CLI/CommandFactory/Command.s: CLI/CommandFactory/Command.cpp.s
 
 # target to generate assembly for a file
 CLI/CommandFactory/Command.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/Command.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/Command.cpp.s
 .PHONY : CLI/CommandFactory/Command.cpp.s
 
 CLI/CommandFactory/CommandCreator.o: CLI/CommandFactory/CommandCreator.cpp.o
@@ -158,7 +158,7 @@ CLI/CommandFactory/CommandCreator.o: CLI/CommandFactory/CommandCreator.cpp.o
 
 # target to build an object file
 CLI/CommandFactory/CommandCreator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/CommandCreator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/CommandCreator.cpp.o
 .PHONY : CLI/CommandFactory/CommandCreator.cpp.o
 
 CLI/CommandFactory/CommandCreator.i: CLI/CommandFactory/CommandCreator.cpp.i
@@ -166,7 +166,7 @@ CLI/CommandFactory/CommandCreator.i: CLI/CommandFactory/CommandCreator.cpp.i
 
 # target to preprocess a source file
 CLI/CommandFactory/CommandCreator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/CommandCreator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/CommandCreator.cpp.i
 .PHONY : CLI/CommandFactory/CommandCreator.cpp.i
 
 CLI/CommandFactory/CommandCreator.s: CLI/CommandFactory/CommandCreator.cpp.s
@@ -174,7 +174,7 @@ CLI/CommandFactory/CommandCreator.s: CLI/CommandFactory/CommandCreator.cpp.s
 
 # target to generate assembly for a file
 CLI/CommandFactory/CommandCreator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/CommandCreator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/CommandCreator.cpp.s
 .PHONY : CLI/CommandFactory/CommandCreator.cpp.s
 
 CLI/CommandFactory/CommandInfo.o: CLI/CommandFactory/CommandInfo.cpp.o
@@ -182,7 +182,7 @@ CLI/CommandFactory/CommandInfo.o: CLI/CommandFactory/CommandInfo.cpp.o
 
 # target to build an object file
 CLI/CommandFactory/CommandInfo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/CommandInfo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/CommandInfo.cpp.o
 .PHONY : CLI/CommandFactory/CommandInfo.cpp.o
 
 CLI/CommandFactory/CommandInfo.i: CLI/CommandFactory/CommandInfo.cpp.i
@@ -190,7 +190,7 @@ CLI/CommandFactory/CommandInfo.i: CLI/CommandFactory/CommandInfo.cpp.i
 
 # target to preprocess a source file
 CLI/CommandFactory/CommandInfo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/CommandInfo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/CommandInfo.cpp.i
 .PHONY : CLI/CommandFactory/CommandInfo.cpp.i
 
 CLI/CommandFactory/CommandInfo.s: CLI/CommandFactory/CommandInfo.cpp.s
@@ -198,7 +198,7 @@ CLI/CommandFactory/CommandInfo.s: CLI/CommandFactory/CommandInfo.cpp.s
 
 # target to generate assembly for a file
 CLI/CommandFactory/CommandInfo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/CommandInfo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/CommandInfo.cpp.s
 .PHONY : CLI/CommandFactory/CommandInfo.cpp.s
 
 CLI/CommandFactory/Exiter.o: CLI/CommandFactory/Exiter.cpp.o
@@ -206,7 +206,7 @@ CLI/CommandFactory/Exiter.o: CLI/CommandFactory/Exiter.cpp.o
 
 # target to build an object file
 CLI/CommandFactory/Exiter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/Exiter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/Exiter.cpp.o
 .PHONY : CLI/CommandFactory/Exiter.cpp.o
 
 CLI/CommandFactory/Exiter.i: CLI/CommandFactory/Exiter.cpp.i
@@ -214,7 +214,7 @@ CLI/CommandFactory/Exiter.i: CLI/CommandFactory/Exiter.cpp.i
 
 # target to preprocess a source file
 CLI/CommandFactory/Exiter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/Exiter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/Exiter.cpp.i
 .PHONY : CLI/CommandFactory/Exiter.cpp.i
 
 CLI/CommandFactory/Exiter.s: CLI/CommandFactory/Exiter.cpp.s
@@ -222,7 +222,7 @@ CLI/CommandFactory/Exiter.s: CLI/CommandFactory/Exiter.cpp.s
 
 # target to generate assembly for a file
 CLI/CommandFactory/Exiter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/Exiter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/Exiter.cpp.s
 .PHONY : CLI/CommandFactory/Exiter.cpp.s
 
 CLI/CommandFactory/FunctionArgument.o: CLI/CommandFactory/FunctionArgument.cpp.o
@@ -230,7 +230,7 @@ CLI/CommandFactory/FunctionArgument.o: CLI/CommandFactory/FunctionArgument.cpp.o
 
 # target to build an object file
 CLI/CommandFactory/FunctionArgument.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/FunctionArgument.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/FunctionArgument.cpp.o
 .PHONY : CLI/CommandFactory/FunctionArgument.cpp.o
 
 CLI/CommandFactory/FunctionArgument.i: CLI/CommandFactory/FunctionArgument.cpp.i
@@ -238,7 +238,7 @@ CLI/CommandFactory/FunctionArgument.i: CLI/CommandFactory/FunctionArgument.cpp.i
 
 # target to preprocess a source file
 CLI/CommandFactory/FunctionArgument.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/FunctionArgument.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/FunctionArgument.cpp.i
 .PHONY : CLI/CommandFactory/FunctionArgument.cpp.i
 
 CLI/CommandFactory/FunctionArgument.s: CLI/CommandFactory/FunctionArgument.cpp.s
@@ -246,7 +246,7 @@ CLI/CommandFactory/FunctionArgument.s: CLI/CommandFactory/FunctionArgument.cpp.s
 
 # target to generate assembly for a file
 CLI/CommandFactory/FunctionArgument.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/FunctionArgument.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/FunctionArgument.cpp.s
 .PHONY : CLI/CommandFactory/FunctionArgument.cpp.s
 
 CLI/CommandFactory/ItemInfo.o: CLI/CommandFactory/ItemInfo.cpp.o
@@ -254,7 +254,7 @@ CLI/CommandFactory/ItemInfo.o: CLI/CommandFactory/ItemInfo.cpp.o
 
 # target to build an object file
 CLI/CommandFactory/ItemInfo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/ItemInfo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/ItemInfo.cpp.o
 .PHONY : CLI/CommandFactory/ItemInfo.cpp.o
 
 CLI/CommandFactory/ItemInfo.i: CLI/CommandFactory/ItemInfo.cpp.i
@@ -262,7 +262,7 @@ CLI/CommandFactory/ItemInfo.i: CLI/CommandFactory/ItemInfo.cpp.i
 
 # target to preprocess a source file
 CLI/CommandFactory/ItemInfo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/ItemInfo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/ItemInfo.cpp.i
 .PHONY : CLI/CommandFactory/ItemInfo.cpp.i
 
 CLI/CommandFactory/ItemInfo.s: CLI/CommandFactory/ItemInfo.cpp.s
@@ -270,7 +270,7 @@ CLI/CommandFactory/ItemInfo.s: CLI/CommandFactory/ItemInfo.cpp.s
 
 # target to generate assembly for a file
 CLI/CommandFactory/ItemInfo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/ItemInfo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/ItemInfo.cpp.s
 .PHONY : CLI/CommandFactory/ItemInfo.cpp.s
 
 CLI/CommandFactory/SlideInfo.o: CLI/CommandFactory/SlideInfo.cpp.o
@@ -278,7 +278,7 @@ CLI/CommandFactory/SlideInfo.o: CLI/CommandFactory/SlideInfo.cpp.o
 
 # target to build an object file
 CLI/CommandFactory/SlideInfo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/SlideInfo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/SlideInfo.cpp.o
 .PHONY : CLI/CommandFactory/SlideInfo.cpp.o
 
 CLI/CommandFactory/SlideInfo.i: CLI/CommandFactory/SlideInfo.cpp.i
@@ -286,7 +286,7 @@ CLI/CommandFactory/SlideInfo.i: CLI/CommandFactory/SlideInfo.cpp.i
 
 # target to preprocess a source file
 CLI/CommandFactory/SlideInfo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/SlideInfo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/SlideInfo.cpp.i
 .PHONY : CLI/CommandFactory/SlideInfo.cpp.i
 
 CLI/CommandFactory/SlideInfo.s: CLI/CommandFactory/SlideInfo.cpp.s
@@ -294,7 +294,7 @@ CLI/CommandFactory/SlideInfo.s: CLI/CommandFactory/SlideInfo.cpp.s
 
 # target to generate assembly for a file
 CLI/CommandFactory/SlideInfo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/SlideInfo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/SlideInfo.cpp.s
 .PHONY : CLI/CommandFactory/SlideInfo.cpp.s
 
 CLI/CommandFactory/SlideMaker.o: CLI/CommandFactory/SlideMaker.cpp.o
@@ -302,7 +302,7 @@ CLI/CommandFactory/SlideMaker.o: CLI/CommandFactory/SlideMaker.cpp.o
 
 # target to build an object file
 CLI/CommandFactory/SlideMaker.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/SlideMaker.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/SlideMaker.cpp.o
 .PHONY : CLI/CommandFactory/SlideMaker.cpp.o
 
 CLI/CommandFactory/SlideMaker.i: CLI/CommandFactory/SlideMaker.cpp.i
@@ -310,7 +310,7 @@ CLI/CommandFactory/SlideMaker.i: CLI/CommandFactory/SlideMaker.cpp.i
 
 # target to preprocess a source file
 CLI/CommandFactory/SlideMaker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/SlideMaker.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/SlideMaker.cpp.i
 .PHONY : CLI/CommandFactory/SlideMaker.cpp.i
 
 CLI/CommandFactory/SlideMaker.s: CLI/CommandFactory/SlideMaker.cpp.s
@@ -318,7 +318,7 @@ CLI/CommandFactory/SlideMaker.s: CLI/CommandFactory/SlideMaker.cpp.s
 
 # target to generate assembly for a file
 CLI/CommandFactory/SlideMaker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/SlideMaker.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/SlideMaker.cpp.s
 .PHONY : CLI/CommandFactory/SlideMaker.cpp.s
 
 CLI/CommandFactory/TextBoxInfo.o: CLI/CommandFactory/TextBoxInfo.cpp.o
@@ -326,7 +326,7 @@ CLI/CommandFactory/TextBoxInfo.o: CLI/CommandFactory/TextBoxInfo.cpp.o
 
 # target to build an object file
 CLI/CommandFactory/TextBoxInfo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/TextBoxInfo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/TextBoxInfo.cpp.o
 .PHONY : CLI/CommandFactory/TextBoxInfo.cpp.o
 
 CLI/CommandFactory/TextBoxInfo.i: CLI/CommandFactory/TextBoxInfo.cpp.i
@@ -334,7 +334,7 @@ CLI/CommandFactory/TextBoxInfo.i: CLI/CommandFactory/TextBoxInfo.cpp.i
 
 # target to preprocess a source file
 CLI/CommandFactory/TextBoxInfo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/TextBoxInfo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/TextBoxInfo.cpp.i
 .PHONY : CLI/CommandFactory/TextBoxInfo.cpp.i
 
 CLI/CommandFactory/TextBoxInfo.s: CLI/CommandFactory/TextBoxInfo.cpp.s
@@ -342,7 +342,7 @@ CLI/CommandFactory/TextBoxInfo.s: CLI/CommandFactory/TextBoxInfo.cpp.s
 
 # target to generate assembly for a file
 CLI/CommandFactory/TextBoxInfo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/CommandFactory/TextBoxInfo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/TextBoxInfo.cpp.s
 .PHONY : CLI/CommandFactory/TextBoxInfo.cpp.s
 
 CLI/Controller/Controller.o: CLI/Controller/Controller.cpp.o
@@ -350,7 +350,7 @@ CLI/Controller/Controller.o: CLI/Controller/Controller.cpp.o
 
 # target to build an object file
 CLI/Controller/Controller.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Controller/Controller.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Controller/Controller.cpp.o
 .PHONY : CLI/Controller/Controller.cpp.o
 
 CLI/Controller/Controller.i: CLI/Controller/Controller.cpp.i
@@ -358,7 +358,7 @@ CLI/Controller/Controller.i: CLI/Controller/Controller.cpp.i
 
 # target to preprocess a source file
 CLI/Controller/Controller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Controller/Controller.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Controller/Controller.cpp.i
 .PHONY : CLI/Controller/Controller.cpp.i
 
 CLI/Controller/Controller.s: CLI/Controller/Controller.cpp.s
@@ -366,7 +366,7 @@ CLI/Controller/Controller.s: CLI/Controller/Controller.cpp.s
 
 # target to generate assembly for a file
 CLI/Controller/Controller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Controller/Controller.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Controller/Controller.cpp.s
 .PHONY : CLI/Controller/Controller.cpp.s
 
 CLI/Controller/Initializer.o: CLI/Controller/Initializer.cpp.o
@@ -374,7 +374,7 @@ CLI/Controller/Initializer.o: CLI/Controller/Initializer.cpp.o
 
 # target to build an object file
 CLI/Controller/Initializer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Controller/Initializer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Controller/Initializer.cpp.o
 .PHONY : CLI/Controller/Initializer.cpp.o
 
 CLI/Controller/Initializer.i: CLI/Controller/Initializer.cpp.i
@@ -382,7 +382,7 @@ CLI/Controller/Initializer.i: CLI/Controller/Initializer.cpp.i
 
 # target to preprocess a source file
 CLI/Controller/Initializer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Controller/Initializer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Controller/Initializer.cpp.i
 .PHONY : CLI/Controller/Initializer.cpp.i
 
 CLI/Controller/Initializer.s: CLI/Controller/Initializer.cpp.s
@@ -390,7 +390,7 @@ CLI/Controller/Initializer.s: CLI/Controller/Initializer.cpp.s
 
 # target to generate assembly for a file
 CLI/Controller/Initializer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Controller/Initializer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Controller/Initializer.cpp.s
 .PHONY : CLI/Controller/Initializer.cpp.s
 
 CLI/Controller/main.o: CLI/Controller/main.cpp.o
@@ -398,7 +398,7 @@ CLI/Controller/main.o: CLI/Controller/main.cpp.o
 
 # target to build an object file
 CLI/Controller/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Controller/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Controller/main.cpp.o
 .PHONY : CLI/Controller/main.cpp.o
 
 CLI/Controller/main.i: CLI/Controller/main.cpp.i
@@ -406,7 +406,7 @@ CLI/Controller/main.i: CLI/Controller/main.cpp.i
 
 # target to preprocess a source file
 CLI/Controller/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Controller/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Controller/main.cpp.i
 .PHONY : CLI/Controller/main.cpp.i
 
 CLI/Controller/main.s: CLI/Controller/main.cpp.s
@@ -414,7 +414,7 @@ CLI/Controller/main.s: CLI/Controller/main.cpp.s
 
 # target to generate assembly for a file
 CLI/Controller/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Controller/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Controller/main.cpp.s
 .PHONY : CLI/Controller/main.cpp.s
 
 CLI/Exception/Exception.o: CLI/Exception/Exception.cpp.o
@@ -422,7 +422,7 @@ CLI/Exception/Exception.o: CLI/Exception/Exception.cpp.o
 
 # target to build an object file
 CLI/Exception/Exception.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/Exception.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/Exception.cpp.o
 .PHONY : CLI/Exception/Exception.cpp.o
 
 CLI/Exception/Exception.i: CLI/Exception/Exception.cpp.i
@@ -430,7 +430,7 @@ CLI/Exception/Exception.i: CLI/Exception/Exception.cpp.i
 
 # target to preprocess a source file
 CLI/Exception/Exception.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/Exception.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/Exception.cpp.i
 .PHONY : CLI/Exception/Exception.cpp.i
 
 CLI/Exception/Exception.s: CLI/Exception/Exception.cpp.s
@@ -438,7 +438,7 @@ CLI/Exception/Exception.s: CLI/Exception/Exception.cpp.s
 
 # target to generate assembly for a file
 CLI/Exception/Exception.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/Exception.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/Exception.cpp.s
 .PHONY : CLI/Exception/Exception.cpp.s
 
 CLI/Exception/InvalidArgument_Cerr.o: CLI/Exception/InvalidArgument_Cerr.cpp.o
@@ -446,7 +446,7 @@ CLI/Exception/InvalidArgument_Cerr.o: CLI/Exception/InvalidArgument_Cerr.cpp.o
 
 # target to build an object file
 CLI/Exception/InvalidArgument_Cerr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/InvalidArgument_Cerr.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidArgument_Cerr.cpp.o
 .PHONY : CLI/Exception/InvalidArgument_Cerr.cpp.o
 
 CLI/Exception/InvalidArgument_Cerr.i: CLI/Exception/InvalidArgument_Cerr.cpp.i
@@ -454,7 +454,7 @@ CLI/Exception/InvalidArgument_Cerr.i: CLI/Exception/InvalidArgument_Cerr.cpp.i
 
 # target to preprocess a source file
 CLI/Exception/InvalidArgument_Cerr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/InvalidArgument_Cerr.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidArgument_Cerr.cpp.i
 .PHONY : CLI/Exception/InvalidArgument_Cerr.cpp.i
 
 CLI/Exception/InvalidArgument_Cerr.s: CLI/Exception/InvalidArgument_Cerr.cpp.s
@@ -462,7 +462,7 @@ CLI/Exception/InvalidArgument_Cerr.s: CLI/Exception/InvalidArgument_Cerr.cpp.s
 
 # target to generate assembly for a file
 CLI/Exception/InvalidArgument_Cerr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/InvalidArgument_Cerr.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidArgument_Cerr.cpp.s
 .PHONY : CLI/Exception/InvalidArgument_Cerr.cpp.s
 
 CLI/Exception/InvalidCharacter_Cerr.o: CLI/Exception/InvalidCharacter_Cerr.cpp.o
@@ -470,7 +470,7 @@ CLI/Exception/InvalidCharacter_Cerr.o: CLI/Exception/InvalidCharacter_Cerr.cpp.o
 
 # target to build an object file
 CLI/Exception/InvalidCharacter_Cerr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/InvalidCharacter_Cerr.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidCharacter_Cerr.cpp.o
 .PHONY : CLI/Exception/InvalidCharacter_Cerr.cpp.o
 
 CLI/Exception/InvalidCharacter_Cerr.i: CLI/Exception/InvalidCharacter_Cerr.cpp.i
@@ -478,7 +478,7 @@ CLI/Exception/InvalidCharacter_Cerr.i: CLI/Exception/InvalidCharacter_Cerr.cpp.i
 
 # target to preprocess a source file
 CLI/Exception/InvalidCharacter_Cerr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/InvalidCharacter_Cerr.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidCharacter_Cerr.cpp.i
 .PHONY : CLI/Exception/InvalidCharacter_Cerr.cpp.i
 
 CLI/Exception/InvalidCharacter_Cerr.s: CLI/Exception/InvalidCharacter_Cerr.cpp.s
@@ -486,7 +486,7 @@ CLI/Exception/InvalidCharacter_Cerr.s: CLI/Exception/InvalidCharacter_Cerr.cpp.s
 
 # target to generate assembly for a file
 CLI/Exception/InvalidCharacter_Cerr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/InvalidCharacter_Cerr.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidCharacter_Cerr.cpp.s
 .PHONY : CLI/Exception/InvalidCharacter_Cerr.cpp.s
 
 CLI/Exception/InvalidCommand_Cerr.o: CLI/Exception/InvalidCommand_Cerr.cpp.o
@@ -494,7 +494,7 @@ CLI/Exception/InvalidCommand_Cerr.o: CLI/Exception/InvalidCommand_Cerr.cpp.o
 
 # target to build an object file
 CLI/Exception/InvalidCommand_Cerr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/InvalidCommand_Cerr.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidCommand_Cerr.cpp.o
 .PHONY : CLI/Exception/InvalidCommand_Cerr.cpp.o
 
 CLI/Exception/InvalidCommand_Cerr.i: CLI/Exception/InvalidCommand_Cerr.cpp.i
@@ -502,7 +502,7 @@ CLI/Exception/InvalidCommand_Cerr.i: CLI/Exception/InvalidCommand_Cerr.cpp.i
 
 # target to preprocess a source file
 CLI/Exception/InvalidCommand_Cerr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/InvalidCommand_Cerr.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidCommand_Cerr.cpp.i
 .PHONY : CLI/Exception/InvalidCommand_Cerr.cpp.i
 
 CLI/Exception/InvalidCommand_Cerr.s: CLI/Exception/InvalidCommand_Cerr.cpp.s
@@ -510,7 +510,7 @@ CLI/Exception/InvalidCommand_Cerr.s: CLI/Exception/InvalidCommand_Cerr.cpp.s
 
 # target to generate assembly for a file
 CLI/Exception/InvalidCommand_Cerr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/InvalidCommand_Cerr.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidCommand_Cerr.cpp.s
 .PHONY : CLI/Exception/InvalidCommand_Cerr.cpp.s
 
 CLI/Exception/InvalidOption_Cerr.o: CLI/Exception/InvalidOption_Cerr.cpp.o
@@ -518,7 +518,7 @@ CLI/Exception/InvalidOption_Cerr.o: CLI/Exception/InvalidOption_Cerr.cpp.o
 
 # target to build an object file
 CLI/Exception/InvalidOption_Cerr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/InvalidOption_Cerr.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidOption_Cerr.cpp.o
 .PHONY : CLI/Exception/InvalidOption_Cerr.cpp.o
 
 CLI/Exception/InvalidOption_Cerr.i: CLI/Exception/InvalidOption_Cerr.cpp.i
@@ -526,7 +526,7 @@ CLI/Exception/InvalidOption_Cerr.i: CLI/Exception/InvalidOption_Cerr.cpp.i
 
 # target to preprocess a source file
 CLI/Exception/InvalidOption_Cerr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/InvalidOption_Cerr.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidOption_Cerr.cpp.i
 .PHONY : CLI/Exception/InvalidOption_Cerr.cpp.i
 
 CLI/Exception/InvalidOption_Cerr.s: CLI/Exception/InvalidOption_Cerr.cpp.s
@@ -534,7 +534,7 @@ CLI/Exception/InvalidOption_Cerr.s: CLI/Exception/InvalidOption_Cerr.cpp.s
 
 # target to generate assembly for a file
 CLI/Exception/InvalidOption_Cerr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/InvalidOption_Cerr.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidOption_Cerr.cpp.s
 .PHONY : CLI/Exception/InvalidOption_Cerr.cpp.s
 
 CLI/Exception/InvalidSyntax_Cerr.o: CLI/Exception/InvalidSyntax_Cerr.cpp.o
@@ -542,7 +542,7 @@ CLI/Exception/InvalidSyntax_Cerr.o: CLI/Exception/InvalidSyntax_Cerr.cpp.o
 
 # target to build an object file
 CLI/Exception/InvalidSyntax_Cerr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/InvalidSyntax_Cerr.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidSyntax_Cerr.cpp.o
 .PHONY : CLI/Exception/InvalidSyntax_Cerr.cpp.o
 
 CLI/Exception/InvalidSyntax_Cerr.i: CLI/Exception/InvalidSyntax_Cerr.cpp.i
@@ -550,7 +550,7 @@ CLI/Exception/InvalidSyntax_Cerr.i: CLI/Exception/InvalidSyntax_Cerr.cpp.i
 
 # target to preprocess a source file
 CLI/Exception/InvalidSyntax_Cerr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/InvalidSyntax_Cerr.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidSyntax_Cerr.cpp.i
 .PHONY : CLI/Exception/InvalidSyntax_Cerr.cpp.i
 
 CLI/Exception/InvalidSyntax_Cerr.s: CLI/Exception/InvalidSyntax_Cerr.cpp.s
@@ -558,7 +558,7 @@ CLI/Exception/InvalidSyntax_Cerr.s: CLI/Exception/InvalidSyntax_Cerr.cpp.s
 
 # target to generate assembly for a file
 CLI/Exception/InvalidSyntax_Cerr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Exception/InvalidSyntax_Cerr.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidSyntax_Cerr.cpp.s
 .PHONY : CLI/Exception/InvalidSyntax_Cerr.cpp.s
 
 CLI/Parser/Parser.o: CLI/Parser/Parser.cpp.o
@@ -566,7 +566,7 @@ CLI/Parser/Parser.o: CLI/Parser/Parser.cpp.o
 
 # target to build an object file
 CLI/Parser/Parser.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Parser/Parser.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Parser/Parser.cpp.o
 .PHONY : CLI/Parser/Parser.cpp.o
 
 CLI/Parser/Parser.i: CLI/Parser/Parser.cpp.i
@@ -574,7 +574,7 @@ CLI/Parser/Parser.i: CLI/Parser/Parser.cpp.i
 
 # target to preprocess a source file
 CLI/Parser/Parser.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Parser/Parser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Parser/Parser.cpp.i
 .PHONY : CLI/Parser/Parser.cpp.i
 
 CLI/Parser/Parser.s: CLI/Parser/Parser.cpp.s
@@ -582,7 +582,7 @@ CLI/Parser/Parser.s: CLI/Parser/Parser.cpp.s
 
 # target to generate assembly for a file
 CLI/Parser/Parser.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/CLI/Parser/Parser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Parser/Parser.cpp.s
 .PHONY : CLI/Parser/Parser.cpp.s
 
 Document/Attributes/I_Attributes.o: Document/Attributes/I_Attributes.cpp.o
@@ -590,7 +590,7 @@ Document/Attributes/I_Attributes.o: Document/Attributes/I_Attributes.cpp.o
 
 # target to build an object file
 Document/Attributes/I_Attributes.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Attributes/I_Attributes.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/I_Attributes.cpp.o
 .PHONY : Document/Attributes/I_Attributes.cpp.o
 
 Document/Attributes/I_Attributes.i: Document/Attributes/I_Attributes.cpp.i
@@ -598,7 +598,7 @@ Document/Attributes/I_Attributes.i: Document/Attributes/I_Attributes.cpp.i
 
 # target to preprocess a source file
 Document/Attributes/I_Attributes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Attributes/I_Attributes.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/I_Attributes.cpp.i
 .PHONY : Document/Attributes/I_Attributes.cpp.i
 
 Document/Attributes/I_Attributes.s: Document/Attributes/I_Attributes.cpp.s
@@ -606,7 +606,7 @@ Document/Attributes/I_Attributes.s: Document/Attributes/I_Attributes.cpp.s
 
 # target to generate assembly for a file
 Document/Attributes/I_Attributes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Attributes/I_Attributes.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/I_Attributes.cpp.s
 .PHONY : Document/Attributes/I_Attributes.cpp.s
 
 Document/Attributes/TextBox_Attr.o: Document/Attributes/TextBox_Attr.cpp.o
@@ -614,7 +614,7 @@ Document/Attributes/TextBox_Attr.o: Document/Attributes/TextBox_Attr.cpp.o
 
 # target to build an object file
 Document/Attributes/TextBox_Attr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Attributes/TextBox_Attr.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/TextBox_Attr.cpp.o
 .PHONY : Document/Attributes/TextBox_Attr.cpp.o
 
 Document/Attributes/TextBox_Attr.i: Document/Attributes/TextBox_Attr.cpp.i
@@ -622,7 +622,7 @@ Document/Attributes/TextBox_Attr.i: Document/Attributes/TextBox_Attr.cpp.i
 
 # target to preprocess a source file
 Document/Attributes/TextBox_Attr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Attributes/TextBox_Attr.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/TextBox_Attr.cpp.i
 .PHONY : Document/Attributes/TextBox_Attr.cpp.i
 
 Document/Attributes/TextBox_Attr.s: Document/Attributes/TextBox_Attr.cpp.s
@@ -630,7 +630,7 @@ Document/Attributes/TextBox_Attr.s: Document/Attributes/TextBox_Attr.cpp.s
 
 # target to generate assembly for a file
 Document/Attributes/TextBox_Attr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Attributes/TextBox_Attr.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/TextBox_Attr.cpp.s
 .PHONY : Document/Attributes/TextBox_Attr.cpp.s
 
 Document/Doc_Exceptions/InvalidAttribute_Cerr.o: Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.o
@@ -638,7 +638,7 @@ Document/Doc_Exceptions/InvalidAttribute_Cerr.o: Document/Doc_Exceptions/Invalid
 
 # target to build an object file
 Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.o
 .PHONY : Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.o
 
 Document/Doc_Exceptions/InvalidAttribute_Cerr.i: Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.i
@@ -646,7 +646,7 @@ Document/Doc_Exceptions/InvalidAttribute_Cerr.i: Document/Doc_Exceptions/Invalid
 
 # target to preprocess a source file
 Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.i
 .PHONY : Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.i
 
 Document/Doc_Exceptions/InvalidAttribute_Cerr.s: Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.s
@@ -654,7 +654,7 @@ Document/Doc_Exceptions/InvalidAttribute_Cerr.s: Document/Doc_Exceptions/Invalid
 
 # target to generate assembly for a file
 Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.s
 .PHONY : Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.s
 
 Document/Doc_Exceptions/InvalidIndex_Cerr.o: Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.o
@@ -662,7 +662,7 @@ Document/Doc_Exceptions/InvalidIndex_Cerr.o: Document/Doc_Exceptions/InvalidInde
 
 # target to build an object file
 Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.o
 .PHONY : Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.o
 
 Document/Doc_Exceptions/InvalidIndex_Cerr.i: Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.i
@@ -670,7 +670,7 @@ Document/Doc_Exceptions/InvalidIndex_Cerr.i: Document/Doc_Exceptions/InvalidInde
 
 # target to preprocess a source file
 Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.i
 .PHONY : Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.i
 
 Document/Doc_Exceptions/InvalidIndex_Cerr.s: Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.s
@@ -678,7 +678,7 @@ Document/Doc_Exceptions/InvalidIndex_Cerr.s: Document/Doc_Exceptions/InvalidInde
 
 # target to generate assembly for a file
 Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.s
 .PHONY : Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.s
 
 Document/Items/Item.o: Document/Items/Item.cpp.o
@@ -686,7 +686,7 @@ Document/Items/Item.o: Document/Items/Item.cpp.o
 
 # target to build an object file
 Document/Items/Item.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Items/Item.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/Item.cpp.o
 .PHONY : Document/Items/Item.cpp.o
 
 Document/Items/Item.i: Document/Items/Item.cpp.i
@@ -694,7 +694,7 @@ Document/Items/Item.i: Document/Items/Item.cpp.i
 
 # target to preprocess a source file
 Document/Items/Item.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Items/Item.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/Item.cpp.i
 .PHONY : Document/Items/Item.cpp.i
 
 Document/Items/Item.s: Document/Items/Item.cpp.s
@@ -702,7 +702,7 @@ Document/Items/Item.s: Document/Items/Item.cpp.s
 
 # target to generate assembly for a file
 Document/Items/Item.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Items/Item.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/Item.cpp.s
 .PHONY : Document/Items/Item.cpp.s
 
 Document/Items/TextBox.o: Document/Items/TextBox.cpp.o
@@ -710,7 +710,7 @@ Document/Items/TextBox.o: Document/Items/TextBox.cpp.o
 
 # target to build an object file
 Document/Items/TextBox.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Items/TextBox.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.o
 .PHONY : Document/Items/TextBox.cpp.o
 
 Document/Items/TextBox.i: Document/Items/TextBox.cpp.i
@@ -718,7 +718,7 @@ Document/Items/TextBox.i: Document/Items/TextBox.cpp.i
 
 # target to preprocess a source file
 Document/Items/TextBox.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Items/TextBox.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.i
 .PHONY : Document/Items/TextBox.cpp.i
 
 Document/Items/TextBox.s: Document/Items/TextBox.cpp.s
@@ -726,7 +726,7 @@ Document/Items/TextBox.s: Document/Items/TextBox.cpp.s
 
 # target to generate assembly for a file
 Document/Items/TextBox.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Items/TextBox.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.s
 .PHONY : Document/Items/TextBox.cpp.s
 
 Document/Slide/Slide.o: Document/Slide/Slide.cpp.o
@@ -734,7 +734,7 @@ Document/Slide/Slide.o: Document/Slide/Slide.cpp.o
 
 # target to build an object file
 Document/Slide/Slide.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Slide/Slide.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.o
 .PHONY : Document/Slide/Slide.cpp.o
 
 Document/Slide/Slide.i: Document/Slide/Slide.cpp.i
@@ -742,7 +742,7 @@ Document/Slide/Slide.i: Document/Slide/Slide.cpp.i
 
 # target to preprocess a source file
 Document/Slide/Slide.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Slide/Slide.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.i
 .PHONY : Document/Slide/Slide.cpp.i
 
 Document/Slide/Slide.s: Document/Slide/Slide.cpp.s
@@ -750,7 +750,7 @@ Document/Slide/Slide.s: Document/Slide/Slide.cpp.s
 
 # target to generate assembly for a file
 Document/Slide/Slide.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Slide/Slide.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.s
 .PHONY : Document/Slide/Slide.cpp.s
 
 Document/Storage/Storage.o: Document/Storage/Storage.cpp.o
@@ -758,7 +758,7 @@ Document/Storage/Storage.o: Document/Storage/Storage.cpp.o
 
 # target to build an object file
 Document/Storage/Storage.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Storage/Storage.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.o
 .PHONY : Document/Storage/Storage.cpp.o
 
 Document/Storage/Storage.i: Document/Storage/Storage.cpp.i
@@ -766,7 +766,7 @@ Document/Storage/Storage.i: Document/Storage/Storage.cpp.i
 
 # target to preprocess a source file
 Document/Storage/Storage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Storage/Storage.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.i
 .PHONY : Document/Storage/Storage.cpp.i
 
 Document/Storage/Storage.s: Document/Storage/Storage.cpp.s
@@ -774,39 +774,15 @@ Document/Storage/Storage.s: Document/Storage/Storage.cpp.s
 
 # target to generate assembly for a file
 Document/Storage/Storage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/Storage/Storage.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.s
 .PHONY : Document/Storage/Storage.cpp.s
-
-Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.o: Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.o
-.PHONY : Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.o
-
-# target to build an object file
-Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.o
-.PHONY : Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.o
-
-Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.i: Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
-.PHONY : Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.i
-
-# target to preprocess a source file
-Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
-.PHONY : Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
-
-Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.s: Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
-.PHONY : Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.s
-
-# target to generate assembly for a file
-Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
-.PHONY : Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
 
 Edition/Item_Factory.o: Edition/Item_Factory.cpp.o
 .PHONY : Edition/Item_Factory.o
 
 # target to build an object file
 Edition/Item_Factory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Edition/Item_Factory.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Item_Factory.cpp.o
 .PHONY : Edition/Item_Factory.cpp.o
 
 Edition/Item_Factory.i: Edition/Item_Factory.cpp.i
@@ -814,7 +790,7 @@ Edition/Item_Factory.i: Edition/Item_Factory.cpp.i
 
 # target to preprocess a source file
 Edition/Item_Factory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Edition/Item_Factory.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Item_Factory.cpp.i
 .PHONY : Edition/Item_Factory.cpp.i
 
 Edition/Item_Factory.s: Edition/Item_Factory.cpp.s
@@ -822,7 +798,7 @@ Edition/Item_Factory.s: Edition/Item_Factory.cpp.s
 
 # target to generate assembly for a file
 Edition/Item_Factory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Edition/Item_Factory.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Item_Factory.cpp.s
 .PHONY : Edition/Item_Factory.cpp.s
 
 Edition/SlideManager.o: Edition/SlideManager.cpp.o
@@ -830,7 +806,7 @@ Edition/SlideManager.o: Edition/SlideManager.cpp.o
 
 # target to build an object file
 Edition/SlideManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Edition/SlideManager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/SlideManager.cpp.o
 .PHONY : Edition/SlideManager.cpp.o
 
 Edition/SlideManager.i: Edition/SlideManager.cpp.i
@@ -838,7 +814,7 @@ Edition/SlideManager.i: Edition/SlideManager.cpp.i
 
 # target to preprocess a source file
 Edition/SlideManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Edition/SlideManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/SlideManager.cpp.i
 .PHONY : Edition/SlideManager.cpp.i
 
 Edition/SlideManager.s: Edition/SlideManager.cpp.s
@@ -846,7 +822,7 @@ Edition/SlideManager.s: Edition/SlideManager.cpp.s
 
 # target to generate assembly for a file
 Edition/SlideManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Edition/SlideManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/SlideManager.cpp.s
 .PHONY : Edition/SlideManager.cpp.s
 
 Edition/Slide_Factory.o: Edition/Slide_Factory.cpp.o
@@ -854,7 +830,7 @@ Edition/Slide_Factory.o: Edition/Slide_Factory.cpp.o
 
 # target to build an object file
 Edition/Slide_Factory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Edition/Slide_Factory.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Slide_Factory.cpp.o
 .PHONY : Edition/Slide_Factory.cpp.o
 
 Edition/Slide_Factory.i: Edition/Slide_Factory.cpp.i
@@ -862,7 +838,7 @@ Edition/Slide_Factory.i: Edition/Slide_Factory.cpp.i
 
 # target to preprocess a source file
 Edition/Slide_Factory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Edition/Slide_Factory.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Slide_Factory.cpp.i
 .PHONY : Edition/Slide_Factory.cpp.i
 
 Edition/Slide_Factory.s: Edition/Slide_Factory.cpp.s
@@ -870,7 +846,7 @@ Edition/Slide_Factory.s: Edition/Slide_Factory.cpp.s
 
 # target to generate assembly for a file
 Edition/Slide_Factory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Edition/Slide_Factory.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Slide_Factory.cpp.s
 .PHONY : Edition/Slide_Factory.cpp.s
 
 Edition/StoreManager.o: Edition/StoreManager.cpp.o
@@ -878,7 +854,7 @@ Edition/StoreManager.o: Edition/StoreManager.cpp.o
 
 # target to build an object file
 Edition/StoreManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Edition/StoreManager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/StoreManager.cpp.o
 .PHONY : Edition/StoreManager.cpp.o
 
 Edition/StoreManager.i: Edition/StoreManager.cpp.i
@@ -886,7 +862,7 @@ Edition/StoreManager.i: Edition/StoreManager.cpp.i
 
 # target to preprocess a source file
 Edition/StoreManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Edition/StoreManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/StoreManager.cpp.i
 .PHONY : Edition/StoreManager.cpp.i
 
 Edition/StoreManager.s: Edition/StoreManager.cpp.s
@@ -894,7 +870,7 @@ Edition/StoreManager.s: Edition/StoreManager.cpp.s
 
 # target to generate assembly for a file
 Edition/StoreManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/Edition/StoreManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/StoreManager.cpp.s
 .PHONY : Edition/StoreManager.cpp.s
 
 # Help Target
@@ -905,7 +881,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... power"
+	@echo "... SlideMakerProject"
 	@echo "... CLI/CommandFactory/Command.o"
 	@echo "... CLI/CommandFactory/Command.i"
 	@echo "... CLI/CommandFactory/Command.s"
@@ -987,9 +963,6 @@ help:
 	@echo "... Document/Storage/Storage.o"
 	@echo "... Document/Storage/Storage.i"
 	@echo "... Document/Storage/Storage.s"
-	@echo "... Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.o"
-	@echo "... Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.i"
-	@echo "... Document/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.s"
 	@echo "... Edition/Item_Factory.o"
 	@echo "... Edition/Item_Factory.i"
 	@echo "... Edition/Item_Factory.s"

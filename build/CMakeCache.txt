@@ -148,7 +148,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=power
+CMAKE_PROJECT_NAME:STATIC=SlideMakerProject
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -216,13 +216,13 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-power_BINARY_DIR:STATIC=/home/geveorg/Desktop/Slide_Maker/build
+SlideMakerProject_BINARY_DIR:STATIC=/home/geveorg/Desktop/Slide_Maker/build
 
 //Value Computed by CMake
-power_IS_TOP_LEVEL:STATIC=ON
+SlideMakerProject_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-power_SOURCE_DIR:STATIC=/home/geveorg/Desktop/Slide_Maker
+SlideMakerProject_SOURCE_DIR:STATIC=/home/geveorg/Desktop/Slide_Maker
 
 
 ########################

@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/geveorg/Desktop/Slide_Maker/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/power.dir/all
+all: CMakeFiles/SlideMakerProject.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/power.dir/clean
+clean: CMakeFiles/SlideMakerProject.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/power.dir
+# Target rules for target CMakeFiles/SlideMakerProject.dir
 
 # All Build rule for target.
-CMakeFiles/power.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33 "Built target power"
-.PHONY : CMakeFiles/power.dir/all
+CMakeFiles/SlideMakerProject.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 "Built target SlideMakerProject"
+.PHONY : CMakeFiles/SlideMakerProject.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/power.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/geveorg/Desktop/Slide_Maker/build/CMakeFiles 33
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/power.dir/all
+CMakeFiles/SlideMakerProject.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/geveorg/Desktop/Slide_Maker/build/CMakeFiles 32
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SlideMakerProject.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/geveorg/Desktop/Slide_Maker/build/CMakeFiles 0
-.PHONY : CMakeFiles/power.dir/rule
+.PHONY : CMakeFiles/SlideMakerProject.dir/rule
 
 # Convenience name for target.
-power: CMakeFiles/power.dir/rule
-.PHONY : power
+SlideMakerProject: CMakeFiles/SlideMakerProject.dir/rule
+.PHONY : SlideMakerProject
 
 # clean rule for target.
-CMakeFiles/power.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power.dir/build.make CMakeFiles/power.dir/clean
-.PHONY : CMakeFiles/power.dir/clean
+CMakeFiles/SlideMakerProject.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/clean
+.PHONY : CMakeFiles/SlideMakerProject.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
