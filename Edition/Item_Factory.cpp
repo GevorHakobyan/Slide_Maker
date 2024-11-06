@@ -1,4 +1,4 @@
-#include "../Include/Item_Factory.h"
+#include "Item_Factory.h"
 
 edition::ItemFactory::ItemMap edition::ItemFactory::m_Items;
 

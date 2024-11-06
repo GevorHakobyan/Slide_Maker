@@ -1,9 +1,9 @@
 #pragma once
-#include "../Include/Slide.h"
-#include "../Include/Storage.h"
+#include "Slide.h"
+#include "Storage.h"
 #include "AttributeMutator.h"
-#include "../Include/ItemInfo.h"
-#include "../Include/SlideInfo.h"
+#include "ItemInfo.h"
+#include "SlideInfo.h"
 #include "Mover.h"
 #include "Slide_Factory.h"
 

@@ -17,7 +17,7 @@ namespace document {
        using Size = size_t;
 
        public:
-       Slide(Data&, const ID);
+       Slide(Data&&, const ID);
        ~Slide() = default;
        Slide(Slide&&) noexcept;
        Slide& operator=(Slide&&) noexcept;
@@ -47,7 +47,9 @@ namespace document {
         Iterator operator++();
         Iterator& operator++(int);
         ValueType operator*();
-        Iterator&  operator->();
+        IterPointer  operator->();
+        const ValueType operator*() const;
+        const IterPointer operator->() const;
         bool operator==(const Iterator&);
         bool operator!=(const Iterator&);
 
@@ -72,7 +74,9 @@ namespace document {
         ConstIterator operator++();
         ConstIterator& operator++(int);
         ValueType operator*();
-        ConstIterator& operator->();
+        IterPointer operator->();
+        const ValueType operator*() const;
+        const IterPointer operator->() const;
         bool operator==(const ConstIterator&);
         bool operator!=(const ConstIterator&);
 

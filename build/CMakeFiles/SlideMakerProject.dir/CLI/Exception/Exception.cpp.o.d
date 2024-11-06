@@ -1,7 +1,7 @@
 CMakeFiles/SlideMakerProject.dir/CLI/Exception/Exception.cpp.o: \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/Exception.cpp \
  /usr/include/stdc-predef.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/Exception.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Exception.h \
  /usr/include/c++/13/exception \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

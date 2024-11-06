@@ -1,43 +1,73 @@
+# Minimum CMake version required
 cmake_minimum_required(VERSION 3.10)
 
 # Project name
-project(power)
+project(SlideMakerProject)
 
-# Set C++ standard
+# Set the C++ standard
 set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
-# Enable export of compile commands (for IDE integration)
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+# Set the build type to Debug for GDB support
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Debug CACHE STRING "Build type" FORCE)
+endif()
 
-# Set the build type to Debug to include debugging symbols for gdb
-set(CMAKE_BUILD_TYPE Debug)
-
-# Include directories for headers
+# Add include directories
 include_directories(
-    "${CMAKE_CURRENT_SOURCE_DIR}/../Include"
-    "${CMAKE_SOURCE_DIR}/CLI"
-    "${CMAKE_SOURCE_DIR}/CLI/CommandFactory"
-    "${CMAKE_SOURCE_DIR}/CLI/Controller"
-    "${CMAKE_SOURCE_DIR}/CLI/Exception"
-    "${CMAKE_SOURCE_DIR}/Edition"
+    ${PROJECT_SOURCE_DIR}/Include
+    ${PROJECT_SOURCE_DIR}/CLI
+    ${PROJECT_SOURCE_DIR}/CLI/CommandFactory
+    ${PROJECT_SOURCE_DIR}/CLI/Commands
+    ${PROJECT_SOURCE_DIR}/CLI/Controller
+    ${PROJECT_SOURCE_DIR}/CLI/Exception
+    ${PROJECT_SOURCE_DIR}/CLI/Parser
+    ${PROJECT_SOURCE_DIR}/Document
+    ${PROJECT_SOURCE_DIR}/Document/Attributes
+    ${PROJECT_SOURCE_DIR}/Document/Doc_Exceptions
+    ${PROJECT_SOURCE_DIR}/Document/Items
+    ${PROJECT_SOURCE_DIR}/Document/Slide
+    ${PROJECT_SOURCE_DIR}/Document/Storage
+    ${PROJECT_SOURCE_DIR}/Edition
 )
 
-# Glob all source files recursively
-file(GLOB_RECURSE SOURCES 
-    "${CMAKE_SOURCE_DIR}/CLI/*.cpp"
-    "${CMAKE_SOURCE_DIR}/Document/*.cpp"
-    "${CMAKE_SOURCE_DIR}/Edition/*.cpp"
+# Collect all source files for CLI
+file(GLOB_RECURSE CLI_SOURCES
+    "${PROJECT_SOURCE_DIR}/CLI/CommandFactory/*.cpp"
+    "${PROJECT_SOURCE_DIR}/CLI/Commands/*.cpp"
+    "${PROJECT_SOURCE_DIR}/CLI/Controller/*.cpp"
+    "${PROJECT_SOURCE_DIR}/CLI/Exception/*.cpp"
+    "${PROJECT_SOURCE_DIR}/CLI/Parser/*.cpp"
 )
 
-# Glob all header files recursively (if needed)
-file(GLOB_RECURSE HEADERS
-    "${CMAKE_SOURCE_DIR}/Include/*.h"
-    "${CMAKE_SOURCE_DIR}/CLI/*.h"
-    "${CMAKE_SOURCE_DIR}/Document/*.h"
-    "${CMAKE_SOURCE_DIR}/Edition/*.h"
+# Collect all source files for Document
+file(GLOB_RECURSE DOCUMENT_SOURCES
+    "${PROJECT_SOURCE_DIR}/Document/Attributes/*.cpp"
+    "${PROJECT_SOURCE_DIR}/Document/Doc_Exceptions/*.cpp"
+    "${PROJECT_SOURCE_DIR}/Document/Items/*.cpp"
+    "${PROJECT_SOURCE_DIR}/Document/Slide/*.cpp"
+    "${PROJECT_SOURCE_DIR}/Document/Storage/*.cpp"
 )
 
-# Add executable
-add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
+# Collect all source files for Edition
+file(GLOB_RECURSE EDITION_SOURCES
+    "${PROJECT_SOURCE_DIR}/Edition/*.cpp"
+)
 
+# Combine all source files into one variable
+set(ALL_SOURCES
+    ${CLI_SOURCES}
+    ${DOCUMENT_SOURCES}
+    ${EDITION_SOURCES}
+)
 
+# Create the executable from the main file in CLI/Controller
+add_executable(SlideMakerProject
+    ${ALL_SOURCES}
+)
+
+# Set debug flags for the compiler to enable GDB support
+target_compile_options(SlideMakerProject PRIVATE
+    $<$<CONFIG:Debug>:-g>
+)

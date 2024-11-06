@@ -1,5 +1,5 @@
 #pragma once
-#include "../Include/ItemInfo.h"
+#include "ItemInfo.h"
 #include "../Include/Item.h"
 #include <functional>
 #include "ItemTypes.h"

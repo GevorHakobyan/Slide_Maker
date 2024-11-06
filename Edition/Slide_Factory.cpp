@@ -1,6 +1,6 @@
-#include "../Include/Slide_Factory.h"
+#include "Slide_Factory.h"
 
-edition::SlideFactory::ItemFactory edition::SlideFactory::m_itemFactory{nullptr};
+edition::SlideFactory::Item_Factory edition::SlideFactory::m_itemFactory{nullptr};
 int edition::SlideFactory::m_BirthId{0};
 
 edition::SlideFactory::SlidePtr edition::SlideFactory::create(SlideInfoPtr info) {

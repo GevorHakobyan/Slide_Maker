@@ -1,6 +1,6 @@
-#include "../../Include/Slide.h"
+#include "Slide.h"
 
-document::Slide::Slide(Data& itemList, const ID id)
+document::Slide::Slide(Data&& itemList, const ID id)
 : m_dataSize{itemList.size()}, m_data{}, m_id{id} {
     for (auto& ptr : itemList) {
         m_data.push_back(ptr);
@@ -117,16 +117,24 @@ document::Slide::Iterator::ValueType document::Slide::Iterator::operator*() {
     return *(*m_iterator);
 }
 
-document::Slide::Iterator& document::Slide::Iterator::operator->() {
-    return *this;
+document::Slide::Iterator::IterPointer document::Slide::Iterator::operator->() {
+    return m_iterator;
+}
+
+const document::Slide::Iterator::ValueType document::Slide::Iterator::operator*() const {
+    return *(*m_iterator);
+}
+
+const document::Slide::Iterator::IterPointer document::Slide::Iterator::operator->() const {
+    return m_iterator;
 }
 
 bool document::Slide::Iterator::operator==(const Iterator& rhs) {
-    return this == &rhs;
+    return (*(*this))->getId() == (*rhs)->getId();
 }
 
 bool document::Slide::Iterator::operator!=(const Iterator& rhs) {
-    return !(this == &rhs);
+    return !(this->operator==(rhs));
 }
 
 document::Slide::ConstIterator::ConstIterator(size_t index, const Data& m_data) {
@@ -154,16 +162,24 @@ document::Slide::ConstIterator::ValueType document::Slide::ConstIterator::operat
     return *(*m_iterator);
 }
 
-document::Slide::ConstIterator& document::Slide::ConstIterator::operator->() {
-    return *this;
+document::Slide::ConstIterator::IterPointer document::Slide::ConstIterator::operator->() {
+    return m_iterator;
+}
+
+const document::Slide::ConstIterator::ValueType document::Slide::ConstIterator::operator*() const {
+    return *(*m_iterator);
+}
+
+const document::Slide::ConstIterator::IterPointer document::Slide::ConstIterator::operator->() const {
+    return m_iterator;
 }
 
 bool document::Slide::ConstIterator::operator==(const ConstIterator& rhs) {
-    return this == &rhs;
+    return (*(*this->m_iterator))->getId() == (*(*rhs.m_iterator))->getId();
 }
 
 bool document::Slide::ConstIterator::operator!=(const ConstIterator& rhs) {
-    return !(this == &rhs);
+    return !(this->operator==(rhs));
 }
 
 bool document::Slide::ConstIterator::isIndexValid(size_t index, size_t size) const {

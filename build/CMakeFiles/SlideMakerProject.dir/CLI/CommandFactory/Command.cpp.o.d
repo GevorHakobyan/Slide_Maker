@@ -133,7 +133,7 @@ CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/Command.cpp.o: \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidArgument_Cerr.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/Exception/../../Include/Exception.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Exception.h \
  /usr/include/c++/13/exception /usr/include/c++/13/bits/exception_ptr.h \
  /usr/include/c++/13/bits/cxxabi_init_exception.h \
  /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/nested_exception.h \

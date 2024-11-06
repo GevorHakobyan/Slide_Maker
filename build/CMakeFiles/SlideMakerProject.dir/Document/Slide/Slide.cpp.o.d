@@ -1,9 +1,9 @@
 CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.o: \
  /home/geveorg/Desktop/Slide_Maker/Document/Slide/Slide.cpp \
  /usr/include/stdc-predef.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Slide/../../Include/Slide.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Slide/../../Include/InvalidIndex_Cerr.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Slide/../../Include/Exception.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Slide.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/InvalidIndex_Cerr.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Exception.h \
  /usr/include/c++/13/exception \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -134,12 +134,12 @@ CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/geveorg/Desktop/Slide_Maker/Document/Slide/../../Include/Item.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Slide/../../Include/I_Attributes.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Slide/../../Include/BoundingBox.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Item.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/I_Attributes.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/BoundingBox.h \
  /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Slide/../../Include/ItemInfo.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Slide/../../Include/ItemTypes.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/ItemInfo.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/ItemTypes.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/align.h \

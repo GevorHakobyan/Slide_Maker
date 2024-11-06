@@ -15,8 +15,5 @@ namespace document {
        TextBox(const Location&, const TextBoxAttrPtr);
        ~TextBox() = default;
        ItemPtr create(ItemInfoPtr, const ID) override;
-
-       private:
-       TextBoxAttrPtr m_attributes{nullptr};
     };
 }; //document

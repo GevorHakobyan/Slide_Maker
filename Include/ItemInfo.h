@@ -1,14 +1,17 @@
 #pragma once
 #include "ItemTypes.h"
+#include "BoundingBox.h"
 #include "I_Attributes.h"
 
 namespace cli {
     struct ItemInfo {
         using Type = edition::ItemType;
-        using Length = document::I_Attributes::Length;
-        using Width = document::I_Attributes::Width;
+        using Length = document::Bounding_Box::Length;
+        using Width = document::Bounding_Box::Width;
         using Color = document::I_Attributes::Color;
 
+        ItemInfo() = default;
+        virtual ~ItemInfo() = default;
         Type getType() const;
         Length getLength() const;
         Width getWidth() const;

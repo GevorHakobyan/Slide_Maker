@@ -109,6 +109,7 @@ cli::CommandInfo cli::Parser::Parse(Text& text) {
     try {
         parseText(text);
     } catch (const cli::Exception& err) {
+        restateAutomata();
         throw;
     }
 

@@ -6,7 +6,6 @@
 #include <utility>
 
 namespace document {
-
     class A_Item {
         public:
         using Location = std::pair<float, float>;
@@ -23,12 +22,12 @@ namespace document {
         virtual ItemPtr create(ItemInfoPtr, const ID) = 0;
         virtual ~A_Item() = default;
 
-        protected:
+        public:
         A_Item(const Location&, const AttributePtr);
         void move(const Location&);
         Location getGeometry() const;
         void setGeometry(const Location&);
-        const ID getId() const;
+        ID getId() const;
 
         public:
         bool friend operator==(const A_Item&, const A_Item&) noexcept;

@@ -5,16 +5,16 @@
 namespace cli {
     class SlideInfo {
         public:
-        using Title = std::string;
-        using Text = std::string;
+        using Title = std::optional<std::string>;
+        using Text = std::optional<std::string>;
 
         public:
         SlideInfo() = default;
         ~SlideInfo() = default;
         void setTitile(const Title&);
         void setText(const Text&);
-        const std::optional<Title&> getTitle() const;
-        const std::optional<Text&> getText() const;
+        const Title getTitle() const;
+        const Text getText() const;
 
         private:
         Title m_slideTitle{};

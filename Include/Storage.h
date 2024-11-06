@@ -43,7 +43,11 @@ namespace document {
             iterator operator--();
             iterator& operator--(int);
             ValueType operator*();
-            iterator&  operator->();
+            const ValueType operator*() const;
+            const IterPointer operator->() const;
+            IterPointer  operator->();
+            bool operator==(const iterator&);
+            bool operator!=(const iterator&);
 
             private:
             iterator(IterPointer);
@@ -68,7 +72,11 @@ namespace document {
             const_iterator operator--();
             const_iterator& operator--(int);
             ValueType operator*();
-            const_iterator&  operator->();
+            IterPointer  operator->();
+            const ValueType operator*() const;
+            const IterPointer operator->() const;
+            bool operator==(const const_iterator&);
+            bool operator!=(const const_iterator&);
 
             private:
             const_iterator(IterPointer);

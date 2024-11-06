@@ -219,39 +219,39 @@ CMakeFiles/SlideMakerProject.dir/CLI/Parser/Parser.cpp.o: \
  /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/variant \
  /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/CommandCreator.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidArgument_Cerr.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/Exception/../../Include/Exception.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Exception.h \
  /usr/include/c++/13/source_location \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidOption_Cerr.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidCommand_Cerr.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/SlideMaker.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/SlideMaker.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/Command.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/FunctionArgument.h \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/SlideInfo.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/StoreManager.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/Storage.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/Slide.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/InvalidIndex_Cerr.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/SlideInfo.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/StoreManager.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Storage.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Slide.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/InvalidIndex_Cerr.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/Item.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/I_Attributes.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/BoundingBox.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/ItemInfo.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/ItemTypes.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/SlideManager.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/AttributeMutator.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/Mover.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/Slide_Factory.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/Item_Factory.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Item.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/I_Attributes.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/BoundingBox.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/ItemInfo.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/ItemTypes.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/SlideManager.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/AttributeMutator.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Mover.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Slide_Factory.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Item_Factory.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/TextBoxInfo.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/Exiter.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/TextBoxInfo.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Exiter.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidCharacter_Cerr.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidSyntax_Cerr.h

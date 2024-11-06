@@ -1,7 +1,7 @@
-#include "../../Include/TextBox_Attr.h"
+#include "TextBox_Attr.h"
 
-document::TextBox_Attr::TextBox_Attr(Color color, Length length, Width width, LetterSize size, const Content& content)
-: I_Attributes(color, length, width, 5) {
+document::TextBox_Attr::TextBox_Attr(Color color, LetterSize size, const Content& content)
+: I_Attributes(color, 5) {
     setLetterSize(size);
     setContent(content);
 }

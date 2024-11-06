@@ -1,4 +1,4 @@
-#include "../Include/SlideManager.h"
+#include "SlideManager.h"
 
 edition::SlideManager::SlideManager()
 : m_designer{nullptr}, m_mover{nullptr}, m_factory{nullptr}

@@ -1,4 +1,4 @@
-#include "../../Include/Storage.h"
+#include "Storage.h"
 
 document::Storage::thisPtr document::Storage::m_ptr{nullptr};
 
@@ -11,6 +11,11 @@ document::Storage::thisPtr document::Storage::getInstance() {
 
 document::Storage::iterator document::Storage::begin() {
     return iterator{0, m_Data};
+}
+
+document::Storage::iterator document::Storage::end() {
+
+    return iterator{m_DataSize, m_Data};
 }
 
 bool document::Storage::isIndexValid(Index index) const {
@@ -62,10 +67,25 @@ document::Storage::iterator::ValueType document::Storage::iterator::operator*() 
     return *(*m_Iterator);
 }
 
-document::Storage::iterator& document::Storage::iterator::operator->() {
-    return *this;
+document::Storage::iterator::IterPointer document::Storage::iterator::operator->() {
+    return m_Iterator;
 }
 
+const document::Storage::iterator::ValueType document::Storage::iterator::operator*() const {
+    return *(*m_Iterator);
+}
+
+const document::Storage::iterator::IterPointer document::Storage::iterator::operator->() const {
+    return m_Iterator;
+}
+
+bool document::Storage::iterator::operator==(const iterator& rhs) {
+    return (*(*this))->getId() == (*rhs)->getId();
+}
+
+bool document::Storage::iterator::operator!=(const iterator& rhs) {
+    return !(this->operator==(rhs));
+}
 
 document::Storage::const_iterator::const_iterator(size_t index, const Data& m_data) {
     if (!isIndexValid(index, m_data.size())) {
@@ -103,8 +123,24 @@ document::Storage::const_iterator::ValueType document::Storage::const_iterator::
     return *(*m_iterator);
 }
 
-document::Storage::const_iterator& document::Storage::const_iterator::operator->() {
-    return *this;
+document::Storage::const_iterator::IterPointer document::Storage::const_iterator::operator->() {
+    return m_iterator;
+}
+
+const document::Storage::const_iterator::ValueType document::Storage::const_iterator::operator*() const {
+    return *(*m_iterator);
+}
+
+const document::Storage::const_iterator::IterPointer document::Storage::const_iterator::operator->() const {
+    return m_iterator;
+}
+
+bool document::Storage::const_iterator::operator==(const const_iterator& rhs) {
+    return (*(*this))->getId() == (*rhs)->getId();
+}
+
+bool document::Storage::const_iterator::operator!=(const const_iterator& rhs) {
+    return !(this->operator==(rhs));
 }
 
 bool document::Storage::const_iterator::isIndexValid(size_t index, size_t size) const {

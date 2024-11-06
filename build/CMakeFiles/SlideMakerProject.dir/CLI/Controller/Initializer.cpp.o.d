@@ -2,7 +2,7 @@ CMakeFiles/SlideMakerProject.dir/CLI/Controller/Initializer.cpp.o: \
  /home/geveorg/Desktop/Slide_Maker/CLI/Controller/Initializer.cpp \
  /usr/include/stdc-predef.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Controller/Initializer.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/SlideMaker.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/SlideMaker.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/Command.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/FunctionArgument.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/Types.h \
@@ -135,7 +135,7 @@ CMakeFiles/SlideMakerProject.dir/CLI/Controller/Initializer.cpp.o: \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidArgument_Cerr.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/Exception/../../Include/Exception.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Exception.h \
  /usr/include/c++/13/exception /usr/include/c++/13/bits/exception_ptr.h \
  /usr/include/c++/13/bits/cxxabi_init_exception.h \
  /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/nested_exception.h \
@@ -217,30 +217,30 @@ CMakeFiles/SlideMakerProject.dir/CLI/Controller/Initializer.cpp.o: \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/SlideInfo.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/SlideInfo.h \
  /usr/include/c++/13/optional \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/StoreManager.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/Storage.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/Slide.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/InvalidIndex_Cerr.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/StoreManager.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Storage.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Slide.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/InvalidIndex_Cerr.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/Item.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/I_Attributes.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/BoundingBox.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Item.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/I_Attributes.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/BoundingBox.h \
  /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/ItemInfo.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/ItemTypes.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/SlideManager.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/AttributeMutator.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/Mover.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/Slide_Factory.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/Item_Factory.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/ItemInfo.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/ItemTypes.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/SlideManager.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/AttributeMutator.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Mover.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Slide_Factory.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Item_Factory.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/array /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
- /home/geveorg/Desktop/Slide_Maker/Include/../Include/TextBoxInfo.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/Exiter.h
+ /home/geveorg/Desktop/Slide_Maker/Include/TextBoxInfo.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Exiter.h

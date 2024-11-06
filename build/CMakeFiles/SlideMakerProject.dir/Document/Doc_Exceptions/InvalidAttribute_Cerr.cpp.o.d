@@ -1,8 +1,8 @@
 CMakeFiles/SlideMakerProject.dir/Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.o: \
  /home/geveorg/Desktop/Slide_Maker/Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp \
  /usr/include/stdc-predef.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Doc_Exceptions/../../Include/InvalidAttribute_Cerr.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Doc_Exceptions/../../Include/Exception.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/InvalidAttribute_Cerr.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Exception.h \
  /usr/include/c++/13/exception \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

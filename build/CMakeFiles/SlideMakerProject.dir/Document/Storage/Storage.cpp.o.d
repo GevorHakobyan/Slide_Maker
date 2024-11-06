@@ -1,10 +1,10 @@
 CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.o: \
  /home/geveorg/Desktop/Slide_Maker/Document/Storage/Storage.cpp \
  /usr/include/stdc-predef.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Storage/../../Include/Storage.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Storage/../../Include/Slide.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Storage/../../Include/InvalidIndex_Cerr.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Storage/../../Include/Exception.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Storage.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Slide.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/InvalidIndex_Cerr.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Exception.h \
  /usr/include/c++/13/exception \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -135,12 +135,12 @@ CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/geveorg/Desktop/Slide_Maker/Document/Storage/../../Include/Item.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Storage/../../Include/I_Attributes.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Storage/../../Include/BoundingBox.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Item.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/I_Attributes.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/BoundingBox.h \
  /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Storage/../../Include/ItemInfo.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Storage/../../Include/ItemTypes.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/ItemInfo.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/ItemTypes.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/align.h \

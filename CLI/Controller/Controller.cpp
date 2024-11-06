@@ -7,14 +7,16 @@ void cli::Controller::start(std::istream& stream) {
     Initializer::InitializeCommands();
     bool Continue{true};
 
-    try{
         while(Continue) {
-            auto command = fetch(stream);
-            Continue = Exectute(command);
-        }
-    } catch(const Exception& err) {
-        std::cerr << err.what() << "\n";
-    }
+            
+            try{
+                auto command = fetch(stream);
+                Continue = Exectute(command);
+
+            } catch(const Exception& err) {
+                std::cerr << err.what() << "\n";
+                }
+        } 
 }
 
 cli::Controller::CommandPtr cli::Controller::fetch(std::istream& stream) {

@@ -1,5 +1,5 @@
 #pragma once
-#include "../../Include/Exception.h"
+#include "Exception.h"
 
 namespace cli{
     class InvalidCharacter_Cerr : public Exception {

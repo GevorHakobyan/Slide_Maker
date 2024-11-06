@@ -1,4 +1,3 @@
-//#include "../../Include/Item.h"
 #include "Item.h"
 
 document::A_Item::A_Item(const Location& location, const AttributePtr attrs)
@@ -11,7 +10,7 @@ void document::A_Item::setGeometry(const Location& location) {
 }
 
 document::A_Item::Location document::A_Item::getGeometry() const {
-    return m_BoundingBox->getLocation();
+    return m_BoundingBox->getCurrentPostion();
 }
 
 const document::A_Item::BoundingBoxPtr document::A_Item::getBoundingBox() const {
@@ -43,3 +42,6 @@ void document::A_Item::move(const Location& newLocation) {
     m_BoundingBox->moveObject(newLocation);
 }
 
+document::A_Item::ID document::A_Item::getId() const {
+    return m_Attributes->getId();
+}

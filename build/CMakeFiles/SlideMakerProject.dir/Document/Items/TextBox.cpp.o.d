@@ -1,10 +1,10 @@
 CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.o: \
  /home/geveorg/Desktop/Slide_Maker/Document/Items/TextBox.cpp \
  /usr/include/stdc-predef.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Items/../../Include/TextBox.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Items/../../Include/Item.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Items/../../Include/I_Attributes.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Items/../../Include/BoundingBox.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/TextBox.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Item.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/I_Attributes.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/BoundingBox.h \
  /usr/include/c++/13/utility \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -25,8 +25,8 @@ CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.o: \
  /usr/include/c++/13/ext/numeric_traits.h \
  /usr/include/c++/13/bits/cpp_type_traits.h \
  /usr/include/c++/13/ext/type_traits.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Items/../../Include/ItemInfo.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Items/../../Include/ItemTypes.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/ItemInfo.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/ItemTypes.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/c++/13/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
@@ -204,5 +204,5 @@ CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.o: \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Items/../../Include/TextBox_Attr.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Items/../../Include/TextBoxInfo.h
+ /home/geveorg/Desktop/Slide_Maker/Include/TextBox_Attr.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/TextBoxInfo.h

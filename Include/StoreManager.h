@@ -1,6 +1,6 @@
 #pragma once
-#include "../Include/Storage.h"
-#include "../Include/ItemInfo.h"
+#include "Storage.h"
+#include "ItemInfo.h"
 #include "SlideManager.h"
 
 namespace edition {
@@ -27,7 +27,7 @@ namespace edition {
         StoreManager();
 
         private:
-        SlideManagerPtr m_manager{nullptr};
+        SlideManagerPtr m_slideManager{nullptr};
         StoragePtr m_storage{nullptr};
         BirthDate m_date{0};
         static thisPtr m_ptr;

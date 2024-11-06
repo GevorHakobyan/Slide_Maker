@@ -201,30 +201,6 @@ CLI/CommandFactory/CommandInfo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/CommandInfo.cpp.s
 .PHONY : CLI/CommandFactory/CommandInfo.cpp.s
 
-CLI/CommandFactory/Exiter.o: CLI/CommandFactory/Exiter.cpp.o
-.PHONY : CLI/CommandFactory/Exiter.o
-
-# target to build an object file
-CLI/CommandFactory/Exiter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/Exiter.cpp.o
-.PHONY : CLI/CommandFactory/Exiter.cpp.o
-
-CLI/CommandFactory/Exiter.i: CLI/CommandFactory/Exiter.cpp.i
-.PHONY : CLI/CommandFactory/Exiter.i
-
-# target to preprocess a source file
-CLI/CommandFactory/Exiter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/Exiter.cpp.i
-.PHONY : CLI/CommandFactory/Exiter.cpp.i
-
-CLI/CommandFactory/Exiter.s: CLI/CommandFactory/Exiter.cpp.s
-.PHONY : CLI/CommandFactory/Exiter.s
-
-# target to generate assembly for a file
-CLI/CommandFactory/Exiter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/Exiter.cpp.s
-.PHONY : CLI/CommandFactory/Exiter.cpp.s
-
 CLI/CommandFactory/FunctionArgument.o: CLI/CommandFactory/FunctionArgument.cpp.o
 .PHONY : CLI/CommandFactory/FunctionArgument.o
 
@@ -297,30 +273,6 @@ CLI/CommandFactory/SlideInfo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/SlideInfo.cpp.s
 .PHONY : CLI/CommandFactory/SlideInfo.cpp.s
 
-CLI/CommandFactory/SlideMaker.o: CLI/CommandFactory/SlideMaker.cpp.o
-.PHONY : CLI/CommandFactory/SlideMaker.o
-
-# target to build an object file
-CLI/CommandFactory/SlideMaker.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/SlideMaker.cpp.o
-.PHONY : CLI/CommandFactory/SlideMaker.cpp.o
-
-CLI/CommandFactory/SlideMaker.i: CLI/CommandFactory/SlideMaker.cpp.i
-.PHONY : CLI/CommandFactory/SlideMaker.i
-
-# target to preprocess a source file
-CLI/CommandFactory/SlideMaker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/SlideMaker.cpp.i
-.PHONY : CLI/CommandFactory/SlideMaker.cpp.i
-
-CLI/CommandFactory/SlideMaker.s: CLI/CommandFactory/SlideMaker.cpp.s
-.PHONY : CLI/CommandFactory/SlideMaker.s
-
-# target to generate assembly for a file
-CLI/CommandFactory/SlideMaker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/SlideMaker.cpp.s
-.PHONY : CLI/CommandFactory/SlideMaker.cpp.s
-
 CLI/CommandFactory/TextBoxInfo.o: CLI/CommandFactory/TextBoxInfo.cpp.o
 .PHONY : CLI/CommandFactory/TextBoxInfo.o
 
@@ -344,6 +296,54 @@ CLI/CommandFactory/TextBoxInfo.s: CLI/CommandFactory/TextBoxInfo.cpp.s
 CLI/CommandFactory/TextBoxInfo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/TextBoxInfo.cpp.s
 .PHONY : CLI/CommandFactory/TextBoxInfo.cpp.s
+
+CLI/Commands/Exiter.o: CLI/Commands/Exiter.cpp.o
+.PHONY : CLI/Commands/Exiter.o
+
+# target to build an object file
+CLI/Commands/Exiter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Exiter.cpp.o
+.PHONY : CLI/Commands/Exiter.cpp.o
+
+CLI/Commands/Exiter.i: CLI/Commands/Exiter.cpp.i
+.PHONY : CLI/Commands/Exiter.i
+
+# target to preprocess a source file
+CLI/Commands/Exiter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Exiter.cpp.i
+.PHONY : CLI/Commands/Exiter.cpp.i
+
+CLI/Commands/Exiter.s: CLI/Commands/Exiter.cpp.s
+.PHONY : CLI/Commands/Exiter.s
+
+# target to generate assembly for a file
+CLI/Commands/Exiter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Exiter.cpp.s
+.PHONY : CLI/Commands/Exiter.cpp.s
+
+CLI/Commands/SlideMaker.o: CLI/Commands/SlideMaker.cpp.o
+.PHONY : CLI/Commands/SlideMaker.o
+
+# target to build an object file
+CLI/Commands/SlideMaker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/SlideMaker.cpp.o
+.PHONY : CLI/Commands/SlideMaker.cpp.o
+
+CLI/Commands/SlideMaker.i: CLI/Commands/SlideMaker.cpp.i
+.PHONY : CLI/Commands/SlideMaker.i
+
+# target to preprocess a source file
+CLI/Commands/SlideMaker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/SlideMaker.cpp.i
+.PHONY : CLI/Commands/SlideMaker.cpp.i
+
+CLI/Commands/SlideMaker.s: CLI/Commands/SlideMaker.cpp.s
+.PHONY : CLI/Commands/SlideMaker.s
+
+# target to generate assembly for a file
+CLI/Commands/SlideMaker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/SlideMaker.cpp.s
+.PHONY : CLI/Commands/SlideMaker.cpp.s
 
 CLI/Controller/Controller.o: CLI/Controller/Controller.cpp.o
 .PHONY : CLI/Controller/Controller.o
@@ -584,6 +584,30 @@ CLI/Parser/Parser.s: CLI/Parser/Parser.cpp.s
 CLI/Parser/Parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Parser/Parser.cpp.s
 .PHONY : CLI/Parser/Parser.cpp.s
+
+Document/Attributes/BoundingBox.o: Document/Attributes/BoundingBox.cpp.o
+.PHONY : Document/Attributes/BoundingBox.o
+
+# target to build an object file
+Document/Attributes/BoundingBox.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/BoundingBox.cpp.o
+.PHONY : Document/Attributes/BoundingBox.cpp.o
+
+Document/Attributes/BoundingBox.i: Document/Attributes/BoundingBox.cpp.i
+.PHONY : Document/Attributes/BoundingBox.i
+
+# target to preprocess a source file
+Document/Attributes/BoundingBox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/BoundingBox.cpp.i
+.PHONY : Document/Attributes/BoundingBox.cpp.i
+
+Document/Attributes/BoundingBox.s: Document/Attributes/BoundingBox.cpp.s
+.PHONY : Document/Attributes/BoundingBox.s
+
+# target to generate assembly for a file
+Document/Attributes/BoundingBox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/BoundingBox.cpp.s
+.PHONY : Document/Attributes/BoundingBox.cpp.s
 
 Document/Attributes/I_Attributes.o: Document/Attributes/I_Attributes.cpp.o
 .PHONY : Document/Attributes/I_Attributes.o
@@ -891,9 +915,6 @@ help:
 	@echo "... CLI/CommandFactory/CommandInfo.o"
 	@echo "... CLI/CommandFactory/CommandInfo.i"
 	@echo "... CLI/CommandFactory/CommandInfo.s"
-	@echo "... CLI/CommandFactory/Exiter.o"
-	@echo "... CLI/CommandFactory/Exiter.i"
-	@echo "... CLI/CommandFactory/Exiter.s"
 	@echo "... CLI/CommandFactory/FunctionArgument.o"
 	@echo "... CLI/CommandFactory/FunctionArgument.i"
 	@echo "... CLI/CommandFactory/FunctionArgument.s"
@@ -903,12 +924,15 @@ help:
 	@echo "... CLI/CommandFactory/SlideInfo.o"
 	@echo "... CLI/CommandFactory/SlideInfo.i"
 	@echo "... CLI/CommandFactory/SlideInfo.s"
-	@echo "... CLI/CommandFactory/SlideMaker.o"
-	@echo "... CLI/CommandFactory/SlideMaker.i"
-	@echo "... CLI/CommandFactory/SlideMaker.s"
 	@echo "... CLI/CommandFactory/TextBoxInfo.o"
 	@echo "... CLI/CommandFactory/TextBoxInfo.i"
 	@echo "... CLI/CommandFactory/TextBoxInfo.s"
+	@echo "... CLI/Commands/Exiter.o"
+	@echo "... CLI/Commands/Exiter.i"
+	@echo "... CLI/Commands/Exiter.s"
+	@echo "... CLI/Commands/SlideMaker.o"
+	@echo "... CLI/Commands/SlideMaker.i"
+	@echo "... CLI/Commands/SlideMaker.s"
 	@echo "... CLI/Controller/Controller.o"
 	@echo "... CLI/Controller/Controller.i"
 	@echo "... CLI/Controller/Controller.s"
@@ -939,6 +963,9 @@ help:
 	@echo "... CLI/Parser/Parser.o"
 	@echo "... CLI/Parser/Parser.i"
 	@echo "... CLI/Parser/Parser.s"
+	@echo "... Document/Attributes/BoundingBox.o"
+	@echo "... Document/Attributes/BoundingBox.i"
+	@echo "... Document/Attributes/BoundingBox.s"
 	@echo "... Document/Attributes/I_Attributes.o"
 	@echo "... Document/Attributes/I_Attributes.i"
 	@echo "... Document/Attributes/I_Attributes.s"

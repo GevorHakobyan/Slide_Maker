@@ -1,10 +1,10 @@
 CMakeFiles/SlideMakerProject.dir/Edition/Slide_Factory.cpp.o: \
  /home/geveorg/Desktop/Slide_Maker/Edition/Slide_Factory.cpp \
  /usr/include/stdc-predef.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/../Include/Slide_Factory.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/../Include/Slide.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/../Include/InvalidIndex_Cerr.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/../Include/Exception.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Slide_Factory.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Slide.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/InvalidIndex_Cerr.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Exception.h \
  /usr/include/c++/13/exception \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -135,12 +135,12 @@ CMakeFiles/SlideMakerProject.dir/Edition/Slide_Factory.cpp.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/geveorg/Desktop/Slide_Maker/Edition/../Include/Item.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/../Include/I_Attributes.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/../Include/BoundingBox.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Item.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/I_Attributes.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/BoundingBox.h \
  /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/../Include/ItemInfo.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/../Include/ItemTypes.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/ItemInfo.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/ItemTypes.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/align.h \
@@ -215,10 +215,10 @@ CMakeFiles/SlideMakerProject.dir/Edition/Slide_Factory.cpp.o: \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/../Include/SlideInfo.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/SlideInfo.h \
  /usr/include/c++/13/optional \
  /usr/include/c++/13/bits/enable_special_members.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/../Include/Item_Factory.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/Item_Factory.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
@@ -230,4 +230,4 @@ CMakeFiles/SlideMakerProject.dir/Edition/Slide_Factory.cpp.o: \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/../Include/TextBoxInfo.h
+ /home/geveorg/Desktop/Slide_Maker/Include/TextBoxInfo.h

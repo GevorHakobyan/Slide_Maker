@@ -9,7 +9,7 @@ namespace document {
         using Content = std::string;
 
         public:
-        TextBox_Attr(Color, Length, Width, LetterSize, const Content&);
+        TextBox_Attr(Color, LetterSize, const Content&);
         ~TextBox_Attr() = default;
         void setLetterSize(LetterSize);
         void setContent(const Content&);
