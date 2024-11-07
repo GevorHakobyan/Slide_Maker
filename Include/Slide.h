@@ -6,7 +6,7 @@
 namespace document {
 
     class Slide {
-       private:
+       public:
        class Iterator;
        class ConstIterator;
        public:
@@ -28,13 +28,14 @@ namespace document {
 
        Size getItemCount() const;  
        ID getId() const;
+       void insert(ItemPtr);
        void erase(ItemPtr);
        Iterator begin();
        Iterator end();
        ConstIterator cbegin() const;
        ConstIterator cend() const;
        
-       private:
+       public:
        class Iterator {
         public: //usings
         using Category = std::forward_iterator_tag;
@@ -47,11 +48,11 @@ namespace document {
         Iterator operator++();
         Iterator& operator++(int);
         ValueType operator*();
-        IterPointer  operator->();
+        PointerType  operator->();
         const ValueType operator*() const;
-        const IterPointer operator->() const;
-        bool operator==(const Iterator&);
-        bool operator!=(const Iterator&);
+        const PointerType operator->() const;
+        friend bool operator==(const Iterator&, const Iterator&);
+        friend bool operator!=(const Iterator&, const Iterator&);
 
         private:
         Iterator(IterPointer);
@@ -74,11 +75,11 @@ namespace document {
         ConstIterator operator++();
         ConstIterator& operator++(int);
         ValueType operator*();
-        IterPointer operator->();
+        PointerType operator->();
         const ValueType operator*() const;
-        const IterPointer operator->() const;
-        bool operator==(const ConstIterator&);
-        bool operator!=(const ConstIterator&);
+        const PointerType operator->() const;
+        friend bool operator==(const ConstIterator&, const ConstIterator&);
+        friend bool operator!=(const ConstIterator&, const ConstIterator&);
 
         private:
         ConstIterator(IterPointer);
@@ -86,7 +87,7 @@ namespace document {
         void setIterator(size_t, const Data&);
 
         private:
-        IterPointer m_iterator{nullptr};
+        IterPointer m_Iterator{nullptr};
        };
      
 

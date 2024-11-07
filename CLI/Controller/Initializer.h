@@ -5,9 +5,10 @@
 namespace cli {
     class Initializer {
         public:
-        static void InitializeCommands();
+        static void InitializeValidCommands();
+        static void InitializeValidItems();
         private:
-        static void setSlideMaker();
+        static void setSlideAdder();
         static void setExiter();
     };
 }; //namespace cli

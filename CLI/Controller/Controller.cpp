@@ -4,7 +4,7 @@ cli::Controller::Controller()
 : m_parser{std::make_unique<Parser>()} {};
 
 void cli::Controller::start(std::istream& stream) {
-    Initializer::InitializeCommands();
+    Initializer::InitializeValidCommands();
     bool Continue{true};
 
         while(Continue) {

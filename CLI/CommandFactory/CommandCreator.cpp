@@ -27,7 +27,7 @@ cli::CommandCreator::CommandPtr cli::CommandCreator::CreateCommand(const Command
 
 void cli::CommandCreator::setValidCommands() {
     auto val = std::make_shared<cli::Slide_Maker>(cli::Slide_Maker());
-    m_validCommands["makeslide"] = std::move(val);
+    m_validCommands["addslide"] = std::move(val);
     
     auto val2 = std::make_shared<cli::Exiter>(cli::Exiter());
     m_validCommands["exit"] = std::move(val2);

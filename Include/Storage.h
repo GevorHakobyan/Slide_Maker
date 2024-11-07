@@ -6,7 +6,7 @@
 
 namespace document {
     class Storage {
-        private:
+        public:
         class iterator;
         class const_iterator;
         public:
@@ -16,19 +16,23 @@ namespace document {
         using Data = std::vector<SlidePtr>;
         using Index = size_t;
         using Size = size_t;
+        using Position = size_t;
 
         public:
         ~Storage() = default;
         thisPtr getInstance();
         iterator begin();
         iterator end();
-        const_iterator cbegin();
-        const_iterator cend();
+        void insert(std::unique_ptr<Slide>, Position);
+        void erase(const Position);
+        const_iterator cbegin() const;
+        const_iterator cend() const;
 
 
         private:
         bool isIndexValid(Index) const;
 
+        public:
         class iterator {
             public: //usings
             using Category = std::bidirectional_iterator_tag;
@@ -44,10 +48,10 @@ namespace document {
             iterator& operator--(int);
             ValueType operator*();
             const ValueType operator*() const;
-            const IterPointer operator->() const;
-            IterPointer  operator->();
-            bool operator==(const iterator&);
-            bool operator!=(const iterator&);
+            const PointerType operator->() const;
+            PointerType  operator->();
+            friend bool operator==(const iterator&, const iterator&);
+            friend bool operator!=(const iterator&, const iterator&);
 
             private:
             iterator(IterPointer);
@@ -72,11 +76,11 @@ namespace document {
             const_iterator operator--();
             const_iterator& operator--(int);
             ValueType operator*();
-            IterPointer  operator->();
+            PointerType  operator->();
             const ValueType operator*() const;
-            const IterPointer operator->() const;
-            bool operator==(const const_iterator&);
-            bool operator!=(const const_iterator&);
+            const PointerType operator->() const;
+            friend bool operator==(const const_iterator&, const const_iterator&);
+            friend bool operator!=(const const_iterator&, const const_iterator&);
 
             private:
             const_iterator(IterPointer);

@@ -41,6 +41,10 @@ void document::Slide::erase(ItemPtr ptr) {
     m_data.erase(it);
 }
 
+void document::Slide::insert(ItemPtr ptr) {
+    m_data.push_back(ptr);
+}
+
 document::Slide::Iterator document::Slide::begin() {
     return Iterator(0, m_data);
 }
@@ -117,24 +121,26 @@ document::Slide::Iterator::ValueType document::Slide::Iterator::operator*() {
     return *(*m_iterator);
 }
 
-document::Slide::Iterator::IterPointer document::Slide::Iterator::operator->() {
-    return m_iterator;
+document::Slide::Iterator::PointerType document::Slide::Iterator::operator->() {
+    return *m_iterator;
 }
 
 const document::Slide::Iterator::ValueType document::Slide::Iterator::operator*() const {
     return *(*m_iterator);
 }
 
-const document::Slide::Iterator::IterPointer document::Slide::Iterator::operator->() const {
-    return m_iterator;
+const document::Slide::Iterator::PointerType document::Slide::Iterator::operator->() const {
+    return *m_iterator;
 }
 
-bool document::Slide::Iterator::operator==(const Iterator& rhs) {
-    return (*(*this))->getId() == (*rhs)->getId();
-}
+namespace document{
+    bool operator==(const Slide::Iterator& rhs, const Slide::Iterator& lfs) {
+        return *rhs.m_iterator == *lfs.m_iterator;
+    }
 
-bool document::Slide::Iterator::operator!=(const Iterator& rhs) {
-    return !(this->operator==(rhs));
+    bool operator!=(const Slide::Iterator& rhs, const Slide::Iterator& lfs) {
+        return *rhs.m_iterator != *lfs.m_iterator;
+    }
 }
 
 document::Slide::ConstIterator::ConstIterator(size_t index, const Data& m_data) {
@@ -145,41 +151,43 @@ document::Slide::ConstIterator::ConstIterator(size_t index, const Data& m_data) 
 }
 
 document::Slide::ConstIterator::ConstIterator(IterPointer ptr)
-: m_iterator{ptr} {};
+: m_Iterator{ptr} {};
 
 document::Slide::ConstIterator document::Slide::ConstIterator::operator++() {
-    ConstIterator iter{m_iterator};
-    ++(*m_iterator);
+    ConstIterator iter{m_Iterator};
+    ++(*m_Iterator);
     return iter;
 }
 
 document::Slide::ConstIterator& document::Slide::ConstIterator::operator++(int) {
-    ++(*m_iterator);
+    ++(*m_Iterator);
     return *this;
 }
 
 document::Slide::ConstIterator::ValueType document::Slide::ConstIterator::operator*() {
-    return *(*m_iterator);
+    return *(*m_Iterator);
 }
 
-document::Slide::ConstIterator::IterPointer document::Slide::ConstIterator::operator->() {
-    return m_iterator;
+document::Slide::ConstIterator::PointerType document::Slide::ConstIterator::operator->() {
+    return *m_Iterator;
 }
 
 const document::Slide::ConstIterator::ValueType document::Slide::ConstIterator::operator*() const {
-    return *(*m_iterator);
+    return *(*m_Iterator);
 }
 
-const document::Slide::ConstIterator::IterPointer document::Slide::ConstIterator::operator->() const {
-    return m_iterator;
+const document::Slide::ConstIterator::PointerType document::Slide::ConstIterator::operator->() const {
+    return *m_Iterator;
 }
 
-bool document::Slide::ConstIterator::operator==(const ConstIterator& rhs) {
-    return (*(*this->m_iterator))->getId() == (*(*rhs.m_iterator))->getId();
-}
+namespace document {
+   bool operator==(const Slide::ConstIterator& rhs, const Slide::ConstIterator& lfs) {
+     return *rhs.m_Iterator == *lfs.m_Iterator;
+   } 
 
-bool document::Slide::ConstIterator::operator!=(const ConstIterator& rhs) {
-    return !(this->operator==(rhs));
+   bool operator!=(const Slide::ConstIterator& rhs, const Slide::ConstIterator& lfs) {
+    return *rhs.m_Iterator != *lfs.m_Iterator;
+   }
 }
 
 bool document::Slide::ConstIterator::isIndexValid(size_t index, size_t size) const {
@@ -187,7 +195,7 @@ bool document::Slide::ConstIterator::isIndexValid(size_t index, size_t size) con
 }
 
 void document::Slide::ConstIterator::setIterator(size_t index, const Data& m_data) {
-    m_iterator = (0 == index) ? std::make_shared<PointerType>(m_data.cbegin()) : std::make_shared<PointerType>(m_data.cend());
+    m_Iterator = (0 == index) ? std::make_shared<PointerType>(m_data.cbegin()) : std::make_shared<PointerType>(m_data.cend());
 }
 
 

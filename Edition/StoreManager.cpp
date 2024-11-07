@@ -16,12 +16,18 @@ edition::StoreManager::StoreManager()
   }
 
 void edition::StoreManager::addSlide(const SlideInfoPtr info, Position pos) {
-  const auto slidePtr = m_slideManager->CreateSlide(info);
+  auto slidePtr = m_slideManager->CreateSlide(info);
   auto iter = m_storage->begin();
+  auto tmpPos = pos;
 
-  while (pos > 0 || iter != m_storage->end()) {
+  while (tmpPos > 0 && iter != m_storage->end()) {
+    --tmpPos;
     ++iter;
+  } 
+
+  if (iter == m_storage->end() && pos != 0) {
+    throw document::Invalid_Index("Invalid index", pos, std::source_location::current());
   }
 
-  
+  m_storage->insert(std::move(slidePtr), pos);
 }

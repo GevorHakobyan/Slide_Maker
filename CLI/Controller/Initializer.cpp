@@ -1,11 +1,15 @@
 #include "Initializer.h"
 
-void cli::Initializer::InitializeCommands() {
-    setSlideMaker();
+void cli::Initializer::InitializeValidCommands() {
+    setSlideAdder();
     setExiter();
 }
 
-void cli::Initializer::setSlideMaker() {
+void cli::Initializer::InitializeValidItems() {
+    //static map initialize 
+}
+
+void cli::Initializer::setSlideAdder() {
     cli::option opt = "t";
     cli::argument argsType = "String";
     cli::Slide_Maker::setValidInfo(opt, argsType);

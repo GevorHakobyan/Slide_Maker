@@ -101,6 +101,8 @@ const cli::Parser::ErrorType cli::Parser::getErrorType(const Token& nextToken) c
     if (m_CurrentState == State::S_Arg) {
         return (nextToken.second == TokenType::Name) ? ErrorType::T5 : ErrorType::T6;
     }
+
+    return ErrorType::T1;
 }
 
 
