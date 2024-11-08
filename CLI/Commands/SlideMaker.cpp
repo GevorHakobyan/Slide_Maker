@@ -28,13 +28,9 @@ cli::I_Command::CommandPtr cli::Slide_Maker::create(const ArgList& Function_argu
     const auto arguments = Function_arguments.getArgumetns();
     const auto options = Function_arguments.getOptions();
 
-       try {
-        validateInfo(options, arguments);
-    } catch (const Exception& err) {
-        throw;
-    }
-
+    validateInfo(options, arguments);
     setSlideInfo(arguments);
+
     return std::move(std::make_unique<cli::Slide_Maker>(options, arguments));
 }
 

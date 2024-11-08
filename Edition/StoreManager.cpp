@@ -4,8 +4,8 @@ edition::StoreManager::thisPtr edition::StoreManager::m_ptr{nullptr};
 
 edition::StoreManager::StoreManager()
 : m_slideManager{std::make_unique<SlideManager>()}, 
-  m_storage{std::make_unique<document::Storage>()},
-  m_date{0} {}
+  m_storage{std::make_unique<document::Storage>()}
+  {}
 
   edition::StoreManager::thisPtr edition::StoreManager::getInstance() {
     if (nullptr == m_ptr) {
@@ -30,4 +30,18 @@ void edition::StoreManager::addSlide(const SlideInfoPtr info, Position pos) {
   }
 
   m_storage->insert(std::move(slidePtr), pos);
+}
+
+void edition::StoreManager::addItem(const ItemInfoPtr info, ID  id) {
+  auto iter = m_storage->begin();
+
+  while ((*iter)->getId() != id || iter != m_storage->end()) {
+    ++iter;
+  }
+  
+  if (iter == m_storage->end()) {
+    throw InvalidID("Invalid ID", id, std::source_location::current());
+  }
+
+  m_slideManager->addItem(*iter, info);
 }

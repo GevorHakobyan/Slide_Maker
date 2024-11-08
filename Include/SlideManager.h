@@ -6,6 +6,7 @@
 #include "SlideInfo.h"
 #include "Mover.h"
 #include "Slide_Factory.h"
+#include "InvalidID_Cerr.h"
 
 namespace edition {
 
@@ -15,10 +16,12 @@ namespace edition {
         using Design = cli::ItemInfo;
         using DesignerPtr = std::unique_ptr<AttributeMutator>;
         using MoverPtr = std::unique_ptr<Mover>;
-        using FactoryPtr = std::unique_ptr<edition::SlideFactory>;
+        using SlideFactoryPtr = std::unique_ptr<edition::SlideFactory>;
+        using ItemFactoryPtr = std::unique_ptr<edition::ItemFactory>;
         using ItemInfoPtr = std::shared_ptr<cli::ItemInfo>;
         using ItemPtr = std::shared_ptr<document::A_Item>;
         using SlidePtr = std::unique_ptr<document::Slide>;
+        using SlideSharedPtr = std::shared_ptr<document::Slide>;
         using SlideInfoPtr = edition::SlideFactory::SlideInfoPtr;
         using Slide = document::Slide;
         using ID = size_t;
@@ -26,15 +29,14 @@ namespace edition {
         public:
         SlideManager();
         ~SlideManager() = default;
-        void removeItem(Slide&, const ID);
+        void removeItem(SlideSharedPtr, const ID);
+        void addItem(SlideSharedPtr, ItemInfoPtr);
         void changeDesign(Slide&, const Design&, ID);
-        ItemPtr CreateItem(const ItemInfoPtr, size_t);
         SlidePtr CreateSlide(const SlideInfoPtr);
 
         private:
         DesignerPtr m_designer{nullptr};
         MoverPtr m_mover{nullptr};
-        FactoryPtr m_factory{nullptr};
     };
 
 }; //namespace edition

@@ -2,6 +2,7 @@
 #include "Storage.h"
 #include "ItemInfo.h"
 #include "SlideManager.h"
+#include "InvalidID_Cerr.h"
 
 namespace edition {
     class StoreManager {
@@ -18,7 +19,7 @@ namespace edition {
         ~StoreManager() = default;
         static thisPtr getInstance();
         void addSlide(const SlideInfoPtr, Position = 0);
-        void addItem(const ItemInfoPtr, Position);
+        void addItem(const ItemInfoPtr, ID);
         void removeSlide(ID);
         void removeItem(ID, Position);
         void swapSlides(ID, ID);
@@ -29,7 +30,6 @@ namespace edition {
         private:
         SlideManagerPtr m_slideManager{nullptr};
         StoragePtr m_storage{nullptr};
-        BirthDate m_date{0};
         static thisPtr m_ptr;
     };
 }; //namespace edition

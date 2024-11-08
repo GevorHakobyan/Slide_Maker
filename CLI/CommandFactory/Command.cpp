@@ -36,5 +36,6 @@ bool cli::I_Command::hasAppropriateValue(const Options_to_Args::iterator options
 }
 
 void cli::I_Command::setValidInfo(const cli::option opt, const cli::argument arg) {
+    //you can use this method to add any new option to argument pair*
     m_Valid_Info[opt] = arg;
 }
