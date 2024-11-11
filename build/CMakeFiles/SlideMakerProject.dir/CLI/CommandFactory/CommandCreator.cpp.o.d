@@ -248,4 +248,6 @@ CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/CommandCreator.cpp.o: \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
  /home/geveorg/Desktop/Slide_Maker/Include/TextBoxInfo.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Exiter.h
+ /home/geveorg/Desktop/Slide_Maker/Include/InvalidID_Cerr.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Exiter.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/TextBoxAdder.h

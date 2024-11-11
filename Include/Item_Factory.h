@@ -9,7 +9,7 @@ namespace edition {
     class ItemFactory {
         public:
         using ItemInfo = cli::ItemInfo;
-        using ID = size_t;
+        using ID = int;
         using Type = ItemType;
         using Item = document::A_Item;
         using ItemPtr = std::unique_ptr<Item>;

@@ -11,6 +11,7 @@ namespace cli {
 
         public:
         TextBoxAdder(const Options&, const Arguments&);
+        TextBoxAdder() = default;
         bool Execute() override;
         CommandPtr create(const ArgList&) override;
 

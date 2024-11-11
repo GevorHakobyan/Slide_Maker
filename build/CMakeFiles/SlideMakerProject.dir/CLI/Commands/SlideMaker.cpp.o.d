@@ -241,4 +241,5 @@ CMakeFiles/SlideMakerProject.dir/CLI/Commands/SlideMaker.cpp.o: \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
- /home/geveorg/Desktop/Slide_Maker/Include/TextBoxInfo.h
+ /home/geveorg/Desktop/Slide_Maker/Include/TextBoxInfo.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/InvalidID_Cerr.h

@@ -253,7 +253,9 @@ CMakeFiles/SlideMakerProject.dir/CLI/Controller/main.cpp.o: \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
  /home/geveorg/Desktop/Slide_Maker/Include/TextBoxInfo.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/InvalidID_Cerr.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Exiter.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/TextBoxAdder.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidCharacter_Cerr.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidSyntax_Cerr.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Controller/Initializer.h

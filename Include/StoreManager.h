@@ -2,13 +2,12 @@
 #include "Storage.h"
 #include "ItemInfo.h"
 #include "SlideManager.h"
-#include "InvalidID_Cerr.h"
 
 namespace edition {
     class StoreManager {
         using thisPtr = std::shared_ptr<StoreManager>;
         using StoragePtr = std::unique_ptr<document::Storage>;
-        using ID = size_t;
+        using ID = int;
         using Position = size_t;
         using BirthDate = size_t;
         using SlideInfoPtr = std::shared_ptr<cli::SlideInfo>;

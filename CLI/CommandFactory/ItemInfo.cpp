@@ -1,4 +1,4 @@
-#include "../../Include/ItemInfo.h"
+#include "ItemInfo.h"
 
 cli::ItemInfo::Type cli::ItemInfo::getType() const {
     return _type;

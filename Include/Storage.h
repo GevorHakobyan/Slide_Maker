@@ -12,7 +12,7 @@ namespace document {
         public:
         using thisPtr = std::shared_ptr<Storage>;
         using SlidePtr = std::shared_ptr<Slide>;
-        using ID = size_t;
+        using ID = int;
         using Data = std::vector<SlidePtr>;
         using Index = size_t;
         using Size = size_t;

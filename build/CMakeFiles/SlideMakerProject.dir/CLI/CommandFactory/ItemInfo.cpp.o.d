@@ -1,9 +1,9 @@
 CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/ItemInfo.cpp.o: \
  /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/ItemInfo.cpp \
  /usr/include/stdc-predef.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/../../Include/ItemInfo.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/../../Include/ItemTypes.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/../../Include/BoundingBox.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/ItemInfo.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/ItemTypes.h \
+ /home/geveorg/Desktop/Slide_Maker/Include/BoundingBox.h \
  /usr/include/c++/13/utility \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -24,4 +24,4 @@ CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/ItemInfo.cpp.o: \
  /usr/include/c++/13/ext/numeric_traits.h \
  /usr/include/c++/13/bits/cpp_type_traits.h \
  /usr/include/c++/13/ext/type_traits.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/../../Include/I_Attributes.h
+ /home/geveorg/Desktop/Slide_Maker/Include/I_Attributes.h

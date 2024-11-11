@@ -6,7 +6,7 @@ cli::TextBoxAdder::TextBoxAdder(const Options& options, const Arguments& argumen
 
 bool cli::TextBoxAdder::Execute() {
     auto StoreManager = edition::StoreManager::getInstance();
-    StoreManager->addItem(m_CommandInfo, 3);
+    StoreManager->addItem(m_CommandInfo, m_CommandInfo->getOwnerId());
 }
 
 cli::I_Command::CommandPtr cli::TextBoxAdder::create(const ArgList& arguments) {
@@ -21,10 +21,10 @@ cli::I_Command::CommandPtr cli::TextBoxAdder::create(const ArgList& arguments) {
 
 void cli::TextBoxAdder::setBoxValues(const BoxValues& values) {
     auto iter = values.begin();
-    const auto content = std::get<std::string>(*iter);
+    const auto id = std::get<int>(*iter);
 
     ++iter;
-    const auto id = std::get<size_t>(*iter);
+    const auto content = std::get<std::string>(*iter);
     
     m_CommandInfo->setContent(content);
     m_CommandInfo->setOwnerId(id);

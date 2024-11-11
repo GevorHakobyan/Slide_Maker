@@ -4,7 +4,7 @@
 namespace edition {
     class InvalidID : public cli::Exception {
         public:
-        using ID = size_t;
+        using ID = int;
 
         public:
         InvalidID(const Messeage&, ID = 0, Location = Location::current());

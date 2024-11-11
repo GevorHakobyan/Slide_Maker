@@ -24,7 +24,7 @@ namespace edition {
         using SlideSharedPtr = std::shared_ptr<document::Slide>;
         using SlideInfoPtr = edition::SlideFactory::SlideInfoPtr;
         using Slide = document::Slide;
-        using ID = size_t;
+        using ID = int;
 
         public:
         SlideManager();

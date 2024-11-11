@@ -6,6 +6,7 @@
 #include "CommandInfo.h"
 #include "SlideMaker.h"
 #include "Exiter.h"
+#include "TextBoxAdder.h"
 #include <unordered_map>
 #include <functional>
 

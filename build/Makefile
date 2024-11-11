@@ -345,6 +345,30 @@ CLI/Commands/SlideMaker.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/SlideMaker.cpp.s
 .PHONY : CLI/Commands/SlideMaker.cpp.s
 
+CLI/Commands/TextBoxAdder.o: CLI/Commands/TextBoxAdder.cpp.o
+.PHONY : CLI/Commands/TextBoxAdder.o
+
+# target to build an object file
+CLI/Commands/TextBoxAdder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/TextBoxAdder.cpp.o
+.PHONY : CLI/Commands/TextBoxAdder.cpp.o
+
+CLI/Commands/TextBoxAdder.i: CLI/Commands/TextBoxAdder.cpp.i
+.PHONY : CLI/Commands/TextBoxAdder.i
+
+# target to preprocess a source file
+CLI/Commands/TextBoxAdder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/TextBoxAdder.cpp.i
+.PHONY : CLI/Commands/TextBoxAdder.cpp.i
+
+CLI/Commands/TextBoxAdder.s: CLI/Commands/TextBoxAdder.cpp.s
+.PHONY : CLI/Commands/TextBoxAdder.s
+
+# target to generate assembly for a file
+CLI/Commands/TextBoxAdder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/TextBoxAdder.cpp.s
+.PHONY : CLI/Commands/TextBoxAdder.cpp.s
+
 CLI/Controller/Controller.o: CLI/Controller/Controller.cpp.o
 .PHONY : CLI/Controller/Controller.o
 
@@ -801,6 +825,30 @@ Document/Storage/Storage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.s
 .PHONY : Document/Storage/Storage.cpp.s
 
+Edition/InvalidID_Cerr.o: Edition/InvalidID_Cerr.cpp.o
+.PHONY : Edition/InvalidID_Cerr.o
+
+# target to build an object file
+Edition/InvalidID_Cerr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/InvalidID_Cerr.cpp.o
+.PHONY : Edition/InvalidID_Cerr.cpp.o
+
+Edition/InvalidID_Cerr.i: Edition/InvalidID_Cerr.cpp.i
+.PHONY : Edition/InvalidID_Cerr.i
+
+# target to preprocess a source file
+Edition/InvalidID_Cerr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/InvalidID_Cerr.cpp.i
+.PHONY : Edition/InvalidID_Cerr.cpp.i
+
+Edition/InvalidID_Cerr.s: Edition/InvalidID_Cerr.cpp.s
+.PHONY : Edition/InvalidID_Cerr.s
+
+# target to generate assembly for a file
+Edition/InvalidID_Cerr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/InvalidID_Cerr.cpp.s
+.PHONY : Edition/InvalidID_Cerr.cpp.s
+
 Edition/Item_Factory.o: Edition/Item_Factory.cpp.o
 .PHONY : Edition/Item_Factory.o
 
@@ -933,6 +981,9 @@ help:
 	@echo "... CLI/Commands/SlideMaker.o"
 	@echo "... CLI/Commands/SlideMaker.i"
 	@echo "... CLI/Commands/SlideMaker.s"
+	@echo "... CLI/Commands/TextBoxAdder.o"
+	@echo "... CLI/Commands/TextBoxAdder.i"
+	@echo "... CLI/Commands/TextBoxAdder.s"
 	@echo "... CLI/Controller/Controller.o"
 	@echo "... CLI/Controller/Controller.i"
 	@echo "... CLI/Controller/Controller.s"
@@ -990,6 +1041,9 @@ help:
 	@echo "... Document/Storage/Storage.o"
 	@echo "... Document/Storage/Storage.i"
 	@echo "... Document/Storage/Storage.s"
+	@echo "... Edition/InvalidID_Cerr.o"
+	@echo "... Edition/InvalidID_Cerr.i"
+	@echo "... Edition/InvalidID_Cerr.s"
 	@echo "... Edition/Item_Factory.o"
 	@echo "... Edition/Item_Factory.i"
 	@echo "... Edition/Item_Factory.s"

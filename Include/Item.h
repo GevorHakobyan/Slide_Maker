@@ -14,7 +14,7 @@ namespace document {
         using ItemPtr = std::unique_ptr<A_Item>;
         using ItemInfo = cli::ItemInfo;
         using ItemInfoPtr = std::shared_ptr<ItemInfo>;
-        using ID = size_t;
+        using ID = int;
 
         public:
         A_Item(A_Item&&) noexcept;

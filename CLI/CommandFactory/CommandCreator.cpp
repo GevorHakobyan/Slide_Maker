@@ -31,5 +31,8 @@ void cli::CommandCreator::setValidCommands() {
     
     auto val2 = std::make_shared<cli::Exiter>(cli::Exiter());
     m_validCommands["exit"] = std::move(val2);
+
+    auto val3 = std::make_shared<cli::TextBoxAdder>(cli::TextBoxAdder());
+    m_validCommands["addtext"] = std::move(val3);
 } 
 
