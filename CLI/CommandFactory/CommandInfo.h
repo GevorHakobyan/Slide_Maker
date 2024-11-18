@@ -3,10 +3,12 @@
 
 namespace cli {
     struct CommandInfo {
-        using Info = std::tuple<C_name, C_options, C_arguments>;
-        C_name m_name{};
-        C_options m_options{};
-        C_arguments m_arguments{};
+        using Type = std::string;
+        using Info = std::tuple<C_name, Type, C_options, C_arguments>;
+        C_name _name{};
+        C_options _options{};
+        C_arguments _arguments{};
+        Type _type{};
         Info getInfo() const;
     };
 }; //namespace cli

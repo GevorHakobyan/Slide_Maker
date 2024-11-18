@@ -98,6 +98,7 @@ namespace cli {
         void setCommandName(const C_name&);
         void setCommandOptions(C_options&);
         void setCommandArguments(C_arguments&);
+        void setShapeType(const C_type&);
         void setStateDiagram();
         void setStartState();
         void setNameState();

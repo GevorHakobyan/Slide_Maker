@@ -2,7 +2,6 @@
 #include "Slide.h"
 #include "SlideInfo.h"
 #include "Item_Factory.h"
-#include "TextBoxInfo.h"
 
 namespace edition {
 
@@ -14,7 +13,6 @@ namespace edition {
         using Item_Factory = std::unique_ptr<ItemFactory>;
         using Data = document::Slide::Data;
         using ItemType = edition::ItemType;
-        using TextBoxInfo = cli::TextBoxInfo;
 
         public:
         static SlidePtr create(const SlideInfoPtr);

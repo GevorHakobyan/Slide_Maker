@@ -1,4 +1,5 @@
 #pragma once
+#include <Types.h>
 
 namespace document {
     struct I_Attributes {
@@ -24,5 +25,9 @@ namespace document {
         const ID _id;
     };
 }
+
+//what if I have map with key enum
+//Value std::variant<?, ?, ?>
+//map[enum] = std::variant<>
 
 

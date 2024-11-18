@@ -3,7 +3,7 @@
 void cli::Initializer::InitializeValidCommands() {
     setSlideAdder();
     setExiter();
-    setBoxAdder();
+    setShapeAdder();
 }
 
 void cli::Initializer::InitializeValidItems() {
@@ -22,7 +22,7 @@ void cli::Initializer::setExiter() {
     cli::Exiter::setValidInfo(opt, argsType);
 }
 
-void cli::Initializer::setBoxAdder() {
+void cli::Initializer::setShapeAdder() {
     cli::option opt = "c";
     cli::argument argsType = "String";
     cli::TextBoxAdder::setValidInfo(opt, argsType);

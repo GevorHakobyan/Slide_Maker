@@ -1,7 +1,6 @@
 #pragma once
 #include "SlideMaker.h"
 #include "Exiter.h"
-#include "TextBoxAdder.h"
 
 namespace cli {
     class Initializer {
@@ -11,6 +10,6 @@ namespace cli {
         private:
         static void setSlideAdder();
         static void setExiter();
-        static void setBoxAdder();
+        static void setShapeAdder();
     };
 }; //namespace cli

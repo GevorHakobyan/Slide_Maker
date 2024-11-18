@@ -105,7 +105,6 @@ const cli::Parser::ErrorType cli::Parser::getErrorType(const Token& nextToken) c
     return ErrorType::T1;
 }
 
-
 cli::CommandInfo cli::Parser::Parse(Text& text) {
     CommandInfo newCommand;
     try {
@@ -138,10 +137,16 @@ void cli::Parser::parseText(Text& text) {
     setCommandName(name);
     setCommandOptions(options);
     setCommandArguments(arguments);
+    if ("addshape" == name) {
+        const auto optIter = options.begin();
+        const auto type = std::get<std::string>(*optIter);
+        options.erase(optIter);
+        setShapeType(type);
+    }
 }
 
 void cli::Parser::setCommandName(const C_name& name) {
-    m_ParsedCommand.m_name = name;
+    m_ParsedCommand._name = name;
 }
 
 void cli::Parser::setCommandOptions(C_options& options) {
@@ -150,7 +155,7 @@ void cli::Parser::setCommandOptions(C_options& options) {
         options.insert(emptyOpt);
     }
 
-    m_ParsedCommand.m_options = options;
+    m_ParsedCommand._options = options;
 }
 
 void cli::Parser::setCommandArguments(C_arguments& arguments) {
@@ -159,7 +164,11 @@ void cli::Parser::setCommandArguments(C_arguments& arguments) {
         arguments.insert(emptyArg);
     }
 
-    m_ParsedCommand.m_arguments = arguments;
+    m_ParsedCommand._arguments = arguments;
+}
+
+void cli::Parser::setShapeType(const C_type& type) {
+    m_ParsedCommand._type = type;
 }
 
 void cli::Parser::restateAutomata() {
@@ -386,6 +395,7 @@ void cli::Parser::Syntax_analyzer::addToCommand_Arguments(const Token& token) {
     const auto value = getValue(token);
     m_CommandArguments.insert(value);
 }
+
 
 cli::Parser::Syntax_analyzer::Data cli::Parser::Syntax_analyzer::getData() const {
     return {m_CommandName, m_CommandOptions, m_CommandArguments};
