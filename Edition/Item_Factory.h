@@ -2,7 +2,6 @@
 #include "ItemInfo.h"
 #include "Item.h"
 #include <functional>
-#include "ItemTypes.h"
 
 namespace edition {
 
@@ -10,7 +9,7 @@ namespace edition {
         public:
         using ItemInfo = cli::ItemInfo;
         using ID = int;
-        using Type = ItemType;
+        using Type = document::IAttributes::Type;
         using Item = document::A_Item;
         using ItemPtr = std::unique_ptr<Item>;
         using Location = document::A_Item::Location;

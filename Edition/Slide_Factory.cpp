@@ -8,7 +8,7 @@ edition::SlideFactory::SlidePtr edition::SlideFactory::create(SlideInfoPtr info)
     const auto title = info->getTitle();
     const auto text = info->getText();
 
-    if (title.has_value()) {
+    /*if (title.has_value()) {
         TextBoxInfo info;
         info.setType(ItemType::TextBox);
         info.setContent(title.value());
@@ -20,7 +20,7 @@ edition::SlideFactory::SlidePtr edition::SlideFactory::create(SlideInfoPtr info)
         info.setType(ItemType::TextBox);
         info.setContent(text.value());
         items.push_back(m_itemFactory->create(info));
-    }
+    }*/
 
     ++m_BirthId;
     return std::move(std::make_unique<Slide>(std::move(items), m_BirthId));

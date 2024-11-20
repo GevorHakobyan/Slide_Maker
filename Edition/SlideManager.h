@@ -1,7 +1,6 @@
 #pragma once
 #include "Slide.h"
 #include "Storage.h"
-#include "AttributeMutator.h"
 #include "ItemInfo.h"
 #include "SlideInfo.h"
 #include "Mover.h"
@@ -14,7 +13,6 @@ namespace edition {
         public:
         using Location = document::A_Item::Location;
         using Design = cli::ItemInfo;
-        using DesignerPtr = std::unique_ptr<AttributeMutator>;
         using MoverPtr = std::unique_ptr<Mover>;
         using SlideFactoryPtr = std::unique_ptr<edition::SlideFactory>;
         using ItemFactoryPtr = std::unique_ptr<edition::ItemFactory>;
@@ -35,7 +33,6 @@ namespace edition {
         SlidePtr CreateSlide(const SlideInfoPtr);
 
         private:
-        DesignerPtr m_designer{nullptr};
         MoverPtr m_mover{nullptr};
     };
 

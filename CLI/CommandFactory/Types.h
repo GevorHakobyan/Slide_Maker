@@ -1,16 +1,16 @@
 #pragma once
-
-#include <unordered_set>
+#include <unordered_map>
 #include <variant>
 #include <string>
 
 namespace cli{
         enum class EMPTY{empty};
-        //enum class ItemType{Rectangle = 1, Triangle, Circle, Box};
+        using Tuple = std::tuple<float, float, float>;
+        using Pair = std::pair<float, float>;
+        using String = std::string;
+        using argument = std::variant<Tuple, Pair, String, int, bool, float, EMPTY>;
         using C_name = std::string;
-        using argument = std::variant<int, std::string, bool,  EMPTY>;
-        using option = std::variant<int, std::string, bool, EMPTY>;
-        using C_arguments = std::unordered_set<argument>;
-        using C_options = std::unordered_set<option>;
+        using option = std::string;
+        using C_arguments = std::unordered_map<option, argument>;
         using C_type = std::string;
 }; //namespace cli

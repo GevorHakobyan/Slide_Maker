@@ -1,34 +1,22 @@
 #include "ItemInfo.h"
 
-cli::ItemInfo::Type cli::ItemInfo::getType() const {
-    return _type;
-}
+namespace cli
+{
+    ItemInfo::ItemInfo() {
+        _attributes = std::make_unique<ItemAttributes>();
+        _boundingBox = std::make_unique<document::Bounding_Box>();
+    }
 
-const cli::ItemInfo::Color& cli::ItemInfo::getColor() const {
-    return _color;
-}
+    void ItemInfo::addAtribute(Key key, Value val) {
+        _attributes->addAttribute(key, val);
+    }
 
-cli::ItemInfo::Length cli::ItemInfo::getLength() const {
-    return _length;
-}
+    ItemInfo::AttributePtr ItemInfo::getAttributes() {
+        return std::move(_attributes);
+    }
 
-cli::ItemInfo::Width cli::ItemInfo::getWidth() const {
-    return _width;
-}
-
-void cli::ItemInfo::setColor(const Color& color) {
-    _color = color;
-}
-
-void cli::ItemInfo::setLength(Length length) {
-    _length = length;
-}
-
-void cli::ItemInfo::setType(Type type) {
-    _type = type;
-}
-
-void cli::ItemInfo::setWidth(Width width) {
-    _width = width;
-}
+    ItemInfo::BoundingBoxPtr ItemInfo::getBoundingBox() {
+        return std::move(_boundingBox);
+    } 
+} // namespace cli
 

@@ -1,5 +1,5 @@
 #pragma once
-#include "I_Attributes.h"
+#include "IAttributes.h"
 #include "BoundingBox.h"
 #include "ItemInfo.h"
 #include <memory>
@@ -9,7 +9,7 @@ namespace document {
     class A_Item {
         public:
         using Location = std::pair<float, float>;
-        using AttributePtr = std::shared_ptr<I_Attributes>;
+        using AttributePtr = std::shared_ptr<IAttributes>;
         using BoundingBoxPtr = std::shared_ptr<Bounding_Box>;
         using ItemPtr = std::unique_ptr<A_Item>;
         using ItemInfo = cli::ItemInfo;

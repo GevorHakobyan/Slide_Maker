@@ -2,10 +2,10 @@ CMakeFiles/SlideMakerProject.dir/CLI/Commands/SlideMaker.cpp.o: \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/SlideMaker.cpp \
  /usr/include/stdc-predef.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/SlideMaker.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/Command.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Command.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/FunctionArgument.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/Types.h \
- /usr/include/c++/13/unordered_set \
+ /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -19,7 +19,7 @@ CMakeFiles/SlideMakerProject.dir/CLI/Commands/SlideMaker.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
  /usr/include/c++/13/pstl/pstl_config.h \
  /usr/include/c++/13/initializer_list \
- /usr/include/c++/13/bits/unordered_set.h \
+ /usr/include/c++/13/bits/unordered_map.h \
  /usr/include/c++/13/bits/hashtable.h \
  /usr/include/c++/13/bits/hashtable_policy.h /usr/include/c++/13/tuple \
  /usr/include/c++/13/bits/stl_pair.h /usr/include/c++/13/type_traits \
@@ -134,15 +134,13 @@ CMakeFiles/SlideMakerProject.dir/CLI/Commands/SlideMaker.cpp.o: \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidArgument_Cerr.h \
- /home/geveorg/Desktop/Slide_Maker/Include/Exception.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Exception/Exception.h \
  /usr/include/c++/13/exception /usr/include/c++/13/bits/exception_ptr.h \
  /usr/include/c++/13/bits/cxxabi_init_exception.h \
  /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/nested_exception.h \
  /usr/include/c++/13/source_location \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidOption_Cerr.h \
- /usr/include/c++/13/unordered_map \
- /usr/include/c++/13/bits/unordered_map.h /usr/include/c++/13/memory \
- /usr/include/c++/13/bits/stl_tempbuf.h \
+ /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/align.h \
@@ -216,30 +214,5 @@ CMakeFiles/SlideMakerProject.dir/CLI/Commands/SlideMaker.cpp.o: \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/geveorg/Desktop/Slide_Maker/Include/SlideInfo.h \
- /usr/include/c++/13/optional \
- /home/geveorg/Desktop/Slide_Maker/Include/StoreManager.h \
- /home/geveorg/Desktop/Slide_Maker/Include/Storage.h \
- /home/geveorg/Desktop/Slide_Maker/Include/Slide.h \
- /home/geveorg/Desktop/Slide_Maker/Include/InvalidIndex_Cerr.h \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc \
- /home/geveorg/Desktop/Slide_Maker/Include/Item.h \
- /home/geveorg/Desktop/Slide_Maker/Include/I_Attributes.h \
- /home/geveorg/Desktop/Slide_Maker/Include/BoundingBox.h \
- /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
- /home/geveorg/Desktop/Slide_Maker/Include/ItemInfo.h \
- /home/geveorg/Desktop/Slide_Maker/Include/ItemTypes.h \
- /home/geveorg/Desktop/Slide_Maker/Include/SlideManager.h \
- /home/geveorg/Desktop/Slide_Maker/Include/AttributeMutator.h \
- /home/geveorg/Desktop/Slide_Maker/Include/Mover.h \
- /home/geveorg/Desktop/Slide_Maker/Include/Slide_Factory.h \
- /home/geveorg/Desktop/Slide_Maker/Include/Item_Factory.h \
- /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
- /usr/include/c++/13/array /usr/include/c++/13/bits/stl_algo.h \
- /usr/include/c++/13/bits/algorithmfwd.h \
- /usr/include/c++/13/bits/stl_heap.h \
- /usr/include/c++/13/bits/uniform_int_dist.h \
- /home/geveorg/Desktop/Slide_Maker/Include/TextBoxInfo.h \
- /home/geveorg/Desktop/Slide_Maker/Include/InvalidID_Cerr.h
+ /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/SlideInfo.h \
+ /usr/include/c++/13/optional

@@ -1,31 +1,21 @@
 #pragma once
-#include "ItemTypes.h"
 #include "BoundingBox.h"
-#include "I_Attributes.h"
+#include "ItemAttributes.h"
+#include <memory>
 
 namespace cli {
     struct ItemInfo {
-        using Type = edition::ItemType;
-        using Length = document::Bounding_Box::Length;
-        using Width = document::Bounding_Box::Width;
-        using Color = document::I_Attributes::Color;
+        using AttributePtr = std::unique_ptr<ItemAttributes>;
+        using BoundingBoxPtr = std::unique_ptr<document::Bounding_Box>;
+        using Key = ItemAttributes::Key;
+        using Value = ItemAttributes::Value;
 
-        ItemInfo() = default;
-        virtual ~ItemInfo() = default;
-        Type getType() const;
-        Length getLength() const;
-        Width getWidth() const;
-        const Color& getColor() const;
-        
-        void setType(Type);
-        void setLength(Length);
-        void setWidth(Width);
-        void setColor(const Color&);
-
-        protected:
-        Length _length;
-        Width _width;
-        Color _color;
-        Type _type;
+        ItemInfo();
+        void addAtribute(Key, Value);
+        AttributePtr getAttributes();
+        BoundingBoxPtr getBoundingBox();
+        private:
+        AttributePtr _attributes{nullptr};
+        BoundingBoxPtr _boundingBox{nullptr};
     };
 }; //namespace cli

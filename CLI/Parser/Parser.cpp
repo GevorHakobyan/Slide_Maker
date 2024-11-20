@@ -132,43 +132,23 @@ void cli::Parser::parseText(Text& text) {
         throw;
     }
 
-    auto[name, options, arguments] = m_syntaxAnalyzer.getData();
+    auto[name, arguments] = m_syntaxAnalyzer.getData();
     m_syntaxAnalyzer.clearCollectedData();
     setCommandName(name);
-    setCommandOptions(options);
     setCommandArguments(arguments);
-    if ("addshape" == name) {
-        const auto optIter = options.begin();
-        const auto type = std::get<std::string>(*optIter);
-        options.erase(optIter);
-        setShapeType(type);
-    }
 }
 
 void cli::Parser::setCommandName(const C_name& name) {
     m_ParsedCommand._name = name;
 }
 
-void cli::Parser::setCommandOptions(C_options& options) {
-    if (0 == options.size()) {
-        cli::option emptyOpt = cli::EMPTY::empty;
-        options.insert(emptyOpt);
-    }
-
-    m_ParsedCommand._options = options;
-}
-
 void cli::Parser::setCommandArguments(C_arguments& arguments) {
     if (0 == arguments.size()) {
         cli::argument emptyArg = cli::EMPTY::empty;
-        arguments.insert(emptyArg);
+        arguments.insert({"",emptyArg});
     }
 
     m_ParsedCommand._arguments = arguments;
-}
-
-void cli::Parser::setShapeType(const C_type& type) {
-    m_ParsedCommand._type = type;
 }
 
 void cli::Parser::restateAutomata() {
@@ -204,16 +184,61 @@ cli::Parser::Token cli::Parser::Lexer::tokenize(Text& text) {
         }
 
         if (isArgument(token)) {
-            token.erase(0, 1);
-            token.erase(token.size() - 1, 1);
             validateArgument(token);
-            return Token{token, TokenType::Argument};
+
+            return GetValidArgument(token);
         }
     } catch(cli::InvalidCharacter_Cerr& err) {
         throw;
     }
 
     return Token("", TokenType::Null); //will never reach here not to show as warning
+}
+
+cli::Parser::Token cli::Parser::Lexer::GetValidArgument(rawToken token) {
+    if (isRange(token)) {
+        return getRange(token);
+    }
+
+    if (isdigit(token[1])) {
+        return getAsNumber(token);
+    }
+
+    return Token{token, TokenType::Argument};
+}
+
+cli::Parser::Token cli::Parser::Lexer::getAsNumber(rawToken token) {
+    Token answer;
+    answer.second = TokenType::Argument;
+
+    std::stringstream ss{token};
+    float val;
+    ss >> val;
+
+    return Token{val, TokenType::Argument};
+}
+
+cli::Parser::Token cli::Parser::Lexer::getRange(rawToken token) {
+    Token answer;
+    answer.second = TokenType::Argument;
+    token.erase(0, 1);
+    token.erase(token.size() - 1, 1);
+
+    std::stringstream ss{token};
+    char delimiter;
+    float first{0.0};
+    float second{0.0};
+    float thirth{0.0};
+
+    ss >> first >> delimiter >> second;
+
+    if (ss >> delimiter >> thirth) { //if there is a thirth one
+        answer.first = std::make_tuple(first, second, thirth);
+        return answer;
+    }
+
+    answer.first = std::make_pair(first, second);
+    return answer;
 }
 
 cli::Parser::rawToken cli::Parser::Lexer::getRawToken(Text& text) {
@@ -234,7 +259,7 @@ bool cli::Parser::Lexer::isOption(const rawToken& token) const {
 
 bool cli::Parser::Lexer::isArgument(const rawToken& token) const {
     //Argument = ^"[Word] | [digit] | [Symbol] "$
-    return (isInQuotation(token)) ? true : false;
+    return (isInQuotation(token) || isRange(token)) ? true : false;
 }
 
 bool cli::Parser::Lexer::isLetter(const Character character) const{
@@ -256,6 +281,15 @@ bool cli::Parser::Lexer::hasDigit(const rawToken& token) const {
 bool cli::Parser::Lexer::isHyphen(const Character character) const {
     const char Hyphen = '-';
     return (character == Hyphen) ? true : false;
+}
+
+bool cli::Parser::Lexer::isRange(const rawToken& token) const {
+    const char firstCharacter = token[0];
+    const char lastCharacter = token[token.size() - 1];
+    const char open = '<';
+    const char close = '>';
+
+    return (firstCharacter == open && lastCharacter == close) ? true : false;
 }
 
 bool cli::Parser::Lexer::isInQuotation(const rawToken& token) const {
@@ -336,12 +370,13 @@ void cli::Parser::Syntax_analyzer::addTo(const Token& token) {
             }
 
             case TokenType::Option: {
-                addToCommand_Options(token);
+                m_argument.first = token;
                 break;
             }
 
             case TokenType::Argument: {
-                addToCommand_Arguments(token);
+                m_argument.second = token;
+                addToCommand_Arguments(m_argument);
                 break;
             }
         }
@@ -350,59 +385,27 @@ void cli::Parser::Syntax_analyzer::addTo(const Token& token) {
     }
 }
 
-const cli::Parser::Varaint cli::Parser::Syntax_analyzer::getValue(const Token& token) const{
-    const auto type = getType(token);
-    switch(type) {
-        case VariantType::Int: {
-            return std::stoi(token.first);
-        }
-
-        case VariantType::String: {
-            return token.first;
-        }
-
-        case VariantType::Bool: {
-            const auto string = token.first;
-            return (string == "true") ? true : false;
-        }
-    }
+const cli::Parser::Variant cli::Parser::Syntax_analyzer::getValue(const Token& token) const{
+    return token.first;
 }
-
-const cli::Parser::VariantType cli::Parser::Syntax_analyzer::getType(const Token& token) const {
-    if (token.first == "true" || token.first == "false") {
-        return VariantType::Bool;
-    }
-
-    const auto firstCharacter = token.first[0];
-    if (std::isdigit(firstCharacter)) {
-        return VariantType::Int;
-    }
-
-    return VariantType::String;
-}
-
 
 void cli::Parser::Syntax_analyzer::addToCommand_Name(const Token& token) {
-    m_CommandName +=  token.first;
+    m_CommandName +=  std::get<std::string>(token.first);
 }
 
-void cli::Parser::Syntax_analyzer::addToCommand_Options(const Token& token) {
-    const auto value = getValue(token);
-    m_CommandOptions.insert(value);
-}
+void cli::Parser::Syntax_analyzer::addToCommand_Arguments(const Argument& argument) {
+    const auto key = std::get<std::string>(getValue(argument.first));
+    const auto value = getValue(argument.second);
 
-void cli::Parser::Syntax_analyzer::addToCommand_Arguments(const Token& token) {
-    const auto value = getValue(token);
-    m_CommandArguments.insert(value);
+    m_CommandArguments.insert({key, value});
 }
 
 
 cli::Parser::Syntax_analyzer::Data cli::Parser::Syntax_analyzer::getData() const {
-    return {m_CommandName, m_CommandOptions, m_CommandArguments};
+    return {m_CommandName,m_CommandArguments};
 }
 
 void cli::Parser::Syntax_analyzer::clearCollectedData() {
     m_CommandName.erase();
-    m_CommandOptions.erase(m_CommandOptions.begin(), m_CommandOptions.end());
     m_CommandArguments.erase(m_CommandArguments.begin(), m_CommandArguments.end());
 }

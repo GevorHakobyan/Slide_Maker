@@ -129,29 +129,29 @@ SlideMakerProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/build
 .PHONY : SlideMakerProject/fast
 
-CLI/CommandFactory/Command.o: CLI/CommandFactory/Command.cpp.o
-.PHONY : CLI/CommandFactory/Command.o
+CLI/CommandFactory/BoundingBox.o: CLI/CommandFactory/BoundingBox.cpp.o
+.PHONY : CLI/CommandFactory/BoundingBox.o
 
 # target to build an object file
-CLI/CommandFactory/Command.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/Command.cpp.o
-.PHONY : CLI/CommandFactory/Command.cpp.o
+CLI/CommandFactory/BoundingBox.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/BoundingBox.cpp.o
+.PHONY : CLI/CommandFactory/BoundingBox.cpp.o
 
-CLI/CommandFactory/Command.i: CLI/CommandFactory/Command.cpp.i
-.PHONY : CLI/CommandFactory/Command.i
+CLI/CommandFactory/BoundingBox.i: CLI/CommandFactory/BoundingBox.cpp.i
+.PHONY : CLI/CommandFactory/BoundingBox.i
 
 # target to preprocess a source file
-CLI/CommandFactory/Command.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/Command.cpp.i
-.PHONY : CLI/CommandFactory/Command.cpp.i
+CLI/CommandFactory/BoundingBox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/BoundingBox.cpp.i
+.PHONY : CLI/CommandFactory/BoundingBox.cpp.i
 
-CLI/CommandFactory/Command.s: CLI/CommandFactory/Command.cpp.s
-.PHONY : CLI/CommandFactory/Command.s
+CLI/CommandFactory/BoundingBox.s: CLI/CommandFactory/BoundingBox.cpp.s
+.PHONY : CLI/CommandFactory/BoundingBox.s
 
 # target to generate assembly for a file
-CLI/CommandFactory/Command.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/Command.cpp.s
-.PHONY : CLI/CommandFactory/Command.cpp.s
+CLI/CommandFactory/BoundingBox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/BoundingBox.cpp.s
+.PHONY : CLI/CommandFactory/BoundingBox.cpp.s
 
 CLI/CommandFactory/CommandCreator.o: CLI/CommandFactory/CommandCreator.cpp.o
 .PHONY : CLI/CommandFactory/CommandCreator.o
@@ -225,6 +225,30 @@ CLI/CommandFactory/FunctionArgument.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/FunctionArgument.cpp.s
 .PHONY : CLI/CommandFactory/FunctionArgument.cpp.s
 
+CLI/CommandFactory/ItemAttributes.o: CLI/CommandFactory/ItemAttributes.cpp.o
+.PHONY : CLI/CommandFactory/ItemAttributes.o
+
+# target to build an object file
+CLI/CommandFactory/ItemAttributes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/ItemAttributes.cpp.o
+.PHONY : CLI/CommandFactory/ItemAttributes.cpp.o
+
+CLI/CommandFactory/ItemAttributes.i: CLI/CommandFactory/ItemAttributes.cpp.i
+.PHONY : CLI/CommandFactory/ItemAttributes.i
+
+# target to preprocess a source file
+CLI/CommandFactory/ItemAttributes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/ItemAttributes.cpp.i
+.PHONY : CLI/CommandFactory/ItemAttributes.cpp.i
+
+CLI/CommandFactory/ItemAttributes.s: CLI/CommandFactory/ItemAttributes.cpp.s
+.PHONY : CLI/CommandFactory/ItemAttributes.s
+
+# target to generate assembly for a file
+CLI/CommandFactory/ItemAttributes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/ItemAttributes.cpp.s
+.PHONY : CLI/CommandFactory/ItemAttributes.cpp.s
+
 CLI/CommandFactory/ItemInfo.o: CLI/CommandFactory/ItemInfo.cpp.o
 .PHONY : CLI/CommandFactory/ItemInfo.o
 
@@ -273,29 +297,29 @@ CLI/CommandFactory/SlideInfo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/SlideInfo.cpp.s
 .PHONY : CLI/CommandFactory/SlideInfo.cpp.s
 
-CLI/CommandFactory/TextBoxInfo.o: CLI/CommandFactory/TextBoxInfo.cpp.o
-.PHONY : CLI/CommandFactory/TextBoxInfo.o
+CLI/Commands/Command.o: CLI/Commands/Command.cpp.o
+.PHONY : CLI/Commands/Command.o
 
 # target to build an object file
-CLI/CommandFactory/TextBoxInfo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/TextBoxInfo.cpp.o
-.PHONY : CLI/CommandFactory/TextBoxInfo.cpp.o
+CLI/Commands/Command.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Command.cpp.o
+.PHONY : CLI/Commands/Command.cpp.o
 
-CLI/CommandFactory/TextBoxInfo.i: CLI/CommandFactory/TextBoxInfo.cpp.i
-.PHONY : CLI/CommandFactory/TextBoxInfo.i
+CLI/Commands/Command.i: CLI/Commands/Command.cpp.i
+.PHONY : CLI/Commands/Command.i
 
 # target to preprocess a source file
-CLI/CommandFactory/TextBoxInfo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/TextBoxInfo.cpp.i
-.PHONY : CLI/CommandFactory/TextBoxInfo.cpp.i
+CLI/Commands/Command.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Command.cpp.i
+.PHONY : CLI/Commands/Command.cpp.i
 
-CLI/CommandFactory/TextBoxInfo.s: CLI/CommandFactory/TextBoxInfo.cpp.s
-.PHONY : CLI/CommandFactory/TextBoxInfo.s
+CLI/Commands/Command.s: CLI/Commands/Command.cpp.s
+.PHONY : CLI/Commands/Command.s
 
 # target to generate assembly for a file
-CLI/CommandFactory/TextBoxInfo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/TextBoxInfo.cpp.s
-.PHONY : CLI/CommandFactory/TextBoxInfo.cpp.s
+CLI/Commands/Command.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Command.cpp.s
+.PHONY : CLI/Commands/Command.cpp.s
 
 CLI/Commands/Exiter.o: CLI/Commands/Exiter.cpp.o
 .PHONY : CLI/Commands/Exiter.o
@@ -321,6 +345,54 @@ CLI/Commands/Exiter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Exiter.cpp.s
 .PHONY : CLI/Commands/Exiter.cpp.s
 
+CLI/Commands/Initializer.o: CLI/Commands/Initializer.cpp.o
+.PHONY : CLI/Commands/Initializer.o
+
+# target to build an object file
+CLI/Commands/Initializer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Initializer.cpp.o
+.PHONY : CLI/Commands/Initializer.cpp.o
+
+CLI/Commands/Initializer.i: CLI/Commands/Initializer.cpp.i
+.PHONY : CLI/Commands/Initializer.i
+
+# target to preprocess a source file
+CLI/Commands/Initializer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Initializer.cpp.i
+.PHONY : CLI/Commands/Initializer.cpp.i
+
+CLI/Commands/Initializer.s: CLI/Commands/Initializer.cpp.s
+.PHONY : CLI/Commands/Initializer.s
+
+# target to generate assembly for a file
+CLI/Commands/Initializer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Initializer.cpp.s
+.PHONY : CLI/Commands/Initializer.cpp.s
+
+CLI/Commands/ShapeAdder.o: CLI/Commands/ShapeAdder.cpp.o
+.PHONY : CLI/Commands/ShapeAdder.o
+
+# target to build an object file
+CLI/Commands/ShapeAdder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/ShapeAdder.cpp.o
+.PHONY : CLI/Commands/ShapeAdder.cpp.o
+
+CLI/Commands/ShapeAdder.i: CLI/Commands/ShapeAdder.cpp.i
+.PHONY : CLI/Commands/ShapeAdder.i
+
+# target to preprocess a source file
+CLI/Commands/ShapeAdder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/ShapeAdder.cpp.i
+.PHONY : CLI/Commands/ShapeAdder.cpp.i
+
+CLI/Commands/ShapeAdder.s: CLI/Commands/ShapeAdder.cpp.s
+.PHONY : CLI/Commands/ShapeAdder.s
+
+# target to generate assembly for a file
+CLI/Commands/ShapeAdder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/ShapeAdder.cpp.s
+.PHONY : CLI/Commands/ShapeAdder.cpp.s
+
 CLI/Commands/SlideMaker.o: CLI/Commands/SlideMaker.cpp.o
 .PHONY : CLI/Commands/SlideMaker.o
 
@@ -345,30 +417,6 @@ CLI/Commands/SlideMaker.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/SlideMaker.cpp.s
 .PHONY : CLI/Commands/SlideMaker.cpp.s
 
-CLI/Commands/TextBoxAdder.o: CLI/Commands/TextBoxAdder.cpp.o
-.PHONY : CLI/Commands/TextBoxAdder.o
-
-# target to build an object file
-CLI/Commands/TextBoxAdder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/TextBoxAdder.cpp.o
-.PHONY : CLI/Commands/TextBoxAdder.cpp.o
-
-CLI/Commands/TextBoxAdder.i: CLI/Commands/TextBoxAdder.cpp.i
-.PHONY : CLI/Commands/TextBoxAdder.i
-
-# target to preprocess a source file
-CLI/Commands/TextBoxAdder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/TextBoxAdder.cpp.i
-.PHONY : CLI/Commands/TextBoxAdder.cpp.i
-
-CLI/Commands/TextBoxAdder.s: CLI/Commands/TextBoxAdder.cpp.s
-.PHONY : CLI/Commands/TextBoxAdder.s
-
-# target to generate assembly for a file
-CLI/Commands/TextBoxAdder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/TextBoxAdder.cpp.s
-.PHONY : CLI/Commands/TextBoxAdder.cpp.s
-
 CLI/Controller/Controller.o: CLI/Controller/Controller.cpp.o
 .PHONY : CLI/Controller/Controller.o
 
@@ -392,54 +440,6 @@ CLI/Controller/Controller.s: CLI/Controller/Controller.cpp.s
 CLI/Controller/Controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Controller/Controller.cpp.s
 .PHONY : CLI/Controller/Controller.cpp.s
-
-CLI/Controller/Initializer.o: CLI/Controller/Initializer.cpp.o
-.PHONY : CLI/Controller/Initializer.o
-
-# target to build an object file
-CLI/Controller/Initializer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Controller/Initializer.cpp.o
-.PHONY : CLI/Controller/Initializer.cpp.o
-
-CLI/Controller/Initializer.i: CLI/Controller/Initializer.cpp.i
-.PHONY : CLI/Controller/Initializer.i
-
-# target to preprocess a source file
-CLI/Controller/Initializer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Controller/Initializer.cpp.i
-.PHONY : CLI/Controller/Initializer.cpp.i
-
-CLI/Controller/Initializer.s: CLI/Controller/Initializer.cpp.s
-.PHONY : CLI/Controller/Initializer.s
-
-# target to generate assembly for a file
-CLI/Controller/Initializer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Controller/Initializer.cpp.s
-.PHONY : CLI/Controller/Initializer.cpp.s
-
-CLI/Controller/main.o: CLI/Controller/main.cpp.o
-.PHONY : CLI/Controller/main.o
-
-# target to build an object file
-CLI/Controller/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Controller/main.cpp.o
-.PHONY : CLI/Controller/main.cpp.o
-
-CLI/Controller/main.i: CLI/Controller/main.cpp.i
-.PHONY : CLI/Controller/main.i
-
-# target to preprocess a source file
-CLI/Controller/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Controller/main.cpp.i
-.PHONY : CLI/Controller/main.cpp.i
-
-CLI/Controller/main.s: CLI/Controller/main.cpp.s
-.PHONY : CLI/Controller/main.s
-
-# target to generate assembly for a file
-CLI/Controller/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Controller/main.cpp.s
-.PHONY : CLI/Controller/main.cpp.s
 
 CLI/Exception/Exception.o: CLI/Exception/Exception.cpp.o
 .PHONY : CLI/Exception/Exception.o
@@ -609,341 +609,29 @@ CLI/Parser/Parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Parser/Parser.cpp.s
 .PHONY : CLI/Parser/Parser.cpp.s
 
-Document/Attributes/BoundingBox.o: Document/Attributes/BoundingBox.cpp.o
-.PHONY : Document/Attributes/BoundingBox.o
+CLI/Parser/main.o: CLI/Parser/main.cpp.o
+.PHONY : CLI/Parser/main.o
 
 # target to build an object file
-Document/Attributes/BoundingBox.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/BoundingBox.cpp.o
-.PHONY : Document/Attributes/BoundingBox.cpp.o
+CLI/Parser/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Parser/main.cpp.o
+.PHONY : CLI/Parser/main.cpp.o
 
-Document/Attributes/BoundingBox.i: Document/Attributes/BoundingBox.cpp.i
-.PHONY : Document/Attributes/BoundingBox.i
-
-# target to preprocess a source file
-Document/Attributes/BoundingBox.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/BoundingBox.cpp.i
-.PHONY : Document/Attributes/BoundingBox.cpp.i
-
-Document/Attributes/BoundingBox.s: Document/Attributes/BoundingBox.cpp.s
-.PHONY : Document/Attributes/BoundingBox.s
-
-# target to generate assembly for a file
-Document/Attributes/BoundingBox.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/BoundingBox.cpp.s
-.PHONY : Document/Attributes/BoundingBox.cpp.s
-
-Document/Attributes/I_Attributes.o: Document/Attributes/I_Attributes.cpp.o
-.PHONY : Document/Attributes/I_Attributes.o
-
-# target to build an object file
-Document/Attributes/I_Attributes.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/I_Attributes.cpp.o
-.PHONY : Document/Attributes/I_Attributes.cpp.o
-
-Document/Attributes/I_Attributes.i: Document/Attributes/I_Attributes.cpp.i
-.PHONY : Document/Attributes/I_Attributes.i
+CLI/Parser/main.i: CLI/Parser/main.cpp.i
+.PHONY : CLI/Parser/main.i
 
 # target to preprocess a source file
-Document/Attributes/I_Attributes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/I_Attributes.cpp.i
-.PHONY : Document/Attributes/I_Attributes.cpp.i
+CLI/Parser/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Parser/main.cpp.i
+.PHONY : CLI/Parser/main.cpp.i
 
-Document/Attributes/I_Attributes.s: Document/Attributes/I_Attributes.cpp.s
-.PHONY : Document/Attributes/I_Attributes.s
-
-# target to generate assembly for a file
-Document/Attributes/I_Attributes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/I_Attributes.cpp.s
-.PHONY : Document/Attributes/I_Attributes.cpp.s
-
-Document/Attributes/TextBox_Attr.o: Document/Attributes/TextBox_Attr.cpp.o
-.PHONY : Document/Attributes/TextBox_Attr.o
-
-# target to build an object file
-Document/Attributes/TextBox_Attr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/TextBox_Attr.cpp.o
-.PHONY : Document/Attributes/TextBox_Attr.cpp.o
-
-Document/Attributes/TextBox_Attr.i: Document/Attributes/TextBox_Attr.cpp.i
-.PHONY : Document/Attributes/TextBox_Attr.i
-
-# target to preprocess a source file
-Document/Attributes/TextBox_Attr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/TextBox_Attr.cpp.i
-.PHONY : Document/Attributes/TextBox_Attr.cpp.i
-
-Document/Attributes/TextBox_Attr.s: Document/Attributes/TextBox_Attr.cpp.s
-.PHONY : Document/Attributes/TextBox_Attr.s
+CLI/Parser/main.s: CLI/Parser/main.cpp.s
+.PHONY : CLI/Parser/main.s
 
 # target to generate assembly for a file
-Document/Attributes/TextBox_Attr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Attributes/TextBox_Attr.cpp.s
-.PHONY : Document/Attributes/TextBox_Attr.cpp.s
-
-Document/Doc_Exceptions/InvalidAttribute_Cerr.o: Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.o
-.PHONY : Document/Doc_Exceptions/InvalidAttribute_Cerr.o
-
-# target to build an object file
-Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.o
-.PHONY : Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.o
-
-Document/Doc_Exceptions/InvalidAttribute_Cerr.i: Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.i
-.PHONY : Document/Doc_Exceptions/InvalidAttribute_Cerr.i
-
-# target to preprocess a source file
-Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.i
-.PHONY : Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.i
-
-Document/Doc_Exceptions/InvalidAttribute_Cerr.s: Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.s
-.PHONY : Document/Doc_Exceptions/InvalidAttribute_Cerr.s
-
-# target to generate assembly for a file
-Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.s
-.PHONY : Document/Doc_Exceptions/InvalidAttribute_Cerr.cpp.s
-
-Document/Doc_Exceptions/InvalidIndex_Cerr.o: Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.o
-.PHONY : Document/Doc_Exceptions/InvalidIndex_Cerr.o
-
-# target to build an object file
-Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.o
-.PHONY : Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.o
-
-Document/Doc_Exceptions/InvalidIndex_Cerr.i: Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.i
-.PHONY : Document/Doc_Exceptions/InvalidIndex_Cerr.i
-
-# target to preprocess a source file
-Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.i
-.PHONY : Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.i
-
-Document/Doc_Exceptions/InvalidIndex_Cerr.s: Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.s
-.PHONY : Document/Doc_Exceptions/InvalidIndex_Cerr.s
-
-# target to generate assembly for a file
-Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.s
-.PHONY : Document/Doc_Exceptions/InvalidIndex_Cerr.cpp.s
-
-Document/Items/Item.o: Document/Items/Item.cpp.o
-.PHONY : Document/Items/Item.o
-
-# target to build an object file
-Document/Items/Item.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/Item.cpp.o
-.PHONY : Document/Items/Item.cpp.o
-
-Document/Items/Item.i: Document/Items/Item.cpp.i
-.PHONY : Document/Items/Item.i
-
-# target to preprocess a source file
-Document/Items/Item.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/Item.cpp.i
-.PHONY : Document/Items/Item.cpp.i
-
-Document/Items/Item.s: Document/Items/Item.cpp.s
-.PHONY : Document/Items/Item.s
-
-# target to generate assembly for a file
-Document/Items/Item.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/Item.cpp.s
-.PHONY : Document/Items/Item.cpp.s
-
-Document/Items/TextBox.o: Document/Items/TextBox.cpp.o
-.PHONY : Document/Items/TextBox.o
-
-# target to build an object file
-Document/Items/TextBox.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.o
-.PHONY : Document/Items/TextBox.cpp.o
-
-Document/Items/TextBox.i: Document/Items/TextBox.cpp.i
-.PHONY : Document/Items/TextBox.i
-
-# target to preprocess a source file
-Document/Items/TextBox.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.i
-.PHONY : Document/Items/TextBox.cpp.i
-
-Document/Items/TextBox.s: Document/Items/TextBox.cpp.s
-.PHONY : Document/Items/TextBox.s
-
-# target to generate assembly for a file
-Document/Items/TextBox.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.s
-.PHONY : Document/Items/TextBox.cpp.s
-
-Document/Slide/Slide.o: Document/Slide/Slide.cpp.o
-.PHONY : Document/Slide/Slide.o
-
-# target to build an object file
-Document/Slide/Slide.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.o
-.PHONY : Document/Slide/Slide.cpp.o
-
-Document/Slide/Slide.i: Document/Slide/Slide.cpp.i
-.PHONY : Document/Slide/Slide.i
-
-# target to preprocess a source file
-Document/Slide/Slide.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.i
-.PHONY : Document/Slide/Slide.cpp.i
-
-Document/Slide/Slide.s: Document/Slide/Slide.cpp.s
-.PHONY : Document/Slide/Slide.s
-
-# target to generate assembly for a file
-Document/Slide/Slide.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.s
-.PHONY : Document/Slide/Slide.cpp.s
-
-Document/Storage/Storage.o: Document/Storage/Storage.cpp.o
-.PHONY : Document/Storage/Storage.o
-
-# target to build an object file
-Document/Storage/Storage.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.o
-.PHONY : Document/Storage/Storage.cpp.o
-
-Document/Storage/Storage.i: Document/Storage/Storage.cpp.i
-.PHONY : Document/Storage/Storage.i
-
-# target to preprocess a source file
-Document/Storage/Storage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.i
-.PHONY : Document/Storage/Storage.cpp.i
-
-Document/Storage/Storage.s: Document/Storage/Storage.cpp.s
-.PHONY : Document/Storage/Storage.s
-
-# target to generate assembly for a file
-Document/Storage/Storage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.s
-.PHONY : Document/Storage/Storage.cpp.s
-
-Edition/InvalidID_Cerr.o: Edition/InvalidID_Cerr.cpp.o
-.PHONY : Edition/InvalidID_Cerr.o
-
-# target to build an object file
-Edition/InvalidID_Cerr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/InvalidID_Cerr.cpp.o
-.PHONY : Edition/InvalidID_Cerr.cpp.o
-
-Edition/InvalidID_Cerr.i: Edition/InvalidID_Cerr.cpp.i
-.PHONY : Edition/InvalidID_Cerr.i
-
-# target to preprocess a source file
-Edition/InvalidID_Cerr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/InvalidID_Cerr.cpp.i
-.PHONY : Edition/InvalidID_Cerr.cpp.i
-
-Edition/InvalidID_Cerr.s: Edition/InvalidID_Cerr.cpp.s
-.PHONY : Edition/InvalidID_Cerr.s
-
-# target to generate assembly for a file
-Edition/InvalidID_Cerr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/InvalidID_Cerr.cpp.s
-.PHONY : Edition/InvalidID_Cerr.cpp.s
-
-Edition/Item_Factory.o: Edition/Item_Factory.cpp.o
-.PHONY : Edition/Item_Factory.o
-
-# target to build an object file
-Edition/Item_Factory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Item_Factory.cpp.o
-.PHONY : Edition/Item_Factory.cpp.o
-
-Edition/Item_Factory.i: Edition/Item_Factory.cpp.i
-.PHONY : Edition/Item_Factory.i
-
-# target to preprocess a source file
-Edition/Item_Factory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Item_Factory.cpp.i
-.PHONY : Edition/Item_Factory.cpp.i
-
-Edition/Item_Factory.s: Edition/Item_Factory.cpp.s
-.PHONY : Edition/Item_Factory.s
-
-# target to generate assembly for a file
-Edition/Item_Factory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Item_Factory.cpp.s
-.PHONY : Edition/Item_Factory.cpp.s
-
-Edition/SlideManager.o: Edition/SlideManager.cpp.o
-.PHONY : Edition/SlideManager.o
-
-# target to build an object file
-Edition/SlideManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/SlideManager.cpp.o
-.PHONY : Edition/SlideManager.cpp.o
-
-Edition/SlideManager.i: Edition/SlideManager.cpp.i
-.PHONY : Edition/SlideManager.i
-
-# target to preprocess a source file
-Edition/SlideManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/SlideManager.cpp.i
-.PHONY : Edition/SlideManager.cpp.i
-
-Edition/SlideManager.s: Edition/SlideManager.cpp.s
-.PHONY : Edition/SlideManager.s
-
-# target to generate assembly for a file
-Edition/SlideManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/SlideManager.cpp.s
-.PHONY : Edition/SlideManager.cpp.s
-
-Edition/Slide_Factory.o: Edition/Slide_Factory.cpp.o
-.PHONY : Edition/Slide_Factory.o
-
-# target to build an object file
-Edition/Slide_Factory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Slide_Factory.cpp.o
-.PHONY : Edition/Slide_Factory.cpp.o
-
-Edition/Slide_Factory.i: Edition/Slide_Factory.cpp.i
-.PHONY : Edition/Slide_Factory.i
-
-# target to preprocess a source file
-Edition/Slide_Factory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Slide_Factory.cpp.i
-.PHONY : Edition/Slide_Factory.cpp.i
-
-Edition/Slide_Factory.s: Edition/Slide_Factory.cpp.s
-.PHONY : Edition/Slide_Factory.s
-
-# target to generate assembly for a file
-Edition/Slide_Factory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Slide_Factory.cpp.s
-.PHONY : Edition/Slide_Factory.cpp.s
-
-Edition/StoreManager.o: Edition/StoreManager.cpp.o
-.PHONY : Edition/StoreManager.o
-
-# target to build an object file
-Edition/StoreManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/StoreManager.cpp.o
-.PHONY : Edition/StoreManager.cpp.o
-
-Edition/StoreManager.i: Edition/StoreManager.cpp.i
-.PHONY : Edition/StoreManager.i
-
-# target to preprocess a source file
-Edition/StoreManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/StoreManager.cpp.i
-.PHONY : Edition/StoreManager.cpp.i
-
-Edition/StoreManager.s: Edition/StoreManager.cpp.s
-.PHONY : Edition/StoreManager.s
-
-# target to generate assembly for a file
-Edition/StoreManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/StoreManager.cpp.s
-.PHONY : Edition/StoreManager.cpp.s
+CLI/Parser/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Parser/main.cpp.s
+.PHONY : CLI/Parser/main.cpp.s
 
 # Help Target
 help:
@@ -954,9 +642,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SlideMakerProject"
-	@echo "... CLI/CommandFactory/Command.o"
-	@echo "... CLI/CommandFactory/Command.i"
-	@echo "... CLI/CommandFactory/Command.s"
+	@echo "... CLI/CommandFactory/BoundingBox.o"
+	@echo "... CLI/CommandFactory/BoundingBox.i"
+	@echo "... CLI/CommandFactory/BoundingBox.s"
 	@echo "... CLI/CommandFactory/CommandCreator.o"
 	@echo "... CLI/CommandFactory/CommandCreator.i"
 	@echo "... CLI/CommandFactory/CommandCreator.s"
@@ -966,33 +654,33 @@ help:
 	@echo "... CLI/CommandFactory/FunctionArgument.o"
 	@echo "... CLI/CommandFactory/FunctionArgument.i"
 	@echo "... CLI/CommandFactory/FunctionArgument.s"
+	@echo "... CLI/CommandFactory/ItemAttributes.o"
+	@echo "... CLI/CommandFactory/ItemAttributes.i"
+	@echo "... CLI/CommandFactory/ItemAttributes.s"
 	@echo "... CLI/CommandFactory/ItemInfo.o"
 	@echo "... CLI/CommandFactory/ItemInfo.i"
 	@echo "... CLI/CommandFactory/ItemInfo.s"
 	@echo "... CLI/CommandFactory/SlideInfo.o"
 	@echo "... CLI/CommandFactory/SlideInfo.i"
 	@echo "... CLI/CommandFactory/SlideInfo.s"
-	@echo "... CLI/CommandFactory/TextBoxInfo.o"
-	@echo "... CLI/CommandFactory/TextBoxInfo.i"
-	@echo "... CLI/CommandFactory/TextBoxInfo.s"
+	@echo "... CLI/Commands/Command.o"
+	@echo "... CLI/Commands/Command.i"
+	@echo "... CLI/Commands/Command.s"
 	@echo "... CLI/Commands/Exiter.o"
 	@echo "... CLI/Commands/Exiter.i"
 	@echo "... CLI/Commands/Exiter.s"
+	@echo "... CLI/Commands/Initializer.o"
+	@echo "... CLI/Commands/Initializer.i"
+	@echo "... CLI/Commands/Initializer.s"
+	@echo "... CLI/Commands/ShapeAdder.o"
+	@echo "... CLI/Commands/ShapeAdder.i"
+	@echo "... CLI/Commands/ShapeAdder.s"
 	@echo "... CLI/Commands/SlideMaker.o"
 	@echo "... CLI/Commands/SlideMaker.i"
 	@echo "... CLI/Commands/SlideMaker.s"
-	@echo "... CLI/Commands/TextBoxAdder.o"
-	@echo "... CLI/Commands/TextBoxAdder.i"
-	@echo "... CLI/Commands/TextBoxAdder.s"
 	@echo "... CLI/Controller/Controller.o"
 	@echo "... CLI/Controller/Controller.i"
 	@echo "... CLI/Controller/Controller.s"
-	@echo "... CLI/Controller/Initializer.o"
-	@echo "... CLI/Controller/Initializer.i"
-	@echo "... CLI/Controller/Initializer.s"
-	@echo "... CLI/Controller/main.o"
-	@echo "... CLI/Controller/main.i"
-	@echo "... CLI/Controller/main.s"
 	@echo "... CLI/Exception/Exception.o"
 	@echo "... CLI/Exception/Exception.i"
 	@echo "... CLI/Exception/Exception.s"
@@ -1014,48 +702,9 @@ help:
 	@echo "... CLI/Parser/Parser.o"
 	@echo "... CLI/Parser/Parser.i"
 	@echo "... CLI/Parser/Parser.s"
-	@echo "... Document/Attributes/BoundingBox.o"
-	@echo "... Document/Attributes/BoundingBox.i"
-	@echo "... Document/Attributes/BoundingBox.s"
-	@echo "... Document/Attributes/I_Attributes.o"
-	@echo "... Document/Attributes/I_Attributes.i"
-	@echo "... Document/Attributes/I_Attributes.s"
-	@echo "... Document/Attributes/TextBox_Attr.o"
-	@echo "... Document/Attributes/TextBox_Attr.i"
-	@echo "... Document/Attributes/TextBox_Attr.s"
-	@echo "... Document/Doc_Exceptions/InvalidAttribute_Cerr.o"
-	@echo "... Document/Doc_Exceptions/InvalidAttribute_Cerr.i"
-	@echo "... Document/Doc_Exceptions/InvalidAttribute_Cerr.s"
-	@echo "... Document/Doc_Exceptions/InvalidIndex_Cerr.o"
-	@echo "... Document/Doc_Exceptions/InvalidIndex_Cerr.i"
-	@echo "... Document/Doc_Exceptions/InvalidIndex_Cerr.s"
-	@echo "... Document/Items/Item.o"
-	@echo "... Document/Items/Item.i"
-	@echo "... Document/Items/Item.s"
-	@echo "... Document/Items/TextBox.o"
-	@echo "... Document/Items/TextBox.i"
-	@echo "... Document/Items/TextBox.s"
-	@echo "... Document/Slide/Slide.o"
-	@echo "... Document/Slide/Slide.i"
-	@echo "... Document/Slide/Slide.s"
-	@echo "... Document/Storage/Storage.o"
-	@echo "... Document/Storage/Storage.i"
-	@echo "... Document/Storage/Storage.s"
-	@echo "... Edition/InvalidID_Cerr.o"
-	@echo "... Edition/InvalidID_Cerr.i"
-	@echo "... Edition/InvalidID_Cerr.s"
-	@echo "... Edition/Item_Factory.o"
-	@echo "... Edition/Item_Factory.i"
-	@echo "... Edition/Item_Factory.s"
-	@echo "... Edition/SlideManager.o"
-	@echo "... Edition/SlideManager.i"
-	@echo "... Edition/SlideManager.s"
-	@echo "... Edition/Slide_Factory.o"
-	@echo "... Edition/Slide_Factory.i"
-	@echo "... Edition/Slide_Factory.s"
-	@echo "... Edition/StoreManager.o"
-	@echo "... Edition/StoreManager.i"
-	@echo "... Edition/StoreManager.s"
+	@echo "... CLI/Parser/main.o"
+	@echo "... CLI/Parser/main.i"
+	@echo "... CLI/Parser/main.s"
 .PHONY : help
 
 

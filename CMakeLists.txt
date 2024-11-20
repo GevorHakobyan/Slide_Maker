@@ -16,20 +16,19 @@ endif()
 
 # Add include directories
 include_directories(
-    ${PROJECT_SOURCE_DIR}/Include
     ${PROJECT_SOURCE_DIR}/CLI
     ${PROJECT_SOURCE_DIR}/CLI/CommandFactory
     ${PROJECT_SOURCE_DIR}/CLI/Commands
     ${PROJECT_SOURCE_DIR}/CLI/Controller
     ${PROJECT_SOURCE_DIR}/CLI/Exception
     ${PROJECT_SOURCE_DIR}/CLI/Parser
-    ${PROJECT_SOURCE_DIR}/Document
-    ${PROJECT_SOURCE_DIR}/Document/Attributes
-    ${PROJECT_SOURCE_DIR}/Document/Doc_Exceptions
-    ${PROJECT_SOURCE_DIR}/Document/Items
-    ${PROJECT_SOURCE_DIR}/Document/Slide
-    ${PROJECT_SOURCE_DIR}/Document/Storage
-    ${PROJECT_SOURCE_DIR}/Edition
+    # ${PROJECT_SOURCE_DIR}/Document
+    # ${PROJECT_SOURCE_DIR}/Document/Attributes
+    # ${PROJECT_SOURCE_DIR}/Document/Doc_Exceptions
+    # ${PROJECT_SOURCE_DIR}/Document/Items
+    # ${PROJECT_SOURCE_DIR}/Document/Slide
+    # ${PROJECT_SOURCE_DIR}/Document/Storage
+    # ${PROJECT_SOURCE_DIR}/Edition
 )
 
 # Collect all source files for CLI
@@ -42,13 +41,13 @@ file(GLOB_RECURSE CLI_SOURCES
 )
 
 # Collect all source files for Document
-file(GLOB_RECURSE DOCUMENT_SOURCES
-    "${PROJECT_SOURCE_DIR}/Document/Attributes/*.cpp"
-    "${PROJECT_SOURCE_DIR}/Document/Doc_Exceptions/*.cpp"
-    "${PROJECT_SOURCE_DIR}/Document/Items/*.cpp"
-    "${PROJECT_SOURCE_DIR}/Document/Slide/*.cpp"
-    "${PROJECT_SOURCE_DIR}/Document/Storage/*.cpp"
-)
+# #file(GLOB_RECURSE DOCUMENT_SOURCES
+#     "${PROJECT_SOURCE_DIR}/Document/Attributes/*.cpp"
+#     "${PROJECT_SOURCE_DIR}/Document/Doc_Exceptions/*.cpp"
+#     "${PROJECT_SOURCE_DIR}/Document/Items/*.cpp"
+#     "${PROJECT_SOURCE_DIR}/Document/Slide/*.cpp"
+#     "${PROJECT_SOURCE_DIR}/Document/Storage/*.cpp"
+# )
 
 # Collect all source files for Edition
 file(GLOB_RECURSE EDITION_SOURCES
@@ -58,8 +57,8 @@ file(GLOB_RECURSE EDITION_SOURCES
 # Combine all source files into one variable
 set(ALL_SOURCES
     ${CLI_SOURCES}
-    ${DOCUMENT_SOURCES}
-    ${EDITION_SOURCES}
+    #${DOCUMENT_SOURCES}
+    #${EDITION_SOURCES}
 )
 
 # Create the executable from the main file in CLI/Controller

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/geveorg/Desktop/Slide_Maker/Include -I/home/geveorg/Desktop/Slide_Maker/CLI -I/home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/geveorg/Desktop/Slide_Maker/CLI/Commands -I/home/geveorg/Desktop/Slide_Maker/CLI/Controller -I/home/geveorg/Desktop/Slide_Maker/CLI/Exception -I/home/geveorg/Desktop/Slide_Maker/CLI/Parser -I/home/geveorg/Desktop/Slide_Maker/Document -I/home/geveorg/Desktop/Slide_Maker/Document/Attributes -I/home/geveorg/Desktop/Slide_Maker/Document/Doc_Exceptions -I/home/geveorg/Desktop/Slide_Maker/Document/Items -I/home/geveorg/Desktop/Slide_Maker/Document/Slide -I/home/geveorg/Desktop/Slide_Maker/Document/Storage -I/home/geveorg/Desktop/Slide_Maker/Edition
+CXX_INCLUDES = -I/home/geveorg/Desktop/Slide_Maker/CLI -I/home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory -I/home/geveorg/Desktop/Slide_Maker/CLI/Commands -I/home/geveorg/Desktop/Slide_Maker/CLI/Controller -I/home/geveorg/Desktop/Slide_Maker/CLI/Exception -I/home/geveorg/Desktop/Slide_Maker/CLI/Parser
 
 CXX_FLAGS = -g -std=c++20 -g
 

@@ -2,7 +2,7 @@ CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidOption_Cerr.cpp.o: \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidOption_Cerr.cpp \
  /usr/include/stdc-predef.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidOption_Cerr.h \
- /home/geveorg/Desktop/Slide_Maker/Include/Exception.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Exception/Exception.h \
  /usr/include/c++/13/exception \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -130,8 +130,8 @@ CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidOption_Cerr.cpp.o: \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
  /usr/include/c++/13/bits/ranges_util.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/Types.h \
- /usr/include/c++/13/unordered_set \
- /usr/include/c++/13/bits/unordered_set.h \
+ /usr/include/c++/13/unordered_map \
+ /usr/include/c++/13/bits/unordered_map.h \
  /usr/include/c++/13/bits/hashtable.h \
  /usr/include/c++/13/bits/hashtable_policy.h \
  /usr/include/c++/13/ext/aligned_buffer.h \

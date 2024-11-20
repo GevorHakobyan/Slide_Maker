@@ -3,7 +3,7 @@ CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/CommandInfo.cpp.o: \
  /usr/include/stdc-predef.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/CommandInfo.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/Types.h \
- /usr/include/c++/13/unordered_set \
+ /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -17,7 +17,7 @@ CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/CommandInfo.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
  /usr/include/c++/13/pstl/pstl_config.h \
  /usr/include/c++/13/initializer_list \
- /usr/include/c++/13/bits/unordered_set.h \
+ /usr/include/c++/13/bits/unordered_map.h \
  /usr/include/c++/13/bits/hashtable.h \
  /usr/include/c++/13/bits/hashtable_policy.h /usr/include/c++/13/tuple \
  /usr/include/c++/13/bits/stl_pair.h /usr/include/c++/13/type_traits \
@@ -130,4 +130,10 @@ CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/CommandInfo.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
- /usr/include/c++/13/bits/basic_string.tcc
+ /usr/include/c++/13/bits/basic_string.tcc \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidCommand_Cerr.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Exception/Exception.h \
+ /usr/include/c++/13/exception /usr/include/c++/13/bits/exception_ptr.h \
+ /usr/include/c++/13/bits/cxxabi_init_exception.h \
+ /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/nested_exception.h \
+ /usr/include/c++/13/source_location

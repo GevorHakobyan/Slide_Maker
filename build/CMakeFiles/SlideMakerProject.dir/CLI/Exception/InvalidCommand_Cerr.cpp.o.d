@@ -2,7 +2,7 @@ CMakeFiles/SlideMakerProject.dir/CLI/Exception/InvalidCommand_Cerr.cpp.o: \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidCommand_Cerr.cpp \
  /usr/include/stdc-predef.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidCommand_Cerr.h \
- /home/geveorg/Desktop/Slide_Maker/Include/Exception.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Exception/Exception.h \
  /usr/include/c++/13/exception \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

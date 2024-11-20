@@ -17,14 +17,13 @@ namespace cli {
         public:
         enum class TokenType{Null = 0, Name, Option, Argument};
         enum class State{S_Start, S_Name, S_Opt, S_Arg, S_Dead, S_End};
-        enum class VariantType{Int, String, Bool};
         public: //usings
         using FactoryPtr  = std::unique_ptr<cli::CommandCreator>;
-        using Varaint = std::variant<int, std::string, bool, cli::EMPTY>;
+        using Variant = cli::argument;
         using Text = std::stringstream;
         using rawToken = std::string;
         using CommandPtr = std::unique_ptr<cli::I_Command>;
-        using Token = std::pair<std::string, TokenType>;
+        using Token = std::pair<Variant, TokenType>;
         using Character = char;
         using Value = std::unordered_map<TokenType, State>;
         using StateDiagram = std::unordered_map<State, Value>;
@@ -39,6 +38,9 @@ namespace cli {
             Token getToken(Text&);
             private:
             Token tokenize(Text&);
+            Token getRange(rawToken);
+            Token getAsNumber(rawToken);
+            Token GetValidArgument(rawToken);
             rawToken getRawToken(Text&);
             //type deciders
             bool isWord(const rawToken&) const;
@@ -49,6 +51,7 @@ namespace cli {
             bool isLetter(const Character) const;
             bool hasDigit(const rawToken&) const;
             bool isHyphen(const Character) const;
+            bool isRange(const rawToken&) const;
             bool isInQuotation(const rawToken&) const;
 
             //specific type validators
@@ -63,7 +66,8 @@ namespace cli {
         };
 
         class Syntax_analyzer {
-            using Data = std::tuple<C_name, C_arguments, C_options>;
+            using Data = std::pair<C_name, C_arguments>;
+            using Argument = std::pair<Token, Token>;
 
             public:
             Syntax_analyzer() = default;
@@ -74,14 +78,12 @@ namespace cli {
 
             private:
             void addToCommand_Name(const Token&);
-            void addToCommand_Options(const Token&);
-            void addToCommand_Arguments(const Token&);
-            const Varaint getValue(const Token&) const;
-            const VariantType getType(const Token&) const;
+            void addToCommand_Arguments(const Argument&);
+            const Variant getValue(const Token&) const;
 
             private: //PARSED COMMAND INFO
+            Argument m_argument{};
             C_name m_CommandName{};
-            C_options m_CommandOptions{};
             C_arguments m_CommandArguments{};
         };
 
@@ -96,9 +98,7 @@ namespace cli {
         CommandInfo Parse(Text&);
         void parseText(Text&);
         void setCommandName(const C_name&);
-        void setCommandOptions(C_options&);
         void setCommandArguments(C_arguments&);
-        void setShapeType(const C_type&);
         void setStateDiagram();
         void setStartState();
         void setNameState();

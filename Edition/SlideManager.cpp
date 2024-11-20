@@ -1,11 +1,7 @@
 #include "SlideManager.h"
 
 edition::SlideManager::SlideManager()
-: m_designer{nullptr}, m_mover{nullptr}
-{
-    m_designer = std::make_unique<AttributeMutator>();
-    //initialize static classes values to use them
-}
+: m_mover{nullptr} {}
 
 
 void edition::SlideManager::removeItem(SlideSharedPtr slidePtr, const ID id) {
