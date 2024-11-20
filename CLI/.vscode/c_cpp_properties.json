@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/CommandFactory",
+                "${workspaceFolder}/Controller",
+                "${workspaceFolder}/Exception",
+                "${workspaceFolder}/Parser",
+                "/usr/include/libxml2/libxml"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang-14",
+            "cStandard": "c17",
+            "intelliSenseMode": "linux-clang-x64"
+        }
+    ],
+    "version": 4
+}
