@@ -1,3 +1,0 @@
-/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles/SlideMakerProject.dir
-/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles/edit_cache.dir
-/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles/rebuild_cache.dir

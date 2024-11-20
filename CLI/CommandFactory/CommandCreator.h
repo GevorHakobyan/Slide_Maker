@@ -14,7 +14,7 @@ namespace cli {
     class CommandCreator{
         public: //usings
         using Key = cli::C_name;
-        using Arguments = cli::Argument_list;
+        using Arguments = cli::C_arguments;
         using FunctionType = std::unique_ptr<cli::I_Command>(Arguments);
         using Value = std::shared_ptr<I_Command>;
         using Function_map = std::unordered_map<Key, Value>; 

@@ -14,9 +14,7 @@ const cli::CommandCreator::Value cli::CommandCreator::getFunction(const Key& key
 cli::CommandCreator::CommandPtr cli::CommandCreator::CreateCommand(const CommandInfo& commandInf) {
     const auto[name, arguments] = commandInf.getInfo();
     Value commandPtr = getFunction(name);
-    
-    Argument_list argList(arguments);
-    return std::move(commandPtr->create(argList));
+    return std::move(commandPtr->create(arguments));
 }
 
 void cli::CommandCreator::setValidCommands() {

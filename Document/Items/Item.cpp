@@ -1,29 +1,29 @@
 #include "Item.h"
 
-document::A_Item::A_Item(const Location& location, const AttributePtr attrs)
-: m_BoundingBox{nullptr},  m_Attributes{attrs} {
-    setGeometry(location);
+document::A_Item::A_Item(AttributePtr attrs)
+: m_BoundingBox{nullptr},  m_Attributes{std::move(attrs)} {
+    setGeometry(attrs->getLocation());
 }
 
 void document::A_Item::setGeometry(const Location& location) {
-    m_BoundingBox = std::make_shared<Bounding_Box>(location, 5.5, 6.2);
+    m_BoundingBox = std::make_shared<Bounding_Box>();
+    m_BoundingBox->setCurrentPostion(location);
 }
 
 document::A_Item::Location document::A_Item::getGeometry() const {
     return m_BoundingBox->getCurrentPostion();
 }
 
-const document::A_Item::BoundingBoxPtr document::A_Item::getBoundingBox() const {
-    return m_BoundingBox;
-}
-
 const document::A_Item::AttributePtr document::A_Item::getAttributes() const {
     return m_Attributes;
 }
 
+const document::A_Item::BoundingBoxPtr document::A_Item::getBoundingBox() const {
+    return m_BoundingBox;
+}
 
 document::A_Item::A_Item(A_Item&& rhs) noexcept
-: A_Item(rhs.getGeometry(), rhs.getAttributes()) {}
+: A_Item(rhs.getAttributes()) {}
 
 bool document::operator==(const A_Item& first, const A_Item& second) noexcept {
     return (first.getId() == second.getId()) ? true : false;
@@ -35,6 +35,7 @@ document::A_Item& document::A_Item::operator=(A_Item&& rhs) noexcept {
     }
 
     this->m_BoundingBox = rhs.getBoundingBox();
+    this->m_Attributes = rhs.getAttributes();
     return *this;
 }
 

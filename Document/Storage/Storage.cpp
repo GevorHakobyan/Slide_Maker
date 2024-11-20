@@ -18,6 +18,18 @@ document::Storage::iterator document::Storage::end() {
     return iterator{m_DataSize, m_Data};
 }
 
+document::Storage::const_iterator document::Storage::cbegin() const {
+    return const_iterator{0, m_Data};
+}
+
+document::Storage::const_iterator document::Storage::cend() const {
+    return const_iterator{m_DataSize, m_Data};
+}
+
+void document::Storage::insert(SlideUptr slide, Position pos) {
+    m_Data.insert(m_Data.cbegin() + pos, std::move(slide));
+}
+
 bool document::Storage::isIndexValid(Index index) const {
     return (index >= 0 && index < m_DataSize) ? true : false;
 }

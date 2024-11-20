@@ -7,6 +7,6 @@ namespace cli {
         Exiter() = default;
         Exiter(const Arguments&);
         bool Execute() override;
-        CommandPtr create(const ArgList&) override;
+        CommandPtr create(const Arguments&) override;
     };
 }; //namespace cli

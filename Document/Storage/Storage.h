@@ -12,7 +12,8 @@ namespace document {
         public:
         using thisPtr = std::shared_ptr<Storage>;
         using SlidePtr = std::shared_ptr<Slide>;
-        using ID = int;
+        using SlideUptr = std::unique_ptr<Slide>;
+        using ID = size_t;
         using Data = std::vector<SlidePtr>;
         using Index = size_t;
         using Size = size_t;
@@ -23,7 +24,7 @@ namespace document {
         thisPtr getInstance();
         iterator begin();
         iterator end();
-        void insert(std::unique_ptr<Slide>, Position);
+        void insert(SlideUptr, Position);
         void erase(const Position);
         const_iterator cbegin() const;
         const_iterator cend() const;

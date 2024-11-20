@@ -1,12 +1,11 @@
 #pragma once
-#include "IAttributes.h"
 #include "SlideMaker.h"
 #include "Exiter.h"
 #include "ShapeAdder.h"
 
 namespace cli {
     class Initializer {
-        using Types = document::IAttributes;
+        //using Types = cli::IAttributes;
         public:
         static void InitializeValidCommands();
         private:

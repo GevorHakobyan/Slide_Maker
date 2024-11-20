@@ -9,10 +9,14 @@ void cli::Initializer::InitializeValidCommands() {
 void cli::Initializer::setSlideAdder() {
     cli::argument argsType = cli::String{};
 
-    cli::option opt = "t";
+    cli::option opt = "tit";
     cli::Slide_Maker::addValue(opt, argsType);
 
     opt = "ct";
+    cli::Slide_Maker::addValue(opt, argsType);
+
+    opt = "ps";
+    argsType = size_t{};
     cli::Slide_Maker::addValue(opt, argsType);
 }
 
