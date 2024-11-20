@@ -11,7 +11,7 @@ namespace document {
        class ConstIterator;
        public:
        using ItemPtr = std::shared_ptr<A_Item>;
-       using ID = int;
+       using ID = size_t;
        using Data = std::vector<ItemPtr>;
        using Index = size_t;
        using Size = size_t;

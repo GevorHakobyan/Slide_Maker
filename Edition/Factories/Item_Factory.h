@@ -9,17 +9,17 @@ namespace edition {
         public:
         using Arguments = cli::C_arguments;
         using ID = int;
-        using Type = cli::ShapeType;
+        using Name = std::string;
         using Item = document::A_Item;
         using ItemPtr = std::unique_ptr<Item>;
         using Location = document::A_Item::Location;
         using AttributePtr = document::A_Item::AttributePtr;
-        using FunctionType = ItemPtr(const Arguments&);
-        using FunctionPtr = std::function<FunctionType>;
-        using ItemMap = std::unordered_map<Type, FunctionPtr>;
+        using InstancePtr = std::unique_ptr<document::A_Item>;
+        using ItemMap = std::unordered_map<Name, InstancePtr>;
 
         public:
         static  ItemPtr create(Arguments);
+        static void setValidItems(Name, InstancePtr);
 
         private:
         ItemFactory() = default;

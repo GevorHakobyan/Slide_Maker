@@ -3,6 +3,10 @@
 edition::ItemFactory::ItemMap edition::ItemFactory::m_Items;
 edition::ItemFactory::ID edition::ItemFactory::m_id;
 
+void edition::ItemFactory::setValidItems(Name name, InstancePtr instance) {
+    m_Items[name] = std::move(instance);
+}
+
 edition::ItemFactory::ItemPtr edition::ItemFactory::create(Arguments info) {
     //const auto type = info.getType();
     //auto funcPtr = m_Items[type];

@@ -1,32 +1,32 @@
-#include "Initializer.h"
+#include "CmdInitializer.h"
 
-void cli::Initializer::InitializeValidCommands() {
+void cli::CInitializer::InitializeValidCommands() {
     setSlideAdder();
     setShapeAdder();
     setExiter();
 }
 
-void cli::Initializer::setSlideAdder() {
+void cli::CInitializer::setSlideAdder() {
     cli::argument argsType = cli::String{};
 
-    cli::option opt = "tit";
+    cli::option opt = "tit"; //title
     cli::Slide_Maker::addValue(opt, argsType);
 
-    opt = "ct";
+    opt = "ct"; //content
     cli::Slide_Maker::addValue(opt, argsType);
 
-    opt = "ps";
+    opt = "ps"; //position
     argsType = size_t{};
     cli::Slide_Maker::addValue(opt, argsType);
 }
 
-void cli::Initializer::setExiter() {
+void cli::CInitializer::setExiter() {
     cli::option opt = "";
     cli::argument argsType = cli::EMPTY::empty;
     cli::Exiter::addValue(opt, argsType);
 }
 
-void cli::Initializer::setShapeAdder() {
+void cli::CInitializer::setShapeAdder() {
     cli::option opt1 = "lc"; //location
     cli::argument argType1 = cli::Pair{};
     cli::ShapeAdder::addValue(opt1, argType1);
@@ -50,5 +50,9 @@ void cli::Initializer::setShapeAdder() {
     cli::option opt6 = "wd"; //width
     cli::argument argType6 = float{};
     cli::ShapeAdder::addValue(opt6, argType6);
+
+    cli::option opt7 = "cl"; //color
+    cli::argument argType7 = Color{};
+    cli::ShapeAdder::addValue(opt7, argType7);
 }
 

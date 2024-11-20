@@ -4,7 +4,7 @@
 #include "ShapeAdder.h"
 
 namespace cli {
-    class Initializer {
+    class CInitializer {
         //using Types = cli::IAttributes;
         public:
         static void InitializeValidCommands();

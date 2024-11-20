@@ -34,11 +34,6 @@ bool document::Storage::isIndexValid(Index index) const {
     return (index >= 0 && index < m_DataSize) ? true : false;
 }
 
-void document::Storage::insert(std::unique_ptr<Slide> slidePtr, size_t index) {
-    auto iter = m_Data.cbegin() + index;
-    m_Data.insert(iter, std::move(slidePtr));
-}
-
 void document::Storage::erase(const Position position) {
     auto iter = m_Data.begin() + position;
     m_Data.erase(iter);

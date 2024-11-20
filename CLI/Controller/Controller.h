@@ -1,6 +1,6 @@
 #pragma once
 #include "Parser.h"
-#include "Initializer.h"
+#include "CmdInitializer.h"
 
 namespace cli {
     class Controller {
