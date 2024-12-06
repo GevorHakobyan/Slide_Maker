@@ -133,7 +133,6 @@ void cli::Parser::parseText(Text& text) {
     }
 
     auto[name, arguments] = m_syntaxAnalyzer.getData();
-    m_syntaxAnalyzer.clearCollectedData();
     setCommandName(name);
     setCommandArguments(arguments);
 }
@@ -152,6 +151,7 @@ void cli::Parser::setCommandArguments(C_arguments& arguments) {
 }
 
 void cli::Parser::restateAutomata() {
+    m_syntaxAnalyzer.clearCollectedData();
     m_CurrentState = State::S_Start;
 }
 
@@ -192,7 +192,8 @@ cli::Parser::Token cli::Parser::Lexer::tokenize(Text& text) {
         throw;
     }
 
-    return Token("", TokenType::Null); //will never reach here not to show as warning
+    throw IncompleteData_Cerr("Something is missing", std::source_location::current());
+    return Token("", TokenType::Null); 
 }
 
 cli::Parser::Token cli::Parser::Lexer::GetValidArgument(rawToken token) {
@@ -200,7 +201,7 @@ cli::Parser::Token cli::Parser::Lexer::GetValidArgument(rawToken token) {
         return getRange(token);
     }
 
-    if (isdigit(token[1])) {
+    if (isdigit(token[0])) {
         return getAsNumber(token);
     }
 
@@ -224,21 +225,35 @@ cli::Parser::Token cli::Parser::Lexer::getRange(rawToken token) {
     token.erase(0, 1);
     token.erase(token.size() - 1, 1);
 
-    std::stringstream ss{token};
-    char delimiter;
-    float first{0.0};
-    float second{0.0};
-    float thirth{0.0};
+    Pair first = getNumbers(token);
+    Pair second = getNumbers(token);
+    Pair third = getNumbers(token);
 
-    ss >> first >> delimiter >> second;
-
-    if (ss >> delimiter >> thirth) { //if there is a thirth one
-        answer.first = std::make_tuple(first, second, thirth);
+    if (second.first == 0.0 && second.second == 0.0) {
+        answer.first = first;
         return answer;
     }
 
-    answer.first = std::make_pair(first, second);
+    answer.first = std::make_tuple(first, second, third);
     return answer;
+}
+
+cli::Pair cli::Parser::Lexer::getNumbers(rawToken& token) {
+    if (token.empty()) {
+        return {};
+    }
+    const auto openIter = std::find(token.begin(), token.end(), '<');
+    const auto closeIter = std::find(token.begin(), token.end(), '>');
+
+    std::string str{openIter + 1, closeIter + 1};
+    std::stringstream numbers{str};
+    token = {closeIter + 1, token.end()};
+
+    float a;
+    float b;
+    char comma;
+    numbers >> a >> comma >> b;
+    return {a, b};
 }
 
 cli::Parser::rawToken cli::Parser::Lexer::getRawToken(Text& text) {
@@ -257,7 +272,7 @@ bool cli::Parser::Lexer::isOption(const rawToken& token) const {
     return (isHyphen(firstCharacter)) ? true : false;
 }
 
-bool cli::Parser::Lexer::isArgument(const rawToken& token) const {
+bool cli::Parser::Lexer::isArgument(rawToken& token) const {
     //Argument = ^"[Word] | [digit] | [Symbol] "$
     return (isInQuotation(token) || isRange(token)) ? true : false;
 }
@@ -292,12 +307,17 @@ bool cli::Parser::Lexer::isRange(const rawToken& token) const {
     return (firstCharacter == open && lastCharacter == close) ? true : false;
 }
 
-bool cli::Parser::Lexer::isInQuotation(const rawToken& token) const {
+bool cli::Parser::Lexer::isInQuotation(rawToken& token) const {
     const char firstCharacter = token[0];
     const char lastCharacter = token[token.size() - 1];
     const char QuoteMark = '"';
 
-    return (firstCharacter == QuoteMark && lastCharacter == QuoteMark) ? true : false;
+    if (firstCharacter == QuoteMark && lastCharacter == QuoteMark) {
+        token.erase(0, 1);
+        token.erase(token.size() - 1, 1);
+        return true;
+    }
+    return false;
 }
 
 void cli::Parser::Lexer::validateWord(const rawToken& token) const {

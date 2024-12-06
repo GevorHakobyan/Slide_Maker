@@ -39,20 +39,21 @@ namespace cli {
             private:
             Token tokenize(Text&);
             Token getRange(rawToken);
+            Pair getNumbers(rawToken&);
             Token getAsNumber(rawToken);
             Token GetValidArgument(rawToken);
             rawToken getRawToken(Text&);
             //type deciders
             bool isWord(const rawToken&) const;
             bool isOption(const rawToken&) const;
-            bool isArgument(const rawToken&) const;
+            bool isArgument(rawToken&) const;
 
             //type decider helpers
             bool isLetter(const Character) const;
             bool hasDigit(const rawToken&) const;
             bool isHyphen(const Character) const;
             bool isRange(const rawToken&) const;
-            bool isInQuotation(const rawToken&) const;
+            bool isInQuotation(rawToken&) const;
 
             //specific type validators
             void validateWord(const rawToken&) const;

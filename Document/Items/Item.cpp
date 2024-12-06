@@ -2,12 +2,12 @@
 
 document::A_Item::A_Item(AttributePtr attrs)
 : m_BoundingBox{nullptr},  m_Attributes{std::move(attrs)} {
-    setGeometry(attrs->getLocation());
+    setGeometry(m_Attributes->getLocation());
 }
 
 void document::A_Item::setGeometry(const Location& location) {
     m_BoundingBox = std::make_shared<Bounding_Box>();
-    m_BoundingBox->setCurrentPostion(location);
+    m_BoundingBox->setOrigin(location);
 }
 
 document::A_Item::Location document::A_Item::getGeometry() const {

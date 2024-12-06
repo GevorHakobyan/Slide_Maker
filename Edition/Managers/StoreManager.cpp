@@ -16,25 +16,33 @@ edition::StoreManager::StoreManager()
   }
 
 void edition::StoreManager::addSlide(SlideInfo info) {
+  auto posIter = info.find("ps");
   auto slidePtr = m_slideManager->CreateSlide(info);
-  auto pos = std::get<size_t>((*info.find("ps")).second);
 
-  if (!isPositionValid(pos)) {
-    throw document::Invalid_Index("Invalid index", pos, std::source_location::current());
+  if (info.end() == posIter) {
+    size_t position = (0 == m_storage->getSize()) ? 0 : m_storage->getSize() - 1;
+    m_storage->insert(std::move(slidePtr), position);
+    return;
+  }
+  
+  auto pos = std::get_if<size_t>(&(*posIter).second);
+  if (!isPositionValid(*pos)) {
+    throw document::Invalid_Index("Invalid index", *pos, std::source_location::current());
   }
 
-  m_storage->insert(std::move(slidePtr), pos);
+  m_storage->insert(std::move(slidePtr), *pos);
+
 }
 
 void edition::StoreManager::addItem(const ItemInfo info) {
   auto iter = m_storage->begin();
-  auto id = std::get<size_t>((*info.find("id")).second);
+  auto id = std::get<float>((*info.find("oid")).second);
 
-  if (isIdValid(id)) {
+  if (!isIdValid(id)) {
     throw InvalidID("Invalid ID", id, std::source_location::current());
   }
   
-   while ((*iter)->getId() != id || iter != m_storage->end()) {
+   while ((*iter)->getId() != static_cast<size_t>(id) || iter != m_storage->end()) {
     ++iter;
   }
   
@@ -59,7 +67,8 @@ bool edition::StoreManager::isPositionValid(size_t pos) const {
 
 bool edition::StoreManager::isIdValid(size_t id) const {
   auto iter = m_storage->begin();
-  while ((*iter)->getId() != id || iter != m_storage->end()) {
+
+  while ((*iter)->getId() != id && iter != m_storage->end()) {
     ++iter;
   }
   

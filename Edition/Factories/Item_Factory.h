@@ -8,7 +8,7 @@ namespace edition {
     class ItemFactory {
         public:
         using Arguments = cli::C_arguments;
-        using ID = int;
+        using ID = size_t;
         using Name = std::string;
         using Item = document::A_Item;
         using ItemPtr = std::unique_ptr<Item>;

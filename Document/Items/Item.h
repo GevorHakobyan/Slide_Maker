@@ -14,9 +14,11 @@ namespace document {
         using ID = size_t;
 
         public:
+        A_Item() = default;
         A_Item(A_Item&&) noexcept;
         A_Item& operator=(A_Item&&) noexcept;
         virtual ItemPtr create(AttributePtr) = 0;
+        virtual void setBoundingBox() = 0;
         virtual ~A_Item() = default;
 
         public:

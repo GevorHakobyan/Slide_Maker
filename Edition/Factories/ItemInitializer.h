@@ -1,6 +1,7 @@
 #pragma once
 #include "Item_Factory.h"
 #include "Rectangle.h"
+#include "TextBox.h"
 
 namespace edition {
     class ItemInitializer {

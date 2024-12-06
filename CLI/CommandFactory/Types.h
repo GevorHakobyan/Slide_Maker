@@ -12,8 +12,8 @@ namespace cli{
         enum class ShapeType {Square = 1, Rectangle, Triangle, Circle, TextBox};
         enum class EMPTY{empty};
         using Type = ShapeType;
-        using Tuple = std::tuple<float, float, float>;
         using Pair = std::pair<float, float>;
+        using Tuple = std::tuple<Pair, Pair, Pair>;
         using String = std::string;
         using argument = std::variant<Tuple, Pair, String, size_t, bool, float, Color, Type, EMPTY>;
         using C_name = std::string;

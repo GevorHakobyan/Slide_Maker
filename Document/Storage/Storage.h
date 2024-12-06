@@ -26,6 +26,7 @@ namespace document {
         iterator end();
         void insert(SlideUptr, Position);
         void erase(const Position);
+        Size getSize() const;
         const_iterator cbegin() const;
         const_iterator cend() const;
 
@@ -65,7 +66,7 @@ namespace document {
 
         class const_iterator {
             public: //usings
-            using Category = std::bidirectional_iterator_tag;
+            using Category = std::random_access_iterator_tag;
             using ValueType = SlidePtr;
             using PointerType = Data::const_iterator;
             using IterPointer = std::shared_ptr<PointerType>;

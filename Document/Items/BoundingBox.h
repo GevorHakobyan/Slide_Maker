@@ -18,11 +18,13 @@ namespace document {
         void moveObject(Location);
 
         public:
-        void setCurrentPostion(Location);
         void setOrigin(Origin);
         void setLength(Length);
         void setWidth(Width);
 
+        private:
+        void setCurrentPostion(Location);
+        
         private:
         Origin m_Origin{0.0, 0.0};
         Location m_CurrentPosition{};

@@ -18,13 +18,10 @@ namespace cli {
         public: //static methods
         virtual CommandPtr create(const Arguments& ) = 0;
         virtual bool Execute() = 0;
-        static void addValue(const cli::option, const cli::argument);
 
         protected://helper ones
-        void validateInfo(const Arguments&);
+        virtual void validateInfo(const Arguments&, const Arguments&) const;
 
-        protected:
-        static Options_to_Args m_Valid_Info;
 
         protected:
         Arguments m_Arguments;

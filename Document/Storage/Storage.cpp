@@ -28,6 +28,7 @@ document::Storage::const_iterator document::Storage::cend() const {
 
 void document::Storage::insert(SlideUptr slide, Position pos) {
     m_Data.insert(m_Data.cbegin() + pos, std::move(slide));
+    ++m_DataSize;
 }
 
 bool document::Storage::isIndexValid(Index index) const {
@@ -37,6 +38,10 @@ bool document::Storage::isIndexValid(Index index) const {
 void document::Storage::erase(const Position position) {
     auto iter = m_Data.begin() + position;
     m_Data.erase(iter);
+}
+
+document::Storage::Size document::Storage::getSize() const {
+    return m_DataSize;
 }
 
 document::Storage::iterator::iterator(size_t index, Data& m_data) {

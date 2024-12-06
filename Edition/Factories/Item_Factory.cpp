@@ -8,9 +8,7 @@ void edition::ItemFactory::setValidItems(Name name, InstancePtr instance) {
 }
 
 edition::ItemFactory::ItemPtr edition::ItemFactory::create(Arguments info) {
-    //const auto type = info.getType();
-    //auto funcPtr = m_Items[type];
-    ///++m_id;
-
-    //return std::move(funcPtr(info, m_id));
+    auto typeName = std::get<std::string>((*info.find("t")).second);
+    AttributePtr attr = std::make_shared<document::Attributes>(std::move(info));
+    return m_Items.find(typeName)->second->create(std::move(attr));
 }

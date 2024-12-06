@@ -7,5 +7,6 @@ namespace document {
         Rectangle() = default;
         Rectangle(AttributePtr);
         ItemPtr create(AttributePtr atributes) override;
+        void setBoundingBox() override;
     };
 }; //namespace document

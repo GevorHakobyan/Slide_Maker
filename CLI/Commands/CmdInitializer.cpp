@@ -7,7 +7,7 @@ void cli::CInitializer::InitializeValidCommands() {
 }
 
 void cli::CInitializer::setSlideAdder() {
-    cli::argument argsType = cli::String{};
+    cli::argument argsType = String{};
 
     cli::option opt = "tit"; //title
     cli::Slide_Maker::addValue(opt, argsType);
@@ -17,6 +17,10 @@ void cli::CInitializer::setSlideAdder() {
 
     opt = "ps"; //position
     argsType = size_t{};
+    cli::Slide_Maker::addValue(opt, argsType);
+
+    opt = "";
+    argsType = cli::EMPTY::empty;
     cli::Slide_Maker::addValue(opt, argsType);
 }
 
@@ -39,7 +43,7 @@ void cli::CInitializer::setShapeAdder() {
     cli::argument argType3 = cli::Tuple{};
     cli::ShapeAdder::addValue(opt3, argType3);
 
-    cli::option opt4 = "r"; //radius
+    cli::option opt4 = "rd"; //radius
     cli::argument argType4 = float{};
     cli::ShapeAdder::addValue(opt4, argType4);
 
@@ -54,5 +58,19 @@ void cli::CInitializer::setShapeAdder() {
     cli::option opt7 = "cl"; //color
     cli::argument argType7 = Color{};
     cli::ShapeAdder::addValue(opt7, argType7);
+
+    cli::option opt8 = "t"; //type
+    cli::argument argType8 = String{};
+    cli::ShapeAdder::addValue(opt8, argType8);
+
+    cli::option opt9 = "oid";
+    cli::argument argType9 = float{};
+    cli::ShapeAdder::addValue(opt9, argType9);
+
+    cli::option opt10 = "txt";
+    cli::argument argType10 = String{};
+    cli::ShapeAdder::addValue(opt10, argType10); 
+
+    cli::ShapeAdder::setValidators();
 }
 

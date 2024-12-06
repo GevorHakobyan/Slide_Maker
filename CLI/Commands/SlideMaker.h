@@ -9,5 +9,8 @@ namespace cli {
         Slide_Maker(const Arguments&);
         bool Execute() override;
         CommandPtr create(const Arguments&) override;
+        static void addValue(const cli::option, const cli::argument);
+        private:
+        static Arguments m_Valid_Info;
     };
 } //namespace cli

@@ -17,5 +17,6 @@ void cli::InvalidArgument_Cerr::setMesseage() {
 }
 
 void cli::InvalidArgument_Cerr::setInvalidArgument(const InvalidArgument& argument) {
-    m_invalidArgument = "unknown";
+    const auto argPtr = std::get_if<std::string>(&argument);
+    m_invalidArgument = (argPtr != nullptr) ? *argPtr : "unknown";
 }
