@@ -228,15 +228,15 @@ CMakeFiles/SlideMakerProject.dir/CLI/Commands/ShapeAdder.cpp.o: \
  /home/geveorg/Desktop/Slide_Maker/Document/Doc_Exceptions/InvalidAccess_Cerr.h \
  /home/geveorg/Desktop/Slide_Maker/Document/Items/BoundingBox.h \
  /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/Managers/SlideManager.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/Managers/Mover.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Slide_Factory.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Item_Factory.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/array /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Managers/SlideManager.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Managers/Mover.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Slide_Factory.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Item_Factory.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Exceptions/InvalidID_Cerr.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidCommand_Cerr.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/CircleValidator.h \

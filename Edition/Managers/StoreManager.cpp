@@ -42,7 +42,7 @@ void edition::StoreManager::addItem(const ItemInfo info) {
     throw InvalidID("Invalid ID", id, std::source_location::current());
   }
   
-   while ((*iter)->getId() != static_cast<size_t>(id) || iter != m_storage->end()) {
+   while (iter != m_storage->end() && (*iter)->getId() != static_cast<size_t>(id)) {
     ++iter;
   }
   
@@ -68,7 +68,11 @@ bool edition::StoreManager::isPositionValid(size_t pos) const {
 bool edition::StoreManager::isIdValid(size_t id) const {
   auto iter = m_storage->begin();
 
-  while ((*iter)->getId() != id && iter != m_storage->end()) {
+  if (iter == m_storage->end()) {
+    throw InvalidID("Invalid Id", id, std::source_location::current());
+  }
+
+  while (iter != m_storage->end() && (*iter)->getId() != id) {
     ++iter;
   }
   

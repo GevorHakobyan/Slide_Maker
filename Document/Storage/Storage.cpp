@@ -45,9 +45,6 @@ document::Storage::Size document::Storage::getSize() const {
 }
 
 document::Storage::iterator::iterator(size_t index, Data& m_data) {
-    if (!isIndexValid(index, m_data.size())) {
-        throw document::Invalid_Index("Index is not Valid", index);
-    }
     setIterator(index, m_data);
 }
 
@@ -114,9 +111,6 @@ namespace document{
 }
 
 document::Storage::const_iterator::const_iterator(size_t index, const Data& m_data) {
-    if (!isIndexValid(index, m_data.size())) {
-        throw document::Invalid_Index("Index is not valid", index, std::source_location::current());
-    }
     setIterator(index, m_data);
 }
 

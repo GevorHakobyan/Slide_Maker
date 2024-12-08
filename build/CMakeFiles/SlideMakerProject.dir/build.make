@@ -447,38 +447,10 @@ CMakeFiles/SlideMakerProject.dir/Document/Items/Item.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SlideMakerProject.dir/Document/Items/Item.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/geveorg/Desktop/Slide_Maker/Document/Items/Item.cpp -o CMakeFiles/SlideMakerProject.dir/Document/Items/Item.cpp.s
 
-CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.o: CMakeFiles/SlideMakerProject.dir/flags.make
-CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.o: /home/geveorg/Desktop/Slide_Maker/Document/Items/Rectangle.cpp
-CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.o: CMakeFiles/SlideMakerProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.o -MF CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.o.d -o CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.o -c /home/geveorg/Desktop/Slide_Maker/Document/Items/Rectangle.cpp
-
-CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/geveorg/Desktop/Slide_Maker/Document/Items/Rectangle.cpp > CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.i
-
-CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/geveorg/Desktop/Slide_Maker/Document/Items/Rectangle.cpp -o CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.s
-
-CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.o: CMakeFiles/SlideMakerProject.dir/flags.make
-CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.o: /home/geveorg/Desktop/Slide_Maker/Document/Items/TextBox.cpp
-CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.o: CMakeFiles/SlideMakerProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.o -MF CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.o.d -o CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.o -c /home/geveorg/Desktop/Slide_Maker/Document/Items/TextBox.cpp
-
-CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/geveorg/Desktop/Slide_Maker/Document/Items/TextBox.cpp > CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.i
-
-CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/geveorg/Desktop/Slide_Maker/Document/Items/TextBox.cpp -o CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.s
-
 CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.o: CMakeFiles/SlideMakerProject.dir/flags.make
 CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.o: /home/geveorg/Desktop/Slide_Maker/Document/Slide/Slide.cpp
 CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.o: CMakeFiles/SlideMakerProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.o -MF CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.o.d -o CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.o -c /home/geveorg/Desktop/Slide_Maker/Document/Slide/Slide.cpp
 
 CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.i: cmake_force
@@ -492,7 +464,7 @@ CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.s: cmake_force
 CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.o: CMakeFiles/SlideMakerProject.dir/flags.make
 CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.o: /home/geveorg/Desktop/Slide_Maker/Document/Storage/Storage.cpp
 CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.o: CMakeFiles/SlideMakerProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.o -MF CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.o.d -o CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.o -c /home/geveorg/Desktop/Slide_Maker/Document/Storage/Storage.cpp
 
 CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.i: cmake_force
@@ -506,7 +478,7 @@ CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.s: cmake_force
 CMakeFiles/SlideMakerProject.dir/Edition/Exceptions/InvalidID_Cerr.cpp.o: CMakeFiles/SlideMakerProject.dir/flags.make
 CMakeFiles/SlideMakerProject.dir/Edition/Exceptions/InvalidID_Cerr.cpp.o: /home/geveorg/Desktop/Slide_Maker/Edition/Exceptions/InvalidID_Cerr.cpp
 CMakeFiles/SlideMakerProject.dir/Edition/Exceptions/InvalidID_Cerr.cpp.o: CMakeFiles/SlideMakerProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/SlideMakerProject.dir/Edition/Exceptions/InvalidID_Cerr.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/SlideMakerProject.dir/Edition/Exceptions/InvalidID_Cerr.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideMakerProject.dir/Edition/Exceptions/InvalidID_Cerr.cpp.o -MF CMakeFiles/SlideMakerProject.dir/Edition/Exceptions/InvalidID_Cerr.cpp.o.d -o CMakeFiles/SlideMakerProject.dir/Edition/Exceptions/InvalidID_Cerr.cpp.o -c /home/geveorg/Desktop/Slide_Maker/Edition/Exceptions/InvalidID_Cerr.cpp
 
 CMakeFiles/SlideMakerProject.dir/Edition/Exceptions/InvalidID_Cerr.cpp.i: cmake_force
@@ -517,24 +489,10 @@ CMakeFiles/SlideMakerProject.dir/Edition/Exceptions/InvalidID_Cerr.cpp.s: cmake_
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SlideMakerProject.dir/Edition/Exceptions/InvalidID_Cerr.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/geveorg/Desktop/Slide_Maker/Edition/Exceptions/InvalidID_Cerr.cpp -o CMakeFiles/SlideMakerProject.dir/Edition/Exceptions/InvalidID_Cerr.cpp.s
 
-CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.o: CMakeFiles/SlideMakerProject.dir/flags.make
-CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.o: /home/geveorg/Desktop/Slide_Maker/Edition/Factories/ItemInitializer.cpp
-CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.o: CMakeFiles/SlideMakerProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.o -MF CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.o.d -o CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.o -c /home/geveorg/Desktop/Slide_Maker/Edition/Factories/ItemInitializer.cpp
-
-CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/geveorg/Desktop/Slide_Maker/Edition/Factories/ItemInitializer.cpp > CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.i
-
-CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/geveorg/Desktop/Slide_Maker/Edition/Factories/ItemInitializer.cpp -o CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.s
-
 CMakeFiles/SlideMakerProject.dir/Edition/Factories/Item_Factory.cpp.o: CMakeFiles/SlideMakerProject.dir/flags.make
 CMakeFiles/SlideMakerProject.dir/Edition/Factories/Item_Factory.cpp.o: /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Item_Factory.cpp
 CMakeFiles/SlideMakerProject.dir/Edition/Factories/Item_Factory.cpp.o: CMakeFiles/SlideMakerProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/SlideMakerProject.dir/Edition/Factories/Item_Factory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/SlideMakerProject.dir/Edition/Factories/Item_Factory.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideMakerProject.dir/Edition/Factories/Item_Factory.cpp.o -MF CMakeFiles/SlideMakerProject.dir/Edition/Factories/Item_Factory.cpp.o.d -o CMakeFiles/SlideMakerProject.dir/Edition/Factories/Item_Factory.cpp.o -c /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Item_Factory.cpp
 
 CMakeFiles/SlideMakerProject.dir/Edition/Factories/Item_Factory.cpp.i: cmake_force
@@ -548,7 +506,7 @@ CMakeFiles/SlideMakerProject.dir/Edition/Factories/Item_Factory.cpp.s: cmake_for
 CMakeFiles/SlideMakerProject.dir/Edition/Factories/Slide_Factory.cpp.o: CMakeFiles/SlideMakerProject.dir/flags.make
 CMakeFiles/SlideMakerProject.dir/Edition/Factories/Slide_Factory.cpp.o: /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Slide_Factory.cpp
 CMakeFiles/SlideMakerProject.dir/Edition/Factories/Slide_Factory.cpp.o: CMakeFiles/SlideMakerProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/SlideMakerProject.dir/Edition/Factories/Slide_Factory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/SlideMakerProject.dir/Edition/Factories/Slide_Factory.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideMakerProject.dir/Edition/Factories/Slide_Factory.cpp.o -MF CMakeFiles/SlideMakerProject.dir/Edition/Factories/Slide_Factory.cpp.o.d -o CMakeFiles/SlideMakerProject.dir/Edition/Factories/Slide_Factory.cpp.o -c /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Slide_Factory.cpp
 
 CMakeFiles/SlideMakerProject.dir/Edition/Factories/Slide_Factory.cpp.i: cmake_force
@@ -562,7 +520,7 @@ CMakeFiles/SlideMakerProject.dir/Edition/Factories/Slide_Factory.cpp.s: cmake_fo
 CMakeFiles/SlideMakerProject.dir/Edition/Managers/SlideManager.cpp.o: CMakeFiles/SlideMakerProject.dir/flags.make
 CMakeFiles/SlideMakerProject.dir/Edition/Managers/SlideManager.cpp.o: /home/geveorg/Desktop/Slide_Maker/Edition/Managers/SlideManager.cpp
 CMakeFiles/SlideMakerProject.dir/Edition/Managers/SlideManager.cpp.o: CMakeFiles/SlideMakerProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/SlideMakerProject.dir/Edition/Managers/SlideManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/SlideMakerProject.dir/Edition/Managers/SlideManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideMakerProject.dir/Edition/Managers/SlideManager.cpp.o -MF CMakeFiles/SlideMakerProject.dir/Edition/Managers/SlideManager.cpp.o.d -o CMakeFiles/SlideMakerProject.dir/Edition/Managers/SlideManager.cpp.o -c /home/geveorg/Desktop/Slide_Maker/Edition/Managers/SlideManager.cpp
 
 CMakeFiles/SlideMakerProject.dir/Edition/Managers/SlideManager.cpp.i: cmake_force
@@ -576,7 +534,7 @@ CMakeFiles/SlideMakerProject.dir/Edition/Managers/SlideManager.cpp.s: cmake_forc
 CMakeFiles/SlideMakerProject.dir/Edition/Managers/StoreManager.cpp.o: CMakeFiles/SlideMakerProject.dir/flags.make
 CMakeFiles/SlideMakerProject.dir/Edition/Managers/StoreManager.cpp.o: /home/geveorg/Desktop/Slide_Maker/Edition/Managers/StoreManager.cpp
 CMakeFiles/SlideMakerProject.dir/Edition/Managers/StoreManager.cpp.o: CMakeFiles/SlideMakerProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/SlideMakerProject.dir/Edition/Managers/StoreManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/SlideMakerProject.dir/Edition/Managers/StoreManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideMakerProject.dir/Edition/Managers/StoreManager.cpp.o -MF CMakeFiles/SlideMakerProject.dir/Edition/Managers/StoreManager.cpp.o.d -o CMakeFiles/SlideMakerProject.dir/Edition/Managers/StoreManager.cpp.o -c /home/geveorg/Desktop/Slide_Maker/Edition/Managers/StoreManager.cpp
 
 CMakeFiles/SlideMakerProject.dir/Edition/Managers/StoreManager.cpp.i: cmake_force
@@ -616,12 +574,9 @@ SlideMakerProject_OBJECTS = \
 "CMakeFiles/SlideMakerProject.dir/Document/Items/Attributes.cpp.o" \
 "CMakeFiles/SlideMakerProject.dir/Document/Items/BoundingBox.cpp.o" \
 "CMakeFiles/SlideMakerProject.dir/Document/Items/Item.cpp.o" \
-"CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.o" \
-"CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.o" \
 "CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.o" \
 "CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.o" \
 "CMakeFiles/SlideMakerProject.dir/Edition/Exceptions/InvalidID_Cerr.cpp.o" \
-"CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.o" \
 "CMakeFiles/SlideMakerProject.dir/Edition/Factories/Item_Factory.cpp.o" \
 "CMakeFiles/SlideMakerProject.dir/Edition/Factories/Slide_Factory.cpp.o" \
 "CMakeFiles/SlideMakerProject.dir/Edition/Managers/SlideManager.cpp.o" \
@@ -657,19 +612,16 @@ SlideMakerProject: CMakeFiles/SlideMakerProject.dir/Document/Doc_Exceptions/Inva
 SlideMakerProject: CMakeFiles/SlideMakerProject.dir/Document/Items/Attributes.cpp.o
 SlideMakerProject: CMakeFiles/SlideMakerProject.dir/Document/Items/BoundingBox.cpp.o
 SlideMakerProject: CMakeFiles/SlideMakerProject.dir/Document/Items/Item.cpp.o
-SlideMakerProject: CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.o
-SlideMakerProject: CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.o
 SlideMakerProject: CMakeFiles/SlideMakerProject.dir/Document/Slide/Slide.cpp.o
 SlideMakerProject: CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.o
 SlideMakerProject: CMakeFiles/SlideMakerProject.dir/Edition/Exceptions/InvalidID_Cerr.cpp.o
-SlideMakerProject: CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.o
 SlideMakerProject: CMakeFiles/SlideMakerProject.dir/Edition/Factories/Item_Factory.cpp.o
 SlideMakerProject: CMakeFiles/SlideMakerProject.dir/Edition/Factories/Slide_Factory.cpp.o
 SlideMakerProject: CMakeFiles/SlideMakerProject.dir/Edition/Managers/SlideManager.cpp.o
 SlideMakerProject: CMakeFiles/SlideMakerProject.dir/Edition/Managers/StoreManager.cpp.o
 SlideMakerProject: CMakeFiles/SlideMakerProject.dir/build.make
 SlideMakerProject: CMakeFiles/SlideMakerProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Linking CXX executable SlideMakerProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/geveorg/Desktop/Slide_Maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX executable SlideMakerProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SlideMakerProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

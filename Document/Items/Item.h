@@ -2,38 +2,39 @@
 #include "Attributes.h"
 #include "BoundingBox.h"
 #include <memory>
-#include <utility>
+#include <map>
+#include <functional>
 
 namespace document {
-    class A_Item {
+    class Item {
         public:
         using Location = std::pair<float, float>;
         using AttributePtr = std::shared_ptr<Attributes>;
         using BoundingBoxPtr = std::shared_ptr<Bounding_Box>;
-        using ItemPtr = std::unique_ptr<A_Item>;
+        using U_BoundingBox = std::unique_ptr<Bounding_Box>;
+        using ItemPtr = std::unique_ptr<Item>;
+        using Map = std::map<std::string, std::function<U_BoundingBox(AttributePtr)>>;
         using ID = size_t;
 
         public:
-        A_Item() = default;
-        A_Item(A_Item&&) noexcept;
-        A_Item& operator=(A_Item&&) noexcept;
-        virtual ItemPtr create(AttributePtr) = 0;
-        virtual void setBoundingBox() = 0;
-        virtual ~A_Item() = default;
+        Item() = default;
+        Item(Item&&) noexcept;
+        Item& operator=(Item&&) noexcept;
+        static ItemPtr create(AttributePtr);
+        void setBoundingBox();
 
         public:
-        A_Item(AttributePtr);
+        Item(AttributePtr);
         void move(const Location&);
         const AttributePtr getAttributes() const;
         const BoundingBoxPtr getBoundingBox() const;
-        Location getGeometry() const;
-        void setGeometry(const Location&);
         ID getId() const;
 
         public:
-        bool friend operator==(const A_Item&, const A_Item&) noexcept;
+        bool friend operator==(const Item&, const Item&) noexcept;
 
-        protected:
+        private:
+        static Map m_BoundingBox_Creators;
         BoundingBoxPtr m_BoundingBox{nullptr};
         AttributePtr m_Attributes{nullptr};
     };

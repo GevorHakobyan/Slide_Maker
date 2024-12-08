@@ -18,7 +18,7 @@ namespace document{
             return std::get<Color>((*iter).second);
         }
 
-        cli::Type Attributes::getType() const {
+        document::Attributes::Type Attributes::getType() const {
             const auto iter = _attributes.find("t");
             if (iter == _attributes.end()) {
                 throw InvalidAccess("Attribute Type dosn't exist", std::source_location::current());
@@ -46,7 +46,7 @@ namespace document{
         }
 
         float Attributes::getRadius() const {
-            const auto iter = _attributes.find("r");
+            const auto iter = _attributes.find("rd");
             if (iter == _attributes.end()) {
                 throw InvalidAccess("Attribute Radius dosn't exist", std::source_location::current());
             }
@@ -63,7 +63,7 @@ namespace document{
         }
 
         Attributes::Pair Attributes::getCenter() const {
-            const auto iter = _attributes.find("c");
+            const auto iter = _attributes.find("cn");
             if (iter == _attributes.end()) {
                 throw InvalidAccess("Attribute Center dosn't exist", std::source_location::current());
             }
@@ -95,7 +95,7 @@ namespace document{
         Attributes::Width Attributes::getWidth() {
             const auto iter = _attributes.find("wd");
             if (iter == _attributes.end()) {
-                throw InvalidAccess("Attribute Length dosn't exist", std::source_location::current());
+                throw InvalidAccess("Attribute width dosn't exist", std::source_location::current());
             }
 
             auto width = std::get<Width>((*iter).second);

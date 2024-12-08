@@ -223,14 +223,16 @@ CMakeFiles/SlideMakerProject.dir/Edition/Managers/StoreManager.cpp.o: \
  /usr/include/c++/13/bits/ranges_uninitialized.h \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h \
+ /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/map \
+ /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/bits/stl_multimap.h /usr/include/c++/13/functional \
+ /usr/include/c++/13/bits/std_function.h /usr/include/c++/13/array \
+ /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/algorithmfwd.h \
+ /usr/include/c++/13/bits/stl_heap.h \
+ /usr/include/c++/13/bits/uniform_int_dist.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Managers/SlideManager.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Managers/Mover.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Slide_Factory.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Item_Factory.h \
- /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
- /usr/include/c++/13/array /usr/include/c++/13/bits/stl_algo.h \
- /usr/include/c++/13/bits/algorithmfwd.h \
- /usr/include/c++/13/bits/stl_heap.h \
- /usr/include/c++/13/bits/uniform_int_dist.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Exceptions/InvalidID_Cerr.h

@@ -1,7 +1,7 @@
 #include "Slide_Factory.h"
 
 edition::SlideFactory::Item_Factory edition::SlideFactory::m_itemFactory{nullptr};
-int edition::SlideFactory::m_BirthId{1};
+int edition::SlideFactory::m_BirthId{0};
 
 edition::SlideFactory::SlidePtr edition::SlideFactory::create(SlideInfo info) {
     Data items;
@@ -12,7 +12,11 @@ edition::SlideFactory::SlidePtr edition::SlideFactory::create(SlideInfo info) {
         cli::C_arguments itemInfo;
         itemInfo["t"] = "tb";
         itemInfo["tit"] = (*title).second;
-        itemInfo["lc"] = std::move((std::pair<int, int>(0, 0)));
+        itemInfo["lc"] = std::move((std::pair<float, float>(0, 0)));
+        float len = 5;
+        float wd = 10;
+        itemInfo["ln"] = len;
+        itemInfo["wd"] = wd;
         auto textBox = m_itemFactory->create(std::move(itemInfo));
         items.push_back(std::move(textBox));
     }
@@ -22,6 +26,10 @@ edition::SlideFactory::SlidePtr edition::SlideFactory::create(SlideInfo info) {
         itemInfo["t"] = "tb";
         itemInfo["ct"] = (*content).second;
         itemInfo["lc"] = std::move(std::pair<int, int>(1, 1));
+        float len = 5;
+        float wd = 10;
+        itemInfo["ln"] = len;
+        itemInfo["wd"] = wd;
         auto textBox = m_itemFactory->create(std::move(itemInfo));
         items.push_back(std::move(textBox));
     }

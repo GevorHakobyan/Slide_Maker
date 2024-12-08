@@ -5,7 +5,6 @@ cli::Controller::Controller()
 
 void cli::Controller::start(std::istream& stream) {
     CInitializer::InitializeValidCommands();
-    edition::ItemInitializer::Initialize();
     bool Continue{true};
 
         while(Continue) {

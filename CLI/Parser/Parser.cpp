@@ -222,8 +222,8 @@ cli::Parser::Token cli::Parser::Lexer::getAsNumber(rawToken token) {
 cli::Parser::Token cli::Parser::Lexer::getRange(rawToken token) {
     Token answer;
     answer.second = TokenType::Argument;
-    token.erase(0, 1);
-    token.erase(token.size() - 1, 1);
+    //token.erase(0, 1);
+    //token.erase(token.size() - 1, 1);
 
     Pair first = getNumbers(token);
     Pair second = getNumbers(token);

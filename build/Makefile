@@ -777,54 +777,6 @@ Document/Items/Item.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/Item.cpp.s
 .PHONY : Document/Items/Item.cpp.s
 
-Document/Items/Rectangle.o: Document/Items/Rectangle.cpp.o
-.PHONY : Document/Items/Rectangle.o
-
-# target to build an object file
-Document/Items/Rectangle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.o
-.PHONY : Document/Items/Rectangle.cpp.o
-
-Document/Items/Rectangle.i: Document/Items/Rectangle.cpp.i
-.PHONY : Document/Items/Rectangle.i
-
-# target to preprocess a source file
-Document/Items/Rectangle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.i
-.PHONY : Document/Items/Rectangle.cpp.i
-
-Document/Items/Rectangle.s: Document/Items/Rectangle.cpp.s
-.PHONY : Document/Items/Rectangle.s
-
-# target to generate assembly for a file
-Document/Items/Rectangle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/Rectangle.cpp.s
-.PHONY : Document/Items/Rectangle.cpp.s
-
-Document/Items/TextBox.o: Document/Items/TextBox.cpp.o
-.PHONY : Document/Items/TextBox.o
-
-# target to build an object file
-Document/Items/TextBox.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.o
-.PHONY : Document/Items/TextBox.cpp.o
-
-Document/Items/TextBox.i: Document/Items/TextBox.cpp.i
-.PHONY : Document/Items/TextBox.i
-
-# target to preprocess a source file
-Document/Items/TextBox.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.i
-.PHONY : Document/Items/TextBox.cpp.i
-
-Document/Items/TextBox.s: Document/Items/TextBox.cpp.s
-.PHONY : Document/Items/TextBox.s
-
-# target to generate assembly for a file
-Document/Items/TextBox.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Items/TextBox.cpp.s
-.PHONY : Document/Items/TextBox.cpp.s
-
 Document/Slide/Slide.o: Document/Slide/Slide.cpp.o
 .PHONY : Document/Slide/Slide.o
 
@@ -896,30 +848,6 @@ Edition/Exceptions/InvalidID_Cerr.s: Edition/Exceptions/InvalidID_Cerr.cpp.s
 Edition/Exceptions/InvalidID_Cerr.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Exceptions/InvalidID_Cerr.cpp.s
 .PHONY : Edition/Exceptions/InvalidID_Cerr.cpp.s
-
-Edition/Factories/ItemInitializer.o: Edition/Factories/ItemInitializer.cpp.o
-.PHONY : Edition/Factories/ItemInitializer.o
-
-# target to build an object file
-Edition/Factories/ItemInitializer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.o
-.PHONY : Edition/Factories/ItemInitializer.cpp.o
-
-Edition/Factories/ItemInitializer.i: Edition/Factories/ItemInitializer.cpp.i
-.PHONY : Edition/Factories/ItemInitializer.i
-
-# target to preprocess a source file
-Edition/Factories/ItemInitializer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.i
-.PHONY : Edition/Factories/ItemInitializer.cpp.i
-
-Edition/Factories/ItemInitializer.s: Edition/Factories/ItemInitializer.cpp.s
-.PHONY : Edition/Factories/ItemInitializer.s
-
-# target to generate assembly for a file
-Edition/Factories/ItemInitializer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Factories/ItemInitializer.cpp.s
-.PHONY : Edition/Factories/ItemInitializer.cpp.s
 
 Edition/Factories/Item_Factory.o: Edition/Factories/Item_Factory.cpp.o
 .PHONY : Edition/Factories/Item_Factory.o
@@ -1107,12 +1035,6 @@ help:
 	@echo "... Document/Items/Item.o"
 	@echo "... Document/Items/Item.i"
 	@echo "... Document/Items/Item.s"
-	@echo "... Document/Items/Rectangle.o"
-	@echo "... Document/Items/Rectangle.i"
-	@echo "... Document/Items/Rectangle.s"
-	@echo "... Document/Items/TextBox.o"
-	@echo "... Document/Items/TextBox.i"
-	@echo "... Document/Items/TextBox.s"
 	@echo "... Document/Slide/Slide.o"
 	@echo "... Document/Slide/Slide.i"
 	@echo "... Document/Slide/Slide.s"
@@ -1122,9 +1044,6 @@ help:
 	@echo "... Edition/Exceptions/InvalidID_Cerr.o"
 	@echo "... Edition/Exceptions/InvalidID_Cerr.i"
 	@echo "... Edition/Exceptions/InvalidID_Cerr.s"
-	@echo "... Edition/Factories/ItemInitializer.o"
-	@echo "... Edition/Factories/ItemInitializer.i"
-	@echo "... Edition/Factories/ItemInitializer.s"
 	@echo "... Edition/Factories/Item_Factory.o"
 	@echo "... Edition/Factories/Item_Factory.i"
 	@echo "... Edition/Factories/Item_Factory.s"

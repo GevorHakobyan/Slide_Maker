@@ -1,35 +1,41 @@
 #include "Item.h"
+document::Item::Map document::Item::m_BoundingBox_Creators{};
 
-document::A_Item::A_Item(AttributePtr attrs)
+document::Item::Item(AttributePtr attrs)
 : m_BoundingBox{nullptr},  m_Attributes{std::move(attrs)} {
-    setGeometry(m_Attributes->getLocation());
+    setBoundingBox();
 }
 
-void document::A_Item::setGeometry(const Location& location) {
-    m_BoundingBox = std::make_shared<Bounding_Box>();
-    m_BoundingBox->setOrigin(location);
+document::Item::ItemPtr document::Item::create(AttributePtr attr) {
+    m_BoundingBox_Creators["crc"] = Bounding_Box::CR_BoundingBox;
+    m_BoundingBox_Creators["rec"] = Bounding_Box::RC_BoundingBox;
+    m_BoundingBox_Creators["trg"] = Bounding_Box::TR_BoundingBox;
+    m_BoundingBox_Creators["tb"] = Bounding_Box::RC_BoundingBox;
+    return std::move(std::make_unique<Item>(attr));
 }
 
-document::A_Item::Location document::A_Item::getGeometry() const {
-    return m_BoundingBox->getCurrentPostion();
+void document::Item::setBoundingBox() {
+    const auto type = m_Attributes->getType();
+    const auto creator = m_BoundingBox_Creators[type];
+    m_BoundingBox = creator(m_Attributes);
 }
 
-const document::A_Item::AttributePtr document::A_Item::getAttributes() const {
+const document::Item::AttributePtr document::Item::getAttributes() const {
     return m_Attributes;
 }
 
-const document::A_Item::BoundingBoxPtr document::A_Item::getBoundingBox() const {
+const document::Item::BoundingBoxPtr document::Item::getBoundingBox() const {
     return m_BoundingBox;
 }
 
-document::A_Item::A_Item(A_Item&& rhs) noexcept
-: A_Item(rhs.getAttributes()) {}
+document::Item::Item(Item&& rhs) noexcept
+: Item(rhs.getAttributes()) {}
 
-bool document::operator==(const A_Item& first, const A_Item& second) noexcept {
+bool document::operator==(const Item& first, const Item& second) noexcept {
     return (first.getId() == second.getId()) ? true : false;
 }
 
-document::A_Item& document::A_Item::operator=(A_Item&& rhs) noexcept {
+document::Item& document::Item::operator=(Item&& rhs) noexcept {
     if (*this == rhs) {
         return *this;
     }
@@ -39,10 +45,10 @@ document::A_Item& document::A_Item::operator=(A_Item&& rhs) noexcept {
     return *this;
 }
 
-void document::A_Item::move(const Location& newLocation) {
+void document::Item::move(const Location& newLocation) {
     m_BoundingBox->moveObject(newLocation);
 }
 
-document::A_Item::ID document::A_Item::getId() const {
+document::Item::ID document::Item::getId() const {
     return m_Attributes->getId();
 }

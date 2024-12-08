@@ -3,7 +3,7 @@
 #include "InvalidAccess_Cerr.h"
 
 namespace document {
-    class Attributes {
+    struct Attributes {
         public:
         using String = std::string;
         using Pair = std::pair<float, float>;
@@ -12,7 +12,7 @@ namespace document {
         using Length = float;
         using Width = float;
         using Color = cli::Color;
-        using Type = cli::Type;
+        using Type = std::string;
         using ID = size_t;
         using Key =  cli::option;
         using Value = cli::argument;
@@ -32,7 +32,7 @@ namespace document {
         Width getWidth();
         ID getOwnerId() const; 
         ID getId() const; 
-        protected:
+        private:
         Map _attributes{};
     };
 }; //namespace cli

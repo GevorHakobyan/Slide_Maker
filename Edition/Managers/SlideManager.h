@@ -9,13 +9,13 @@ namespace edition {
 
     class SlideManager {
         public:
-        using Location = document::A_Item::Location;
+        using Location = document::Item::Location;
         using Design = cli::C_arguments;
         using MoverPtr = std::unique_ptr<Mover>;
         using SlideFactoryPtr = std::unique_ptr<edition::SlideFactory>;
         using ItemFactoryPtr = std::unique_ptr<edition::ItemFactory>;
         using ItemInfo = cli::C_arguments;
-        using ItemPtr = std::shared_ptr<document::A_Item>;
+        using ItemPtr = std::shared_ptr<document::Item>;
         using SlidePtr = std::unique_ptr<document::Slide>;
         using SlideSharedPtr = std::shared_ptr<document::Slide>;
         using SlideInfo = cli::C_arguments;

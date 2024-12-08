@@ -10,7 +10,7 @@ namespace document {
        class Iterator;
        class ConstIterator;
        public:
-       using ItemPtr = std::shared_ptr<A_Item>;
+       using ItemPtr = std::shared_ptr<Item>;
        using ID = size_t;
        using Data = std::vector<ItemPtr>;
        using Index = size_t;
