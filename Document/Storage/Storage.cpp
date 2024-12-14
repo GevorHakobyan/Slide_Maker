@@ -20,6 +20,11 @@ document::Storage::const_iterator document::Storage::cend() const {
 }
 
 void document::Storage::insert(SlideUptr slide, Position pos) {
+    if (pos < m_DataSize) {
+        m_Data.push_back(std::move(m_Data[pos]));
+        m_Data[pos] = std::move(slide);
+        return;
+    }
     m_Data.insert(m_Data.cbegin() + pos, std::move(slide));
     ++m_DataSize;
 }
@@ -29,6 +34,9 @@ bool document::Storage::isIndexValid(Index index) const {
 }
 
 void document::Storage::erase(const Position position) {
+    if (position >= m_DataSize) {
+        throw Invalid_Index("Position dosn't exist", position, std::source_location::current());
+    }
     auto iter = m_Data.begin() + position;
     m_Data.erase(iter);
 }

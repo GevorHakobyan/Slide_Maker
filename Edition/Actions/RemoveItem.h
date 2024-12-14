@@ -3,6 +3,8 @@
 
 namespace edition {
     class RemoveItem : public Action {
-
+        public:
+        RemoveItem() = default;
+        RemoveItem(const Info&);
     };
 }; //namespace edition

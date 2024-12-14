@@ -8,16 +8,23 @@ namespace edition {
         public:
         using Info = cli::C_arguments;
         using ActionPtr = std::unique_ptr<Action>;
-        using Actions = std::pair<ActionPtr, ActionPtr>;
+        using ActionType = std::string;
+        using Pair = std::pair<ActionPtr, ActionType>;
         using StoragePtr = std::unique_ptr<document::Storage>;
         using SlideManagerPtr = std::unique_ptr<SlideManager>;
 
         public:
-        Action();
-        virtual Actions create(Info) = 0;
+        Action(const Info&);
+        virtual Pair create(const Info&) = 0;
         virtual void Do() = 0;
 
         protected:
+        void setData(const Info&);
+        bool isSlideIdValid(size_t) const;
+        bool isPositionValid(size_t) const;
+
+        protected:
+        Info m_Data;
         static StoragePtr m_storage;
         static SlideManagerPtr m_slideManager;
     };

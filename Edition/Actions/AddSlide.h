@@ -5,7 +5,9 @@
 namespace edition {
     class AddSlide : public Action {
         public:
-        Actions create(Info) override;
+        AddSlide() = default;
+        AddSlide(const Info&);
+        Pair create(const Info&) override;
         void Do() override;
     };
 }; //namespace edition

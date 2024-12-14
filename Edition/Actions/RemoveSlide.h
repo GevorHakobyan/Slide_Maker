@@ -3,6 +3,10 @@
 
 namespace edition {
     class RemoveSlide : public Action {
-
+        public:
+        RemoveSlide() = default;
+        RemoveSlide(const Info&);
+        Pair create(const Info&) override;
+        void Do() override;
     };
 }
