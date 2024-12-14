@@ -2,13 +2,6 @@
 
 document::Storage::thisPtr document::Storage::m_ptr{nullptr};
 
-document::Storage::thisPtr document::Storage::getInstance() {
-    if (nullptr == m_ptr) {
-        m_ptr.reset(new Storage());
-    }
-    return m_ptr;
-}
-
 document::Storage::iterator document::Storage::begin() {
     return iterator{0, m_Data};
 }

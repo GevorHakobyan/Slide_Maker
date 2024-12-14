@@ -40,7 +40,7 @@ void cli::Parser::setNameState() {
     std::unordered_map<TokenType, State> nameStateValue;
     nameStateValue[TokenType::Name] = State::S_Name;
     nameStateValue[TokenType::Option] = State::S_Opt;
-    nameStateValue[TokenType::Argument] = State::S_Arg;
+    nameStateValue[TokenType::Argument] = State::S_Dead;
     nameStateValue[TokenType::Null] = State::S_End;
 
    m_states[State::S_Name] = std::move(nameStateValue);
@@ -50,9 +50,9 @@ void cli::Parser::setNameState() {
 void cli::Parser::setOptionState() {
    std::unordered_map<TokenType, State> optionStateValue;
     optionStateValue[TokenType::Name] = State::S_Dead;
-    optionStateValue[TokenType::Option] = State::S_Opt;
-    optionStateValue[TokenType::Argument] = State::S_Arg;
-    optionStateValue[TokenType::Null] = State::S_End;
+    optionStateValue[TokenType::Option] = State::S_Dead;
+    optionStateValue[TokenType::Argument] = State::S_Arg; 
+    optionStateValue[TokenType::Null] = State::S_Dead;
 
     m_states[State::S_Opt] = std::move(optionStateValue);
 }
@@ -61,7 +61,7 @@ void cli::Parser::setArgumentState() {
     std::unordered_map<TokenType, State> argumentStateValue;
     argumentStateValue[TokenType::Name] = State::S_Dead;
     argumentStateValue[TokenType::Option] = State::S_Opt;
-    argumentStateValue[TokenType::Argument] = State::S_Arg;
+    argumentStateValue[TokenType::Argument] = State::S_Dead;
     argumentStateValue[TokenType::Null] = State::S_End;
 
     m_states[State::S_Arg] = std::move(argumentStateValue);
@@ -183,9 +183,9 @@ cli::Parser::Token cli::Parser::Lexer::tokenize(Text& text) {
             return Token{token, TokenType::Option};
         }
 
-        if (isArgument(token)) {
+        if (isArgument()) {
+            getFullArgument(text, token);
             validateArgument(token);
-
             return GetValidArgument(token);
         }
     } catch(cli::InvalidCharacter_Cerr& err) {
@@ -222,8 +222,6 @@ cli::Parser::Token cli::Parser::Lexer::getAsNumber(rawToken token) {
 cli::Parser::Token cli::Parser::Lexer::getRange(rawToken token) {
     Token answer;
     answer.second = TokenType::Argument;
-    //token.erase(0, 1);
-    //token.erase(token.size() - 1, 1);
 
     Pair first = getNumbers(token);
     Pair second = getNumbers(token);
@@ -262,6 +260,32 @@ cli::Parser::rawToken cli::Parser::Lexer::getRawToken(Text& text) {
     return token;
 }
 
+void cli::Parser::Lexer::getFullArgument(Text& text, rawToken& token) {
+    rawToken fullArgument;
+
+    while (text.peek() != '-' && !text.eof()) {
+        if (' ' == text.peek()) {
+            text.get();
+            continue;
+        }
+        fullArgument += text.get();
+    }
+    token += fullArgument;
+
+    const auto [open, close] = isInScope(token);
+    if (!open && close || open && !close) {
+        throw InvalidArgument_Cerr("Half open Argument range", fullArgument, std::source_location::current());
+    }
+
+    if (open && close) {
+        removeScope(token);
+    }
+
+    if (token.size() < 1) {
+        throw InvalidArgument_Cerr("Empty argument list", token, std::source_location::current());
+    }
+}
+
 bool cli::Parser::Lexer::isWord(const rawToken& token) const {
     const Character firstCharacter = token[0];
     return (isLetter(firstCharacter) && !hasDigit(token)) ? true : false;
@@ -272,9 +296,9 @@ bool cli::Parser::Lexer::isOption(const rawToken& token) const {
     return (isHyphen(firstCharacter)) ? true : false;
 }
 
-bool cli::Parser::Lexer::isArgument(rawToken& token) const {
+bool cli::Parser::Lexer::isArgument() const {
     //Argument = ^"[Word] | [digit] | [Symbol] "$
-    return (isInQuotation(token) || isRange(token)) ? true : false;
+    return (State::S_Opt == m_CurrentState) ? true : false;
 }
 
 bool cli::Parser::Lexer::isLetter(const Character character) const{
@@ -298,23 +322,31 @@ bool cli::Parser::Lexer::isHyphen(const Character character) const {
     return (character == Hyphen) ? true : false;
 }
 
-bool cli::Parser::Lexer::isRange(const rawToken& token) const {
-    const char firstCharacter = token[0];
-    const char lastCharacter = token[token.size() - 1];
-    const char open = '<';
-    const char close = '>';
+std::pair<bool, bool> cli::Parser::Lexer::isInScope(const rawToken& token) const {
+    const char char1 = '"';
+    const char char2 = '<';
+    std::pair<bool, bool> answer{false, false};
 
-    return (firstCharacter == open && lastCharacter == close) ? true : false;
+    if (token[0] == char1 || token[0] == char2) {
+        answer.first = true;
+    }
+
+    answer.second = (isLastQuotation(token) || isRange(token)) ? true : false;
+    return answer;
 }
 
-bool cli::Parser::Lexer::isInQuotation(rawToken& token) const {
-    const char firstCharacter = token[0];
+bool cli::Parser::Lexer::isRange(const rawToken& token) const {
+    const char lastCharacter = token[token.size() - 1];
+    const char close = '>';
+
+    return (lastCharacter ==  close) ? true : false;
+}
+
+bool cli::Parser::Lexer::isLastQuotation(const rawToken& token) const {
     const char lastCharacter = token[token.size() - 1];
     const char QuoteMark = '"';
 
-    if (firstCharacter == QuoteMark && lastCharacter == QuoteMark) {
-        token.erase(0, 1);
-        token.erase(token.size() - 1, 1);
+    if (lastCharacter == QuoteMark) { 
         return true;
     }
     return false;
@@ -353,6 +385,11 @@ bool cli::Parser::Lexer::isZeroFirst(const rawToken& token) const {
 bool cli::Parser::Lexer::isZero(const Character character) const {
     const Character zero = '0';
     return (character == zero) ? true : false;
+}
+
+void cli::Parser::Lexer::removeScope(rawToken& token) const{
+    token.erase(0, 1);
+    token.erase(token.size() - 1, 1);
 }
 
 bool cli::Parser::Lexer::hasInvalidCharacter(const rawToken& token) const {

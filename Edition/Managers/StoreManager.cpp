@@ -10,9 +10,32 @@ edition::StoreManager::StoreManager()
   edition::StoreManager::thisPtr edition::StoreManager::getInstance() {
     if (nullptr == m_ptr) {
         m_ptr = std::shared_ptr<StoreManager>(new StoreManager());
+        m_ptr->setActions();
     }
 
     return m_ptr;
+  }
+
+  void edition::StoreManager::push(ActionInfo info, ActionType type) {
+    const auto actionPtr = m_actions[type];
+    const auto[Do, Undo] = std::move(actionPtr->create(info));
+    Do->Do();
+
+    m_undo.push(std::move(Undo));
+    m_redo.push(std::move(Do));
+  }
+
+  void edition::StoreManager::pop(bool undo) {
+    if (undo) {
+      m_undo.top()->Do();
+      m_undo.pop();
+      return;
+    }
+
+    if (m_redo.size() > m_undo.size()) {
+      m_redo.top()->Do();
+      m_redo.pop();
+    }
   }
 
 void edition::StoreManager::addSlide(SlideInfo info) {
@@ -31,7 +54,6 @@ void edition::StoreManager::addSlide(SlideInfo info) {
   }
 
   m_storage->insert(std::move(slidePtr), *pos);
-
 }
 
 void edition::StoreManager::addItem(const ItemInfo info) {

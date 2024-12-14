@@ -30,7 +30,8 @@ void cli::ShapeAdder::addValue(const cli::option opt, const cli::argument arg) {
 void cli::ShapeAdder::setValidators() {
     m_Validators["rec"] = std::move(std::make_shared<RectValidator>());
     m_Validators["crc"] = std::move(std::make_shared<CircleValidator>());
-    m_Validators["trg"] =std::move(std::make_shared<TriangleValidator>());
+    m_Validators["trg"] = std::move(std::make_shared<TriangleValidator>());
+    m_Validators["tbx"] = std::move(std::make_shared<TextBoxValidator>());
 }
 
 void cli::ShapeAdder::isInofAcceptable(const Arguments& args) const {

@@ -43,17 +43,19 @@ namespace cli {
             Token getAsNumber(rawToken);
             Token GetValidArgument(rawToken);
             rawToken getRawToken(Text&);
+            void getFullArgument(Text&, rawToken&);
             //type deciders
             bool isWord(const rawToken&) const;
             bool isOption(const rawToken&) const;
-            bool isArgument(rawToken&) const;
+            bool isArgument() const;
 
             //type decider helpers
             bool isLetter(const Character) const;
             bool hasDigit(const rawToken&) const;
             bool isHyphen(const Character) const;
+            std::pair<bool, bool> isInScope(const rawToken&) const;
             bool isRange(const rawToken&) const;
-            bool isInQuotation(rawToken&) const;
+            bool isLastQuotation(const rawToken&) const;
 
             //specific type validators
             void validateWord(const rawToken&) const;
@@ -64,6 +66,7 @@ namespace cli {
             bool isZeroFirst(const rawToken&) const;
             bool hasInvalidCharacter(const rawToken&) const;
             bool isZero(const Character) const;
+            void removeScope(rawToken&) const;
         };
 
         class Syntax_analyzer {

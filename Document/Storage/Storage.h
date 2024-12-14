@@ -21,7 +21,6 @@ namespace document {
 
         public:
         ~Storage() = default;
-        thisPtr getInstance();
         iterator begin();
         iterator end();
         void insert(SlideUptr, Position);

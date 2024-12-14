@@ -7,6 +7,7 @@
 #include "CircleValidator.h"
 #include "RectValidator.h"
 #include "TriangleValidator.h"
+#include "TextBoxValidator.h"
 
 namespace cli{
     class ShapeAdder : public I_Command {

@@ -17,8 +17,8 @@ namespace document {
         float getLength() const;
         float getWidth() const;
         void moveObject(Pair);
-        static thisPtr CR_BoundingBox(const AttributePtr); //for Triangle
-        static thisPtr TR_BoundingBox(const AttributePtr); //for Circle
+        static thisPtr CR_BoundingBox(const AttributePtr); //for Circle
+        static thisPtr TR_BoundingBox(const AttributePtr);//for Triangle 
         static thisPtr RC_BoundingBox(const AttributePtr); //for Rectangle 
 
         private:
