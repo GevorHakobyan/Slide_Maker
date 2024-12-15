@@ -6,7 +6,10 @@
 #include "CommandInfo.h"
 #include "SlideMaker.h"
 #include "Exiter.h"
+#include "Remover.h"
 #include "ShapeAdder.h"
+#include "Undo.h"
+#include "Redo.h"
 #include <unordered_map>
 #include <functional>
 

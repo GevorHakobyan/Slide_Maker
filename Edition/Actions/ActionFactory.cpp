@@ -16,7 +16,7 @@ namespace edition {
         auto [actionDo, undoType] = std::move(DoPtr->create(info));
 
         const auto UndoPtr = m_actions.find(undoType)->second;
-        auto [actionUndo, undoType] = std::move(UndoPtr->create(info));
+        auto [actionUndo, null] = std::move(UndoPtr->create(info));
 
         answer.first = std::move(actionDo);
         answer.second = std::move(actionUndo);

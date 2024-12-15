@@ -297,6 +297,54 @@ CLI/Commands/RectValidator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/RectValidator.cpp.s
 .PHONY : CLI/Commands/RectValidator.cpp.s
 
+CLI/Commands/Redo.o: CLI/Commands/Redo.cpp.o
+.PHONY : CLI/Commands/Redo.o
+
+# target to build an object file
+CLI/Commands/Redo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Redo.cpp.o
+.PHONY : CLI/Commands/Redo.cpp.o
+
+CLI/Commands/Redo.i: CLI/Commands/Redo.cpp.i
+.PHONY : CLI/Commands/Redo.i
+
+# target to preprocess a source file
+CLI/Commands/Redo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Redo.cpp.i
+.PHONY : CLI/Commands/Redo.cpp.i
+
+CLI/Commands/Redo.s: CLI/Commands/Redo.cpp.s
+.PHONY : CLI/Commands/Redo.s
+
+# target to generate assembly for a file
+CLI/Commands/Redo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Redo.cpp.s
+.PHONY : CLI/Commands/Redo.cpp.s
+
+CLI/Commands/Remover.o: CLI/Commands/Remover.cpp.o
+.PHONY : CLI/Commands/Remover.o
+
+# target to build an object file
+CLI/Commands/Remover.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Remover.cpp.o
+.PHONY : CLI/Commands/Remover.cpp.o
+
+CLI/Commands/Remover.i: CLI/Commands/Remover.cpp.i
+.PHONY : CLI/Commands/Remover.i
+
+# target to preprocess a source file
+CLI/Commands/Remover.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Remover.cpp.i
+.PHONY : CLI/Commands/Remover.cpp.i
+
+CLI/Commands/Remover.s: CLI/Commands/Remover.cpp.s
+.PHONY : CLI/Commands/Remover.s
+
+# target to generate assembly for a file
+CLI/Commands/Remover.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Remover.cpp.s
+.PHONY : CLI/Commands/Remover.cpp.s
+
 CLI/Commands/ShapeAdder.o: CLI/Commands/ShapeAdder.cpp.o
 .PHONY : CLI/Commands/ShapeAdder.o
 
@@ -392,6 +440,30 @@ CLI/Commands/TriangleValidator.s: CLI/Commands/TriangleValidator.cpp.s
 CLI/Commands/TriangleValidator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/TriangleValidator.cpp.s
 .PHONY : CLI/Commands/TriangleValidator.cpp.s
+
+CLI/Commands/Undo.o: CLI/Commands/Undo.cpp.o
+.PHONY : CLI/Commands/Undo.o
+
+# target to build an object file
+CLI/Commands/Undo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Undo.cpp.o
+.PHONY : CLI/Commands/Undo.cpp.o
+
+CLI/Commands/Undo.i: CLI/Commands/Undo.cpp.i
+.PHONY : CLI/Commands/Undo.i
+
+# target to preprocess a source file
+CLI/Commands/Undo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Undo.cpp.i
+.PHONY : CLI/Commands/Undo.cpp.i
+
+CLI/Commands/Undo.s: CLI/Commands/Undo.cpp.s
+.PHONY : CLI/Commands/Undo.s
+
+# target to generate assembly for a file
+CLI/Commands/Undo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Undo.cpp.s
+.PHONY : CLI/Commands/Undo.cpp.s
 
 CLI/Controller/Controller.o: CLI/Controller/Controller.cpp.o
 .PHONY : CLI/Controller/Controller.o
@@ -825,6 +897,150 @@ Document/Storage/Storage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Document/Storage/Storage.cpp.s
 .PHONY : Document/Storage/Storage.cpp.s
 
+Edition/Actions/Action.o: Edition/Actions/Action.cpp.o
+.PHONY : Edition/Actions/Action.o
+
+# target to build an object file
+Edition/Actions/Action.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/Action.cpp.o
+.PHONY : Edition/Actions/Action.cpp.o
+
+Edition/Actions/Action.i: Edition/Actions/Action.cpp.i
+.PHONY : Edition/Actions/Action.i
+
+# target to preprocess a source file
+Edition/Actions/Action.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/Action.cpp.i
+.PHONY : Edition/Actions/Action.cpp.i
+
+Edition/Actions/Action.s: Edition/Actions/Action.cpp.s
+.PHONY : Edition/Actions/Action.s
+
+# target to generate assembly for a file
+Edition/Actions/Action.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/Action.cpp.s
+.PHONY : Edition/Actions/Action.cpp.s
+
+Edition/Actions/ActionFactory.o: Edition/Actions/ActionFactory.cpp.o
+.PHONY : Edition/Actions/ActionFactory.o
+
+# target to build an object file
+Edition/Actions/ActionFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/ActionFactory.cpp.o
+.PHONY : Edition/Actions/ActionFactory.cpp.o
+
+Edition/Actions/ActionFactory.i: Edition/Actions/ActionFactory.cpp.i
+.PHONY : Edition/Actions/ActionFactory.i
+
+# target to preprocess a source file
+Edition/Actions/ActionFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/ActionFactory.cpp.i
+.PHONY : Edition/Actions/ActionFactory.cpp.i
+
+Edition/Actions/ActionFactory.s: Edition/Actions/ActionFactory.cpp.s
+.PHONY : Edition/Actions/ActionFactory.s
+
+# target to generate assembly for a file
+Edition/Actions/ActionFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/ActionFactory.cpp.s
+.PHONY : Edition/Actions/ActionFactory.cpp.s
+
+Edition/Actions/AddItem.o: Edition/Actions/AddItem.cpp.o
+.PHONY : Edition/Actions/AddItem.o
+
+# target to build an object file
+Edition/Actions/AddItem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/AddItem.cpp.o
+.PHONY : Edition/Actions/AddItem.cpp.o
+
+Edition/Actions/AddItem.i: Edition/Actions/AddItem.cpp.i
+.PHONY : Edition/Actions/AddItem.i
+
+# target to preprocess a source file
+Edition/Actions/AddItem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/AddItem.cpp.i
+.PHONY : Edition/Actions/AddItem.cpp.i
+
+Edition/Actions/AddItem.s: Edition/Actions/AddItem.cpp.s
+.PHONY : Edition/Actions/AddItem.s
+
+# target to generate assembly for a file
+Edition/Actions/AddItem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/AddItem.cpp.s
+.PHONY : Edition/Actions/AddItem.cpp.s
+
+Edition/Actions/AddSlide.o: Edition/Actions/AddSlide.cpp.o
+.PHONY : Edition/Actions/AddSlide.o
+
+# target to build an object file
+Edition/Actions/AddSlide.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/AddSlide.cpp.o
+.PHONY : Edition/Actions/AddSlide.cpp.o
+
+Edition/Actions/AddSlide.i: Edition/Actions/AddSlide.cpp.i
+.PHONY : Edition/Actions/AddSlide.i
+
+# target to preprocess a source file
+Edition/Actions/AddSlide.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/AddSlide.cpp.i
+.PHONY : Edition/Actions/AddSlide.cpp.i
+
+Edition/Actions/AddSlide.s: Edition/Actions/AddSlide.cpp.s
+.PHONY : Edition/Actions/AddSlide.s
+
+# target to generate assembly for a file
+Edition/Actions/AddSlide.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/AddSlide.cpp.s
+.PHONY : Edition/Actions/AddSlide.cpp.s
+
+Edition/Actions/RemoveItem.o: Edition/Actions/RemoveItem.cpp.o
+.PHONY : Edition/Actions/RemoveItem.o
+
+# target to build an object file
+Edition/Actions/RemoveItem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/RemoveItem.cpp.o
+.PHONY : Edition/Actions/RemoveItem.cpp.o
+
+Edition/Actions/RemoveItem.i: Edition/Actions/RemoveItem.cpp.i
+.PHONY : Edition/Actions/RemoveItem.i
+
+# target to preprocess a source file
+Edition/Actions/RemoveItem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/RemoveItem.cpp.i
+.PHONY : Edition/Actions/RemoveItem.cpp.i
+
+Edition/Actions/RemoveItem.s: Edition/Actions/RemoveItem.cpp.s
+.PHONY : Edition/Actions/RemoveItem.s
+
+# target to generate assembly for a file
+Edition/Actions/RemoveItem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/RemoveItem.cpp.s
+.PHONY : Edition/Actions/RemoveItem.cpp.s
+
+Edition/Actions/RemoveSlide.o: Edition/Actions/RemoveSlide.cpp.o
+.PHONY : Edition/Actions/RemoveSlide.o
+
+# target to build an object file
+Edition/Actions/RemoveSlide.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/RemoveSlide.cpp.o
+.PHONY : Edition/Actions/RemoveSlide.cpp.o
+
+Edition/Actions/RemoveSlide.i: Edition/Actions/RemoveSlide.cpp.i
+.PHONY : Edition/Actions/RemoveSlide.i
+
+# target to preprocess a source file
+Edition/Actions/RemoveSlide.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/RemoveSlide.cpp.i
+.PHONY : Edition/Actions/RemoveSlide.cpp.i
+
+Edition/Actions/RemoveSlide.s: Edition/Actions/RemoveSlide.cpp.s
+.PHONY : Edition/Actions/RemoveSlide.s
+
+# target to generate assembly for a file
+Edition/Actions/RemoveSlide.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/RemoveSlide.cpp.s
+.PHONY : Edition/Actions/RemoveSlide.cpp.s
+
 Edition/Exceptions/InvalidID_Cerr.o: Edition/Exceptions/InvalidID_Cerr.cpp.o
 .PHONY : Edition/Exceptions/InvalidID_Cerr.o
 
@@ -975,6 +1191,12 @@ help:
 	@echo "... CLI/Commands/RectValidator.o"
 	@echo "... CLI/Commands/RectValidator.i"
 	@echo "... CLI/Commands/RectValidator.s"
+	@echo "... CLI/Commands/Redo.o"
+	@echo "... CLI/Commands/Redo.i"
+	@echo "... CLI/Commands/Redo.s"
+	@echo "... CLI/Commands/Remover.o"
+	@echo "... CLI/Commands/Remover.i"
+	@echo "... CLI/Commands/Remover.s"
 	@echo "... CLI/Commands/ShapeAdder.o"
 	@echo "... CLI/Commands/ShapeAdder.i"
 	@echo "... CLI/Commands/ShapeAdder.s"
@@ -987,6 +1209,9 @@ help:
 	@echo "... CLI/Commands/TriangleValidator.o"
 	@echo "... CLI/Commands/TriangleValidator.i"
 	@echo "... CLI/Commands/TriangleValidator.s"
+	@echo "... CLI/Commands/Undo.o"
+	@echo "... CLI/Commands/Undo.i"
+	@echo "... CLI/Commands/Undo.s"
 	@echo "... CLI/Controller/Controller.o"
 	@echo "... CLI/Controller/Controller.i"
 	@echo "... CLI/Controller/Controller.s"
@@ -1041,6 +1266,24 @@ help:
 	@echo "... Document/Storage/Storage.o"
 	@echo "... Document/Storage/Storage.i"
 	@echo "... Document/Storage/Storage.s"
+	@echo "... Edition/Actions/Action.o"
+	@echo "... Edition/Actions/Action.i"
+	@echo "... Edition/Actions/Action.s"
+	@echo "... Edition/Actions/ActionFactory.o"
+	@echo "... Edition/Actions/ActionFactory.i"
+	@echo "... Edition/Actions/ActionFactory.s"
+	@echo "... Edition/Actions/AddItem.o"
+	@echo "... Edition/Actions/AddItem.i"
+	@echo "... Edition/Actions/AddItem.s"
+	@echo "... Edition/Actions/AddSlide.o"
+	@echo "... Edition/Actions/AddSlide.i"
+	@echo "... Edition/Actions/AddSlide.s"
+	@echo "... Edition/Actions/RemoveItem.o"
+	@echo "... Edition/Actions/RemoveItem.i"
+	@echo "... Edition/Actions/RemoveItem.s"
+	@echo "... Edition/Actions/RemoveSlide.o"
+	@echo "... Edition/Actions/RemoveSlide.i"
+	@echo "... Edition/Actions/RemoveSlide.s"
 	@echo "... Edition/Exceptions/InvalidID_Cerr.o"
 	@echo "... Edition/Exceptions/InvalidID_Cerr.i"
 	@echo "... Edition/Exceptions/InvalidID_Cerr.s"

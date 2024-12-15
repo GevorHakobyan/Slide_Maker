@@ -226,7 +226,10 @@ CMakeFiles/SlideMakerProject.dir/CLI/Parser/Parser.cpp.o: \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/SlideMaker.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Command.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Managers/StoreManager.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Storage/Storage.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Actions/ActionFactory.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Actions/AddItem.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Actions/Action.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Managers/SlideManager.h \
  /home/geveorg/Desktop/Slide_Maker/Document/Slide/Slide.h \
  /home/geveorg/Desktop/Slide_Maker/Document/Doc_Exceptions/InvalidIndex_Cerr.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
@@ -244,17 +247,27 @@ CMakeFiles/SlideMakerProject.dir/CLI/Parser/Parser.cpp.o: \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/Managers/SlideManager.h \
+ /home/geveorg/Desktop/Slide_Maker/Document/Storage/Storage.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Managers/Mover.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Slide_Factory.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Item_Factory.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Exceptions/InvalidID_Cerr.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Actions/RemoveItem.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Actions/AddSlide.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Actions/RemoveSlide.h \
+ /usr/include/c++/13/stack /usr/include/c++/13/deque \
+ /usr/include/c++/13/bits/stl_deque.h /usr/include/c++/13/bits/deque.tcc \
+ /usr/include/c++/13/bits/stl_stack.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Exiter.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Remover.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/ShapeAdder.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/CircleValidator.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Validator.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/IncompleteData_Cerr.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/RectValidator.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/TriangleValidator.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/TextBoxValidator.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Undo.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Redo.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidCharacter_Cerr.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidSyntax_Cerr.h

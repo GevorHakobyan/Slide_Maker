@@ -4,15 +4,8 @@ edition::SlideManager::SlideManager()
 : m_mover{nullptr} {}
 
 
-void edition::SlideManager::removeItem(SlideSharedPtr slidePtr, const ID id) {
-    for(auto elem : *slidePtr) {
-        if (id == elem->getId()) {
-            slidePtr->erase(elem); 
-            return;
-        }
-    }
-
-    throw InvalidID("Invalid ID", id, std::source_location::current());
+void edition::SlideManager::removeItem(SlideSharedPtr slidePtr, ItemPtr item) {
+    slidePtr->erase(item);
 }
 
 edition::SlideManager::SlidePtr edition::SlideManager::CreateSlide(SlideInfo info) {

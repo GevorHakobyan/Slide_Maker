@@ -39,6 +39,20 @@ void document::Storage::erase(const Position position) {
     }
     auto iter = m_Data.begin() + position;
     m_Data.erase(iter);
+    --m_DataSize;
+}
+
+void document::Storage::swap(Position first, Position second) {
+    if (!isIndexValid(first)) {
+        throw Invalid_Index("Invalid index", first, std::source_location::current());
+    }
+    if (!isIndexValid(second)) {
+        throw Invalid_Index("Invalid index", second, std::source_location::current());
+    }
+
+    auto tmp = std::move(m_Data[first]);
+    m_Data[first] = std::move(m_Data[second]);
+    m_Data[second] = std::move(tmp);
 }
 
 document::Storage::Size document::Storage::getSize() const {
@@ -101,7 +115,7 @@ const document::Storage::iterator::PointerType document::Storage::iterator::oper
 
 namespace document{
     bool operator==(const Storage::iterator& rhs, const Storage::iterator& lfs) {
-        return *rhs.m_Iterator == *lfs.m_Iterator;
+        return *(rhs.m_Iterator) == *(lfs.m_Iterator);
     }
 
 

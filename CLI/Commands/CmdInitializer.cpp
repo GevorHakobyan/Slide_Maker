@@ -3,7 +3,9 @@
 void cli::CInitializer::InitializeValidCommands() {
     setSlideAdder();
     setShapeAdder();
+    setRemover();
     setExiter();
+    setUndoRedo();
 }
 
 void cli::CInitializer::setSlideAdder() {
@@ -72,5 +74,26 @@ void cli::CInitializer::setShapeAdder() {
     cli::ShapeAdder::addValue(opt10, argType10); 
 
     cli::ShapeAdder::setValidators();
+}
+
+void cli::CInitializer::setRemover() {
+    cli::option opt1 = "obj";
+    cli::argument argType1 = String{};
+    cli::Remover::addValue(opt1, argType1);
+
+    cli::option opt2 = "sid";
+    cli::argument argType2 = float{};
+    cli::Remover::addValue(opt2, argType2);
+
+    cli::option opt3 = "iid";
+    cli::argument argType3 = float{};
+    cli::Remover::addValue(opt3, argType3);
+}
+
+void cli::CInitializer::setUndoRedo() {
+    cli::option opt1 = "";
+    cli::argument argType1 = cli::EMPTY::empty;
+    cli::Undo::addValue(opt1, argType1);
+    cli::Redo::addValue(opt1, argType1);
 }
 

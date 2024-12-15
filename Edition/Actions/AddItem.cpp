@@ -16,17 +16,13 @@ namespace edition {
     }
 
     void AddItem::Do() {
-        auto iter = m_storage->begin();
         auto id = std::get<float>((*m_Data.find("oid")).second);
+        const auto slidePtr = isSlideIdValid(id);
 
-        if (!isSlideIdValid(id)) {
+        if (nullptr == slidePtr) {
             throw InvalidID("Invalid ID", id, std::source_location::current());
         }
         
-        while (iter != m_storage->end() && (*iter)->getId() != static_cast<size_t>(id)) {
-            ++iter;
-        }
-        
-        m_slideManager->addItem(*iter, m_Data);
+        m_slideManager->addItem(slidePtr, m_Data);
     }
 }

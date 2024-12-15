@@ -39,10 +39,12 @@ void document::Swap(Slide& first, Slide& second) noexcept {
 void document::Slide::erase(ItemPtr ptr) {
     auto it  = std::ranges::find(m_data, ptr);
     m_data.erase(it);
+    --m_dataSize;
 }
 
 void document::Slide::insert(ItemPtr ptr) {
     m_data.push_back(ptr);
+    ++m_dataSize;
 }
 
 document::Slide::Iterator document::Slide::begin() {

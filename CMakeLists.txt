@@ -31,6 +31,7 @@ include_directories(
     ${PROJECT_SOURCE_DIR}/Edition/Exceptions
     ${PROJECT_SOURCE_DIR}/Edition/Factories
     ${PROJECT_SOURCE_DIR}/Edition/Managers
+    ${PROJECT_SOURCE_DIR}/Edition/Actions
 )
 
 # Collect all source files for CLI

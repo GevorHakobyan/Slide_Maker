@@ -25,7 +25,7 @@ namespace edition {
         public:
         SlideManager();
         ~SlideManager() = default;
-        void removeItem(SlideSharedPtr, const ID);
+        void removeItem(SlideSharedPtr, ItemPtr);
         void addItem(SlideSharedPtr, ItemInfo);
         void changeDesign(Slide&, const Design&, ID);
         SlidePtr CreateSlide(const SlideInfo);

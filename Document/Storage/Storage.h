@@ -25,6 +25,7 @@ namespace document {
         iterator end();
         void insert(SlideUptr, Position);
         void erase(const Position);
+        void swap(Position, Position);
         Size getSize() const;
         const_iterator cbegin() const;
         const_iterator cend() const;

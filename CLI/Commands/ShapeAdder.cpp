@@ -9,7 +9,7 @@ cli::ShapeAdder::ShapeAdder(const Arguments& arguments)
 
 bool cli::ShapeAdder::Execute() {
     auto StoreManagerPtr = edition::StoreManager::getInstance();
-    StoreManagerPtr->addItem(std::move(m_Arguments));
+    StoreManagerPtr->push(std::move(m_Arguments), "AddItem");
     return true;
 }
 

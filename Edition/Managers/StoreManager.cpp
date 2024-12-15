@@ -14,7 +14,7 @@ edition::StoreManager::StoreManager()
   }
 
   void edition::StoreManager::push(ActionInfo info, ActionType type) {
-    const auto[Do, Undo] = std::move(m_actionFactory->create(info, type));
+    auto[Do, Undo] = std::move(m_actionFactory->create(info, type));
     Do->Do();
 
     m_undo.push(std::move(Undo));

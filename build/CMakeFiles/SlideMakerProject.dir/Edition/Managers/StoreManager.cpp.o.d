@@ -2,7 +2,10 @@ CMakeFiles/SlideMakerProject.dir/Edition/Managers/StoreManager.cpp.o: \
  /home/geveorg/Desktop/Slide_Maker/Edition/Managers/StoreManager.cpp \
  /usr/include/stdc-predef.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Managers/StoreManager.h \
- /home/geveorg/Desktop/Slide_Maker/Document/Storage/Storage.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Actions/ActionFactory.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Actions/AddItem.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Actions/Action.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Managers/SlideManager.h \
  /home/geveorg/Desktop/Slide_Maker/Document/Slide/Slide.h \
  /home/geveorg/Desktop/Slide_Maker/Document/Doc_Exceptions/InvalidIndex_Cerr.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/Exception.h \
@@ -231,8 +234,14 @@ CMakeFiles/SlideMakerProject.dir/Edition/Managers/StoreManager.cpp.o: \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/Managers/SlideManager.h \
+ /home/geveorg/Desktop/Slide_Maker/Document/Storage/Storage.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Managers/Mover.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Slide_Factory.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Item_Factory.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/Exceptions/InvalidID_Cerr.h
+ /home/geveorg/Desktop/Slide_Maker/Edition/Exceptions/InvalidID_Cerr.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Actions/RemoveItem.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Actions/AddSlide.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Actions/RemoveSlide.h \
+ /usr/include/c++/13/stack /usr/include/c++/13/deque \
+ /usr/include/c++/13/bits/stl_deque.h /usr/include/c++/13/bits/deque.tcc \
+ /usr/include/c++/13/bits/stl_stack.h

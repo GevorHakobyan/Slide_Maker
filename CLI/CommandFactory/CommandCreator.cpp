@@ -26,5 +26,14 @@ void cli::CommandCreator::setValidCommands() {
 
     auto val3 = std::make_shared<cli::ShapeAdder>(cli::ShapeAdder());
     m_validCommands["addshape"] = std::move(val3);
+    
+    auto val4 = std::make_shared<cli::Remover>();
+    m_validCommands["remove"] = std::move(val4);
+
+    auto val5 = std::make_shared<cli::Undo>();
+    m_validCommands["undo"] = std::move(val5);
+
+    auto val6 = std::make_shared<cli::Redo>();
+    m_validCommands["redo"] = std::move(val6);
 } 
 

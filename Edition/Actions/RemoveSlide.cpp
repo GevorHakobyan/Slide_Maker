@@ -19,6 +19,12 @@ namespace edition {
         const auto posIter = m_Data.find("ps");
         if (posIter == m_Data.end()) {
             m_storage->erase(m_storage->getSize() - 1);
+            return;
         }
+
+        const auto first = std::get<size_t>((*posIter).second);
+        const auto second = m_storage->getSize() - 1;
+        m_storage->swap(first, second);
+        m_storage->erase(second);
     }
 }
