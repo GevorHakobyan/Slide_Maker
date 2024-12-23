@@ -253,23 +253,28 @@ CMakeFiles/SlideMakerProject.dir/CLI/Controller/Controller.cpp.o: \
  /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Slide_Factory.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Item_Factory.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Exceptions/InvalidID_Cerr.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Managers/ViewManager.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Actions/RemoveItem.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Actions/AddSlide.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Actions/RemoveSlide.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Actions/PrintAction.h \
  /usr/include/c++/13/stack /usr/include/c++/13/deque \
  /usr/include/c++/13/bits/stl_deque.h /usr/include/c++/13/bits/deque.tcc \
  /usr/include/c++/13/bits/stl_stack.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Exiter.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Remover.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/ShapeAdder.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/Commands/CircleValidator.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Validator.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Validators/CircleValidator.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Validators/Validator.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/IncompleteData_Cerr.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/Commands/RectValidator.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/Commands/TriangleValidator.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/Commands/TextBoxValidator.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Validators/RectValidator.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Validators/TriangleValidator.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Validators/TextBoxValidator.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Undo.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Redo.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Print.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Validators/SlidePrintValidator.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Validators/HelpPrintValidator.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidCharacter_Cerr.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidSyntax_Cerr.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/Commands/CmdInitializer.h

@@ -3,6 +3,7 @@
 namespace edition {
     Action::SlideManagerPtr Action::m_slideManager{nullptr};
     Action::StoragePtr Action::m_storage{nullptr};
+    Action::ViewManagerPtr Action::m_viewManager{nullptr};
 
     Action::Action(const Info& info) {
         m_Data = info;
@@ -11,6 +12,7 @@ namespace edition {
     Action::Action() {
         m_slideManager = std::make_unique<SlideManager>();
         m_storage = std::make_unique<document::Storage>();
+        m_viewManager = std::make_unique<View::ViewManager>();
     }
 
     void Action::setData(const Info& info) {

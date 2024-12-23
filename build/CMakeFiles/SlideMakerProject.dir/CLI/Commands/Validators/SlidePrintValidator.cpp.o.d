@@ -1,8 +1,8 @@
-CMakeFiles/SlideMakerProject.dir/CLI/Commands/TriangleValidator.cpp.o: \
- /home/geveorg/Desktop/Slide_Maker/CLI/Commands/TriangleValidator.cpp \
+CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/SlidePrintValidator.cpp.o: \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Validators/SlidePrintValidator.cpp \
  /usr/include/stdc-predef.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/Commands/TriangleValidator.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Validator.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Validators/SlidePrintValidator.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Validators/Validator.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/Types.h \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/requires_hosted.h \
@@ -139,4 +139,4 @@ CMakeFiles/SlideMakerProject.dir/CLI/Commands/TriangleValidator.cpp.o: \
  /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/nested_exception.h \
  /usr/include/c++/13/source_location \
  /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidArgument_Cerr.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/Exception/IncompleteData_Cerr.h
+ /home/geveorg/Desktop/Slide_Maker/CLI/Exception/InvalidCommand_Cerr.h

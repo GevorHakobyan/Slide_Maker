@@ -6,7 +6,7 @@ namespace edition {
         public:
         RemoveSlide() = default;
         RemoveSlide(const Info&);
-        Pair create(const Info&) override;
+        Pair create(Info&) override;
         void Do() override;
     };
 }

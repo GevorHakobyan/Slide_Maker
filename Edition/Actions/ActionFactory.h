@@ -3,6 +3,7 @@
 #include "AddSlide.h"
 #include "RemoveItem.h"
 #include "RemoveSlide.h"
+#include "PrintAction.h"
 
 namespace edition {
     class ActionFactory {
@@ -15,7 +16,7 @@ namespace edition {
 
         public:
         ActionFactory();
-        static Actions create(const Info&, ActionType);
+        static Actions create(Info&, ActionType);
         private:
         static Map m_actions;
     };

@@ -7,6 +7,7 @@ cli::Slide_Maker::Slide_Maker(const Arguments& args)
 
 bool cli::Slide_Maker::Execute() {
     auto StoreManagerPtr = edition::StoreManager::getInstance();
+    m_Arguments["isMutuable"] = true;
     StoreManagerPtr->push(std::move(m_Arguments), "AddSlide");
     return true;
 }

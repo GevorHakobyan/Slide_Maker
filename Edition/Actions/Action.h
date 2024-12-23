@@ -1,6 +1,7 @@
 #pragma once
 #include "SlideManager.h"
 #include "Storage.h"
+#include "ViewManager.h"
 #include "Types.h"
 
 namespace edition {
@@ -13,11 +14,12 @@ namespace edition {
         using SlidePtr = std::shared_ptr<document::Slide>;
         using StoragePtr = std::unique_ptr<document::Storage>;
         using SlideManagerPtr = std::unique_ptr<SlideManager>;
+        using ViewManagerPtr = std::unique_ptr<View::ViewManager>;
 
         public:
         Action();
         Action(const Info&);
-        virtual Pair create(const Info&) = 0;
+        virtual Pair create(Info&) = 0;
         virtual void Do() = 0;
 
         protected:
@@ -29,5 +31,6 @@ namespace edition {
         Info m_Data;
         static StoragePtr m_storage;
         static SlideManagerPtr m_slideManager;
+        static ViewManagerPtr m_viewManager;
     };
 } //namespace edition

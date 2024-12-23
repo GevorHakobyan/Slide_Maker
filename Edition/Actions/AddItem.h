@@ -5,10 +5,13 @@
 namespace edition {
     class AddItem : public Action {
         public:
+        using ID = float;
         AddItem() = default;
         AddItem(const Info&);
-        Pair create(const Info&) override;
+        Pair create(Info&) override;
         void Do() override;
+        ID getItemId() const;
         private:
+        ID m_ItemId{};
     };
 }; //namespace edition

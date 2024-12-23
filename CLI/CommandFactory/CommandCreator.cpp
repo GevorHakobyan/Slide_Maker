@@ -30,10 +30,13 @@ void cli::CommandCreator::setValidCommands() {
     auto val4 = std::make_shared<cli::Remover>();
     m_validCommands["remove"] = std::move(val4);
 
-    auto val5 = std::make_shared<cli::Undo>();
-    m_validCommands["undo"] = std::move(val5);
+    auto val5 = std::make_shared<cli::Print>();
+    m_validCommands["print"] = std::move(val5);
 
-    auto val6 = std::make_shared<cli::Redo>();
-    m_validCommands["redo"] = std::move(val6);
+    auto val6 = std::make_shared<cli::Undo>();
+    m_validCommands["undo"] = std::move(val6);
+
+    auto val7 = std::make_shared<cli::Redo>();
+    m_validCommands["redo"] = std::move(val7);
 } 
 

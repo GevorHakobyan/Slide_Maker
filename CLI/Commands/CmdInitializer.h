@@ -3,6 +3,7 @@
 #include "Exiter.h"
 #include "ShapeAdder.h"
 #include "Remover.h"
+#include "Print.h"
 #include "Undo.h"
 #include "Redo.h"
 
@@ -16,6 +17,7 @@ namespace cli {
         static void setShapeAdder();
         static void setExiter();
         static void setRemover();
+        static void setPrint();
         static void setUndoRedo();
     };
 }; //namespace cli

@@ -14,11 +14,14 @@ edition::StoreManager::StoreManager()
   }
 
   void edition::StoreManager::push(ActionInfo info, ActionType type) {
-    auto[Do, Undo] = std::move(m_actionFactory->create(info, type));
-    Do->Do();
-
-    m_undo.push(std::move(Undo));
-    m_redo.push(std::move(Do));
+    auto[ActionDo, ActionUndo] = std::move(m_actionFactory->create(info, type));
+    ActionDo->Do();
+    bool isMutuable = std::get<bool>((info.find("isMutuable")->second));
+    
+    if (true == isMutuable) {
+      m_undo.push(std::move(ActionUndo));
+      m_redo.push(std::move(ActionDo));
+    }
   }
 
   void edition::StoreManager::pop(bool undo) {

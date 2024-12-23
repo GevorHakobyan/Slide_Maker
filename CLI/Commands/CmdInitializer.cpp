@@ -5,6 +5,7 @@ void cli::CInitializer::InitializeValidCommands() {
     setShapeAdder();
     setRemover();
     setExiter();
+    setPrint();
     setUndoRedo();
 }
 
@@ -90,10 +91,23 @@ void cli::CInitializer::setRemover() {
     cli::Remover::addValue(opt3, argType3);
 }
 
+void cli::CInitializer::setPrint() {
+    cli::option opt = "slide";
+    cli::argument argType = float{};
+    cli::Print::addValue(opt, argType);
+
+    opt = "help";
+    argType = String{};
+    cli::Print::addValue(opt, argType);
+
+    cli::Print::setValidators();
+}
+
 void cli::CInitializer::setUndoRedo() {
     cli::option opt1 = "";
     cli::argument argType1 = cli::EMPTY::empty;
     cli::Undo::addValue(opt1, argType1);
     cli::Redo::addValue(opt1, argType1);
 }
+
 

@@ -10,6 +10,7 @@
 #include "ShapeAdder.h"
 #include "Undo.h"
 #include "Redo.h"
+#include "Print.h"
 #include <unordered_map>
 #include <functional>
 

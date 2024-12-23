@@ -20,13 +20,13 @@ namespace edition {
         using SlideSharedPtr = std::shared_ptr<document::Slide>;
         using SlideInfo = cli::C_arguments;
         using Slide = document::Slide;
-        using ID = int;
+        using ID = float;
 
         public:
         SlideManager();
         ~SlideManager() = default;
-        void removeItem(SlideSharedPtr, ItemPtr);
-        void addItem(SlideSharedPtr, ItemInfo);
+        ID removeItem(SlideSharedPtr, ItemPtr);
+        ID addItem(SlideSharedPtr, ItemInfo);
         void changeDesign(Slide&, const Design&, ID);
         SlidePtr CreateSlide(const SlideInfo);
 

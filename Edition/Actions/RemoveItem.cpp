@@ -4,7 +4,7 @@ namespace edition {
     RemoveItem::RemoveItem(const Info& info)
     : Action{info} {};
 
-    RemoveItem::Pair RemoveItem::create(const Info& info) {
+    RemoveItem::Pair RemoveItem::create(Info& info) {
         Pair answer;
         ActionPtr Do = std::make_unique<RemoveItem>(info);
         ActionType Undo = "AddItem";
@@ -16,7 +16,7 @@ namespace edition {
     }
 
     void RemoveItem::Do() {
-        const auto slideId = std::get<float>((*m_Data.find("sid")).second);
+        const auto slideId = std::get<float>((*m_Data.find("oid")).second);
         const auto itemId = std::get<float>((*m_Data.find("iid")).second);
 
         const auto slidePtr = isSlideIdValid(slideId);

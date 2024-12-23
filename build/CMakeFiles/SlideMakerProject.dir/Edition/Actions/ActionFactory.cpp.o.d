@@ -238,6 +238,8 @@ CMakeFiles/SlideMakerProject.dir/Edition/Actions/ActionFactory.cpp.o: \
  /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Slide_Factory.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Item_Factory.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Exceptions/InvalidID_Cerr.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Managers/ViewManager.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Actions/RemoveItem.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Actions/AddSlide.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/Actions/RemoveSlide.h
+ /home/geveorg/Desktop/Slide_Maker/Edition/Actions/RemoveSlide.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Actions/PrintAction.h

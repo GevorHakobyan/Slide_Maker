@@ -9,6 +9,7 @@ cli::ShapeAdder::ShapeAdder(const Arguments& arguments)
 
 bool cli::ShapeAdder::Execute() {
     auto StoreManagerPtr = edition::StoreManager::getInstance();
+    m_Arguments["isMutuable"] = true;
     StoreManagerPtr->push(std::move(m_Arguments), "AddItem");
     return true;
 }

@@ -6,9 +6,10 @@ namespace cli {
     Remover::Remover(const Arguments& arguments)
     : I_Command{arguments} {};
 
-    Remover::CommandPtr Remover::create(const Arguments& arguments) {
-        validateInfo(arguments);
-        return std::move(std::make_unique<Remover>(arguments));
+    Remover::CommandPtr Remover::create(const Arguments& collectedArguments) {
+        validateInfo(collectedArguments);
+        m_Arguments["isMutuable"] = true;
+        return std::move(std::make_unique<Remover>(collectedArguments));
     }
 
     bool Remover::Execute() {

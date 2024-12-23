@@ -236,4 +236,5 @@ CMakeFiles/SlideMakerProject.dir/Edition/Actions/RemoveItem.cpp.o: \
  /home/geveorg/Desktop/Slide_Maker/Edition/Managers/Mover.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Slide_Factory.h \
  /home/geveorg/Desktop/Slide_Maker/Edition/Factories/Item_Factory.h \
- /home/geveorg/Desktop/Slide_Maker/Edition/Exceptions/InvalidID_Cerr.h
+ /home/geveorg/Desktop/Slide_Maker/Edition/Exceptions/InvalidID_Cerr.h \
+ /home/geveorg/Desktop/Slide_Maker/Edition/Managers/ViewManager.h

@@ -177,30 +177,6 @@ CLI/CommandFactory/CommandInfo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/CommandFactory/CommandInfo.cpp.s
 .PHONY : CLI/CommandFactory/CommandInfo.cpp.s
 
-CLI/Commands/CircleValidator.o: CLI/Commands/CircleValidator.cpp.o
-.PHONY : CLI/Commands/CircleValidator.o
-
-# target to build an object file
-CLI/Commands/CircleValidator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/CircleValidator.cpp.o
-.PHONY : CLI/Commands/CircleValidator.cpp.o
-
-CLI/Commands/CircleValidator.i: CLI/Commands/CircleValidator.cpp.i
-.PHONY : CLI/Commands/CircleValidator.i
-
-# target to preprocess a source file
-CLI/Commands/CircleValidator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/CircleValidator.cpp.i
-.PHONY : CLI/Commands/CircleValidator.cpp.i
-
-CLI/Commands/CircleValidator.s: CLI/Commands/CircleValidator.cpp.s
-.PHONY : CLI/Commands/CircleValidator.s
-
-# target to generate assembly for a file
-CLI/Commands/CircleValidator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/CircleValidator.cpp.s
-.PHONY : CLI/Commands/CircleValidator.cpp.s
-
 CLI/Commands/CmdInitializer.o: CLI/Commands/CmdInitializer.cpp.o
 .PHONY : CLI/Commands/CmdInitializer.o
 
@@ -273,29 +249,29 @@ CLI/Commands/Exiter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Exiter.cpp.s
 .PHONY : CLI/Commands/Exiter.cpp.s
 
-CLI/Commands/RectValidator.o: CLI/Commands/RectValidator.cpp.o
-.PHONY : CLI/Commands/RectValidator.o
+CLI/Commands/Print.o: CLI/Commands/Print.cpp.o
+.PHONY : CLI/Commands/Print.o
 
 # target to build an object file
-CLI/Commands/RectValidator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/RectValidator.cpp.o
-.PHONY : CLI/Commands/RectValidator.cpp.o
+CLI/Commands/Print.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Print.cpp.o
+.PHONY : CLI/Commands/Print.cpp.o
 
-CLI/Commands/RectValidator.i: CLI/Commands/RectValidator.cpp.i
-.PHONY : CLI/Commands/RectValidator.i
+CLI/Commands/Print.i: CLI/Commands/Print.cpp.i
+.PHONY : CLI/Commands/Print.i
 
 # target to preprocess a source file
-CLI/Commands/RectValidator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/RectValidator.cpp.i
-.PHONY : CLI/Commands/RectValidator.cpp.i
+CLI/Commands/Print.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Print.cpp.i
+.PHONY : CLI/Commands/Print.cpp.i
 
-CLI/Commands/RectValidator.s: CLI/Commands/RectValidator.cpp.s
-.PHONY : CLI/Commands/RectValidator.s
+CLI/Commands/Print.s: CLI/Commands/Print.cpp.s
+.PHONY : CLI/Commands/Print.s
 
 # target to generate assembly for a file
-CLI/Commands/RectValidator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/RectValidator.cpp.s
-.PHONY : CLI/Commands/RectValidator.cpp.s
+CLI/Commands/Print.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Print.cpp.s
+.PHONY : CLI/Commands/Print.cpp.s
 
 CLI/Commands/Redo.o: CLI/Commands/Redo.cpp.o
 .PHONY : CLI/Commands/Redo.o
@@ -393,54 +369,6 @@ CLI/Commands/SlideMaker.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/SlideMaker.cpp.s
 .PHONY : CLI/Commands/SlideMaker.cpp.s
 
-CLI/Commands/TextBoxValidator.o: CLI/Commands/TextBoxValidator.cpp.o
-.PHONY : CLI/Commands/TextBoxValidator.o
-
-# target to build an object file
-CLI/Commands/TextBoxValidator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/TextBoxValidator.cpp.o
-.PHONY : CLI/Commands/TextBoxValidator.cpp.o
-
-CLI/Commands/TextBoxValidator.i: CLI/Commands/TextBoxValidator.cpp.i
-.PHONY : CLI/Commands/TextBoxValidator.i
-
-# target to preprocess a source file
-CLI/Commands/TextBoxValidator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/TextBoxValidator.cpp.i
-.PHONY : CLI/Commands/TextBoxValidator.cpp.i
-
-CLI/Commands/TextBoxValidator.s: CLI/Commands/TextBoxValidator.cpp.s
-.PHONY : CLI/Commands/TextBoxValidator.s
-
-# target to generate assembly for a file
-CLI/Commands/TextBoxValidator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/TextBoxValidator.cpp.s
-.PHONY : CLI/Commands/TextBoxValidator.cpp.s
-
-CLI/Commands/TriangleValidator.o: CLI/Commands/TriangleValidator.cpp.o
-.PHONY : CLI/Commands/TriangleValidator.o
-
-# target to build an object file
-CLI/Commands/TriangleValidator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/TriangleValidator.cpp.o
-.PHONY : CLI/Commands/TriangleValidator.cpp.o
-
-CLI/Commands/TriangleValidator.i: CLI/Commands/TriangleValidator.cpp.i
-.PHONY : CLI/Commands/TriangleValidator.i
-
-# target to preprocess a source file
-CLI/Commands/TriangleValidator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/TriangleValidator.cpp.i
-.PHONY : CLI/Commands/TriangleValidator.cpp.i
-
-CLI/Commands/TriangleValidator.s: CLI/Commands/TriangleValidator.cpp.s
-.PHONY : CLI/Commands/TriangleValidator.s
-
-# target to generate assembly for a file
-CLI/Commands/TriangleValidator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/TriangleValidator.cpp.s
-.PHONY : CLI/Commands/TriangleValidator.cpp.s
-
 CLI/Commands/Undo.o: CLI/Commands/Undo.cpp.o
 .PHONY : CLI/Commands/Undo.o
 
@@ -464,6 +392,150 @@ CLI/Commands/Undo.s: CLI/Commands/Undo.cpp.s
 CLI/Commands/Undo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Undo.cpp.s
 .PHONY : CLI/Commands/Undo.cpp.s
+
+CLI/Commands/Validators/CircleValidator.o: CLI/Commands/Validators/CircleValidator.cpp.o
+.PHONY : CLI/Commands/Validators/CircleValidator.o
+
+# target to build an object file
+CLI/Commands/Validators/CircleValidator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/CircleValidator.cpp.o
+.PHONY : CLI/Commands/Validators/CircleValidator.cpp.o
+
+CLI/Commands/Validators/CircleValidator.i: CLI/Commands/Validators/CircleValidator.cpp.i
+.PHONY : CLI/Commands/Validators/CircleValidator.i
+
+# target to preprocess a source file
+CLI/Commands/Validators/CircleValidator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/CircleValidator.cpp.i
+.PHONY : CLI/Commands/Validators/CircleValidator.cpp.i
+
+CLI/Commands/Validators/CircleValidator.s: CLI/Commands/Validators/CircleValidator.cpp.s
+.PHONY : CLI/Commands/Validators/CircleValidator.s
+
+# target to generate assembly for a file
+CLI/Commands/Validators/CircleValidator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/CircleValidator.cpp.s
+.PHONY : CLI/Commands/Validators/CircleValidator.cpp.s
+
+CLI/Commands/Validators/HelpPrintValidator.o: CLI/Commands/Validators/HelpPrintValidator.cpp.o
+.PHONY : CLI/Commands/Validators/HelpPrintValidator.o
+
+# target to build an object file
+CLI/Commands/Validators/HelpPrintValidator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/HelpPrintValidator.cpp.o
+.PHONY : CLI/Commands/Validators/HelpPrintValidator.cpp.o
+
+CLI/Commands/Validators/HelpPrintValidator.i: CLI/Commands/Validators/HelpPrintValidator.cpp.i
+.PHONY : CLI/Commands/Validators/HelpPrintValidator.i
+
+# target to preprocess a source file
+CLI/Commands/Validators/HelpPrintValidator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/HelpPrintValidator.cpp.i
+.PHONY : CLI/Commands/Validators/HelpPrintValidator.cpp.i
+
+CLI/Commands/Validators/HelpPrintValidator.s: CLI/Commands/Validators/HelpPrintValidator.cpp.s
+.PHONY : CLI/Commands/Validators/HelpPrintValidator.s
+
+# target to generate assembly for a file
+CLI/Commands/Validators/HelpPrintValidator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/HelpPrintValidator.cpp.s
+.PHONY : CLI/Commands/Validators/HelpPrintValidator.cpp.s
+
+CLI/Commands/Validators/RectValidator.o: CLI/Commands/Validators/RectValidator.cpp.o
+.PHONY : CLI/Commands/Validators/RectValidator.o
+
+# target to build an object file
+CLI/Commands/Validators/RectValidator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/RectValidator.cpp.o
+.PHONY : CLI/Commands/Validators/RectValidator.cpp.o
+
+CLI/Commands/Validators/RectValidator.i: CLI/Commands/Validators/RectValidator.cpp.i
+.PHONY : CLI/Commands/Validators/RectValidator.i
+
+# target to preprocess a source file
+CLI/Commands/Validators/RectValidator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/RectValidator.cpp.i
+.PHONY : CLI/Commands/Validators/RectValidator.cpp.i
+
+CLI/Commands/Validators/RectValidator.s: CLI/Commands/Validators/RectValidator.cpp.s
+.PHONY : CLI/Commands/Validators/RectValidator.s
+
+# target to generate assembly for a file
+CLI/Commands/Validators/RectValidator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/RectValidator.cpp.s
+.PHONY : CLI/Commands/Validators/RectValidator.cpp.s
+
+CLI/Commands/Validators/SlidePrintValidator.o: CLI/Commands/Validators/SlidePrintValidator.cpp.o
+.PHONY : CLI/Commands/Validators/SlidePrintValidator.o
+
+# target to build an object file
+CLI/Commands/Validators/SlidePrintValidator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/SlidePrintValidator.cpp.o
+.PHONY : CLI/Commands/Validators/SlidePrintValidator.cpp.o
+
+CLI/Commands/Validators/SlidePrintValidator.i: CLI/Commands/Validators/SlidePrintValidator.cpp.i
+.PHONY : CLI/Commands/Validators/SlidePrintValidator.i
+
+# target to preprocess a source file
+CLI/Commands/Validators/SlidePrintValidator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/SlidePrintValidator.cpp.i
+.PHONY : CLI/Commands/Validators/SlidePrintValidator.cpp.i
+
+CLI/Commands/Validators/SlidePrintValidator.s: CLI/Commands/Validators/SlidePrintValidator.cpp.s
+.PHONY : CLI/Commands/Validators/SlidePrintValidator.s
+
+# target to generate assembly for a file
+CLI/Commands/Validators/SlidePrintValidator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/SlidePrintValidator.cpp.s
+.PHONY : CLI/Commands/Validators/SlidePrintValidator.cpp.s
+
+CLI/Commands/Validators/TextBoxValidator.o: CLI/Commands/Validators/TextBoxValidator.cpp.o
+.PHONY : CLI/Commands/Validators/TextBoxValidator.o
+
+# target to build an object file
+CLI/Commands/Validators/TextBoxValidator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/TextBoxValidator.cpp.o
+.PHONY : CLI/Commands/Validators/TextBoxValidator.cpp.o
+
+CLI/Commands/Validators/TextBoxValidator.i: CLI/Commands/Validators/TextBoxValidator.cpp.i
+.PHONY : CLI/Commands/Validators/TextBoxValidator.i
+
+# target to preprocess a source file
+CLI/Commands/Validators/TextBoxValidator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/TextBoxValidator.cpp.i
+.PHONY : CLI/Commands/Validators/TextBoxValidator.cpp.i
+
+CLI/Commands/Validators/TextBoxValidator.s: CLI/Commands/Validators/TextBoxValidator.cpp.s
+.PHONY : CLI/Commands/Validators/TextBoxValidator.s
+
+# target to generate assembly for a file
+CLI/Commands/Validators/TextBoxValidator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/TextBoxValidator.cpp.s
+.PHONY : CLI/Commands/Validators/TextBoxValidator.cpp.s
+
+CLI/Commands/Validators/TriangleValidator.o: CLI/Commands/Validators/TriangleValidator.cpp.o
+.PHONY : CLI/Commands/Validators/TriangleValidator.o
+
+# target to build an object file
+CLI/Commands/Validators/TriangleValidator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/TriangleValidator.cpp.o
+.PHONY : CLI/Commands/Validators/TriangleValidator.cpp.o
+
+CLI/Commands/Validators/TriangleValidator.i: CLI/Commands/Validators/TriangleValidator.cpp.i
+.PHONY : CLI/Commands/Validators/TriangleValidator.i
+
+# target to preprocess a source file
+CLI/Commands/Validators/TriangleValidator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/TriangleValidator.cpp.i
+.PHONY : CLI/Commands/Validators/TriangleValidator.cpp.i
+
+CLI/Commands/Validators/TriangleValidator.s: CLI/Commands/Validators/TriangleValidator.cpp.s
+.PHONY : CLI/Commands/Validators/TriangleValidator.s
+
+# target to generate assembly for a file
+CLI/Commands/Validators/TriangleValidator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/TriangleValidator.cpp.s
+.PHONY : CLI/Commands/Validators/TriangleValidator.cpp.s
 
 CLI/Controller/Controller.o: CLI/Controller/Controller.cpp.o
 .PHONY : CLI/Controller/Controller.o
@@ -993,6 +1065,30 @@ Edition/Actions/AddSlide.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/AddSlide.cpp.s
 .PHONY : Edition/Actions/AddSlide.cpp.s
 
+Edition/Actions/PrintAction.o: Edition/Actions/PrintAction.cpp.o
+.PHONY : Edition/Actions/PrintAction.o
+
+# target to build an object file
+Edition/Actions/PrintAction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/PrintAction.cpp.o
+.PHONY : Edition/Actions/PrintAction.cpp.o
+
+Edition/Actions/PrintAction.i: Edition/Actions/PrintAction.cpp.i
+.PHONY : Edition/Actions/PrintAction.i
+
+# target to preprocess a source file
+Edition/Actions/PrintAction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/PrintAction.cpp.i
+.PHONY : Edition/Actions/PrintAction.cpp.i
+
+Edition/Actions/PrintAction.s: Edition/Actions/PrintAction.cpp.s
+.PHONY : Edition/Actions/PrintAction.s
+
+# target to generate assembly for a file
+Edition/Actions/PrintAction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Actions/PrintAction.cpp.s
+.PHONY : Edition/Actions/PrintAction.cpp.s
+
 Edition/Actions/RemoveItem.o: Edition/Actions/RemoveItem.cpp.o
 .PHONY : Edition/Actions/RemoveItem.o
 
@@ -1161,6 +1257,30 @@ Edition/Managers/StoreManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Managers/StoreManager.cpp.s
 .PHONY : Edition/Managers/StoreManager.cpp.s
 
+Edition/Managers/ViewManager.o: Edition/Managers/ViewManager.cpp.o
+.PHONY : Edition/Managers/ViewManager.o
+
+# target to build an object file
+Edition/Managers/ViewManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Managers/ViewManager.cpp.o
+.PHONY : Edition/Managers/ViewManager.cpp.o
+
+Edition/Managers/ViewManager.i: Edition/Managers/ViewManager.cpp.i
+.PHONY : Edition/Managers/ViewManager.i
+
+# target to preprocess a source file
+Edition/Managers/ViewManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Managers/ViewManager.cpp.i
+.PHONY : Edition/Managers/ViewManager.cpp.i
+
+Edition/Managers/ViewManager.s: Edition/Managers/ViewManager.cpp.s
+.PHONY : Edition/Managers/ViewManager.s
+
+# target to generate assembly for a file
+Edition/Managers/ViewManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideMakerProject.dir/build.make CMakeFiles/SlideMakerProject.dir/Edition/Managers/ViewManager.cpp.s
+.PHONY : Edition/Managers/ViewManager.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1176,9 +1296,6 @@ help:
 	@echo "... CLI/CommandFactory/CommandInfo.o"
 	@echo "... CLI/CommandFactory/CommandInfo.i"
 	@echo "... CLI/CommandFactory/CommandInfo.s"
-	@echo "... CLI/Commands/CircleValidator.o"
-	@echo "... CLI/Commands/CircleValidator.i"
-	@echo "... CLI/Commands/CircleValidator.s"
 	@echo "... CLI/Commands/CmdInitializer.o"
 	@echo "... CLI/Commands/CmdInitializer.i"
 	@echo "... CLI/Commands/CmdInitializer.s"
@@ -1188,9 +1305,9 @@ help:
 	@echo "... CLI/Commands/Exiter.o"
 	@echo "... CLI/Commands/Exiter.i"
 	@echo "... CLI/Commands/Exiter.s"
-	@echo "... CLI/Commands/RectValidator.o"
-	@echo "... CLI/Commands/RectValidator.i"
-	@echo "... CLI/Commands/RectValidator.s"
+	@echo "... CLI/Commands/Print.o"
+	@echo "... CLI/Commands/Print.i"
+	@echo "... CLI/Commands/Print.s"
 	@echo "... CLI/Commands/Redo.o"
 	@echo "... CLI/Commands/Redo.i"
 	@echo "... CLI/Commands/Redo.s"
@@ -1203,15 +1320,27 @@ help:
 	@echo "... CLI/Commands/SlideMaker.o"
 	@echo "... CLI/Commands/SlideMaker.i"
 	@echo "... CLI/Commands/SlideMaker.s"
-	@echo "... CLI/Commands/TextBoxValidator.o"
-	@echo "... CLI/Commands/TextBoxValidator.i"
-	@echo "... CLI/Commands/TextBoxValidator.s"
-	@echo "... CLI/Commands/TriangleValidator.o"
-	@echo "... CLI/Commands/TriangleValidator.i"
-	@echo "... CLI/Commands/TriangleValidator.s"
 	@echo "... CLI/Commands/Undo.o"
 	@echo "... CLI/Commands/Undo.i"
 	@echo "... CLI/Commands/Undo.s"
+	@echo "... CLI/Commands/Validators/CircleValidator.o"
+	@echo "... CLI/Commands/Validators/CircleValidator.i"
+	@echo "... CLI/Commands/Validators/CircleValidator.s"
+	@echo "... CLI/Commands/Validators/HelpPrintValidator.o"
+	@echo "... CLI/Commands/Validators/HelpPrintValidator.i"
+	@echo "... CLI/Commands/Validators/HelpPrintValidator.s"
+	@echo "... CLI/Commands/Validators/RectValidator.o"
+	@echo "... CLI/Commands/Validators/RectValidator.i"
+	@echo "... CLI/Commands/Validators/RectValidator.s"
+	@echo "... CLI/Commands/Validators/SlidePrintValidator.o"
+	@echo "... CLI/Commands/Validators/SlidePrintValidator.i"
+	@echo "... CLI/Commands/Validators/SlidePrintValidator.s"
+	@echo "... CLI/Commands/Validators/TextBoxValidator.o"
+	@echo "... CLI/Commands/Validators/TextBoxValidator.i"
+	@echo "... CLI/Commands/Validators/TextBoxValidator.s"
+	@echo "... CLI/Commands/Validators/TriangleValidator.o"
+	@echo "... CLI/Commands/Validators/TriangleValidator.i"
+	@echo "... CLI/Commands/Validators/TriangleValidator.s"
 	@echo "... CLI/Controller/Controller.o"
 	@echo "... CLI/Controller/Controller.i"
 	@echo "... CLI/Controller/Controller.s"
@@ -1278,6 +1407,9 @@ help:
 	@echo "... Edition/Actions/AddSlide.o"
 	@echo "... Edition/Actions/AddSlide.i"
 	@echo "... Edition/Actions/AddSlide.s"
+	@echo "... Edition/Actions/PrintAction.o"
+	@echo "... Edition/Actions/PrintAction.i"
+	@echo "... Edition/Actions/PrintAction.s"
 	@echo "... Edition/Actions/RemoveItem.o"
 	@echo "... Edition/Actions/RemoveItem.i"
 	@echo "... Edition/Actions/RemoveItem.s"
@@ -1299,6 +1431,9 @@ help:
 	@echo "... Edition/Managers/StoreManager.o"
 	@echo "... Edition/Managers/StoreManager.i"
 	@echo "... Edition/Managers/StoreManager.s"
+	@echo "... Edition/Managers/ViewManager.o"
+	@echo "... Edition/Managers/ViewManager.i"
+	@echo "... Edition/Managers/ViewManager.s"
 .PHONY : help
 
 

@@ -4,7 +4,7 @@ namespace edition {
     RemoveSlide::RemoveSlide(const Info& info)
     : Action(info) {};
 
-    RemoveSlide::Pair RemoveSlide::create(const Info& info) {
+    RemoveSlide::Pair RemoveSlide::create(Info& info) {
         Pair answer;
         ActionPtr Do = std::make_unique<RemoveSlide>(info);
         ActionType Undo = "AddSlide";

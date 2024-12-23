@@ -1,8 +1,8 @@
-CMakeFiles/SlideMakerProject.dir/CLI/Commands/RectValidator.cpp.o: \
- /home/geveorg/Desktop/Slide_Maker/CLI/Commands/RectValidator.cpp \
+CMakeFiles/SlideMakerProject.dir/CLI/Commands/Validators/TriangleValidator.cpp.o: \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Validators/TriangleValidator.cpp \
  /usr/include/stdc-predef.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/Commands/RectValidator.h \
- /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Validator.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Validators/TriangleValidator.h \
+ /home/geveorg/Desktop/Slide_Maker/CLI/Commands/Validators/Validator.h \
  /home/geveorg/Desktop/Slide_Maker/CLI/CommandFactory/Types.h \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/requires_hosted.h \

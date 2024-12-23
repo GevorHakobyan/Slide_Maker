@@ -8,7 +8,7 @@ namespace edition {
         public:
         RemoveItem() = default;
         RemoveItem(const Info&);
-        Pair create(const Info&) override;
+        Pair create(Info&) override;
         void Do() override;
         private:
         ItemPtr isItemIdValid(SlidePtr, size_t) const;
